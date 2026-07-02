@@ -9,6 +9,8 @@ html {
 }
 
 body {
+  --serif-stack: ui-serif, "New York", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans-stack: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   --bg: #eee4d0;
   --ink: #241b12;
   --muted: #7b6e5e;
@@ -25,7 +27,7 @@ body {
   min-height: 100%;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  font-family: var(--sans-stack);
   line-height: 1.5;
 }
 
@@ -98,7 +100,7 @@ body.theme-dark {
   border-radius: 7px;
   background: var(--button);
   color: var(--ink);
-  font: 650 13px/1 "Avenir Next", "Helvetica Neue", sans-serif;
+  font: 650 13px/1 var(--sans-stack);
 }
 
 .controls {
@@ -144,11 +146,11 @@ body.theme-dark {
 }
 
 .family-button.family-serif {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--serif-stack);
 }
 
 .family-button.family-sans {
-  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  font-family: var(--sans-stack);
 }
 
 .reader {
@@ -167,7 +169,7 @@ body.theme-dark {
 .chapter-title {
   margin: 14px 0 30px;
   text-align: center;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--serif-stack);
   font-size: 26px;
   font-weight: 700;
 }
@@ -180,11 +182,13 @@ body.theme-dark {
 }
 
 .text.serif {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--serif-stack);
+  font-kerning: normal;
+  font-synthesis: none;
 }
 
 .text.sans {
-  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  font-family: var(--sans-stack);
 }
 
 .text p {
@@ -221,7 +225,7 @@ body.theme-dark {
   background: var(--tooltip);
   color: var(--tooltip-text);
   box-shadow: 0 8px 22px rgba(54, 42, 24, 0.18);
-  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  font-family: var(--sans-stack);
   overflow: auto;
   overflow-wrap: break-word;
   white-space: normal;

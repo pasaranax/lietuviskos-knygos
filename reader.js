@@ -108,7 +108,7 @@
         if (block.type === "dialogue") paragraph.classList.add("dialogue");
         block.items.forEach(function (item, itemIndex) {
           if (itemIndex > 0) paragraph.append(document.createTextNode(" "));
-          paragraph.append(renderPhrase(item));
+          paragraph.append(renderItem(item));
         });
         textWrap.append(paragraph);
       });
@@ -119,15 +119,22 @@
     applySettings();
   }
 
-  function renderPhrase(item) {
-    if (!hasTooltip(item)) return document.createTextNode(item.text);
+  function renderItem(item) {
+    if (!hasTooltip(item)) return document.createTextNode(displayText(item.text));
+    return renderPhrase(item);
+  }
 
+  function renderPhrase(item) {
     var span = document.createElement("span");
     span.className = "phrase";
     span.tabIndex = 0;
-    span.textContent = item.text;
+    span.textContent = displayText(item.text);
     span._phraseData = item;
     return span;
+  }
+
+  function displayText(value) {
+    return String(value || "").normalize("NFC");
   }
 
   function makeParagraphId(chapter, chapterIndex, blockIndex) {
