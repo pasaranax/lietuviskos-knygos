@@ -1,0 +1,18 @@
+{
+  "books": [
+    {
+      "id": "jokiu-orchideju",
+      "title": "Jokių orchidėjų mis Blendiš",
+      "author": "Džeimsas H. Čeizas",
+      "cover": "assets/jokiu-orchideju-cover.jpg",
+      "href": "reader.html?book=jokiu-orchideju",
+      "wordCount": 52393,
+      "downloads": [
+        {
+          "label": "FB2",
+          "href": "fb2/jokiu-orchideju.fb2.zip"
+        }
+      ]
+    }
+  ]
+}

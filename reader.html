@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="reader.css">
+  <title>Skaityklė</title>
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <a class="home-link" href="index.html" aria-label="Grįžti į lentyną">←</a>
+    <div class="progress" id="progressText">0%</div>
+    <select class="chapter-select" id="chapterSelect" aria-label="Skyrius"></select>
+    <div class="controls" aria-label="Skaitymo nustatymai">
+      <button class="control-button theme-button" id="themeButton" type="button">🌙</button>
+      <button class="control-button" id="fontDownButton" type="button">A-</button>
+      <button class="control-button" id="fontUpButton" type="button">A+</button>
+      <button class="control-button family-button" id="familyButton" type="button">A</button>
+    </div>
+  </header>
+
+  <main class="reader">
+    <article class="content" id="content" aria-label="Adaptuotas tekstas">
+      <p class="loading">Kraunama...</p>
+    </article>
+  </main>
+
+  <div class="tooltip" id="tooltip" role="note" hidden>
+    <div class="tooltip-translation" id="tooltipTranslation"></div>
+    <div class="tooltip-note" id="tooltipNote"></div>
+  </div>
+
+  <script src="reader.js" defer></script>
+</body>
+</html>
