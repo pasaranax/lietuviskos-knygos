@@ -6,13 +6,7 @@
       "author": "Džeimsas H. Čeizas",
       "cover": "assets/jokiu-orchideju-cover.jpg",
       "href": "reader.html?book=jokiu-orchideju",
-      "wordCount": 52393,
-      "downloads": [
-        {
-          "label": "FB2",
-          "href": "fb2/jokiu-orchideju.fb2.zip"
-        }
-      ]
+      "wordCount": 52393
     }
   ]
 }

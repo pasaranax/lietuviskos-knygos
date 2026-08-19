@@ -234,16 +234,18 @@ body.theme-dark {
 }
 
 .tooltip-translation {
-  margin: 0 0 8px;
-  font-size: 17px;
-  line-height: 1.4;
-  font-weight: 750;
+  margin: 10px 0 0;
+  color: var(--tooltip-muted);
+  font-size: 13px;
+  line-height: 1.38;
+  font-weight: 400;
 }
 
 .tooltip-note {
   color: var(--tooltip-muted);
   font-size: 15px;
   line-height: 1.38;
+  white-space: pre-line;
 }
 
 .loading,
@@ -313,8 +315,8 @@ body.theme-dark {
   }
 
   .tooltip-translation {
-    font-size: 18px;
-    line-height: 1.42;
+    font-size: 14px;
+    line-height: 1.4;
   }
 
   .tooltip-note {

@@ -164,39 +164,6 @@ h1 {
   color: #dccca8;
 }
 
-.book-actions {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  width: 100%;
-}
-
-.book-action {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 0;
-  min-height: 36px;
-  padding: 8px 10px;
-  border: 1px solid rgba(224, 196, 143, 0.52);
-  border-radius: 8px;
-  background: rgba(118, 81, 38, 0.52);
-  color: #f3e4c6;
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.1;
-  text-align: center;
-  text-decoration: none;
-  overflow-wrap: anywhere;
-}
-
-.book-action:hover,
-.book-action:focus-visible {
-  background: rgba(151, 105, 51, 0.72);
-}
-
 .empty-state,
 .error-state {
   margin: 0;
@@ -233,17 +200,6 @@ h1 {
 
   .book-info {
     width: 100%;
-  }
-
-  .book-actions {
-    gap: 6px;
-  }
-
-  .book-action {
-    min-height: 34px;
-    padding: 6px 5px;
-    border-radius: 7px;
-    font-size: 10px;
   }
 
   .book-title {

@@ -102,29 +102,6 @@
 
     card.append(link);
 
-    var actions = document.createElement("span");
-    actions.className = "book-actions";
-
-    var readLink = document.createElement("a");
-    readLink.className = "book-action";
-    readLink.href = link.href;
-    readLink.textContent = "Skaityti";
-    readLink.setAttribute("aria-label", "Skaityti: " + book.title);
-    actions.append(readLink);
-
-    if (Array.isArray(book.downloads) && book.downloads.length > 0) {
-      book.downloads.forEach(function (download) {
-        var downloadLink = document.createElement("a");
-        downloadLink.className = "book-action";
-        downloadLink.href = download.href;
-        downloadLink.textContent = download.label || "Atsisiųsti";
-        downloadLink.setAttribute("download", "");
-        downloadLink.setAttribute("aria-label", downloadLink.textContent + ": " + book.title);
-        actions.append(downloadLink);
-      });
-    }
-    card.append(actions);
-
     return card;
   }
 
