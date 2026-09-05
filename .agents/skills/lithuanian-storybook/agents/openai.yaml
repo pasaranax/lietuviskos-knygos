@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lithuanian Storybook"
+  short_description: "Сюжетные книги A2 с повторами слов и тултипами"
+  default_prompt: "Используй $lithuanian-storybook для новой литовской книги A2: сначала проработай сюжет, затем создай пилот с русскими тултипами."

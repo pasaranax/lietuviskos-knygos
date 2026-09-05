@@ -6,6 +6,10 @@ Add each new Lithuanian book so it appears on `index.html` as a bookshelf card a
 
 The reader is generic. Do not create one-off HTML readers per book.
 
+## Book Generation Skill
+
+When generating an original book, pilot chapter, or continuation, use the project skill [lithuanian-storybook](.agents/skills/lithuanian-storybook/SKILL.md). Read it before planning or writing, and load only the optional setting and genre files relevant to the current request.
+
 ## Project Structure
 
 - `index.html` - bookshelf shell.
