@@ -1,0 +1,973 @@
+{
+  "id": "jusu-iprastas-uzsakymas",
+  "title": "Jūsų įprastas užsakymas",
+  "author": "DI sukurta istorija",
+  "language": "lt",
+  "translationLanguage": "ru",
+  "cover": "assets/jusu-iprastas-uzsakymas-cover.jpg",
+  "wordCount": 708,
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "title": "Dvi porcijos",
+      "label": "I",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Penktãdienį Tòmas grį̃žo nè į̃ sàvo namùs.",
+              "translation": "В пятницу Томас вернулся не к себе домой.",
+              "note": "**grįžti** — вернуться, возвращаться; **grįžo** — 3-е лицо прошедшего времени.\n**į** — в, к; **į savo namus** — направление, винительный падеж мн. числа."
+            },
+            {
+              "text": "Beñt jaũ taĩp jám atródė,",
+              "translation": "По крайней мере, так ему казалось,",
+              "note": "**atrodyti** — казаться, выглядеть; **atrodė** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "kaĩ priẽ dùrų ieškójo naũjo rãkto.",
+              "translation": "когда у двери он искал новый ключ.",
+              "note": "**raktas** — ключ; **rakto** — родительный падеж ед. числа после **ieškoti** — искать.\n**prie** — у, возле; **durų** — родительный падеж мн. числа после этого предлога."
+            },
+            {
+              "text": "Jõ sẽnas rãktas bùvo mãžas.",
+              "translation": "Его старый ключ был маленьким.",
+              "note": "**mažas** — маленький, небольшой; **mažas** согласуется с существительным мужского рода **raktas**."
+            },
+            {
+              "text": "Šìtas bùvo ìlgas ir̃ visur̃ kliùvo.",
+              "translation": "Этот был длинным и везде цеплялся.",
+              "note": "**kliūti** — цепляться, застревать; **kliuvo** — 3-е лицо прошедшего времени."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Ùž dùrų stovė́jo trỹs didelė̃s dėžė̃s.",
+              "translation": "За дверью стояли три большие коробки.",
+              "note": "**dėžė** — коробка, ящик; **dėžės** — именительный падеж мн. числа.\n**už** — за; **durų** — родительный падеж при обозначении места."
+            },
+            {
+              "text": "Añt vienõs bùvo ùžrašas „Virtùvė“.",
+              "translation": "На одной была надпись «Кухня».",
+              "note": "**užrašas** — надпись, запись; здесь именительный падеж ед. числа.\n**ant** — на; **vienos** — родительный падеж женского рода, подразумевается коробка."
+            },
+            {
+              "text": "Tòmas ją̃ atidãrė ir̃ rãdo batùs.",
+              "translation": "Томас открыл её и нашёл ботинки.",
+              "note": "**atidaryti** — открыть; **atidarė** — 3-е лицо прошедшего времени.\n**rasti** — найти; **rado** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Dėžès jìs króvė vãkar nãktį.",
+              "translation": "Коробки он складывал вчера ночью.",
+              "note": "**krauti** — грузить, укладывать; **krovė** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Tadà vìskas atródė labaĩ áišku.",
+              "translation": "Тогда всё казалось очень ясным.",
+              "note": "**aiškus** — ясный, понятный; **aišku** — форма среднего рода, описывает ситуацию в целом."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Butè bùvo tylù ir̃ šíek tíek šálta.",
+              "translation": "В квартире было тихо и немного холодно.",
+              "note": "**butas** — квартира; **bute** — местный падеж ед. числа.\n**šiek tiek** — немного, чуть-чуть; устойчивое выражение степени."
+            },
+            {
+              "text": "Prõ lángą jìs mãtė autobùsų stotẽlę.",
+              "translation": "Через окно он видел автобусную остановку.",
+              "note": "**pro** — через, мимо; **langą** — винительный падеж после этого предлога.\n**stotelė** — остановка; **stotelę** — винительный падеж ед. числа."
+            },
+            {
+              "text": "Kitamè gãtvės galè bùvo mažà parduotùvė.",
+              "translation": "На другом конце улицы был маленький магазин.",
+              "note": "**galas** — конец, край; **gale** — местный падеж ед. числа.\n**parduotuvė** — магазин; здесь именительный падеж ед. числа."
+            },
+            {
+              "text": "Šiõ Vìlniaus rajòno jìs bevéik nepažinójo.",
+              "translation": "Этот район Вильнюса он почти не знал.",
+              "note": "**pažinoti** — знать, быть знакомым; **nepažinojo** — отрицательная форма прошедшего времени.\n**rajonas** — район; **rajono** — родительный падеж при отрицании."
+            },
+            {
+              "text": "Čià niẽkas nežinójo jõ var̃do.",
+              "translation": "Здесь никто не знал его имени.",
+              "note": "**vardas** — имя; **vardo** — родительный падеж при отрицании **nežinojo**."
+            },
+            {
+              "text": "Kõl kàs jám taĩ patìko.",
+              "translation": "Пока ему это нравилось.",
+              "note": "**kol kas** — пока, на данный момент; устойчивое временное выражение.\n**patikti** — нравиться; **patiko** — прошедшее время, тот, кому нравится, стоит в дательном падеже: **jam**."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Priẽš dvì saváites jiẽ sù Austė́ja išsiskýrė.",
+              "translation": "Две недели назад они с Аустеей расстались.",
+              "note": "**išsiskirti** — расстаться, разойтись; **išsiskyrė** — возвратный глагол, 3-е лицо прошедшего времени.\n**prieš** — перед, назад; **dvi savaites** — винительный падеж в указании времени."
+            },
+            {
+              "text": "Dabar̃ jìs turė́jo kìtą ãdresą",
+              "translation": "Теперь у него был другой адрес",
+              "note": "**turėti** — иметь; **turėjo** — 3-е лицо прошедшего времени.\n**adresas** — адрес; **adresą** — винительный падеж ед. числа."
+            },
+            {
+              "text": "ir̃ per̃ daũg daiktų̃ vienám kam̃bariui.",
+              "translation": "и слишком много вещей для одной комнаты.",
+              "note": "**per daug** — слишком много; **daiktų** — родительный падеж мн. числа после обозначения количества.\n**kambarys** — комната; **kambariui** — дательный падеж ед. числа."
+            },
+            {
+              "text": "Apiẽ kitùs dalykùs galvõs vėliaũ.",
+              "translation": "О других вещах он подумает позже.",
+              "note": "**galvoti** — думать; **galvos** — 3-е лицо будущего времени.\n**apie** — о, об; **dalykus** — винительный падеж мн. числа после этого предлога."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Šį̃ vãkarą jám reikė́jo paprastų̃ dalỹkų:",
+              "translation": "В этот вечер ему были нужны простые вещи:",
+              "note": "**reikėti** — быть нужным, требоваться; **reikėjo** — прошедшее время, нужное стоит в родительном падеже: **paprastų dalykų**."
+            },
+            {
+              "text": "švariõs lóvos, káršto maĩsto ir̃ ramýbės.",
+              "translation": "чистая постель, горячая еда и покой.",
+              "note": "**ramybė** — покой, спокойствие; **ramybės** — родительный падеж ед. числа, продолжает конструкцию **reikėjo**."
+            },
+            {
+              "text": "Nuõ pirmãdienio jìs normaliaĩ miegõs,",
+              "translation": "С понедельника он будет нормально спать,",
+              "note": "**miegoti** — спать; **miegos** — 3-е лицо будущего времени.\n**nuo** — с, от; **pirmadienio** — родительный падеж ед. числа."
+            },
+            {
+              "text": "gamiñs namiẽ ir̃ nevėluõs į̃ dárbą.",
+              "translation": "будет готовить дома и не будет опаздывать на работу.",
+              "note": "**gaminti** — готовить, изготовлять; **gamins** — 3-е лицо будущего времени.\n**vėluoti** — опаздывать; **nevėluos** — отрицательная форма будущего времени."
+            },
+            {
+              "text": "Gál nèt nuõ rytójaus.",
+              "translation": "Может, даже с завтрашнего дня.",
+              "note": "**rytojus** — завтрашний день; **rytojaus** — родительный падеж ед. числа после **nuo**."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Virtùvėje añt stãlo stovė́jo mãžas ekrãnas.",
+              "translation": "На кухне на столе стоял маленький экран.",
+              "note": "**ekranas** — экран; здесь именительный падеж ед. числа.\n**virtuvė** — кухня; **virtuvėje** — местный падеж ед. числа."
+            },
+            {
+              "text": "Šalià gulė́jo bùto saviniñkės lapẽlis.",
+              "translation": "Рядом лежала записка хозяйки квартиры.",
+              "note": "**lapelis** — листок, записка; уменьшительная форма от **lapas** — лист.\n**savininkė** — владелица, хозяйка; **savininkės** — родительный падеж ед. числа."
+            },
+            {
+              "text": "„Namų̃ pagálbininkas. Pìrmas mė́nuo jaũ apmokė́tas.“",
+              "translation": "«Домашний помощник. Первый месяц уже оплачен».",
+              "note": "**pagalbininkas** — помощник; здесь именительный падеж ед. числа.\n**apmokėti** — оплатить; **apmokėtas** — страдательное причастие прошедшего времени, мужской род ед. числа."
+            },
+            {
+              "text": "Žemiaũ bùvo parašýta: „Prijùnkite sàvo telefòną.“",
+              "translation": "Ниже было написано: «Подключите свой телефон».",
+              "note": "**žemai** — низко; **žemiau** — сравнительная степень: ниже.\n**prijungti** — подключить, присоединить; **prijunkite** — вежливая повелительная форма.\n**parašyti** — написать; **parašyta** — страдательное причастие, форма среднего рода."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas prijùngė telefòną ir̃ įrãšė var̃dą.",
+              "translation": "Томас подключил телефон и ввёл имя.",
+              "note": "**prijungti** — подключить; **prijungė** — 3-е лицо прошедшего времени.\n**įrašyti** — записать, ввести; **įrašė** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Ekranè pasiródė kelì trumpì kláusimai.",
+              "translation": "На экране появилось несколько коротких вопросов.",
+              "note": "**pasirodyti** — появиться, показаться; **pasirodė** — 3-е лицо прошедшего времени.\n**klausimas** — вопрос; **klausimai** — именительный падеж мн. числа."
+            },
+            {
+              "text": "Ar̃ gãlima primiñti apiẽ susitikimùs?",
+              "translation": "Можно ли напоминать о встречах?",
+              "note": "**ar** — ли; частица вводит общий вопрос.\n**priminti** — напомнить, напоминать; после **galima** употребляется инфинитив.\n**susitikimas** — встреча; **susitikimus** — винительный падеж мн. числа после **apie**."
+            },
+            {
+              "text": "Ar̃ gãlima užsakýti maĩsto?",
+              "translation": "Можно ли заказывать еду?",
+              "note": "**užsakyti** — заказать; **maisto** — родительный падеж: некоторое количество еды.\n**ar galima** — можно ли; вопрос о разрешении."
+            },
+            {
+              "text": "Ar̃ gãlima sių̃sti žinutès jõ vardù?",
+              "translation": "Можно ли отправлять сообщения от его имени?",
+              "note": "**siųsti** — отправлять, посылать; здесь инфинитив.\n**vardas** — имя; **jo vardu** — от его имени, творительный падеж ед. числа."
+            },
+            {
+              "text": "Tòmas visur̃ pasiriñko „Taĩp“.",
+              "translation": "Томас везде выбрал «Да».",
+              "note": "**pasirinkti** — выбрать, подобрать себе; **pasirinko** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Skaitýti mažàs raidès dabar̃ nesinorė́jo.",
+              "translation": "Читать мелкие буквы сейчас не хотелось.",
+              "note": "**raidė** — буква; **raides** — винительный падеж мн. числа.\n**nesinorėjo** — не хотелось; безличная отрицательная форма прошедшего времени от **norėtis**."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Lãbas vãkaras, Tòmai. Kuõ galiù padė́ti?",
+              "translation": "— Добрый вечер, Томас. Чем могу помочь?",
+              "note": "**Tomas** — Томас; **Tomai** — звательный падеж при обращении.\n**kuo galiu padėti** — чем могу помочь; **kuo** — творительный падеж вопросительного местоимения."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Bal̃sas bùvo ramùs, bevéik liñksmas.",
+              "translation": "Голос был спокойным, почти весёлым.",
+              "note": "**balsas** — голос; здесь именительный падеж ед. числа.\n**linksmas** — весёлый, радостный; мужской род ед. числа."
+            },
+            {
+              "text": "Tòmas pàžvelgė į̃ dė̃žę sù bãtais.",
+              "translation": "Томас взглянул на коробку с ботинками.",
+              "note": "**pažvelgti** — взглянуть, посмотреть; **pažvelgė** — 3-е лицо прошедшего времени.\n**su** — с; **batais** — творительный падеж мн. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Pirmiáusia suràsk màno púodus.",
+              "translation": "— Сначала найди мои кастрюли.",
+              "note": "**surasti** — найти, отыскать; **surask** — повелительное наклонение, 2-е лицо ед. числа.\n**puodas** — кастрюля, горшок; **puodus** — винительный падеж мн. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Nemataũ, kàs ỹra dėžėsè.",
+              "translation": "— Не вижу, что находится в коробках.",
+              "note": "**matyti** — видеть; **nematau** — отрицательная форма, 1-е лицо настоящего времени.\n**dėžė** — коробка; **dėžėse** — местный падеж мн. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Tadà primiñk rytój nusipir̃kti dúonos.",
+              "translation": "— Тогда напомни завтра купить хлеба.",
+              "note": "**priminti** — напомнить; **primink** — повелительное наклонение, 2-е лицо ед. числа.\n**nusipirkti** — купить себе; возвратная форма, **duonos** — родительный падеж количества."
+            },
+            {
+              "text": "Ir̃ pažãdink manè septiñtą vãlandą.",
+              "translation": "И разбуди меня в семь часов.",
+              "note": "**pažadinti** — разбудить; **pažadink** — повелительное наклонение, 2-е лицо ед. числа.\n**septinta valanda** — седьмой час; **septintą valandą** — винительный падеж времени: в семь часов."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Rytój šeštãdienis. Ar̃ tikraĩ septiñtą?",
+              "translation": "— Завтра суббота. Точно в семь?",
+              "note": "**šeštadienis** — суббота; именительный падеж в предложении без связки.\n**ar tikrai** — действительно ли, точно ли; вопрос для уточнения."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Geraĩ, aštuñtą, — pasãkė Tòmas.",
+              "translation": "— Хорошо, в восемь, — сказал Томас.",
+              "note": "**aštuntas** — восьмой; **aštuntą** — винительный падеж женского рода, пропущено **valandą**."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Naũjas gyvẽnimas galė́jo paláukti vãlandą.",
+              "translation": "Новая жизнь могла подождать час.",
+              "note": "**palaukti** — подождать; приставка обозначает ограниченное ожидание.\n**valanda** — час; **valandą** — винительный падеж продолжительности."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Kažkàs tỹliai pasibéldė į̃ durìs.",
+              "translation": "Кто-то тихо постучал в дверь.",
+              "note": "**pasibelsti** — постучать; **pasibeldė** — 3-е лицо прошедшего времени.\n**į duris** — в дверь; винительный падеж после **į**, существительное употребляется во мн. числе."
+            },
+            {
+              "text": "Ùž jų̃ stovė́jo výras sù žaliù megztiniù.",
+              "translation": "За ней стоял мужчина в зелёном свитере.",
+              "note": "**megztinis** — свитер, джемпер; **megztiniu** — творительный падеж ед. числа после **su**."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Àš jū́sų kaimýnas. Gyvenù apačiojè.",
+              "translation": "— Я ваш сосед. Живу внизу.",
+              "note": "**kaimynas** — сосед; здесь именительный падеж ед. числа.\n**apačioje** — внизу; местный падеж от **apačia** — низ."
+            },
+            {
+              "text": "Ar̃ čià jū́sų rãktas?",
+              "translation": "Это здесь ваш ключ?",
+              "note": "**raktas** — ключ; именительный падеж ед. числа.\n**ar** — ли; вопросительная частица, отдельно обычно не переводится."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas patìkrino kišẽnę. Jì bùvo tuščià.",
+              "translation": "Томас проверил карман. Он был пустой.",
+              "note": "**patikrinti** — проверить; **patikrino** — 3-е лицо прошедшего времени.\n**kišenė** — карман; женский род, поэтому далее **ji**, **tuščia**."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Ãčiū! Dár nepriprataũ priẽ šìto rãkto.",
+              "translation": "— Спасибо! Ещё не привык к этому ключу.",
+              "note": "**priprasti** — привыкнуть; **nepripratau** — отрицательная форма, 1-е лицо прошедшего времени.\n**prie** — к; в конструкции привыкания требует родительного падежа: **šito rakto**."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Pripràsite, — pasãkė kaimýnas ir̃ nusišypsójo.",
+              "translation": "— Привыкнете, — сказал сосед и улыбнулся.",
+              "note": "**priprasti** — привыкнуть; **priprasite** — 2-е лицо мн. числа будущего времени, вежливое обращение.\n**nusišypsoti** — улыбнуться; **nusišypsojo** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Tìk durìs uždarýkite tỹliai, prašaũ.",
+              "translation": "Только дверь закрывайте тихо, пожалуйста.",
+              "note": "**uždaryti** — закрыть; **uždarykite** — вежливая повелительная форма.\n**tyliai** — тихо, негромко; наречие образа действия."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas tỹliai uždãrė durìs.",
+              "translation": "Томас тихо закрыл дверь.",
+              "note": "**uždaryti** — закрыть; **uždarė** — 3-е лицо прошедшего времени.\n**durys** — дверь; **duris** — винительный падеж, только мн. число."
+            },
+            {
+              "text": "Beñt víeną dalỹką šiañdien padãrė geraĩ.",
+              "translation": "Хотя бы одну вещь сегодня сделал хорошо.",
+              "note": "**padaryti** — сделать; **padarė** — 3-е лицо прошедшего времени, приставка подчёркивает результат.\n**bent** — хотя бы, по крайней мере; частица минимального ограничения."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Jìs vė̃l nuė̃jo į̃ virtùvę.",
+              "translation": "Он снова пошёл на кухню.",
+              "note": "**nueiti** — пойти, дойти; **nuėjo** — 3-е лицо прошедшего времени.\n**į virtuvę** — на кухню; винительный падеж направления."
+            },
+            {
+              "text": "Šaldytuvè bùvo tìk bùtelis vandeñs.",
+              "translation": "В холодильнике была только бутылка воды.",
+              "note": "**šaldytuvas** — холодильник; **šaldytuve** — местный падеж ед. числа.\n**vanduo** — вода; **vandens** — родительный падеж ед. числа."
+            },
+            {
+              "text": "Parduotùvė ùž lángo dár dìrbo,",
+              "translation": "Магазин за окном ещё работал,",
+              "note": "**dirbti** — работать; **dirbo** — 3-е лицо прошедшего времени, о магазине: был открыт.\n**už lango** — за окном; родительный падеж места после **už**."
+            },
+            {
+              "text": "bèt Tòmas jaũ nusimóvė batùs.",
+              "translation": "но Томас уже снял ботинки.",
+              "note": "**nusimauti** — снять с себя обувь, носки; **nusimovė** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Taĩ bùvo ganà rimtà priežastìs neĩti.",
+              "translation": "Это была довольно серьёзная причина не идти.",
+              "note": "**priežastis** — причина, основание; именительный падеж ед. числа.\n**eiti** — идти; **neiti** — отрицательный инфинитив."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Ar̃ gãli užsakýti mán vakariẽnę?",
+              "translation": "— Можешь заказать мне ужин?",
+              "note": "**užsakyti** — заказать; инфинитив после **gali** — можешь.\n**vakarienė** — ужин; **vakarienę** — винительный падеж ед. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Galiù. Šiañdien siū́lau vištíeną sù rỹžiais.",
+              "translation": "— Могу. Сегодня предлагаю курицу с рисом.",
+              "note": "**siūlyti** — предлагать; **siūlau** — 1-е лицо настоящего времени.\n**vištiena** — куриное мясо; **vištieną** — винительный падеж.\n**ryžiai** — рис; **ryžiais** — творительный падеж мн. числа после **su**."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Geraĩ. Tìk bè svogū̃nų, prašaũ.",
+              "translation": "— Хорошо. Только без лука, пожалуйста.",
+              "note": "**svogūnas** — луковица, лук; **svogūnų** — родительный падеж мн. числа после **be** — без."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Užsãkymas prìimtas. Maĩstas atvỹks septiñtą.",
+              "translation": "— Заказ принят. Еда прибудет в семь.",
+              "note": "**užsakymas** — заказ; именительный падеж ед. числа.\n**priimti** — принять; **priimtas** — страдательное причастие прошедшего времени, мужской род.\n**atvykti** — прибыть, приехать; **atvyks** — 3-е лицо будущего времени."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Ikì septynių̃ lìko pùsė valandõs.",
+              "translation": "До семи осталось полчаса.",
+              "note": "**likti** — остаться; **liko** — 3-е лицо прошедшего времени.\n**iki** — до; **septynių** — родительный падеж числительного.\n**pusė valandos** — половина часа, полчаса; после **pusė** стоит родительный падеж."
+            },
+            {
+              "text": "Tòmas nuspréndė per̃ tą̃ laĩką",
+              "translation": "Томас решил за это время",
+              "note": "**nuspręsti** — решить, принять решение; **nusprendė** — 3-е лицо прошедшего времени.\n**per tą laiką** — за это время; **per** с винительным падежом."
+            },
+            {
+              "text": "išim̃ti beñt drabužiùs ìš dėžių̃.",
+              "translation": "вынуть хотя бы одежду из коробок.",
+              "note": "**išimti** — вынуть, достать; инфинитив продолжает **nusprendė**.\n**iš** — из; **dėžių** — родительный падеж мн. числа."
+            },
+            {
+              "text": "Añt lóvos jìs padė́jo švariùs márškinius.",
+              "translation": "На кровать он положил чистую рубашку.",
+              "note": "**padėti** — положить, поставить; **padėjo** — 3-е лицо прошедшего времени.\n**marškiniai** — рубашка; **marškinius** — винительный падеж, слово употребляется во мн. числе."
+            },
+            {
+              "text": "Spìntoje jíems kõl kàs viẽtos nebùvo.",
+              "translation": "В шкафу для неё пока не было места.",
+              "note": "**spinta** — шкаф; **spintoje** — местный падеж ед. числа.\n**vieta** — место; **vietos** — родительный падеж при отрицании **nebuvo**."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Telefònas trumpaĩ sužìbo añt stãlo.",
+              "translation": "Телефон ненадолго засветился на столе.",
+              "note": "**sužibti** — засветиться, вспыхнуть; **sužibo** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Tòmas pamãtė tìk laĩką: bevéik septýnios.",
+              "translation": "Томас увидел только время: почти семь.",
+              "note": "**pamatyti** — увидеть, заметить; **pamatė** — 3-е лицо прошедшего времени.\n**septynios** — семь; женская форма, подразумевается **valandos** — часы."
+            },
+            {
+              "text": "Tuõ metù kažkàs paskam̃bino į̃ durìs.",
+              "translation": "В этот момент кто-то позвонил в дверь.",
+              "note": "**tuo metu** — в это время, в тот момент; устойчивое обстоятельство времени, творительный падеж.\n**paskambinti** — позвонить; **paskambino** — 3-е лицо прошедшего времени."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Kùrjeris pàdavė jám dìdelį popierìnį maĩšą.",
+              "translation": "Курьер передал ему большой бумажный пакет.",
+              "note": "**paduoti** — подать, передать; **padavė** — 3-е лицо прошедшего времени.\n**maišas** — мешок, пакет; **maišą** — винительный падеж ед. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Jū́sų į̃prastas užsãkymas. Skanaũs!",
+              "translation": "— Ваш обычный заказ. Приятного аппетита!",
+              "note": "**įprastas** — обычный, привычный; мужской род ед. числа, согласуется с **užsakymas**.\n**skanaus** — приятного аппетита; краткое пожелание, родительный падеж от **skanus** — вкусный."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Àš čià pìrmą diẽną, — pasãkė Tòmas.",
+              "translation": "— Я здесь первый день, — сказал Томас.",
+              "note": "**pirma diena** — первый день; **pirmą dieną** — винительный падеж времени."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Bèt kùrjeris jaũ léidosi láiptais žemỹn.",
+              "translation": "Но курьер уже спускался по лестнице вниз.",
+              "note": "**leistis** — спускаться; **leidosi** — 3-е лицо прошедшего времени.\n**laiptai** — лестница, ступеньки; **laiptais** — творительный падеж пути движения."
+            },
+            {
+              "text": "Tòmas nùnešė maĩšą añt virtùvės stãlo.",
+              "translation": "Томас отнёс пакет на кухонный стол.",
+              "note": "**nunešti** — отнести, унести; **nunešė** — 3-е лицо прошедшего времени.\n**ant stalo** — на стол; после **ant** — родительный падеж и при движении."
+            },
+            {
+              "text": "Maĩstas kvepė́jo geraĩ. Labaĩ geraĩ.",
+              "translation": "Еда пахла хорошо. Очень хорошо.",
+              "note": "**kvepėti** — пахнуть, приятно пахнуть; **kvepėjo** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Jìs ìšėmė víeną dėžùtę, paskuĩ kìtą.",
+              "translation": "Он вынул одну коробочку, потом другую.",
+              "note": "**išimti** — вынуть; **išėmė** — 3-е лицо прошедшего времени.\n**dėžutė** — коробочка; **dėžutę** — винительный падеж ед. числа, уменьшительная форма от **dėžė**."
+            },
+            {
+              "text": "Abì bùvo pìlnos. Dvì vienódos pòrcijos.",
+              "translation": "Обе были полными. Две одинаковые порции.",
+              "note": "**abi** — обе; женская форма, относится к двум коробочкам.\n**porcija** — порция; **porcijos** — именительный падеж мн. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Kodė̃l čià dvì pòrcijos?",
+              "translation": "— Почему здесь две порции?",
+              "note": "**kodėl** — почему; вопрос о причине.\n**du** — два; **dvi** — женская форма, согласуется с **porcijos**."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Jū́sų užsãkymas: dvì vakariẽnės,",
+              "translation": "— Ваш заказ: два ужина,",
+              "note": "**vakarienė** — ужин; **vakarienės** — именительный падеж мн. числа после **dvi**."
+            },
+            {
+              "text": "— atsãkė namų̃ pagálbininkas tuõ pačiù balsù.",
+              "translation": "— ответил домашний помощник тем же голосом.",
+              "note": "**atsakyti** — ответить; **atsakė** — 3-е лицо прошедшего времени.\n**tuo pačiu balsu** — тем же голосом; творительный падеж ед. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Àš prašiaũ vakariẽnės sáu. Vienám žmógui.",
+              "translation": "— Я просил ужин для себя. Для одного человека.",
+              "note": "**prašyti** — просить; **prašiau** — 1-е лицо прошедшего времени, **vakarienės** — родительный падеж объекта просьбы.\n**sau** — себе, для себя; дательный падеж возвратного местоимения."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Užsãkymas jaũ pristatýtas. Ar̃ reĩkia šakùčių?",
+              "translation": "— Заказ уже доставлен. Нужны вилки?",
+              "note": "**pristatyti** — доставить; **pristatytas** — страдательное причастие прошедшего времени, мужской род ед. числа.\n**šakutė** — вилка; **šakučių** — родительный падеж мн. числа после **reikia**."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas atsisė́do. Paskuĩ vė̃l atsistójo.",
+              "translation": "Томас сел. Потом снова встал.",
+              "note": "**atsisėsti** — сесть; **atsisėdo** — 3-е лицо прошедшего времени.\n**atsistoti** — встать; **atsistojo** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Jám reikė́jo nè šakùčių, õ paáiškinimo.",
+              "translation": "Ему были нужны не вилки, а объяснение.",
+              "note": "**paaiškinimas** — объяснение, пояснение; **paaiškinimo** — родительный падеж ед. числа после **reikėjo**.\n**ne … o …** — не … а …; конструкция противопоставления."
+            },
+            {
+              "text": "Tačiaũ pỹkti añt tùščio kam̃bario bùvo keĩsta.",
+              "translation": "Однако сердиться на пустую комнату было странно.",
+              "note": "**pykti** — сердиться, злиться; **pykti ant** требует родительного падежа: **tuščio kambario** — пустой комнаты."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Paródyk čèkį, prašaũ.",
+              "translation": "— Покажи чек, пожалуйста.",
+              "note": "**parodyti** — показать; **parodyk** — повелительное наклонение, 2-е лицо ед. числа.\n**čekis** — чек; **čekį** — винительный падеж ед. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Čèkis ỹra jū́sų telefonè.",
+              "translation": "— Чек находится в вашем телефоне.",
+              "note": "**čekis** — чек; именительный падеж ед. числа.\n**telefonas** — телефон; **telefone** — местный падеж ед. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Õ kur̃ mãno telefònas?",
+              "translation": "— А где мой телефон?",
+              "note": "**kur** — где, куда; здесь вопрос о местонахождении."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Šį̃ kar̃tą pagálbininkas niẽko neatsãkė.",
+              "translation": "На этот раз помощник ничего не ответил.",
+              "note": "**šį kartą** — на этот раз; винительный падеж времени.\n**niekas** — ничто, никто; **nieko** — родительный падеж при отрицании **neatsakė**."
+            },
+            {
+              "text": "Tòmas pažiūrė́jo añt stãlo ir̃ põ stalù.",
+              "translation": "Томас посмотрел на столе и под столом.",
+              "note": "**pažiūrėti** — посмотреть, взглянуть; **pažiūrėjo** — 3-е лицо прошедшего времени.\n**po stalu** — под столом; **po** с творительным падежом обозначает место."
+            },
+            {
+              "text": "Telefònas gulė́jo añt lóvos, põ marškiniaĩs.",
+              "translation": "Телефон лежал на кровати, под рубашкой.",
+              "note": "**gulėti** — лежать; **gulėjo** — 3-е лицо прошедшего времени.\n**po marškiniais** — под рубашкой; творительный падеж мн. числа после **po**."
+            },
+            {
+              "text": "Jìs pàts teñ jį̃ padė́jo.",
+              "translation": "Он сам его туда положил.",
+              "note": "**pats** — сам; именительный падеж мужского рода, подчёркивает, кто совершил действие.\n**ten** — там, туда; здесь направление действия."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Kõl ieškójo čèkio, pamãtė Austė́jos var̃dą.",
+              "translation": "Пока он искал чек, увидел имя Аустеи.",
+              "note": "**ieškoti** — искать; **ieškojo** — 3-е лицо прошедшего времени, требует родительного падежа: **čekio**.\n**kol** — пока; связывает одновременные действия."
+            },
+            {
+              "text": "Senà žinùtė. „Nepamir̃šk sàvo mė́lyno puodẽlio.“",
+              "translation": "Старое сообщение. «Не забудь свою синюю кружку».",
+              "note": "**pamiršti** — забыть; **nepamiršk** — отрицательная повелительная форма.\n**puodelis** — чашка, кружка; **puodelio** — родительный падеж при отрицании, уменьшительная форма."
+            },
+            {
+              "text": "Puodẽlis lìko jõs virtùvėje.",
+              "translation": "Кружка осталась на её кухне.",
+              "note": "**likti** — остаться; **liko** — 3-е лицо прошедшего времени.\n**jos** — её; родительный падеж местоимения, выражает принадлежность."
+            },
+            {
+              "text": "Tòmas uždãrė žinùtę ir̃ grį̃žo priẽ užsãkymo.",
+              "translation": "Томас закрыл сообщение и вернулся к заказу.",
+              "note": "**grįžti** — вернуться; **grįžo prie užsakymo** — вернулся к рассмотрению заказа, **prie** с родительным падежом."
+            },
+            {
+              "text": "Dvì pòrcijos. Dár ir̃ dvì šakùtės.",
+              "translation": "Две порции. Ещё и две вилки.",
+              "note": "**dar ir** — ещё и, вдобавок; сочетание подчёркивает добавление.\n**šakutė** — вилка; **šakutės** — именительный падеж мн. числа."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Gál añtrą pòrciją palìks rytójui.",
+              "translation": "Может, вторую порцию оставит на завтра.",
+              "note": "**palikti** — оставить; **paliks** — 3-е лицо будущего времени.\n**rytojus** — завтрашний день; **rytojui** — дательный падеж: на завтра."
+            },
+            {
+              "text": "Bèt pirmiáusia norė́jo supràsti káiną.",
+              "translation": "Но прежде всего хотел разобраться с ценой.",
+              "note": "**suprasti** — понять, разобраться; инфинитив после **norėjo**.\n**kaina** — цена, стоимость; **kainą** — винительный падеж ед. числа."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Ar̃ sumokė́jau ùž abì pòrcijas?",
+              "translation": "— Я заплатил за обе порции?",
+              "note": "**sumokėti** — заплатить; **sumokėjau** — 1-е лицо прошедшего времени.\n**už** — за; **abi porcijas** — винительный падеж, когда речь об оплате."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Taĩp. Bendrà sumà ỹra...",
+              "translation": "— Да. Общая сумма составляет...",
+              "note": "**bendras** — общий, совместный; **bendra** — женский род ед. числа, согласуется с **suma** — сумма."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Vė̃l suskam̃bo dùrų skambùtis.",
+              "translation": "Снова зазвенел дверной звонок.",
+              "note": "**suskambėti** — зазвенеть, зазвучать; **suskambo** — 3-е лицо прошедшего времени.\n**skambutis** — звонок; **durų** — родительный падеж мн. числа: дверной."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas padė́jo telefòną šalià maĩsto.",
+              "translation": "Томас положил телефон рядом с едой.",
+              "note": "**padėti** — положить, поставить; **padėjo** — 3-е лицо прошедшего времени.\n**šalia** — рядом с, возле; **maisto** — родительный падеж после этого слова."
+            },
+            {
+              "text": "Gál kùrjeris grį̃žo sù čekiù?",
+              "translation": "Может, курьер вернулся с чеком?",
+              "note": "**čekis** — чек; **čekiu** — творительный падеж ед. числа после **su**."
+            },
+            {
+              "text": "Õ gál kaimýnas vė̃l rãdo jõ rãktą?",
+              "translation": "А может, сосед снова нашёл его ключ?",
+              "note": "**kaimynas** — сосед; здесь именительный падеж ед. числа.\n**rasti** — найти; **rado** — 3-е лицо прошедшего времени."
+            },
+            {
+              "text": "Šį̃ kar̃tą rãktas gulė́jo kišẽnėje.",
+              "translation": "На этот раз ключ лежал в кармане.",
+              "note": "**kišenė** — карман; **kišenėje** — местный падеж ед. числа."
+            },
+            {
+              "text": "Tòmas jį̃ pàlietė ir̃ atidãrė durìs.",
+              "translation": "Томас потрогал его и открыл дверь.",
+              "note": "**paliesti** — коснуться, потрогать; **palietė** — 3-е лицо прошедшего времени."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Priẽ dùrų stovė́jo nepažį́stama móteris.",
+              "translation": "У двери стояла незнакомая женщина.",
+              "note": "**nepažįstamas** — незнакомый; **nepažįstama** — женский род ед. числа, согласуется с **moteris**.\n**prie durų** — у двери; родительный падеж после **prie**."
+            },
+            {
+              "text": "Jõs plaukaĩ bùvo šlapì nuõ lietaũs.",
+              "translation": "Её волосы были мокрыми от дождя.",
+              "note": "**plaukas** — волос; **plaukai** — именительный падеж мн. числа.\n**nuo lietaus** — от дождя; **lietus** — дождь, родительный падеж после **nuo**."
+            },
+            {
+              "text": "Vienojè rañkoje jì laĩkė mãžą skė̃tį,",
+              "translation": "В одной руке она держала маленький зонт,",
+              "note": "**ranka** — рука; **rankoje** — местный падеж ед. числа.\n**skėtis** — зонт; **skėtį** — винительный падеж ед. числа."
+            },
+            {
+              "text": "kitojè — telefòną sù šviesiù ekranù.",
+              "translation": "в другой — телефон со светлым экраном.",
+              "note": "**kitas** — другой; **kitoje** — местный падеж женского рода, подразумевается **rankoje**.\n**su šviesiu ekranu** — со светлым экраном; творительный падеж ед. числа."
+            },
+            {
+              "text": "Jì pažiūrė́jo į̃ bùto nùmerį.",
+              "translation": "Она посмотрела на номер квартиры.",
+              "note": "**numeris** — номер; **numerį** — винительный падеж ед. числа после **į**.\n**butas** — квартира; **buto** — родительный падеж ед. числа."
+            },
+            {
+              "text": "Tadà pažiūrė́jo į̃ Tòmą.",
+              "translation": "Потом посмотрела на Томаса.",
+              "note": "**Tomas** — Томас; **Tomą** — винительный падеж ед. числа после **į**."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Lãbas vãkaras. Atródo, šiañdien láukiate mãnęs vakariẽnės?",
+              "translation": "— Добрый вечер. Кажется, сегодня вы ждёте меня на ужин?",
+              "note": "**atrodyti** — казаться, выглядеть; **atrodo** — 3-е лицо настоящего времени, здесь вводное «кажется».\n**laukti** — ждать; **laukiate** — 2-е лицо мн. числа настоящего времени, вежливое обращение.\n**manęs** — меня; родительный падеж после **laukti**.\n**vakarienė** — ужин; **vakarienės** — родительный падеж цели: на ужин."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas niẽko nepasãkė. Móteris kìlstelėjo telefòną.",
+              "translation": "Томас ничего не сказал. Женщина слегка подняла телефон.",
+              "note": "**pasakyti** — сказать; **nepasakė** — отрицательная форма прошедшего времени.\n**kilstelėti** — слегка поднять; **kilstelėjo** — 3-е лицо прошедшего времени."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Gavaũ jū́sų kvietìmą. Septiñtą vãlandą.",
+              "translation": "— Я получила ваше приглашение. В семь часов.",
+              "note": "**gauti** — получить; **gavau** — 1-е лицо прошедшего времени.\n**kvietimas** — приглашение; **kvietimą** — винительный падеж ед. числа."
+            },
+            {
+              "text": "Atsiprašaũ, trupùtį vėlúoju. Pradė́jo lýti.",
+              "translation": "Извините, немного опаздываю. Начался дождь.",
+              "note": "**vėluoti** — опаздывать; **vėluoju** — 1-е лицо настоящего времени.\n**lyti** — идти, лить о дожде; **pradėjo lyti** — начало дождить."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Jì paródė kvietìmą telefòno ekranè.",
+              "translation": "Она показала приглашение на экране телефона.",
+              "note": "**parodyti** — показать; **parodė** — 3-е лицо прошедшего времени.\n**kvietimas** — приглашение; **kvietimą** — винительный падеж ед. числа."
+            },
+            {
+              "text": "Ãdresas bùvo teisìngas. Var̃das ir̃gi.",
+              "translation": "Адрес был правильным. Имя тоже.",
+              "note": "**teisingas** — правильный, верный; мужской род ед. числа.\n**irgi** — тоже, также; наречие добавления."
+            },
+            {
+              "text": "Vir̃š kvietìmo Tòmas pamãtė sàvo nùmerį.",
+              "translation": "Над приглашением Томас увидел свой номер.",
+              "note": "**virš** — над, выше; **kvietimo** — родительный падеж ед. числа после этого предлога."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Bèt àš niẽko nèkviečiau.",
+              "translation": "— Но я никого не приглашал.",
+              "note": "**kviesti** — приглашать, звать; **nekviečiau** — отрицательная форма, 1-е лицо прошедшего времени.\n**nieko** — никого; родительный падеж при отрицании."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Móteris nuléido telefòną. Abù tylė́jo.",
+              "translation": "Женщина опустила телефон. Оба молчали.",
+              "note": "**nuleisti** — опустить; **nuleido** — 3-е лицо прошедшего времени.\n**abu** — оба; мужская форма обозначает здесь мужчину и женщину."
+            },
+            {
+              "text": "Ìš virtùvės atė̃jo ramùs bal̃sas:",
+              "translation": "Из кухни донёсся спокойный голос:",
+              "note": "**iš virtuvės** — из кухни; родительный падеж после **iš**.\n**ateiti** — прийти; **atėjo** — прошедшее время, о голосе: донёсся."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Tòmai, jū́sų vakariẽnė šą̃la.",
+              "translation": "— Томас, ваш ужин остывает.",
+              "note": "**šalti** — остывать, мёрзнуть; **šąla** — 3-е лицо настоящего времени.\n**Tomai** — звательный падеж имени **Tomas**."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Móteris pàžvelgė prõ ãtviras durìs.",
+              "translation": "Женщина взглянула через открытую дверь.",
+              "note": "**atviras** — открытый; **atviras duris** — винительный падеж женского рода мн. числа после **pro**."
+            },
+            {
+              "text": "Tòmas žeñgė į̃ šóną.",
+              "translation": "Томас шагнул в сторону.",
+              "note": "**žengti** — шагнуть, ступать; **žengė** — 3-е лицо прошедшего времени.\n**į šoną** — в сторону; устойчивое направление, винительный падеж."
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Užeĩkite. Čià beñt jaũ sausà.",
+              "translation": "— Заходите. Здесь по крайней мере сухо.",
+              "note": "**užeiti** — зайти, войти; **užeikite** — вежливая повелительная форма.\n**sausas** — сухой; **sausa** — форма среднего рода, состояние окружающего пространства."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Añt stãlo láukė dvì pòrcijos.",
+              "translation": "На столе ждали две порции.",
+              "note": "**laukti** — ждать; **laukė** — 3-е лицо прошедшего времени, здесь образно о готовой еде.\n**porcija** — порция; **porcijos** — именительный падеж мн. числа."
+            },
+            {
+              "text": "Dabar̃ beñt bùvo áišku, kám antróji.",
+              "translation": "Теперь хотя бы было ясно, кому вторая.",
+              "note": "**kas** — кто; **kam** — дательный падеж: кому.\n**antras** — второй; **antroji** — определённая форма женского рода, подразумевается порция."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

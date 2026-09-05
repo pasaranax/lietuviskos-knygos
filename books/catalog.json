@@ -7,6 +7,14 @@
       "cover": "assets/jokiu-orchideju-cover.jpg",
       "href": "reader.html?book=jokiu-orchideju",
       "wordCount": 52393
+    },
+    {
+      "id": "jusu-iprastas-uzsakymas",
+      "title": "Jūsų įprastas užsakymas",
+      "author": "DI sukurta istorija",
+      "cover": "assets/jusu-iprastas-uzsakymas-cover.jpg",
+      "wordCount": 708,
+      "href": "reader.html?book=jusu-iprastas-uzsakymas"
     }
   ]
 }
