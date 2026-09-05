@@ -10,7 +10,6 @@
     fontSize: readStore("fontSize", "23"),
     fontFamily: readStore("fontFamily", "serif"),
     theme: readStore("theme", "light"),
-    lastScrollY: window.scrollY || 0,
     saveTimer: null,
     restored: false
   };
@@ -236,7 +235,6 @@
     });
 
     window.addEventListener("scroll", function () {
-      handleTopbar();
       updateProgressAndChapter();
       queueSavePosition();
       positionTooltip();
@@ -396,16 +394,6 @@
       width: window.innerWidth,
       height: window.innerHeight
     };
-  }
-
-  function handleTopbar() {
-    var y = window.scrollY || 0;
-    if (y > state.lastScrollY + 8 && y > topbar.offsetHeight + 24) {
-      topbar.classList.add("is-hidden");
-    } else if (y < state.lastScrollY - 8) {
-      topbar.classList.remove("is-hidden");
-    }
-    state.lastScrollY = y;
   }
 
   function updateProgressAndChapter() {
