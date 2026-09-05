@@ -12,6 +12,8 @@ When generating an original book, pilot chapter, or continuation, use the projec
 
 ## Project Structure
 
+Author plans live in `author-plans/<book-id>.md` in this repository. Before continuing a book, read its plan and canonical book JSON; update the plan after each chapter. Plans contain spoilers: do not show them in chat or link them from the reader. They are excluded from the Jekyll site build, but are not private in a public Git repository.
+
 - `index.html` - bookshelf shell.
 - `index.css` / `index.js` - bookshelf UI and catalog loading.
 - `reader.html` - shared reader shell.

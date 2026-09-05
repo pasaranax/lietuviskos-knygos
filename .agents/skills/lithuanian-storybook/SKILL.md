@@ -41,13 +41,17 @@ Modules are composable: near future plus drama need not contain a crime, suspect
 
 ## Book state
 
-Keep one author dossier per book outside the served website and public repository. Use a private working directory, such as a sibling directory named `<book-id>-author`. If that destination needs filesystem approval, obtain it; do not silently put spoilers in a static site's directory. The dossier contains:
+Keep one canonical author dossier per book in the repository at `author-plans/<book-id>.md`, not in a temporary directory. Read it before continuing and update it after each accepted chapter. Keep `author-plans` excluded from the published site build and out of the reader/catalog; a public Git repository still exposes these files, and a raw local HTTP server may serve them directly. This is spoiler separation, not access control. The dossier contains:
 
 - Brief: premise, tone, reader level, scope, protagonist's desire and personal stakes.
 - Story arc: starting situation, central tension, character development, intended ending, timeline, and relevant world rules.
 - Chapter map: goal, obstacle, decision, consequence, information revealed, and vocabulary targets.
 - Language ledger: assumed/confirmed vocabulary, introduced forms, actual recurrence, and uncertainties.
 - Continuity: accepted facts, character knowledge, unresolved threads, promises, and current revision state. Add genre-specific records only when required by selected modules.
+
+Keep the dossier focused on the book's content and learning targets, not the agent's workflow. After each accepted chapter, reconcile it with the canonical text: distinguish established events from planned ones, update character knowledge and vocabulary recurrence, and resolve contradictions. Replace outdated planning state instead of accumulating old versions or a work log; Git preserves history.
+
+Do not put agent instructions, local paths, commands, test or deployment reports, or cover-generation history in the dossier. Workflow rules belong in this skill or AGENTS.md, not in the story plan.
 
 This is planning metadata, not a second copy of the translated book. The user is the reader and wants to discover the story through reading. Keep the ending, causes of unexplained events, hidden motives, future turns, and clue payoffs out of chat, progress updates, filenames, covers, tooltips, and delivery summaries. Do not automatically open or offer a link to the author dossier. If a later explicit request asks for spoilers, provide only the requested scope. Resume from the dossier and canonical chapter text, not recollection alone.
 
