@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="reader.css?v=tooltips-20260819">
+  <link rel="stylesheet" href="reader.css?v=progress-20260909">
   <title>Skaityklė</title>
 </head>
 <body>
   <header class="topbar" id="topbar">
     <a class="home-link" href="index.html" aria-label="Grįžti į lentyną">←</a>
-    <div class="progress" id="progressText">0%</div>
     <select class="chapter-select" id="chapterSelect" aria-label="Skyrius"></select>
     <div class="controls" aria-label="Skaitymo nustatymai">
       <button class="control-button theme-button" id="themeButton" type="button">🌙</button>
@@ -26,11 +25,16 @@
     </article>
   </main>
 
+  <footer class="progress-bar" aria-label="Skaitymo pažanga">
+    <span>Knyga <span id="progressText">0%</span></span>
+    <span>Skyrius <span id="chapterProgressText">0%</span></span>
+  </footer>
+
   <div class="tooltip" id="tooltip" role="note" hidden>
     <div class="tooltip-note" id="tooltipNote"></div>
     <div class="tooltip-translation" id="tooltipTranslation"></div>
   </div>
 
-  <script src="reader.js?v=fontfix-20260702" defer></script>
+  <script src="reader.js?v=progress-20260909" defer></script>
 </body>
 </html>

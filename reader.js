@@ -17,6 +17,7 @@
   var content = document.getElementById("content");
   var topbar = document.getElementById("topbar");
   var progressText = document.getElementById("progressText");
+  var chapterProgressText = document.getElementById("chapterProgressText");
   var chapterSelect = document.getElementById("chapterSelect");
   var themeButton = document.getElementById("themeButton");
   var fontDownButton = document.getElementById("fontDownButton");
@@ -402,13 +403,28 @@
     var percent = Math.max(0, Math.min(100, Math.round(position.index / total * 100)));
     progressText.textContent = percent + "%";
 
-    var current = null;
+    var current = document.querySelector(".chapter-title");
     Array.prototype.forEach.call(document.querySelectorAll(".chapter-title"), function (chapter) {
       if (chapter.getBoundingClientRect().top <= topbar.offsetHeight + 18) {
         current = chapter;
       }
     });
     if (current) chapterSelect.value = current.id;
+    var chapterStart = 0;
+    var chapterSize = 0;
+    if (state.book && current) {
+      state.book.chapters.some(function (chapter) {
+        if (chapter.id === current.id) {
+          chapterSize = chapter.blocks.length;
+          return true;
+        }
+        chapterStart += chapter.blocks.length;
+        return false;
+      });
+    }
+    var chapterPercent = Math.max(0, Math.min(100,
+      Math.round((position.index - chapterStart) / Math.max(1, chapterSize) * 100)));
+    chapterProgressText.textContent = chapterPercent + "%";
   }
 
   function queueSavePosition() {
