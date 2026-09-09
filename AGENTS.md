@@ -221,6 +221,7 @@ Translation:
 
 Notes:
 
+- Keep a full contextual dictionary in every chapter, including repeated words. Never thin or omit explanations because a word appeared earlier or is assumed to be learned. The reader chooses whether to open the tooltip. Explain content words and their current forms locally; include useful grammar and constructions without filler or mechanical entries for every function word.
 - Explain important words, idioms, cases, participles, word order and fixed expressions.
 - Give each vocabulary word in its dictionary form, then translate that dictionary form.
 - After the lemma and its translation, show the surface form from the sentence when it differs and explain exactly how it changed: case, number, gender, person, tense, mood, participle type, prefix or suffix.
