@@ -18,6 +18,7 @@
   var topbar = document.getElementById("topbar");
   var progressText = document.getElementById("progressText");
   var chapterProgressText = document.getElementById("chapterProgressText");
+  var chapterCountText = document.getElementById("chapterCountText");
   var chapterSelect = document.getElementById("chapterSelect");
   var themeButton = document.getElementById("themeButton");
   var fontDownButton = document.getElementById("fontDownButton");
@@ -413,9 +414,10 @@
     var chapterStart = 0;
     var chapterSize = 0;
     if (state.book && current) {
-      state.book.chapters.some(function (chapter) {
+      state.book.chapters.some(function (chapter, index) {
         if (chapter.id === current.id) {
           chapterSize = chapter.blocks.length;
+          chapterCountText.textContent = "Skyrius " + (index + 1) + " iš " + state.book.chapters.length;
           return true;
         }
         chapterStart += chapter.blocks.length;

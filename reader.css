@@ -86,7 +86,7 @@ body.theme-dark {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 5px 18px calc(5px + env(safe-area-inset-bottom));
+  padding: 6px max(32px, env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(32px, env(safe-area-inset-left));
   border-top: 1px solid var(--line);
   background: var(--surface);
   color: var(--muted);
