@@ -1,0 +1,856 @@
+{
+  "provider": "Azure Speech",
+  "sourceSha256": "fb56b27e85eb0cfe62f4553070a45ac45191cb7b9a60a529a61c9f204bc31784",
+  "sampleRate": 24000,
+  "duration": 262.896,
+  "phrases": [
+    {
+      "mark": "p-000-i-000",
+      "block": 0,
+      "item": 0,
+      "text": "Penktadienį po darbo Tomas parašė Austėjai.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 0,
+      "end": 3.675,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-000-i-000.mp3"
+    },
+    {
+      "mark": "p-000-i-001",
+      "block": 0,
+      "item": 1,
+      "text": "Dar reikėjo pasiimti kelis daiktus.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 3.675,
+      "end": 6.675,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-000-i-001.mp3"
+    },
+    {
+      "mark": "p-000-i-002",
+      "block": 0,
+      "item": 2,
+      "text": "Telefoną laikė abiem rankomis.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 6.675,
+      "end": 9.625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-000-i-002.mp3"
+    },
+    {
+      "mark": "p-000-i-003",
+      "block": 0,
+      "item": 3,
+      "text": "Žinutė buvo trumpa.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 9.625,
+      "end": 12.0,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-000-i-003.mp3"
+    },
+    {
+      "mark": "p-001-i-000",
+      "block": 1,
+      "item": 0,
+      "text": "„Ar galiu rytoj atvažiuoti dešimtą?“",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 12.0,
+      "end": 15.15,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-001-i-000.mp3"
+    },
+    {
+      "mark": "p-002-i-000",
+      "block": 2,
+      "item": 0,
+      "text": "Austėja atsakė po kelių minučių.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 15.15,
+      "end": 18.125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-002-i-000.mp3"
+    },
+    {
+      "mark": "p-003-i-000",
+      "block": 3,
+      "item": 0,
+      "text": "„Gali. Tik vienuoliktą turiu išeiti.“",
+      "voice": "lt-LT-OnaNeural",
+      "start": 18.125,
+      "end": 22.7875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-003-i-000.mp3"
+    },
+    {
+      "mark": "p-004-i-000",
+      "block": 4,
+      "item": 0,
+      "text": "„Būsiu dešimtą. Iki pusės vienuoliktos užteks?“",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 22.7875,
+      "end": 28.1125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-004-i-000.mp3"
+    },
+    {
+      "mark": "p-005-i-000",
+      "block": 5,
+      "item": 0,
+      "text": "„Taip. Beje, atsinešk seną raktą.“",
+      "voice": "lt-LT-OnaNeural",
+      "start": 28.1125,
+      "end": 32.8875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-005-i-000.mp3"
+    },
+    {
+      "mark": "p-006-i-000",
+      "block": 6,
+      "item": 0,
+      "text": "Tomas perskaitė paskutinį sakinį dar kartą.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 32.8875,
+      "end": 36.5375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-006-i-000.mp3"
+    },
+    {
+      "mark": "p-006-i-001",
+      "block": 6,
+      "item": 1,
+      "text": "Tada atsakė, kad atsineš.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 36.5375,
+      "end": 39.35,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-006-i-001.mp3"
+    },
+    {
+      "mark": "p-006-i-002",
+      "block": 6,
+      "item": 2,
+      "text": "Raktą įdėjo į mažą krepšio kišenę.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 39.35,
+      "end": 42.7625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-006-i-002.mp3"
+    },
+    {
+      "mark": "p-006-i-003",
+      "block": 6,
+      "item": 3,
+      "text": "Naujo buto raktas liko prie durų.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 42.7625,
+      "end": 45.9,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-006-i-003.mp3"
+    },
+    {
+      "mark": "p-007-i-000",
+      "block": 7,
+      "item": 0,
+      "text": "Šeštadienį jis atsikėlė be žadintuvo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 45.9,
+      "end": 49.225,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-007-i-000.mp3"
+    },
+    {
+      "mark": "p-007-i-001",
+      "block": 7,
+      "item": 1,
+      "text": "Išgėrė kavos, bet sumuštinio nebaigė.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 49.225,
+      "end": 52.5625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-007-i-001.mp3"
+    },
+    {
+      "mark": "p-007-i-002",
+      "block": 7,
+      "item": 2,
+      "text": "Patikrino autobusų tvarkaraštį ir išėjo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 52.5625,
+      "end": 56.175,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-007-i-002.mp3"
+    },
+    {
+      "mark": "p-008-i-000",
+      "block": 8,
+      "item": 0,
+      "text": "Prie seno namo atvažiavo be penkių dešimt.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 56.175,
+      "end": 59.85,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-008-i-000.mp3"
+    },
+    {
+      "mark": "p-008-i-001",
+      "block": 8,
+      "item": 1,
+      "text": "Penkioms minutėms atsisėdo ant suolo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 59.85,
+      "end": 63.175,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-008-i-001.mp3"
+    },
+    {
+      "mark": "p-008-i-002",
+      "block": 8,
+      "item": 2,
+      "text": "Kieme niekas nepasikeitė.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 63.175,
+      "end": 65.75,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-008-i-002.mp3"
+    },
+    {
+      "mark": "p-008-i-003",
+      "block": 8,
+      "item": 3,
+      "text": "Tas pats medis, tie patys dviračiai.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 65.75,
+      "end": 68.8875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-008-i-003.mp3"
+    },
+    {
+      "mark": "p-009-i-000",
+      "block": 9,
+      "item": 0,
+      "text": "Dešimtą jis pakilo laiptais ir pasibeldė.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 68.8875,
+      "end": 72.5375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-009-i-000.mp3"
+    },
+    {
+      "mark": "p-009-i-001",
+      "block": 9,
+      "item": 1,
+      "text": "Austėja atidarė duris.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 72.5375,
+      "end": 75.1,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-009-i-001.mp3"
+    },
+    {
+      "mark": "p-010-i-000",
+      "block": 10,
+      "item": 0,
+      "text": "— Labas. Užeik. Dėžė kambaryje.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 75.1,
+      "end": 81.4625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-010-i-000.mp3"
+    },
+    {
+      "mark": "p-011-i-000",
+      "block": 11,
+      "item": 0,
+      "text": "Jis nusiavė batus prie durų.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 81.4625,
+      "end": 84.2375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-011-i-000.mp3"
+    },
+    {
+      "mark": "p-011-i-001",
+      "block": 11,
+      "item": 1,
+      "text": "Ranka pati ieškojo senų šlepečių.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 84.2375,
+      "end": 87.3625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-011-i-001.mp3"
+    },
+    {
+      "mark": "p-011-i-002",
+      "block": 11,
+      "item": 2,
+      "text": "Jų ten nebebuvo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 87.3625,
+      "end": 89.575,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-011-i-002.mp3"
+    },
+    {
+      "mark": "p-012-i-000",
+      "block": 12,
+      "item": 0,
+      "text": "— Šlepetės irgi dėžėje, — pasakė Austėja.",
+      "voice": "lt-LT-OnaNeural",
+      "segments": [
+        {
+          "text": "— Šlepetės irgi dėžėje, ",
+          "voice": "lt-LT-OnaNeural"
+        },
+        {
+          "text": "— pasakė Austėja.",
+          "voice": "lt-LT-LeonasNeural"
+        }
+      ],
+      "start": 89.575,
+      "end": 94.675,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-012-i-000.mp3"
+    },
+    {
+      "mark": "p-013-i-000",
+      "block": 13,
+      "item": 0,
+      "text": "— Gerai. Ačiū.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 94.675,
+      "end": 98.3375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-013-i-000.mp3"
+    },
+    {
+      "mark": "p-014-i-000",
+      "block": 14,
+      "item": 0,
+      "text": "Dėžėje buvo knygos, šalikas ir mėlynas puodelis.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 98.3375,
+      "end": 102.475,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-014-i-000.mp3"
+    },
+    {
+      "mark": "p-014-i-001",
+      "block": 14,
+      "item": 1,
+      "text": "Tomas paėmė puodelį už ąselės.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 102.475,
+      "end": 105.625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-014-i-001.mp3"
+    },
+    {
+      "mark": "p-014-i-002",
+      "block": 14,
+      "item": 2,
+      "text": "Iš jo gerdavo kavą kiekvieną rytą.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 105.625,
+      "end": 108.7375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-014-i-002.mp3"
+    },
+    {
+      "mark": "p-015-i-000",
+      "block": 15,
+      "item": 0,
+      "text": "— Nori kavos? — paklausė ji.",
+      "voice": "lt-LT-OnaNeural",
+      "segments": [
+        {
+          "text": "— Nori kavos? ",
+          "voice": "lt-LT-OnaNeural"
+        },
+        {
+          "text": "— paklausė ji.",
+          "voice": "lt-LT-LeonasNeural"
+        }
+      ],
+      "start": 108.7375,
+      "end": 112.8125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-015-i-000.mp3"
+    },
+    {
+      "mark": "p-016-i-000",
+      "block": 16,
+      "item": 0,
+      "text": "— Gal... Ne, ačiū. Jau gėriau.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 112.8125,
+      "end": 118.7625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-016-i-000.mp3"
+    },
+    {
+      "mark": "p-017-i-000",
+      "block": 17,
+      "item": 0,
+      "text": "Austėja linktelėjo ir atsisėdo prie stalo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 118.7625,
+      "end": 122.275,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-017-i-000.mp3"
+    },
+    {
+      "mark": "p-017-i-001",
+      "block": 17,
+      "item": 1,
+      "text": "Tomas išėmė knygas po vieną.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 122.275,
+      "end": 125.35,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-017-i-001.mp3"
+    },
+    {
+      "mark": "p-017-i-002",
+      "block": 17,
+      "item": 2,
+      "text": "Vienos knygos pirmame puslapyje buvo jos vardas.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 125.35,
+      "end": 129.325,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-017-i-002.mp3"
+    },
+    {
+      "mark": "p-018-i-000",
+      "block": 18,
+      "item": 0,
+      "text": "— Šita tavo, — pasakė jis.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 129.325,
+      "end": 132.0875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-018-i-000.mp3"
+    },
+    {
+      "mark": "p-019-i-000",
+      "block": 19,
+      "item": 0,
+      "text": "— Tikrai. Aš net nepažiūrėjau.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 132.0875,
+      "end": 136.0875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-019-i-000.mp3"
+    },
+    {
+      "mark": "p-020-i-000",
+      "block": 20,
+      "item": 0,
+      "text": "Jis padėjo knygą ant stalo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 136.0875,
+      "end": 138.8375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-020-i-000.mp3"
+    },
+    {
+      "mark": "p-020-i-001",
+      "block": 20,
+      "item": 1,
+      "text": "Puodelį susuko į šaliką.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 138.8375,
+      "end": 141.45,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-020-i-001.mp3"
+    },
+    {
+      "mark": "p-020-i-002",
+      "block": 20,
+      "item": 2,
+      "text": "Taip jis nesuduš pakeliui.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 141.45,
+      "end": 144.05,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-020-i-002.mp3"
+    },
+    {
+      "mark": "p-021-i-000",
+      "block": 21,
+      "item": 0,
+      "text": "— Dar keptuvė, — prisiminė Austėja.",
+      "voice": "lt-LT-OnaNeural",
+      "segments": [
+        {
+          "text": "— Dar keptuvė, ",
+          "voice": "lt-LT-OnaNeural"
+        },
+        {
+          "text": "— prisiminė Austėja.",
+          "voice": "lt-LT-LeonasNeural"
+        }
+      ],
+      "start": 144.05,
+      "end": 148.3625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-021-i-000.mp3"
+    },
+    {
+      "mark": "p-021-i-001",
+      "block": 21,
+      "item": 1,
+      "text": "Ji atsistojo ir nuėjo į virtuvę.",
+      "voice": "lt-LT-OnaNeural",
+      "segments": [
+        {
+          "text": "Ji atsistojo ir nuėjo į virtuvę.",
+          "voice": "lt-LT-LeonasNeural"
+        }
+      ],
+      "start": 148.3625,
+      "end": 151.5,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-021-i-001.mp3"
+    },
+    {
+      "mark": "p-022-i-000",
+      "block": 22,
+      "item": 0,
+      "text": "— Aš jos visur ieškojau.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 151.5,
+      "end": 153.9875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-022-i-000.mp3"
+    },
+    {
+      "mark": "p-022-i-001",
+      "block": 22,
+      "item": 1,
+      "text": "Net iš kaimyno teko skolintis.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 153.9875,
+      "end": 156.9,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-022-i-001.mp3"
+    },
+    {
+      "mark": "p-023-i-000",
+      "block": 23,
+      "item": 0,
+      "text": "— Ji buvo po kriaukle.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 156.9,
+      "end": 159.2625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-023-i-000.mp3"
+    },
+    {
+      "mark": "p-024-i-000",
+      "block": 24,
+      "item": 0,
+      "text": "— Ten irgi ieškojau. Tik kitame bute.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 159.2625,
+      "end": 163.7625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-024-i-000.mp3"
+    },
+    {
+      "mark": "p-025-i-000",
+      "block": 25,
+      "item": 0,
+      "text": "Abu trumpai nusijuokė.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 163.7625,
+      "end": 166.3125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-025-i-000.mp3"
+    },
+    {
+      "mark": "p-025-i-001",
+      "block": 25,
+      "item": 1,
+      "text": "Paskui virtuvėje vėl buvo tylu.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 166.3125,
+      "end": 169.225,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-025-i-001.mp3"
+    },
+    {
+      "mark": "p-026-i-000",
+      "block": 26,
+      "item": 0,
+      "text": "— Tau jos nereikės? — paklausė Tomas.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 169.225,
+      "end": 173.6625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-026-i-000.mp3"
+    },
+    {
+      "mark": "p-027-i-000",
+      "block": 27,
+      "item": 0,
+      "text": "— Ne. Turiu kitą. Šita tavo.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 173.6625,
+      "end": 179.8625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-027-i-000.mp3"
+    },
+    {
+      "mark": "p-028-i-000",
+      "block": 28,
+      "item": 0,
+      "text": "Tomas įdėjo keptuvę į krepšį.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 179.8625,
+      "end": 182.7875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-028-i-000.mp3"
+    },
+    {
+      "mark": "p-028-i-001",
+      "block": 28,
+      "item": 1,
+      "text": "Rankena netilpo ir liko lauke.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 182.7875,
+      "end": 185.825,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-028-i-001.mp3"
+    },
+    {
+      "mark": "p-028-i-002",
+      "block": 28,
+      "item": 2,
+      "text": "Jis jau norėjo nunešti dėžę prie durų.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 185.825,
+      "end": 189.1375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-028-i-002.mp3"
+    },
+    {
+      "mark": "p-028-i-003",
+      "block": 28,
+      "item": 3,
+      "text": "Tada prisiminė mažą kišenę.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 189.1375,
+      "end": 192.05,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-028-i-003.mp3"
+    },
+    {
+      "mark": "p-029-i-000",
+      "block": 29,
+      "item": 0,
+      "text": "— Štai raktas.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 192.05,
+      "end": 194.1125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-029-i-000.mp3"
+    },
+    {
+      "mark": "p-030-i-000",
+      "block": 30,
+      "item": 0,
+      "text": "Austėja ištiesė ranką.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 194.1125,
+      "end": 196.6,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-030-i-000.mp3"
+    },
+    {
+      "mark": "p-030-i-001",
+      "block": 30,
+      "item": 1,
+      "text": "Jis padėjo raktą jai į delną.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 196.6,
+      "end": 199.45,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-030-i-001.mp3"
+    },
+    {
+      "mark": "p-031-i-000",
+      "block": 31,
+      "item": 0,
+      "text": "— Ačiū, — pasakė ji.",
+      "voice": "lt-LT-OnaNeural",
+      "segments": [
+        {
+          "text": "— Ačiū, ",
+          "voice": "lt-LT-OnaNeural"
+        },
+        {
+          "text": "— pasakė ji.",
+          "voice": "lt-LT-LeonasNeural"
+        }
+      ],
+      "start": 199.45,
+      "end": 203.4,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-031-i-000.mp3"
+    },
+    {
+      "mark": "p-032-i-000",
+      "block": 32,
+      "item": 0,
+      "text": "Buvo dešimt dvidešimt penkios.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 203.4,
+      "end": 206.1625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-032-i-000.mp3"
+    },
+    {
+      "mark": "p-032-i-001",
+      "block": 32,
+      "item": 1,
+      "text": "Tomas apsiavė batus ir pakėlė dėžę.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 206.1625,
+      "end": 209.675,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-032-i-001.mp3"
+    },
+    {
+      "mark": "p-032-i-002",
+      "block": 32,
+      "item": 2,
+      "text": "Krepšį užsidėjo ant peties.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 209.675,
+      "end": 212.425,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-032-i-002.mp3"
+    },
+    {
+      "mark": "p-033-i-000",
+      "block": 33,
+      "item": 0,
+      "text": "— Jei dar ką rasi, parašyk.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 212.425,
+      "end": 215.2125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-033-i-000.mp3"
+    },
+    {
+      "mark": "p-034-i-000",
+      "block": 34,
+      "item": 0,
+      "text": "— Parašysiu. Geros dienos, Tomai.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 215.2125,
+      "end": 219.9875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-034-i-000.mp3"
+    },
+    {
+      "mark": "p-035-i-000",
+      "block": 35,
+      "item": 0,
+      "text": "— Tau irgi.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 219.9875,
+      "end": 221.925,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-035-i-000.mp3"
+    },
+    {
+      "mark": "p-036-i-000",
+      "block": 36,
+      "item": 0,
+      "text": "Autobuse dėžę laikė ant kelių.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 221.925,
+      "end": 224.8875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-036-i-000.mp3"
+    },
+    {
+      "mark": "p-036-i-001",
+      "block": 36,
+      "item": 1,
+      "text": "Šalia stovėjo moteris su pirkinių maišeliu.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 224.8875,
+      "end": 228.4125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-036-i-001.mp3"
+    },
+    {
+      "mark": "p-036-i-002",
+      "block": 36,
+      "item": 2,
+      "text": "Tomas patraukė krepšį arčiau savęs.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 228.4125,
+      "end": 231.75,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-036-i-002.mp3"
+    },
+    {
+      "mark": "p-036-i-003",
+      "block": 36,
+      "item": 3,
+      "text": "Keptuvės rankena niekam netrukdė.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 231.75,
+      "end": 234.9875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-036-i-003.mp3"
+    },
+    {
+      "mark": "p-037-i-000",
+      "block": 37,
+      "item": 0,
+      "text": "Namuose jis pirmiausia išėmė puodelį.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 234.9875,
+      "end": 238.4875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-037-i-000.mp3"
+    },
+    {
+      "mark": "p-037-i-001",
+      "block": 37,
+      "item": 1,
+      "text": "Pastatė jį ant lentynos, šalia stiklinių.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 238.4875,
+      "end": 242.0125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-037-i-001.mp3"
+    },
+    {
+      "mark": "p-037-i-002",
+      "block": 37,
+      "item": 2,
+      "text": "Keptuvei rado vietą po kriaukle.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 242.0125,
+      "end": 244.9875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-037-i-002.mp3"
+    },
+    {
+      "mark": "p-038-i-000",
+      "block": 38,
+      "item": 0,
+      "text": "Tik tada atsisėdo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 244.9875,
+      "end": 247.325,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-038-i-000.mp3"
+    },
+    {
+      "mark": "p-038-i-001",
+      "block": 38,
+      "item": 1,
+      "text": "Buvo liūdna. Dar nenorėjo niekam rašyti.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 247.325,
+      "end": 252.325,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-038-i-001.mp3"
+    },
+    {
+      "mark": "p-038-i-002",
+      "block": 38,
+      "item": 2,
+      "text": "Už lango švietė saulė.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 252.325,
+      "end": 255.075,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-038-i-002.mp3"
+    },
+    {
+      "mark": "p-038-i-003",
+      "block": 38,
+      "item": 3,
+      "text": "Jis prisiminė rytinį sumuštinį ir atsistojo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 255.075,
+      "end": 258.8125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-038-i-003.mp3"
+    },
+    {
+      "mark": "p-038-i-004",
+      "block": 38,
+      "item": 4,
+      "text": "Reikėjo ką nors suvalgyti.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 258.8125,
+      "end": 262.896,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-6/p-038-i-004.mp3"
+    }
+  ],
+  "casting": {
+    "femaleBlocks": [
+      4,
+      6,
+      11,
+      13,
+      16,
+      20,
+      22,
+      24,
+      28,
+      32,
+      35
+    ],
+    "narratorSpans": {
+      "13:1": [
+        "— pasakė Austėja."
+      ],
+      "16:1": [
+        "— paklausė ji."
+      ],
+      "22:1": [
+        "— prisiminė Austėja."
+      ],
+      "22:2": [
+        "Ji atsistojo ir nuėjo į virtuvę."
+      ],
+      "32:1": [
+        "— pasakė ji."
+      ]
+    }
+  }
+}
