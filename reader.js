@@ -8,6 +8,10 @@
     activeData: null,
     tooltipPinned: false,
     tooltipTimer: null,
+    chapterTimelines: {},
+    audioChapterId: null,
+    readingPhrase: null,
+    pendingSeek: null,
     totalParagraphs: 0,
     fontSize: readStore("fontSize", "23"),
     fontFamily: readStore("fontFamily", "serif"),
@@ -32,6 +36,9 @@
   var tooltipAudioButton = document.getElementById("tooltipAudioButton");
   var tooltipAudioError = document.getElementById("tooltipAudioError");
   var phraseAudio = document.getElementById("phraseAudio");
+  var chapterAudio = document.getElementById("chapterAudio");
+  var chapterPlayButton = document.getElementById("chapterPlayButton");
+  var chapterAudioError = document.getElementById("chapterAudioError");
 
   state.fontSize = normalizeFontSize(parseInt(state.fontSize, 10));
   state.fontFamily = state.fontFamily === "sans" ? "sans" : "serif";
@@ -74,6 +81,7 @@
         renderBook(book);
         restorePosition();
         updateProgressAndChapter();
+        loadChapterTimelines();
       })
       .catch(function () {
         content.innerHTML = "";
@@ -96,7 +104,7 @@
       var chapterTitle = chapter.title || ("Skyrius " + (chapterIndex + 1));
       var option = document.createElement("option");
       option.value = chapter.id;
-      option.textContent = chapterTitle;
+      option.textContent = chapter.title ? (chapterIndex + 1) + ". " + chapter.title : chapterTitle;
       chapterSelect.append(option);
 
       var title = document.createElement("div");
@@ -105,16 +113,6 @@
       title.dataset.chapterTitle = chapterTitle;
       title.textContent = chapter.label || chapterTitle;
       textWrap.append(title);
-
-      if (chapter.audio) {
-        var chapterAudio = document.createElement("audio");
-        chapterAudio.className = "chapter-audio";
-        chapterAudio.controls = true;
-        chapterAudio.preload = "none";
-        chapterAudio.src = chapter.audio;
-        chapterAudio.setAttribute("aria-label", "Klausyti skyriaus: " + chapterTitle);
-        textWrap.append(chapterAudio);
-      }
 
       chapter.blocks.forEach(function (block, blockIndex) {
         var paragraph = document.createElement("p");
@@ -125,7 +123,9 @@
         if (block.type === "dialogue") paragraph.classList.add("dialogue");
         block.items.forEach(function (item, itemIndex) {
           if (itemIndex > 0) paragraph.append(document.createTextNode(" "));
-          paragraph.append(renderItem(item));
+          var phrase = renderItem(item);
+          if (phrase.nodeType === 1) phrase.dataset.chapterId = chapter.id;
+          paragraph.append(phrase);
         });
         textWrap.append(paragraph);
       });
@@ -194,6 +194,7 @@
     });
 
     chapterSelect.addEventListener("change", function () {
+      stopChapterAudio();
       hideTooltip();
       var target = document.getElementById(chapterSelect.value);
       if (target) {
@@ -201,7 +202,28 @@
         window.scrollBy(0, -topbar.offsetHeight - 8);
         savePosition();
       }
+      updateChapterAudioButton();
     });
+
+    chapterPlayButton.addEventListener("click", playChapterAudio);
+    chapterAudio.addEventListener("loadedmetadata", function () {
+      if (state.pendingSeek !== null) {
+        chapterAudio.currentTime = state.pendingSeek;
+        state.pendingSeek = null;
+      }
+    });
+    chapterAudio.addEventListener("play", function () {
+      updateChapterAudioButton();
+      syncChapterPhrase();
+    });
+    chapterAudio.addEventListener("timeupdate", syncChapterPhrase);
+    chapterAudio.addEventListener("seeked", syncChapterPhrase);
+    chapterAudio.addEventListener("pause", updateChapterAudioButton);
+    chapterAudio.addEventListener("ended", function () {
+      clearReadingPhrase();
+      updateChapterAudioButton();
+    });
+    chapterAudio.addEventListener("error", showChapterAudioError);
 
     content.addEventListener("click", function (event) {
       var phrase = closestElement(event.target, ".phrase");
@@ -337,8 +359,15 @@
   function showTooltip(phrase, event, hoverOnly) {
     if (!phrase || !phrase._phraseData) return;
     if (!hasTooltip(phrase._phraseData)) return;
+    if (hoverOnly && !chapterAudio.paused) return;
     window.clearTimeout(state.tooltipTimer);
     if (hoverOnly && (state.tooltipPinned || state.activePhrase === phrase)) return;
+    if (!hoverOnly) {
+      chapterAudio.pause();
+      clearReadingPhrase();
+      chapterSelect.value = phrase.dataset.chapterId;
+      updateChapterAudioButton();
+    }
     if (state.activePhrase !== phrase) stopPhraseAudio();
     state.tooltipPinned = !hoverOnly;
     if (!hoverOnly) phrase.focus({ preventScroll: true });
@@ -409,6 +438,127 @@
     resetAudioButton();
     tooltipAudioError.hidden = false;
     positionTooltip();
+  }
+
+  function loadChapterTimelines() {
+    var phrases = {};
+    content.querySelectorAll(".phrase").forEach(function (phrase) {
+      if (phrase._phraseData.audio) phrases[phrase._phraseData.audio] = phrase;
+    });
+    state.book.chapters.forEach(function (chapter) {
+      if (!chapter.audio) return;
+      fetch(new URL("manifest.json", new URL(chapter.audio, document.baseURI)))
+        .then(function (response) {
+          if (!response.ok) throw new Error("timeline load failed");
+          return response.json();
+        })
+        .then(function (manifest) {
+          var cues = manifest.phrases.map(function (cue) {
+            var phrase = phrases[cue.audio];
+            if (!phrase || phrase.dataset.chapterId !== chapter.id ||
+                !Number.isFinite(cue.start) || !Number.isFinite(cue.end) || cue.end <= cue.start) {
+              throw new Error("invalid timeline");
+            }
+            return { start: cue.start, end: cue.end, phrase: phrase };
+          });
+          if (!cues.length) throw new Error("empty timeline");
+          state.chapterTimelines[chapter.id] = cues;
+          updateChapterAudioButton();
+        })
+        .catch(function () {
+          state.chapterTimelines[chapter.id] = null;
+          updateChapterAudioButton();
+        });
+    });
+  }
+
+  function updateChapterAudioButton() {
+    var chapter = state.book && state.book.chapters.find(function (item) {
+      return item.id === chapterSelect.value;
+    });
+    var playing = !chapterAudio.paused && !chapterAudio.ended;
+    var timeline = chapter && state.chapterTimelines[chapter.id];
+    chapterPlayButton.disabled = !timeline;
+    chapterPlayButton.setAttribute("aria-pressed", String(playing));
+    var label = playing ? "Pristabdyti skaitymą" : "Klausyti skyriaus";
+    if (!chapter || !chapter.audio) label = "Šis skyrius dar neįgarsintas";
+    else if (timeline === undefined) label = "Kraunama...";
+    else if (timeline === null) label = "Nepavyko įkelti garso. Atnaujink puslapį.";
+    chapterPlayButton.setAttribute("aria-label", label);
+    chapterPlayButton.title = label;
+    document.body.classList.toggle("chapter-playing", playing);
+  }
+
+  function playChapterAudio() {
+    if (!chapterAudio.paused) {
+      chapterAudio.pause();
+      return;
+    }
+    var chapter = state.book.chapters.find(function (item) { return item.id === chapterSelect.value; });
+    var cues = chapter && state.chapterTimelines[chapter.id];
+    if (!cues) return;
+    var selected = cues.find(function (cue) { return cue.phrase === state.activePhrase; });
+    var sameChapter = state.audioChapterId === chapter.id;
+    var resumeTime = state.pendingSeek === null ? chapterAudio.currentTime : state.pendingSeek;
+    var start = selected ? selected.start : (sameChapter && !chapterAudio.ended ? resumeTime : 0);
+    hideTooltip();
+    clearReadingPhrase();
+    chapterAudioError.hidden = true;
+    if (!sameChapter || chapterAudio.error) {
+      state.audioChapterId = chapter.id;
+      chapterAudio.src = chapter.audio;
+    }
+    // Keep play() in the click gesture for mobile browsers; seek as soon as metadata is ready.
+    state.pendingSeek = start;
+    if (chapterAudio.readyState >= 1) {
+      chapterAudio.currentTime = start;
+      state.pendingSeek = null;
+    }
+    chapterAudio.play().catch(function (error) {
+      if (error.name !== "AbortError" && state.audioChapterId === chapter.id) showChapterAudioError();
+    });
+  }
+
+  function stopChapterAudio() {
+    chapterAudio.pause();
+    state.audioChapterId = null;
+    state.pendingSeek = null;
+    chapterAudio.removeAttribute("src");
+    chapterAudio.load();
+    clearReadingPhrase();
+    chapterAudioError.hidden = true;
+    updateChapterAudioButton();
+  }
+
+  function showChapterAudioError() {
+    if (!state.audioChapterId) return;
+    chapterAudio.pause();
+    clearReadingPhrase();
+    chapterAudioError.hidden = false;
+    updateChapterAudioButton();
+  }
+
+  function clearReadingPhrase() {
+    if (state.readingPhrase) state.readingPhrase.classList.remove("is-reading");
+    state.readingPhrase = null;
+  }
+
+  function syncChapterPhrase() {
+    if (chapterAudio.paused || chapterAudio.ended) return;
+    var time = state.pendingSeek === null ? chapterAudio.currentTime : state.pendingSeek;
+    var cues = state.chapterTimelines[state.audioChapterId] || [];
+    var cue = cues.find(function (item) { return time >= item.start && time < item.end; });
+    if (!cue || cue.phrase === state.readingPhrase) return;
+    clearReadingPhrase();
+    state.readingPhrase = cue.phrase;
+    cue.phrase.classList.add("is-reading");
+    var rect = getPhraseRect(cue.phrase);
+    var viewport = getViewport();
+    window.scrollTo({
+      top: Math.max(0, window.scrollY + rect.top + rect.height / 2 - viewport.top - viewport.height / 2),
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+    });
+    updateProgressAndChapter();
   }
 
   function positionTooltip(event) {
@@ -510,7 +660,9 @@
         current = chapter;
       }
     });
+    if (!chapterAudio.paused && state.audioChapterId) current = document.getElementById(state.audioChapterId);
     if (current) chapterSelect.value = current.id;
+    updateChapterAudioButton();
     var chapterStart = 0;
     var chapterSize = 0;
     if (state.book && current) {
@@ -576,6 +728,7 @@
     if (!current) {
       current = document.querySelector(".reader-paragraph");
     }
+    if (!chapterAudio.paused && state.readingPhrase) current = state.readingPhrase.closest(".reader-paragraph");
     if (!current) return { id: "", index: 0, offset: 0, text: "" };
     var index = parseInt(current.dataset.paragraphIndex || "0", 10);
     var absoluteTop = (window.scrollY || 0) + current.getBoundingClientRect().top;

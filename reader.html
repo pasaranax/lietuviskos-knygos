@@ -4,13 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="reader.css?v=audio-icons-20260913">
+  <link rel="stylesheet" href="reader.css?v=chapter-playback-20260913">
   <title>Skaityklė</title>
 </head>
 <body>
   <header class="topbar" id="topbar">
     <a class="home-link" href="index.html" aria-label="Grįžti į lentyną">←</a>
     <select class="chapter-select" id="chapterSelect" aria-label="Skyrius"></select>
+    <button class="control-button chapter-play-button" id="chapterPlayButton" type="button" aria-label="Klausyti skyriaus" aria-pressed="false" disabled>
+      <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+        <path class="audio-icon-play" d="M4 2 14 8 4 14Z"/>
+        <path class="audio-icon-pause" d="M3 2h4v12H3zM9 2h4v12H9z"/>
+      </svg>
+    </button>
     <div class="controls" aria-label="Skaitymo nustatymai">
       <button class="control-button theme-button" id="themeButton" type="button">🌙</button>
       <button class="control-button" id="fontDownButton" type="button">A-</button>
@@ -18,6 +24,7 @@
       <button class="control-button family-button" id="familyButton" type="button">A</button>
     </div>
   </header>
+  <div class="chapter-audio-error" id="chapterAudioError" role="status" hidden>Nepavyko paleisti. Bandyk dar kartą.</div>
 
   <main class="reader">
     <article class="content" id="content" aria-label="Adaptuotas tekstas">
@@ -45,7 +52,8 @@
     </div>
   </div>
   <audio id="phraseAudio" preload="none" hidden></audio>
+  <audio id="chapterAudio" preload="none" hidden></audio>
 
-  <script src="reader.js?v=audio-icons-20260913" defer></script>
+  <script src="reader.js?v=chapter-playback-20260913" defer></script>
 </body>
 </html>

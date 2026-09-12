@@ -137,6 +137,43 @@ body.theme-dark {
   background: var(--button-active);
 }
 
+.chapter-play-button {
+  flex: 0 0 34px;
+  padding: 0;
+}
+
+.chapter-play-button:disabled {
+  opacity: 0.4;
+}
+
+.chapter-play-button svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.audio-icon-pause,
+.chapter-play-button[aria-pressed="true"] .audio-icon-play {
+  display: none;
+}
+
+.chapter-play-button[aria-pressed="true"] .audio-icon-pause {
+  display: block;
+}
+
+.chapter-audio-error {
+  position: fixed;
+  top: calc(60px + env(safe-area-inset-top));
+  right: 12px;
+  left: 12px;
+  z-index: 60;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+  font-size: 13px;
+}
+
 .theme-button {
   width: 42px;
   padding: 0;
@@ -211,20 +248,10 @@ body.theme-dark {
   -webkit-tap-highlight-color: rgba(47, 107, 79, 0.18);
 }
 
-.chapter-audio {
-  display: block;
-  width: 100%;
-  max-width: 420px;
-  margin: 0 auto 24px;
-}
-
-.theme-dark .chapter-audio {
-  color-scheme: dark;
-}
-
-.phrase:hover,
-.phrase:focus,
-.phrase.is-active {
+body:not(.chapter-playing) .phrase:hover,
+body:not(.chapter-playing) .phrase:focus,
+.phrase.is-active,
+.phrase.is-reading {
   background: var(--mark);
   outline: none;
 }
@@ -338,6 +365,7 @@ body.theme-dark {
 
   .chapter-select {
     flex-basis: 104px;
+    min-width: 60px;
     max-width: 126px;
     font-size: 12px;
   }
@@ -356,6 +384,11 @@ body.theme-dark {
     min-height: 32px;
     padding: 0 8px;
     font-size: 12px;
+  }
+
+  .chapter-play-button {
+    flex-basis: 32px;
+    padding: 0;
   }
 
   .theme-button,
@@ -390,5 +423,12 @@ body.theme-dark {
   .tooltip-note {
     font-size: 16px;
     line-height: 1.45;
+  }
+}
+
+@media (max-width: 360px) {
+  .controls .theme-button,
+  .controls .family-button {
+    width: 32px;
   }
 }
