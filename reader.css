@@ -211,6 +211,17 @@ body.theme-dark {
   -webkit-tap-highlight-color: rgba(47, 107, 79, 0.18);
 }
 
+.chapter-audio {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 24px;
+}
+
+.theme-dark .chapter-audio {
+  color-scheme: dark;
+}
+
 .phrase:hover,
 .phrase:focus,
 .phrase.is-active {
@@ -238,12 +249,69 @@ body.theme-dark {
   -webkit-overflow-scrolling: touch;
 }
 
+.tooltip-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  margin-top: 10px;
+}
+
 .tooltip-translation {
-  margin: 10px 0 0;
+  flex: 1 1 auto;
+  max-width: 100%;
   color: var(--tooltip-muted);
   font-size: 13px;
   line-height: 1.38;
   font-weight: 400;
+}
+
+.tooltip-audio-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex: 0 0 auto;
+  margin-left: auto;
+  white-space: nowrap;
+  padding: 3px 7px;
+  border: 0;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.09);
+  color: var(--tooltip-muted);
+  font: 400 12px var(--sans-stack);
+  cursor: pointer;
+}
+
+.tooltip-audio-button[hidden] {
+  display: none;
+}
+
+.tooltip-audio-button svg {
+  flex: 0 0 12px;
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.audio-icon-stop,
+.tooltip-audio-button[aria-pressed="true"] .audio-icon-play {
+  display: none;
+}
+
+.tooltip-audio-button[aria-pressed="true"] .audio-icon-stop {
+  display: block;
+}
+
+.tooltip-audio-button:hover,
+.tooltip-audio-button[aria-pressed="true"] {
+  color: var(--tooltip-text);
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.tooltip-audio-error {
+  margin-top: 10px;
+  color: var(--tooltip-text);
+  font-size: 13px;
 }
 
 .tooltip-note {

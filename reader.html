@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="reader.css?v=progress-insets-20260909">
+  <link rel="stylesheet" href="reader.css?v=audio-icons-20260913">
   <title>Skaityklė</title>
 </head>
 <body>
@@ -32,9 +32,20 @@
 
   <div class="tooltip" id="tooltip" role="note" hidden>
     <div class="tooltip-note" id="tooltipNote"></div>
-    <div class="tooltip-translation" id="tooltipTranslation"></div>
+    <div class="tooltip-audio-error" id="tooltipAudioError" role="status" hidden>Nepavyko paleisti. Bandyk dar kartą.</div>
+    <div class="tooltip-footer">
+      <div class="tooltip-translation" id="tooltipTranslation"></div>
+      <button class="tooltip-audio-button" id="tooltipAudioButton" type="button" aria-pressed="false" hidden>
+        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <path class="audio-icon-play" d="M4 2 14 8 4 14Z"/>
+          <rect class="audio-icon-stop" x="2" y="2" width="12" height="12"/>
+        </svg>
+        <span>Klausyti</span>
+      </button>
+    </div>
   </div>
+  <audio id="phraseAudio" preload="none" hidden></audio>
 
-  <script src="reader.js?v=progress-insets-20260909" defer></script>
+  <script src="reader.js?v=audio-icons-20260913" defer></script>
 </body>
 </html>

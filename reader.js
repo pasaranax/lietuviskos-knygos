@@ -6,6 +6,8 @@
     book: null,
     activePhrase: null,
     activeData: null,
+    tooltipPinned: false,
+    tooltipTimer: null,
     totalParagraphs: 0,
     fontSize: readStore("fontSize", "23"),
     fontFamily: readStore("fontFamily", "serif"),
@@ -27,6 +29,9 @@
   var tooltip = document.getElementById("tooltip");
   var tooltipTranslation = document.getElementById("tooltipTranslation");
   var tooltipNote = document.getElementById("tooltipNote");
+  var tooltipAudioButton = document.getElementById("tooltipAudioButton");
+  var tooltipAudioError = document.getElementById("tooltipAudioError");
+  var phraseAudio = document.getElementById("phraseAudio");
 
   state.fontSize = normalizeFontSize(parseInt(state.fontSize, 10));
   state.fontFamily = state.fontFamily === "sans" ? "sans" : "serif";
@@ -88,17 +93,28 @@
     textWrap.id = "readerText";
 
     book.chapters.forEach(function (chapter, chapterIndex) {
+      var chapterTitle = chapter.title || ("Skyrius " + (chapterIndex + 1));
       var option = document.createElement("option");
       option.value = chapter.id;
-      option.textContent = chapter.title || ("Skyrius " + (chapterIndex + 1));
+      option.textContent = chapterTitle;
       chapterSelect.append(option);
 
       var title = document.createElement("div");
       title.className = "chapter-title";
       title.id = chapter.id;
-      title.dataset.chapterTitle = option.textContent;
-      title.textContent = chapter.label || option.textContent;
+      title.dataset.chapterTitle = chapterTitle;
+      title.textContent = chapter.label || chapterTitle;
       textWrap.append(title);
+
+      if (chapter.audio) {
+        var chapterAudio = document.createElement("audio");
+        chapterAudio.className = "chapter-audio";
+        chapterAudio.controls = true;
+        chapterAudio.preload = "none";
+        chapterAudio.src = chapter.audio;
+        chapterAudio.setAttribute("aria-label", "Klausyti skyriaus: " + chapterTitle);
+        textWrap.append(chapterAudio);
+      }
 
       chapter.blocks.forEach(function (block, blockIndex) {
         var paragraph = document.createElement("p");
@@ -194,7 +210,7 @@
         return;
       }
       event.preventDefault();
-      if (state.activePhrase === phrase) {
+      if (state.activePhrase === phrase && state.tooltipPinned) {
         hideTooltip();
       } else {
         showTooltip(phrase, event);
@@ -210,6 +226,7 @@
         hideTooltip();
       } else {
         showTooltip(phrase, null);
+        if (!tooltipAudioButton.hidden) tooltipAudioButton.focus({ preventScroll: true });
       }
     });
 
@@ -223,7 +240,36 @@
       if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
       var phrase = closestElement(event.target, ".phrase");
       if (!phrase || phrase.contains(event.relatedTarget) || tooltip.contains(event.relatedTarget)) return;
+      if (!state.tooltipPinned) scheduleHideTooltip();
+    });
+
+    tooltip.addEventListener("mouseenter", function () {
+      window.clearTimeout(state.tooltipTimer);
+    });
+    tooltip.addEventListener("mouseleave", function (event) {
+      if (!state.tooltipPinned && !(state.activePhrase && state.activePhrase.contains(event.relatedTarget))) {
+        scheduleHideTooltip();
+      }
+    });
+    tooltip.addEventListener("focusin", function () {
+      window.clearTimeout(state.tooltipTimer);
+      state.tooltipPinned = true;
+    });
+    tooltipAudioButton.addEventListener("click", playPhraseAudio);
+    phraseAudio.addEventListener("ended", resetAudioButton);
+    phraseAudio.addEventListener("pause", resetAudioButton);
+    phraseAudio.addEventListener("error", showAudioError);
+    document.addEventListener("play", function (event) {
+      if (event.target.tagName !== "AUDIO") return;
+      document.querySelectorAll("audio").forEach(function (audio) {
+        if (audio !== event.target) audio.pause();
+      });
+    }, true);
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Escape" || tooltip.hidden) return;
+      var phrase = state.activePhrase;
       hideTooltip();
+      if (phrase) phrase.focus({ preventScroll: true });
     });
 
     document.addEventListener("click", function (event) {
@@ -291,6 +337,10 @@
   function showTooltip(phrase, event, hoverOnly) {
     if (!phrase || !phrase._phraseData) return;
     if (!hasTooltip(phrase._phraseData)) return;
+    window.clearTimeout(state.tooltipTimer);
+    if (hoverOnly && (state.tooltipPinned || state.activePhrase === phrase)) return;
+    if (state.activePhrase !== phrase) stopPhraseAudio();
+    state.tooltipPinned = !hoverOnly;
     if (!hoverOnly) phrase.focus({ preventScroll: true });
     if (state.activePhrase && state.activePhrase !== phrase) {
       state.activePhrase.classList.remove("is-active");
@@ -300,15 +350,65 @@
     phrase.classList.add("is-active");
     tooltipTranslation.textContent = state.activeData.translation;
     renderRichText(tooltipNote, state.activeData.note);
+    tooltipAudioButton.hidden = !state.activeData.audio;
+    tooltipAudioError.hidden = true;
     tooltip.hidden = false;
     positionTooltip(event);
   }
 
   function hideTooltip() {
+    window.clearTimeout(state.tooltipTimer);
+    stopPhraseAudio();
+    state.tooltipPinned = false;
     if (state.activePhrase) state.activePhrase.classList.remove("is-active");
     state.activePhrase = null;
     state.activeData = null;
     tooltip.hidden = true;
+  }
+
+  function scheduleHideTooltip() {
+    window.clearTimeout(state.tooltipTimer);
+    state.tooltipTimer = window.setTimeout(hideTooltip, 300);
+  }
+
+  function resetAudioButton() {
+    tooltipAudioButton.setAttribute("aria-pressed", "false");
+  }
+
+  function stopPhraseAudio() {
+    phraseAudio.pause();
+    // Abort a pending load/play too, so a closed tooltip cannot start speaking later.
+    if (phraseAudio.hasAttribute("src")) {
+      phraseAudio.removeAttribute("src");
+      phraseAudio.load();
+    }
+    resetAudioButton();
+  }
+
+  function playPhraseAudio() {
+    if (!state.activeData || !state.activeData.audio) return;
+    window.clearTimeout(state.tooltipTimer);
+    state.tooltipPinned = true;
+    if (!phraseAudio.paused) {
+      stopPhraseAudio();
+      return;
+    }
+    var item = state.activeData;
+    tooltipAudioError.hidden = true;
+    phraseAudio.src = item.audio;
+    tooltipAudioButton.setAttribute("aria-pressed", "true");
+    phraseAudio.play().catch(function (error) {
+      if (error.name === "AbortError" || state.activeData !== item) return;
+      showAudioError();
+    });
+  }
+
+  function showAudioError() {
+    if (!state.activeData || !phraseAudio.hasAttribute("src")) return;
+    phraseAudio.pause();
+    resetAudioButton();
+    tooltipAudioError.hidden = false;
+    positionTooltip();
   }
 
   function positionTooltip(event) {
