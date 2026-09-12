@@ -10,7 +10,7 @@ const source = fs.readFileSync(path.join(__dirname, "../reader.js"), "utf8");
 const handlers = source.slice(source.indexOf("  function playChapterAudio()"), source.indexOf("  function syncChapterPhrase()"));
 
 function player({ metadata = true } = {}) {
-  const phrase = { classList: { remove() {} } };
+  const phrase = { _phraseData: { audio: "phrase.mp3" }, classList: { remove() {} } };
   const audio = {
     paused: true, ended: false, currentTime: 0, readyState: metadata ? 1 : 0,
     error: null, loads: 0,
@@ -22,7 +22,7 @@ function player({ metadata = true } = {}) {
   };
   const state = {
     book: { chapters: [{ id: "one", audio: "one.mp3" }, { id: "two" }] },
-    chapterTimelines: { one: [{ start: 390.025, end: 396.0375, phrase }] },
+    chapterTimelines: { one: [{ start: 390.025, end: 396.0375, audio: "phrase.mp3", phrase }] },
     audioChapterId: null, activePhrase: null, pendingSeek: null, readingPhrase: null
   };
   const context = vm.createContext({
@@ -43,6 +43,13 @@ test("chapter playback starts at the selected phrase, before hiding its tooltip"
   assert.equal(p.audio.source, "one.mp3");
   assert.equal(p.audio.paused, false);
   assert.equal(p.state.activePhrase, null);
+});
+
+test("chapter playback finds the selected phrase by its audio key", () => {
+  const p = player();
+  p.state.activePhrase = { _phraseData: { audio: "phrase.mp3" } };
+  p.play();
+  assert.equal(p.audio.currentTime, 390.025);
 });
 
 test("pause and resume preserve a selected start while metadata is still loading", () => {

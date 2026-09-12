@@ -477,7 +477,7 @@
                 !Number.isFinite(cue.start) || !Number.isFinite(cue.end) || cue.end <= cue.start) {
               throw new Error("invalid timeline");
             }
-            return { start: cue.start, end: cue.end, phrase: phrase };
+            return { start: cue.start, end: cue.end, audio: cue.audio, phrase: phrase };
           });
           if (!cues.length) throw new Error("empty timeline");
           state.chapterTimelines[chapter.id] = cues;
@@ -515,7 +515,10 @@
     var chapter = state.book.chapters.find(function (item) { return item.id === chapterSelect.value; });
     var cues = chapter && state.chapterTimelines[chapter.id];
     if (!cues) return;
-    var selected = cues.find(function (cue) { return cue.phrase === state.activePhrase; });
+    var selectedAudio = state.activePhrase && state.activePhrase._phraseData.audio;
+    var selected = cues.find(function (cue) {
+      return cue.phrase === state.activePhrase || (selectedAudio && cue.audio === selectedAudio);
+    });
     var sameChapter = state.audioChapterId === chapter.id;
     var resumeTime = state.pendingSeek === null ? chapterAudio.currentTime : state.pendingSeek;
     var start = selected ? selected.start : (sameChapter && !chapterAudio.ended ? resumeTime : 0);
@@ -757,18 +760,25 @@
     };
   }
 
+  function findChapterAtMarker(chapters, marker) {
+    var current = chapters[0] || null;
+    chapters.forEach(function (chapter) {
+      if (chapter.getBoundingClientRect().top <= marker) current = chapter;
+    });
+    return current;
+  }
+
   function updateProgressAndChapter() {
     var position = getCurrentPosition();
     var total = Math.max(1, state.totalParagraphs || 1);
     var percent = Math.max(0, Math.min(100, Math.round(position.index / total * 100)));
     progressText.textContent = percent + "%";
 
-    var current = document.querySelector(".chapter-title");
-    Array.prototype.forEach.call(document.querySelectorAll(".chapter-title"), function (chapter) {
-      if (chapter.getBoundingClientRect().top <= topbar.offsetHeight + 18) {
-        current = chapter;
-      }
-    });
+    var viewport = getViewport();
+    var current = findChapterAtMarker(
+      Array.prototype.slice.call(document.querySelectorAll(".chapter-title")),
+      viewport.top + viewport.height / 2
+    );
     if (!chapterAudio.paused && state.audioChapterId) current = document.getElementById(state.audioChapterId);
     if (current) chapterSelect.value = current.id;
     updateChapterAudioButton();

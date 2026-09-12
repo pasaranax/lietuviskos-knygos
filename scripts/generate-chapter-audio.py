@@ -29,11 +29,66 @@ def plain_text(text):
     ))
 
 
+def build_ssml(chapter, female_blocks, narrator_spans):
+    phrases, parts, used = [], ['<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="lt-LT">'], set()
+    previous_voice = None
+    for bi, block in enumerate(chapter["blocks"]):
+        voice = "lt-LT-OnaNeural" if bi + 1 in female_blocks else "lt-LT-LeonasNeural"
+        block_parts = []
+        for ii, item in enumerate(block["items"]):
+            mark, text = f"p-{bi:03d}-i-{ii:03d}", plain_text(item["text"])
+            key = f"{bi + 1}:{ii + 1}"
+            spans = narrator_spans.get(key, [])
+            if key in narrator_spans:
+                used.add(key)
+            ranges = []
+            for span in spans:
+                if not span or text.count(span) != 1:
+                    raise ValueError(f"Narrator span must match exactly once at {key}: {span!r}")
+                ranges.append((text.index(span), text.index(span) + len(span)))
+            segments, cursor = [], 0
+            for start, end in sorted(ranges):
+                if start < cursor:
+                    raise ValueError(f"Overlapping narrator spans at {key}")
+                if start > cursor:
+                    segments.append(dict(text=text[cursor:start], voice=voice))
+                segments.append(dict(text=text[start:end], voice="lt-LT-LeonasNeural"))
+                cursor = end
+            if cursor < len(text):
+                segments.append(dict(text=text[cursor:], voice=voice))
+            phrase = dict(mark=mark, block=bi, item=ii, text=text, voice=voice)
+            if spans:
+                phrase["segments"] = segments
+            phrases.append(phrase)
+            for si, segment in enumerate(segments):
+                markup = (f'<bookmark mark="{mark}"/>' if si == 0 else "") + escape(segment["text"])
+                if si == len(segments) - 1:
+                    markup += " "
+                block_parts.append((segment["voice"], markup))
+        for index, (part_voice, markup) in enumerate(block_parts):
+            if part_voice != previous_voice:
+                if index:
+                    parts.append("</p>")
+                if previous_voice:
+                    parts.append("</voice>")
+                parts.append(f'<voice name="{part_voice}"><p>')
+                previous_voice = part_voice
+            elif index == 0:
+                parts.append("<p>")
+            parts.append(markup)
+        parts.append("</p>")
+    if used != set(narrator_spans):
+        raise ValueError("Narrator spans refer to missing phrases")
+    parts.append("</voice></speak>")
+    return "".join(parts), phrases
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("book", type=Path)
     parser.add_argument("--chapter", type=int, required=True)
     parser.add_argument("--female-blocks", type=int, nargs="*", default=[])
+    parser.add_argument("--casting", type=Path, help="Reviewed femaleBlocks/narratorSpans JSON, or a previous manifest")
     parser.add_argument("--work-dir", type=Path, required=True)
     parser.add_argument("--credentials", type=Path,
                         default=Path.home() / ".azure/lietuviskos-knygos-speech.json")
@@ -43,29 +98,15 @@ def main():
     if not 1 <= args.chapter <= len(book["chapters"]):
         parser.error("Chapter number is out of range")
     chapter = book["chapters"][args.chapter - 1]
+    casting = json.loads(args.casting.read_text()) if args.casting else {}
+    casting = casting.get("casting", casting)
+    args.female_blocks = casting.get("femaleBlocks", args.female_blocks)
+    narrator_spans = casting.get("narratorSpans", {})
     for number in args.female_blocks:
         if not 1 <= number <= len(chapter["blocks"]) or chapter["blocks"][number - 1]["type"] != "dialogue":
             parser.error("Female block numbers must identify reviewed dialogue blocks")
 
-    phrases = []
-    parts = ['<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="lt-LT">']
-    previous_voice = None
-    for bi, block in enumerate(chapter["blocks"]):
-        voice = "lt-LT-OnaNeural" if bi + 1 in args.female_blocks else "lt-LT-LeonasNeural"
-        if voice != previous_voice:
-            if previous_voice:
-                parts.append("</voice>")
-            parts.append(f'<voice name="{voice}">')
-            previous_voice = voice
-        parts.append("<p>")
-        for ii, item in enumerate(block["items"]):
-            mark = f"p-{bi:03d}-i-{ii:03d}"
-            text = plain_text(item["text"])
-            phrases.append(dict(mark=mark, block=bi, item=ii, text=text, voice=voice))
-            parts.append(f'<bookmark mark="{mark}"/>{escape(text)} ')
-        parts.append("</p>")
-    parts.append("</voice></speak>")
-    ssml = "".join(parts)
+    ssml, phrases = build_ssml(chapter, args.female_blocks, narrator_spans)
     digest = hashlib.sha256(ssml.encode()).hexdigest()
     args.work_dir.mkdir(parents=True, exist_ok=True)
     wav_path = args.work_dir / f"{digest}.wav"
@@ -136,7 +177,8 @@ def main():
     for phrase in phrases:
         current_chapter["blocks"][phrase["block"]]["items"][phrase["item"]]["audio"] = phrase["audio"]
     manifest = dict(provider="Azure Speech", sourceSha256=digest, sampleRate=params.framerate,
-                    duration=duration, phrases=phrases)
+                    duration=duration, phrases=phrases,
+                    casting=dict(femaleBlocks=args.female_blocks, narratorSpans=narrator_spans))
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     temporary = book_path.with_suffix(".json.tmp")
     temporary.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n")

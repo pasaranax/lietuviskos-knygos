@@ -321,6 +321,17 @@ Do not publish a full copyrighted book to public GitHub Pages unless the user ex
 
 GitHub Pages is public by default. Treat full book text as publish-sensitive.
 
+### 11. Chapter Audio And Deployment
+
+A request to create or continue a chapter includes its complete narration and deployment, unless the user explicitly limits the request to a draft or text only. Finish one chapter at a time: review the text and notes, generate audio, verify it, then deploy that chapter before proceeding to the next. Do not wait for a separate request to add audio or deploy. Honor rights confirmations and publishing authorization already given for the book.
+
+- Reuse the established voices for the book. For `jusu-iprastas-uzsakymas`, use `lt-LT-LeonasNeural` for narration, male characters, and the home voice assistant; use `lt-LT-OnaNeural` for female dialogue.
+- Review speakers from the surrounding text. Narrator insertions within dialogue still use the narrator's voice; do not assign every word in a dialogue block to the character automatically.
+- Use `scripts/generate-chapter-audio.py` with the configured Azure Speech F0 resource and a reviewed casting plan. `--female-blocks` uses one-based block numbers. For mixed phrases, `--casting` accepts `femaleBlocks` and `narratorSpans` keyed by one-based `block:item`, with exact unaccented narrator fragments. The generated manifest preserves this casting and can be passed back with `--casting` for regeneration.
+- Generate each chapter once with phrase bookmarks, then cut phrase clips locally. Attach the chapter MP3, every phrase clip, and the timing manifest to the shared reader. Reuse cached synthesis; playback must never call Azure or expose its credentials. If the free quota is exhausted, report that instead of switching to paid service automatically.
+- Before deployment, verify text/voice coverage, contiguous timing, decodable MP3s, and chapter/phrase playback with synchronization. Keep browser audio muted during automated checks and leave all players stopped.
+- Deploy after every completed chapter using the established GitHub Pages workflow. Verify a successful deployment and the actual published JSON, manifest, and audio files before reporting that chapter available.
+
 ## Reader Architecture
 
 - The supported target is a static web site over HTTP/HTTPS.
