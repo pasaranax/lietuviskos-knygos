@@ -12,6 +12,11 @@
     audioChapterId: null,
     readingPhrase: null,
     pendingSeek: null,
+    scrollFrame: null,
+    scrollTrack: null,
+    scrollLastTime: null,
+    scrollPosition: 0,
+    scrollVelocity: 0,
     totalParagraphs: 0,
     fontSize: readStore("fontSize", "23"),
     fontFamily: readStore("fontFamily", "serif"),
@@ -217,9 +222,19 @@
       syncChapterPhrase();
     });
     chapterAudio.addEventListener("timeupdate", syncChapterPhrase);
-    chapterAudio.addEventListener("seeked", syncChapterPhrase);
-    chapterAudio.addEventListener("pause", updateChapterAudioButton);
+    chapterAudio.addEventListener("playing", startChapterScroll);
+    chapterAudio.addEventListener("waiting", stopChapterScroll);
+    chapterAudio.addEventListener("seeking", stopChapterScroll);
+    chapterAudio.addEventListener("seeked", function () {
+      syncChapterPhrase();
+      if (!chapterAudio.paused) startChapterScroll();
+    });
+    chapterAudio.addEventListener("pause", function () {
+      stopChapterScroll();
+      updateChapterAudioButton();
+    });
     chapterAudio.addEventListener("ended", function () {
+      stopChapterScroll();
       clearReadingPhrase();
       updateChapterAudioButton();
     });
@@ -300,12 +315,13 @@
     });
 
     window.addEventListener("resize", function () {
+      state.scrollTrack = null;
       positionTooltip();
       updateProgressAndChapter();
     });
 
     window.addEventListener("scroll", function () {
-      updateProgressAndChapter();
+      if (chapterAudio.paused) updateProgressAndChapter();
       queueSavePosition();
       positionTooltip();
     }, { passive: true });
@@ -314,6 +330,7 @@
     window.addEventListener("beforeunload", savePosition);
     document.addEventListener("visibilitychange", function () {
       if (document.visibilityState === "hidden") savePosition();
+      else if (!chapterAudio.paused) startChapterScroll();
     });
   }
 
@@ -338,6 +355,7 @@
   }
 
   function applySettings() {
+    state.scrollTrack = null;
     document.body.classList.toggle("theme-dark", state.theme === "dark");
     document.body.classList.toggle("theme-light", state.theme !== "dark");
     document.documentElement.style.setProperty("--reader-font-size", state.fontSize + "px");
@@ -552,13 +570,104 @@
     clearReadingPhrase();
     state.readingPhrase = cue.phrase;
     cue.phrase.classList.add("is-reading");
-    var rect = getPhraseRect(cue.phrase);
-    var viewport = getViewport();
-    window.scrollTo({
-      top: Math.max(0, window.scrollY + rect.top + rect.height / 2 - viewport.top - viewport.height / 2),
-      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
-    });
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      var rect = getPhraseRect(cue.phrase);
+      var viewport = getViewport();
+      window.scrollTo(0, Math.max(0, window.scrollY + rect.top + rect.height / 2 - viewport.top - viewport.height / 2));
+    }
     updateProgressAndChapter();
+  }
+
+  function buildScrollTrack() {
+    var viewport = getViewport();
+    state.scrollTrack = (state.chapterTimelines[state.audioChapterId] || []).map(function (cue) {
+      var rect = getPhraseRect(cue.phrase);
+      return {
+        time: (cue.start + cue.end) / 2,
+        position: window.scrollY + rect.top + rect.height / 2 - viewport.top - viewport.height / 2
+      };
+    });
+  }
+
+  function startChapterScroll() {
+    stopChapterScroll();
+    if (chapterAudio.paused || chapterAudio.readyState < 3 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    buildScrollTrack();
+    if (!state.scrollTrack.length) return;
+    state.scrollPosition = window.scrollY;
+    var target = getScrollTarget(state.scrollTrack, chapterAudio.currentTime);
+    // Reposition once after starting/seeking far away; normal playback only adjusts speed.
+    if (Math.abs(target.position - state.scrollPosition) > getViewport().height * 0.65) {
+      window.scrollTo(0, Math.max(0, target.position));
+      state.scrollPosition = window.scrollY;
+    }
+    state.scrollFrame = window.requestAnimationFrame(scrollChapterFrame);
+  }
+
+  function stopChapterScroll() {
+    window.cancelAnimationFrame(state.scrollFrame);
+    state.scrollFrame = null;
+    state.scrollLastTime = null;
+    state.scrollVelocity = 0;
+  }
+
+  function scrollChapterFrame(timestamp) {
+    if (chapterAudio.paused || chapterAudio.ended || chapterAudio.seeking || chapterAudio.readyState < 3) {
+      stopChapterScroll();
+      return;
+    }
+    if (!state.scrollTrack) {
+      startChapterScroll();
+      return;
+    }
+    var elapsed = state.scrollLastTime === null ? 0 : Math.min(0.05, (timestamp - state.scrollLastTime) / 1000);
+    state.scrollLastTime = timestamp;
+    // Retain fractional pixels, but absorb manual scrolling and layout changes.
+    if (Math.abs(window.scrollY - state.scrollPosition) > 2) state.scrollPosition = window.scrollY;
+    var target = getScrollTarget(state.scrollTrack, chapterAudio.currentTime);
+    var next = advanceScroll(state.scrollPosition, state.scrollVelocity, target, elapsed);
+    state.scrollPosition = Math.max(0, Math.min(document.documentElement.scrollHeight - window.innerHeight, next.position));
+    state.scrollVelocity = next.velocity;
+    window.scrollTo(0, state.scrollPosition);
+    state.scrollFrame = window.requestAnimationFrame(scrollChapterFrame);
+  }
+
+  function interpolateScrollPosition(track, time) {
+    if (time <= track[0].time) return track[0].position;
+    for (var index = 1; index < track.length; index++) {
+      if (time <= track[index].time) {
+        var left = track[index - 1];
+        var right = track[index];
+        return left.position + (right.position - left.position) * (time - left.time) / (right.time - left.time);
+      }
+    }
+    return track[track.length - 1].position;
+  }
+
+  function getScrollTarget(track, time) {
+    // Average six seconds of the known narration path. Both position and speed
+    // stay continuous even when several phrases share a line or a paragraph ends.
+    var from = time - 3;
+    var to = time + 3;
+    var start = interpolateScrollPosition(track, from);
+    var end = interpolateScrollPosition(track, to);
+    var previousTime = from;
+    var previousPosition = start;
+    var area = 0;
+    track.forEach(function (point) {
+      if (point.time <= from || point.time >= to) return;
+      area += (previousPosition + point.position) / 2 * (point.time - previousTime);
+      previousTime = point.time;
+      previousPosition = point.position;
+    });
+    area += (previousPosition + end) / 2 * (to - previousTime);
+    return { position: area / 6, velocity: (end - start) / 6 };
+  }
+
+  function advanceScroll(position, velocity, target, elapsed) {
+    var desiredVelocity = Math.max(0, target.velocity + (target.position - position) * 0.7);
+    var nextVelocity = velocity + (desiredVelocity - velocity) * (1 - Math.exp(-elapsed / 0.35));
+    return { position: position + nextVelocity * elapsed, velocity: nextVelocity };
   }
 
   function positionTooltip(event) {
