@@ -768,6 +768,17 @@
     return current;
   }
 
+  function getChapterPercentAtMarker(chapters, current, marker, contentBottom) {
+    var index = chapters.indexOf(current);
+    if (index < 0) return 0;
+    var start = current.getBoundingClientRect().top;
+    var end = index + 1 < chapters.length
+      ? chapters[index + 1].getBoundingClientRect().top
+      : contentBottom;
+    if (!Number.isFinite(start) || !Number.isFinite(end) || end <= start) return 0;
+    return Math.max(0, Math.min(100, Math.round((marker - start) / (end - start) * 100)));
+  }
+
   function updateProgressAndChapter() {
     var position = getCurrentPosition();
     var total = Math.max(1, state.totalParagraphs || 1);
@@ -775,28 +786,24 @@
     progressText.textContent = percent + "%";
 
     var viewport = getViewport();
-    var current = findChapterAtMarker(
-      Array.prototype.slice.call(document.querySelectorAll(".chapter-title")),
-      viewport.top + viewport.height / 2
-    );
+    var marker = viewport.top + viewport.height / 2;
+    var chapterTitles = Array.prototype.slice.call(document.querySelectorAll(".chapter-title"));
+    var current = findChapterAtMarker(chapterTitles, marker);
     if (!chapterAudio.paused && state.audioChapterId) current = document.getElementById(state.audioChapterId);
     if (current) chapterSelect.value = current.id;
     updateChapterAudioButton();
-    var chapterStart = 0;
-    var chapterSize = 0;
     if (state.book && current) {
       state.book.chapters.some(function (chapter, index) {
         if (chapter.id === current.id) {
-          chapterSize = chapter.blocks.length;
           chapterCountText.textContent = "Skyrius " + (index + 1) + " iš " + state.book.chapters.length;
           return true;
         }
-        chapterStart += chapter.blocks.length;
         return false;
       });
     }
-    var chapterPercent = Math.max(0, Math.min(100,
-      Math.round((position.index - chapterStart) / Math.max(1, chapterSize) * 100)));
+    var chapterPercent = getChapterPercentAtMarker(
+      chapterTitles, current, marker, content.getBoundingClientRect().bottom
+    );
     chapterProgressText.textContent = chapterPercent + "%";
   }
 
