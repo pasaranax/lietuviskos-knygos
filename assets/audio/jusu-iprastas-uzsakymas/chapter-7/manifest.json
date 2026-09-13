@@ -1,0 +1,674 @@
+{
+  "provider": "Azure Speech",
+  "sourceSha256": "a80b2de3c2325bbeed3037004cdc221cfc4339dfc289cfd992f47616e25aea8d",
+  "sampleRate": 24000,
+  "duration": 230.472,
+  "phrases": [
+    {
+      "mark": "p-000-i-000",
+      "block": 0,
+      "item": 0,
+      "text": "Sekmadienį Tomas išėjo nusipirkti duonos.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 0,
+      "end": 3.65,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-000-i-000.mp3"
+    },
+    {
+      "mark": "p-000-i-001",
+      "block": 0,
+      "item": 1,
+      "text": "Namuose buvo makaronų, sūrio ir pomidorų.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 3.65,
+      "end": 7.3,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-000-i-001.mp3"
+    },
+    {
+      "mark": "p-000-i-002",
+      "block": 0,
+      "item": 2,
+      "text": "Juos nusipirko vakar, jau po pietų.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 7.3,
+      "end": 10.625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-000-i-002.mp3"
+    },
+    {
+      "mark": "p-000-i-003",
+      "block": 0,
+      "item": 3,
+      "text": "Šiandien sąrašas buvo trumpas.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 10.625,
+      "end": 13.5125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-000-i-003.mp3"
+    },
+    {
+      "mark": "p-001-i-000",
+      "block": 1,
+      "item": 0,
+      "text": "Prie parduotuvės jis pamatė Ievą.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 13.5125,
+      "end": 16.4,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-001-i-000.mp3"
+    },
+    {
+      "mark": "p-001-i-001",
+      "block": 1,
+      "item": 1,
+      "text": "Ji laikė du pirkinių maišelius.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 16.4,
+      "end": 19.3625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-001-i-001.mp3"
+    },
+    {
+      "mark": "p-001-i-002",
+      "block": 1,
+      "item": 2,
+      "text": "Vieną trumpam padėjo ant žemės.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 19.3625,
+      "end": 22.2375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-001-i-002.mp3"
+    },
+    {
+      "mark": "p-002-i-000",
+      "block": 2,
+      "item": 0,
+      "text": "— Labas vakaras, — pasakė Tomas.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 22.2375,
+      "end": 25.1625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-002-i-000.mp3"
+    },
+    {
+      "mark": "p-003-i-000",
+      "block": 3,
+      "item": 0,
+      "text": "— Labas! Ar jau radote duoną?",
+      "voice": "lt-LT-OnaNeural",
+      "start": 25.1625,
+      "end": 29.575,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-003-i-000.mp3"
+    },
+    {
+      "mark": "p-004-i-000",
+      "block": 4,
+      "item": 0,
+      "text": "— Radau. Dabar reikia pirkti iš naujo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 29.575,
+      "end": 33.95,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-004-i-000.mp3"
+    },
+    {
+      "mark": "p-005-i-000",
+      "block": 5,
+      "item": 0,
+      "text": "Ieva nusijuokė. Tomas pažiūrėjo į maišelius.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 33.95,
+      "end": 39.0125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-005-i-000.mp3"
+    },
+    {
+      "mark": "p-006-i-000",
+      "block": 6,
+      "item": 0,
+      "text": "— Padėti nunešti?",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 39.0125,
+      "end": 41.25,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-006-i-000.mp3"
+    },
+    {
+      "mark": "p-007-i-000",
+      "block": 7,
+      "item": 0,
+      "text": "— Ačiū, nereikia. Čia tik iki kampo.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 41.25,
+      "end": 45.9875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-007-i-000.mp3"
+    },
+    {
+      "mark": "p-007-i-001",
+      "block": 7,
+      "item": 1,
+      "text": "Einu pas tėtį.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 45.9875,
+      "end": 48.2125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-007-i-001.mp3"
+    },
+    {
+      "mark": "p-008-i-000",
+      "block": 8,
+      "item": 0,
+      "text": "Tomas jau norėjo palinkėti gero vakaro.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 48.2125,
+      "end": 51.6875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-008-i-000.mp3"
+    },
+    {
+      "mark": "p-008-i-001",
+      "block": 8,
+      "item": 1,
+      "text": "Bet tada prisiminė dvi stiklines ant lentynos.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 51.6875,
+      "end": 55.4125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-008-i-001.mp3"
+    },
+    {
+      "mark": "p-009-i-000",
+      "block": 9,
+      "item": 0,
+      "text": "— Gal norėtumėte šiandien vakarieniauti pas mane?",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 55.4125,
+      "end": 59.1625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-009-i-000.mp3"
+    },
+    {
+      "mark": "p-009-i-001",
+      "block": 9,
+      "item": 1,
+      "text": "Apie septintą. Šį kartą gaminsiu pats.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 59.1625,
+      "end": 63.8875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-009-i-001.mp3"
+    },
+    {
+      "mark": "p-010-i-000",
+      "block": 10,
+      "item": 0,
+      "text": "Ji pažiūrėjo į jį, paskui į maišelius.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 63.8875,
+      "end": 67.3125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-010-i-000.mp3"
+    },
+    {
+      "mark": "p-011-i-000",
+      "block": 11,
+      "item": 0,
+      "text": "— Šiandien negaliu. Vakarieniausiu pas tėtį.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 67.3125,
+      "end": 72.1,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-011-i-000.mp3"
+    },
+    {
+      "mark": "p-011-i-001",
+      "block": 11,
+      "item": 1,
+      "text": "Pažadėjau padėti jam sutvarkyti virtuvę.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 72.1,
+      "end": 75.525,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-011-i-001.mp3"
+    },
+    {
+      "mark": "p-012-i-000",
+      "block": 12,
+      "item": 0,
+      "text": "— O vėliau? — paklausė Tomas.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 75.525,
+      "end": 79.4,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-012-i-000.mp3"
+    },
+    {
+      "mark": "p-013-i-000",
+      "block": 13,
+      "item": 0,
+      "text": "— Nežinau, kada baigsime. Nenoriu skubėti.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 79.4,
+      "end": 84.15,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-013-i-000.mp3"
+    },
+    {
+      "mark": "p-014-i-000",
+      "block": 14,
+      "item": 0,
+      "text": "Tomas linktelėjo. Jam buvo truputį gaila.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 84.15,
+      "end": 88.9875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-014-i-000.mp3"
+    },
+    {
+      "mark": "p-014-i-001",
+      "block": 14,
+      "item": 1,
+      "text": "Prie stalo norėjo ne tik valgyti.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 88.9875,
+      "end": 91.9,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-014-i-001.mp3"
+    },
+    {
+      "mark": "p-014-i-002",
+      "block": 14,
+      "item": 2,
+      "text": "Norėjo ir su kuo nors pasikalbėti.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 91.9,
+      "end": 94.9875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-014-i-002.mp3"
+    },
+    {
+      "mark": "p-015-i-000",
+      "block": 15,
+      "item": 0,
+      "text": "— Suprantu. Tada gal kitą dieną?",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 94.9875,
+      "end": 99.2625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-015-i-000.mp3"
+    },
+    {
+      "mark": "p-016-i-000",
+      "block": 16,
+      "item": 0,
+      "text": "— Ketvirtadienį galėčiau, — pasakė Ieva.",
+      "voice": "lt-LT-OnaNeural",
+      "segments": [
+        {
+          "text": "— Ketvirtadienį galėčiau, ",
+          "voice": "lt-LT-OnaNeural"
+        },
+        {
+          "text": "— pasakė Ieva.",
+          "voice": "lt-LT-LeonasNeural"
+        }
+      ],
+      "start": 99.2625,
+      "end": 103.8,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-016-i-000.mp3"
+    },
+    {
+      "mark": "p-016-i-001",
+      "block": 16,
+      "item": 1,
+      "text": "Po darbo. Apie septintą tiktų?",
+      "voice": "lt-LT-OnaNeural",
+      "start": 103.8,
+      "end": 108.2,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-016-i-001.mp3"
+    },
+    {
+      "mark": "p-017-i-000",
+      "block": 17,
+      "item": 0,
+      "text": "Tomas patikrino ketvirtadienio planus telefone.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 108.2,
+      "end": 112.05,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-017-i-000.mp3"
+    },
+    {
+      "mark": "p-017-i-001",
+      "block": 17,
+      "item": 1,
+      "text": "Po darbo nieko nebuvo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 112.05,
+      "end": 114.475,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-017-i-001.mp3"
+    },
+    {
+      "mark": "p-018-i-000",
+      "block": 18,
+      "item": 0,
+      "text": "— Tinka. Užsirašau, — pasakė jis.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 114.475,
+      "end": 119.1,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-018-i-000.mp3"
+    },
+    {
+      "mark": "p-019-i-000",
+      "block": 19,
+      "item": 0,
+      "text": "— Tik nereikia didelės vakarienės.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 119.1,
+      "end": 122.225,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-019-i-000.mp3"
+    },
+    {
+      "mark": "p-019-i-001",
+      "block": 19,
+      "item": 1,
+      "text": "Galime ką nors paprasto pagaminti kartu.",
+      "voice": "lt-LT-OnaNeural",
+      "start": 122.225,
+      "end": 125.725,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-019-i-001.mp3"
+    },
+    {
+      "mark": "p-020-i-000",
+      "block": 20,
+      "item": 0,
+      "text": "— Gerai. Tik duoną nupirksiu iš anksto.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 125.725,
+      "end": 130.275,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-020-i-000.mp3"
+    },
+    {
+      "mark": "p-021-i-000",
+      "block": 21,
+      "item": 0,
+      "text": "— Tada iki ketvirtadienio!",
+      "voice": "lt-LT-OnaNeural",
+      "start": 130.275,
+      "end": 133.0375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-021-i-000.mp3"
+    },
+    {
+      "mark": "p-022-i-000",
+      "block": 22,
+      "item": 0,
+      "text": "Ieva paėmė maišelį nuo žemės.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 133.0375,
+      "end": 136.2,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-022-i-000.mp3"
+    },
+    {
+      "mark": "p-022-i-001",
+      "block": 22,
+      "item": 1,
+      "text": "Tomas jai palinkėjo gero vakaro.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 136.2,
+      "end": 139.2875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-022-i-001.mp3"
+    },
+    {
+      "mark": "p-022-i-002",
+      "block": 22,
+      "item": 2,
+      "text": "Paskui įėjo į parduotuvę.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 139.2875,
+      "end": 141.9,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-022-i-002.mp3"
+    },
+    {
+      "mark": "p-023-i-000",
+      "block": 23,
+      "item": 0,
+      "text": "Prie duonos lentynos sustojo ilgiau.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 141.9,
+      "end": 145.0625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-023-i-000.mp3"
+    },
+    {
+      "mark": "p-023-i-001",
+      "block": 23,
+      "item": 1,
+      "text": "Ketvirtadienis dar toli. Šiandien reikėjo nedaug.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 145.0625,
+      "end": 150.0875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-023-i-001.mp3"
+    },
+    {
+      "mark": "p-023-i-002",
+      "block": 23,
+      "item": 2,
+      "text": "Paėmė mažą duonos kepalą.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 150.0875,
+      "end": 152.75,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-023-i-002.mp3"
+    },
+    {
+      "mark": "p-024-i-000",
+      "block": 24,
+      "item": 0,
+      "text": "Namuose pirmiausia padėjo raktą prie durų.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 152.75,
+      "end": 156.125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-024-i-000.mp3"
+    },
+    {
+      "mark": "p-024-i-001",
+      "block": 24,
+      "item": 1,
+      "text": "Tada pripylė į puodą vandens.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 156.125,
+      "end": 159.175,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-024-i-001.mp3"
+    },
+    {
+      "mark": "p-024-i-002",
+      "block": 24,
+      "item": 2,
+      "text": "Kol vanduo šilo, perskaitė makaronų pakelį.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 159.175,
+      "end": 162.9875,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-024-i-002.mp3"
+    },
+    {
+      "mark": "p-024-i-003",
+      "block": 24,
+      "item": 3,
+      "text": "Ten buvo parašyta: dešimt minučių.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 162.9875,
+      "end": 166.125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-024-i-003.mp3"
+    },
+    {
+      "mark": "p-025-i-000",
+      "block": 25,
+      "item": 0,
+      "text": "Į verdantį vandenį įbėrė makaronų.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 166.125,
+      "end": 169.3625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-025-i-000.mp3"
+    },
+    {
+      "mark": "p-026-i-000",
+      "block": 26,
+      "item": 0,
+      "text": "— Primink po dešimties minučių, — pasakė.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 169.3625,
+      "end": 172.775,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-026-i-000.mp3"
+    },
+    {
+      "mark": "p-027-i-000",
+      "block": 27,
+      "item": 0,
+      "text": "— Ką priminti? — paklausė pagalbininkas.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 172.775,
+      "end": 177.4,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-027-i-000.mp3"
+    },
+    {
+      "mark": "p-028-i-000",
+      "block": 28,
+      "item": 0,
+      "text": "— Makaronus. Kad juos išvirčiau, o ne pamirščiau.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 177.4,
+      "end": 182.5125,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-028-i-000.mp3"
+    },
+    {
+      "mark": "p-029-i-000",
+      "block": 29,
+      "item": 0,
+      "text": "— Priminsiu po dešimties minučių.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 182.5125,
+      "end": 185.3625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-029-i-000.mp3"
+    },
+    {
+      "mark": "p-030-i-000",
+      "block": 30,
+      "item": 0,
+      "text": "Tomas supjaustė pomidorą ir atsipjovė sūrio.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 185.3625,
+      "end": 189.15,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-030-i-000.mp3"
+    },
+    {
+      "mark": "p-030-i-001",
+      "block": 30,
+      "item": 1,
+      "text": "Ant stalo padėjo vieną lėkštę.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 189.15,
+      "end": 192.1375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-030-i-001.mp3"
+    },
+    {
+      "mark": "p-030-i-002",
+      "block": 30,
+      "item": 2,
+      "text": "Kitos šiandien nereikėjo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 192.1375,
+      "end": 194.5625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-030-i-002.mp3"
+    },
+    {
+      "mark": "p-031-i-000",
+      "block": 31,
+      "item": 0,
+      "text": "Telefoną paliko prie lentynos.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 194.5625,
+      "end": 197.5625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-031-i-000.mp3"
+    },
+    {
+      "mark": "p-031-i-001",
+      "block": 31,
+      "item": 1,
+      "text": "Ketvirtadienio planas jau buvo užrašytas.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 197.5625,
+      "end": 201.0,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-031-i-001.mp3"
+    },
+    {
+      "mark": "p-031-i-002",
+      "block": 31,
+      "item": 2,
+      "text": "Dar vieno kvietimo siųsti nereikėjo.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 201.0,
+      "end": 204.15,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-031-i-002.mp3"
+    },
+    {
+      "mark": "p-032-i-000",
+      "block": 32,
+      "item": 0,
+      "text": "Kai pagalbininkas priminė, Tomas paragavo makaronų.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 204.15,
+      "end": 208.2375,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-032-i-000.mp3"
+    },
+    {
+      "mark": "p-032-i-001",
+      "block": 32,
+      "item": 1,
+      "text": "Jie buvo minkšti. Šį kartą pavyko.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 208.2375,
+      "end": 212.65,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-032-i-001.mp3"
+    },
+    {
+      "mark": "p-032-i-002",
+      "block": 32,
+      "item": 2,
+      "text": "Jis išjungė viryklę ir įsidėjo maisto.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 212.65,
+      "end": 215.975,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-032-i-002.mp3"
+    },
+    {
+      "mark": "p-033-i-000",
+      "block": 33,
+      "item": 0,
+      "text": "Virtuvėje buvo tylu, tik lauke važiavo autobusai.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 215.975,
+      "end": 219.95,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-033-i-000.mp3"
+    },
+    {
+      "mark": "p-033-i-001",
+      "block": 33,
+      "item": 1,
+      "text": "Tomas paėmė duoną ir atsilaužė gabaliuką.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 219.95,
+      "end": 223.4625,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-033-i-001.mp3"
+    },
+    {
+      "mark": "p-033-i-002",
+      "block": 33,
+      "item": 2,
+      "text": "Pluta buvo traški, vidus dar minkštas.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 223.4625,
+      "end": 226.9,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-033-i-002.mp3"
+    },
+    {
+      "mark": "p-033-i-003",
+      "block": 33,
+      "item": 3,
+      "text": "Parduotuvėje pasirinko gerai.",
+      "voice": "lt-LT-LeonasNeural",
+      "start": 226.9,
+      "end": 230.472,
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-7/p-033-i-003.mp3"
+    }
+  ],
+  "casting": {
+    "femaleBlocks": [
+      4,
+      8,
+      12,
+      14,
+      17,
+      20,
+      22
+    ],
+    "narratorSpans": {
+      "17:1": [
+        "— pasakė Ieva."
+      ]
+    }
+  }
+}
