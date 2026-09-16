@@ -6,7 +6,7 @@
   "language": "lt",
   "translationLanguage": "ru",
   "cover": "assets/jusu-iprastas-uzsakymas-cover.jpg",
-  "wordCount": 5510,
+  "wordCount": 5930,
   "chapters": [
     {
       "id": "chapter-1",
@@ -8603,7 +8603,7 @@
             {
               "text": "— Gál rytój ateĩtum piètų?",
               "translation": "— Может быть, завтра ты пришёл бы на обед?",
-              "note": "**gal** — может быть.\n**ateiti** — прийти; **ateitum** — условное наклонение, 2-е лицо ед. числа.\n**pietų** — на обед; родительный падеж.",
+              "note": "**gal** — может быть.\n**ateiti** — прийти; **ateitum** — условное наклонение, 2-е лицо ед. числа.\n**pietų** — на обед; родительный падеж.\n**ateitum** также показывает неформальное обращение в единственном числе; Томас и Антанас теперь говорят друг другу **tu**.",
               "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-11/p-006-i-000.mp3"
             }
           ]
@@ -8709,7 +8709,7 @@
             {
               "text": "— Labàs. Ar̃ rytój bū́tum laisvà?",
               "translation": "— Привет. Ты была бы свободна завтра?",
-              "note": "**laisvas** — свободный; **laisva** — форма женского рода.\n**būti** — быть; **būtum** — условное наклонение, 2-е лицо ед. числа.",
+              "note": "**laisvas** — свободный; **laisva** — форма женского рода.\n**būti** — быть; **būtum** — условное наклонение, 2-е лицо ед. числа.\n**būtum** и **laisva** показывают неформальное обращение в единственном числе; после обмена номерами Томас и Ева перешли на **tu**.",
               "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-11/p-014-i-000.mp3"
             }
           ]
@@ -8748,7 +8748,7 @@
             {
               "text": "— Kadà táu bū́tų patogù?",
               "translation": "— Когда тебе было бы удобно?",
-              "note": "**kada** — когда.\n**patogus** — удобный; **būtų patogu** — условная безличная конструкция «было бы удобно».\n**tau** — тебе, дательный падеж.",
+              "note": "**kada** — когда.\n**patogus** — удобный; **būtų patogu** — условная безличная конструкция «было бы удобно».\n**tau** — тебе, дательный падеж.\n**tau** — неформальное «тебе», дательный падеж единственного числа от **tu**.",
               "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-11/p-017-i-000.mp3"
             }
           ]
@@ -8765,7 +8765,7 @@
             {
               "text": "Jéi táu tiñka.",
               "translation": "Если тебе подходит.",
-              "note": "**jei** — если.\n**tikti** — подходить; **tinka** — 3-е лицо, настоящее время.",
+              "note": "**jei** — если.\n**tikti** — подходить; **tinka** — 3-е лицо, настоящее время.\n**tau** — неформальное «тебе», дательный падеж единственного числа от **tu**.",
               "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-11/p-018-i-001.mp3"
             }
           ]
@@ -9208,6 +9208,783 @@
         }
       ],
       "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-11/chapter.mp3"
+    },
+    {
+      "id": "chapter-12",
+      "title": "Kitas penktadienis",
+      "label": "XII",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Kìtą penktãdienį Tòmas grį̃žo namõ bè dvìdešimties šẽštą.",
+              "translation": "В следующую пятницу Томас вернулся домой без двадцати шесть.",
+              "note": "**kitas** — следующий, другой; **kitą penktadienį** — винительный падеж времени.\n**be dvidešimties šeštą** — без двадцати шесть; родительный падеж после **be**.\n**grįžti** — вернуться; **grįžo** — 3-е лицо, прошедшее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-000-i-000.mp3"
+            },
+            {
+              "text": "Vienojè rañkoje laĩkė pirkinių̃ maišẽlį,",
+              "translation": "В одной руке он держал пакет с покупками,",
+              "note": "**viena ranka** — одна рука; **vienoje rankoje** — местный падеж.\n**laikyti** — держать; **laikė** — 3-е лицо, прошедшее время.\n**pirkinių maišelis** — пакет с покупками; **pirkinių maišelį** — винительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-000-i-001.mp3"
+            },
+            {
+              "text": "kitojè — sulankstýtą popierìnį są́rašą.",
+              "translation": "в другой — сложенный бумажный список.",
+              "note": "**kitoje** — в другой, местный падеж женского рода; слово **rankoje** опущено.\n**sulankstyti** — сложить; **sulankstytą** — страдательное причастие прошедшего времени.\n**popierinis sąrašas** — бумажный список; **popierinį sąrašą** — винительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-000-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Pìlnas plãnas baĩgėsi pirmãdienį.",
+              "translation": "Полный план закончился в понедельник.",
+              "note": "**pilnas planas** — полный план.\n**baigtis** — закончиться; **baigėsi** — 3-е лицо, прошедшее время.\n**pirmadienį** — в понедельник, винительный падеж времени.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-001-i-000.mp3"
+            },
+            {
+              "text": "Ekranè lìko kalendõrius, są́rašai ir̃ priminìmai.",
+              "translation": "На экране остались календарь, списки и напоминания.",
+              "note": "**likti** — остаться; **liko** — 3-е лицо, прошедшее время.\n**kalendorius** — календарь.\n**sąrašas** — список; **sąrašai** — множественное число.\n**priminimas** — напоминание; **priminimai** — множественное число.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-001-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Priminìmas: pradė́ti gamìnti šẽštą vãlandą.",
+              "translation": "— Напоминание: начать готовить в шесть часов.",
+              "note": "**pradėti** — начать.\n**gaminti** — готовить.\n**šeštą valandą** — в шесть часов, винительный падеж времени.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-002-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Žinaũ. Šį̃ priminìmą įrašiaũ pàts.",
+              "translation": "— Знаю. Это напоминание я записал сам.",
+              "note": "**žinoti** — знать; **žinau** — 1-е лицо, настоящее время.\n**įrašyti** — записать, внести; **įrašiau** — 1-е лицо, прошедшее время.\n**pats** — сам, форма мужского рода.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-003-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas išdė́jo produktùs añt stãlo.",
+              "translation": "Томас выложил продукты на стол.",
+              "note": "**išdėti** — выложить; **išdėjo** — 3-е лицо, прошедшее время.\n**produktas** — продукт; **produktus** — винительный падеж мн. числа.\n**ant stalo** — на стол, родительный падеж после **ant**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-004-i-000.mp3"
+            },
+            {
+              "text": "Dvì bùlvės, dù kiaušìniai, pomidòrai, sū́ris ir̃ dúona.",
+              "translation": "Две картофелины, два яйца, помидоры, сыр и хлеб.",
+              "note": "**dvi bulvės** — две картофелины, форма женского рода.\n**du kiaušiniai** — два яйца, форма мужского рода.\n**pomidoras** — помидор; **pomidorai** — множественное число.\n**sūris** — сыр.\n**duona** — хлеб.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-004-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Druskà jaũ stovė́jo priẽ virỹklės.",
+              "translation": "Соль уже стояла возле плиты.",
+              "note": "**druska** — соль.\n**stovėti** — стоять; **stovėjo** — 3-е лицо, прошедшее время.\n**viryklė** — плита; **prie viryklės** — возле плиты, родительный падеж после **prie**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-005-i-000.mp3"
+            },
+            {
+              "text": "Šį̃ kar̃tą jõs pamir̃šti negalė́jo.",
+              "translation": "В этот раз он не мог её забыть.",
+              "note": "**pamiršti** — забыть.\n**negalėti** — не мочь; **negalėjo** — 3-е лицо, прошедшее время.\n**jos** — её, родительный падеж при отрицании.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-005-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Priẽš gamìndamas Tòmas parãšė Iẽvai.",
+              "translation": "Перед готовкой Томас написал Еве.",
+              "note": "**prieš gamindamas** — перед тем как готовить; **gamindamas** — деепричастная форма одновременного действия, мужской род.\n**parašyti** — написать; **parašė** — 3-е лицо, прошедшее время.\n**Ievai** — Еве, дательный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-006-i-000.mp3"
+            },
+            {
+              "text": "„Vakariẽnė septiñtą. Ar̃ vìs dar̃ tiñka?“",
+              "translation": "«Ужин в семь. Всё ещё подходит?»",
+              "note": "**vakarienė** — ужин.\n**septintą** — в семь, винительный падеж времени.\n**vis dar** — всё ещё.\n**tikti** — подходить; **tinka** — 3-е лицо, настоящее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-006-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Atsãkymas atė̃jo põ minùtės.",
+              "translation": "Ответ пришёл через минуту.",
+              "note": "**atsakymas** — ответ.\n**ateiti** — прийти; **atėjo** — 3-е лицо, прошедшее время.\n**po minutės** — через минуту, родительный падеж после **po**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-007-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Tiñka. Bū́siu septiñtą.",
+              "translation": "— Подходит. Буду в семь.",
+              "note": "**būti** — быть; **būsiu** — 1-е лицо, будущее время.\n**septintą** — в семь, винительный падеж времени.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-008-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas įjùngė órkaitę ir̃ atidãrė Rasõs recèptą.",
+              "translation": "Томас включил духовку и открыл рецепт Расы.",
+              "note": "**įjungti** — включить; **įjungė** — 3-е лицо, прошедшее время.\n**orkaitė** — духовка; **orkaitę** — винительный падеж.\n**atidaryti** — открыть; **atidarė** — прошедшее время.\n**Rasos receptą** — рецепт Расы, родительный падеж имени и винительный слова **receptas**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-009-i-000.mp3"
+            },
+            {
+              "text": "Šalià gulė́jo jõ patiẽs pãstaba.",
+              "translation": "Рядом лежала его собственная заметка.",
+              "note": "**šalia** — рядом.\n**gulėti** — лежать; **gulėjo** — 3-е лицо, прошедшее время.\n**jo paties** — его самого, усилительная конструкция.\n**pastaba** — заметка.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-009-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "„Drùską dė́ti priẽš kepìmą.“",
+              "translation": "«Соль класть перед запеканием».",
+              "note": "**druska** — соль; **druską** — винительный падеж.\n**dėti** — класть.\n**prieš kepimą** — перед запеканием, винительный падеж после **prieš**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-010-i-000.mp3"
+            },
+            {
+              "text": "Tòmas pérskaitė sãkinį gar̃siai.",
+              "translation": "Томас прочитал предложение вслух.",
+              "note": "**perskaityti** — прочитать; **perskaitė** — 3-е лицо, прошедшее время.\n**sakinys** — предложение; **sakinį** — винительный падеж.\n**garsiai** — вслух, громко.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-010-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Gẽras patarìmas.",
+              "translation": "— Хороший совет.",
+              "note": "**geras** — хороший.\n**patarimas** — совет.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-011-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Bùlves jìs supjáustė ploniaũ negù šeštãdienį.",
+              "translation": "Картофель он нарезал тоньше, чем в субботу.",
+              "note": "**supjaustyti** — нарезать; **supjaustė** — 3-е лицо, прошедшее время.\n**plonai** — тонко; **ploniau** — сравнительная форма «тоньше».\n**negu** — чем.\n**šeštadienį** — в субботу, винительный падеж времени.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-012-i-000.mp3"
+            },
+            {
+              "text": "Tadà į̃mušė kiaušiniùs ir̃ užbė́rė sū́rio.",
+              "translation": "Затем разбил яйца и посыпал сыром.",
+              "note": "**įmušti** — разбить яйцо в посуду; **įmušė** — прошедшее время.\n**kiaušinius** — яйца, винительный падеж мн. числа.\n**užberti** — посыпать; **užbėrė** — прошедшее время.\n**sūrio** — сыра, родительный падеж количества.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-012-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Añt viršaũs sudė́jo pomidòrų gabaliukùs.",
+              "translation": "Сверху он разложил кусочки помидоров.",
+              "note": "**ant viršaus** — сверху.\n**sudėti** — сложить, разложить; **sudėjo** — прошедшее время.\n**pomidorų gabaliukai** — кусочки помидоров; **pomidorų gabaliukus** — винительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-013-i-000.mp3"
+            },
+            {
+              "text": "Fòrmą įdė́jo į̃ kárštą órkaitę.",
+              "translation": "Форму он поставил в горячую духовку.",
+              "note": "**forma** — форма для запекания; **formą** — винительный падеж.\n**įdėti** — положить, поставить внутрь; **įdėjo** — прошедшее время.\n**karštas** — горячий; **į karštą orkaitę** — винительный падеж направления.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-013-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Priminìmas põ dvìdešimties minùčių.",
+              "translation": "— Напоминание через двадцать минут.",
+              "note": "**po dvidešimties minučių** — через двадцать минут; родительный падеж после **po**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-014-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Kõl maĩstas kẽpė, Tòmas pàdengė stãlą.",
+              "translation": "Пока еда запекалась, Томас накрыл на стол.",
+              "note": "**kol** — пока.\n**kepti** — печься, жариться; **kepė** — 3-е лицо, прошедшее время.\n**padengti stalą** — накрыть на стол; **padengė** — прошедшее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-015-i-000.mp3"
+            },
+            {
+              "text": "Pastãtė dvì lėkštès ir̃ dvì stiklinès.",
+              "translation": "Он поставил две тарелки и два стакана.",
+              "note": "**pastatyti** — поставить; **pastatė** — прошедшее время.\n**dvi lėkštes** — две тарелки, винительный падеж мн. числа.\n**dvi stiklines** — два стакана, винительный падеж мн. числа.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-015-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Dúoną supjáustė, bèt jõs neùždengė.",
+              "translation": "Хлеб он нарезал, но не накрыл его.",
+              "note": "**supjaustyti** — нарезать; **supjaustė** — прошедшее время.\n**uždengti** — накрыть; **neuždengė** — отрицательная форма прошедшего времени.\n**jos** — его, родительный падеж при отрицании.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-016-i-000.mp3"
+            },
+            {
+              "text": "Põ kelių̃ minùčių prisìminė ir̃ ùždengė rañkšluosčiu.",
+              "translation": "Через несколько минут вспомнил и накрыл полотенцем.",
+              "note": "**po kelių minučių** — через несколько минут, родительный падеж после **po**.\n**prisiminti** — вспомнить; **prisiminė** — прошедшее время.\n**rankšluostis** — полотенце; **rankšluosčiu** — творительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-016-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Priminìmas suskam̃bo lýgiai šẽšios dvìdešimt.",
+              "translation": "Напоминание прозвучало ровно в шесть двадцать.",
+              "note": "**suskambėti** — прозвучать, зазвонить; **suskambo** — прошедшее время.\n**lygiai** — ровно, точно.\n**šešios dvidešimt** — шесть двадцать.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-017-i-000.mp3"
+            },
+            {
+              "text": "Tòmas šakùte patìkrino bùlvę viduryjè.",
+              "translation": "Томас вилкой проверил картофелину в середине.",
+              "note": "**šakutė** — вилка; **šakute** — творительный падеж.\n**patikrinti** — проверить; **patikrino** — прошедшее время.\n**bulvė** — картофелина; **bulvę** — винительный падеж.\n**vidurys** — середина; **viduryje** — местный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-017-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Kraštaĩ jaũ bùvo rudì, bèt vidurỹs dar̃ kíetas.",
+              "translation": "Края уже были румяными, но середина ещё твёрдой.",
+              "note": "**kraštas** — край; **kraštai** — множественное число.\n**rudas** — коричневый, румяный; **rudi** — множественное число.\n**vidurys** — середина.\n**kietas** — твёрдый.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-018-i-000.mp3"
+            },
+            {
+              "text": "Ikì septintõs lìko kẽturiasdešimt minùčių.",
+              "translation": "До семи оставалось сорок минут.",
+              "note": "**iki septintos** — до семи, родительный падеж после **iki**.\n**likti** — оставаться; **liko** — прошедшее время.\n**keturiasdešimt minučių** — сорок минут; родительный падеж мн. числа.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-018-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Anksčiaũ Tòmas bū́tų ieškójęs maĩsto pristãtymo.",
+              "translation": "Раньше Томас стал бы искать доставку еды.",
+              "note": "**anksčiau** — раньше.\n**būtų ieškojęs** — условная форма прошедшего времени, мужской род.\n**maisto pristatymas** — доставка еды; **maisto pristatymo** — родительный падеж после **ieškoti**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-019-i-000.mp3"
+            },
+            {
+              "text": "Dabar̃ jìs tìk pamaĩšė bùlves",
+              "translation": "Теперь он лишь перемешал картофель",
+              "note": "**dabar** — теперь.\n**pamaišyti** — перемешать; **pamaišė** — 3-е лицо, прошедшее время.\n**bulves** — картофель, винительный падеж мн. числа.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-019-i-001.mp3"
+            },
+            {
+              "text": "ir̃ nustãtė dar̃ dẽšimt minùčių.",
+              "translation": "и поставил ещё десять минут.",
+              "note": "**nustatyti** — установить, задать; **nustatė** — прошедшее время.\n**dar dešimt minučių** — ещё десять минут.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-019-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Primiñti, kaĩ laĩkas baĩgsis?",
+              "translation": "— Напомнить, когда время закончится?",
+              "note": "**priminti** — напомнить.\n**kai** — когда.\n**baigtis** — закончиться; **baigsis** — 3-е лицо, будущее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-020-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Taĩp. Daugiaũ niẽko nereĩkia.",
+              "translation": "— Да. Больше ничего не нужно.",
+              "note": "**daugiau** — больше.\n**nieko nereikia** — ничего не нужно; родительный падеж при отрицании.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-021-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Põ dẽšimties minùčių bùlvė bùvo minkštà.",
+              "translation": "Через десять минут картофелина была мягкой.",
+              "note": "**po dešimties minučių** — через десять минут, родительный падеж после **po**.\n**minkštas** — мягкий; **minkšta** — форма женского рода.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-022-i-000.mp3"
+            },
+            {
+              "text": "Víenas krãštas apskrùdo daugiaũ, bèt nesùdegė.",
+              "translation": "Один край подрумянился сильнее, но не сгорел.",
+              "note": "**apskrusti** — подрумяниться; **apskrudo** — прошедшее время.\n**daugiau** — больше, сильнее.\n**sudegti** — сгореть; **nesudegė** — отрицательная форма прошедшего времени.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-022-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas paragãvo mãžą gabaliùką.",
+              "translation": "Томас попробовал маленький кусочек.",
+              "note": "**paragauti** — попробовать на вкус; **paragavo** — прошедшее время.\n**mažas gabaliukas** — маленький кусочек; **mažą gabaliuką** — винительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-023-i-000.mp3"
+            },
+            {
+              "text": "Drùskos užtẽko.",
+              "translation": "Соли было достаточно.",
+              "note": "**druska** — соль; **druskos** — родительный падеж.\n**užtekti** — хватать, быть достаточным; **užteko** — прошедшее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-023-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Bè penkių̃ septýnios añt stãlo bùvo dvì pòrcijos.",
+              "translation": "Без пяти семь на столе были две порции.",
+              "note": "**be penkių septynios** — без пяти семь; родительный падеж после **be**.\n**ant stalo** — на столе, родительный падеж после **ant**.\n**dvi porcijos** — две порции.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-024-i-000.mp3"
+            },
+            {
+              "text": "Tòmas atsisė́do, bèt tuõj vė̃l atsistójo.",
+              "translation": "Томас сел, но тут же снова встал.",
+              "note": "**atsisėsti** — сесть; **atsisėdo** — прошедшее время.\n**tuoj** — тут же, сейчас.\n**atsistoti** — встать; **atsistojo** — прошедшее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-024-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Patìkrino dúoną, stiklinès ir̃ sàvo márškinius.",
+              "translation": "Он проверил хлеб, стаканы и свою рубашку.",
+              "note": "**patikrinti** — проверить; **patikrino** — прошедшее время.\n**stiklinė** — стакан; **stiklines** — винительный падеж мн. числа.\n**marškiniai** — рубашка; **marškinius** — винительный падеж мн. числа.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-025-i-000.mp3"
+            },
+            {
+              "text": "Tadà nusìjuokė pàts ìš savę̃s.",
+              "translation": "Потом он рассмеялся над самим собой.",
+              "note": "**nusijuokti** — рассмеяться; **nusijuokė** — прошедшее время.\n**pats iš savęs** — над самим собой; родительный падеж после **iš**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-025-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Vìskas jaũ pàruošta.",
+              "translation": "— Всё уже готово.",
+              "note": "**viskas** — всё.\n**paruošti** — подготовить; **paruošta** — краткая страдательная форма среднего рода «готово».",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-026-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Septiñtą suskam̃bo dùrų skambùtis.",
+              "translation": "В семь прозвучал дверной звонок.",
+              "note": "**septintą** — в семь, винительный падеж времени.\n**durų skambutis** — дверной звонок.\n**suskambėti** — зазвонить; **suskambo** — прошедшее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-027-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas atidãrė durìs.",
+              "translation": "Томас открыл дверь.",
+              "note": "**atidaryti** — открыть; **atidarė** — прошедшее время.\n**durys** — дверь; **duris** — винительный падеж мн. числа.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-028-i-000.mp3"
+            },
+            {
+              "text": "Ievà stovė́jo sù mažù žaliù dùbeniu.",
+              "translation": "Ева стояла с небольшой зелёной миской.",
+              "note": "**stovėti** — стоять; **stovėjo** — прошедшее время.\n**mažas žalias dubuo** — небольшая зелёная миска; **su mažu žaliu dubeniu** — творительный падеж после **su**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-028-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Atsìnešiau salõtų.",
+              "translation": "— Я принесла салат.",
+              "note": "**atsinešti** — принести с собой; **atsinešiau** — 1-е лицо, прошедшее время.\n**salotos** — салат; **salotų** — родительный падеж количества.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-029-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Puikù. Õ àš pagaminaũ dvì pòrcijas.",
+              "translation": "— Отлично. А я приготовил две порции.",
+              "note": "**puiku** — отлично.\n**pagaminti** — приготовить; **pagaminau** — 1-е лицо, прошедшее время.\n**dvi porcijas** — две порции, винительный падеж мн. числа.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-030-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Bè grietinė̃lės?",
+              "translation": "— Без сливок?",
+              "note": "**be + kilmininkas** — без чего-либо; **be grietinėlės** — без сливок.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-031-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Bè grietinė̃lės. Ir̃ bè užsãkymo.",
+              "translation": "— Без сливок. И без заказа.",
+              "note": "**grietinėlė** — сливки; **grietinėlės** — родительный падеж после **be**.\n**užsakymas** — заказ; **be užsakymo** — без заказа.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-032-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Ievà padė́jo dùbenį añt stãlo",
+              "translation": "Ева поставила миску на стол",
+              "note": "**padėti** — положить, поставить; **padėjo** — прошедшее время.\n**dubuo** — миска; **dubenį** — винительный падеж.\n**ant stalo** — на стол, родительный падеж после **ant**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-033-i-000.mp3"
+            },
+            {
+              "text": "ir̃ nusivil̃ko striùkę.",
+              "translation": "и сняла куртку.",
+              "note": "**nusivilkti** — снять одежду; **nusivilko** — 3-е лицо, прошедшее время.\n**striukė** — куртка; **striukę** — винительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-033-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Labaĩ geraĩ kvẽpia.",
+              "translation": "— Очень хорошо пахнет.",
+              "note": "**labai** — очень.\n**gerai** — хорошо.\n**kvepėti** — пахнуть; **kvepia** — 3-е лицо, настоящее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-034-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Ar̃ tė̃čio virtùvę jaũ sutvarkeĩ?",
+              "translation": "— Ты уже привела в порядок папину кухню?",
+              "note": "**tėčio virtuvė** — кухня папы; **tėčio virtuvę** — винительный падеж.\n**sutvarkyti** — привести в порядок; **sutvarkei** — 2-е лицо ед. числа, прошедшее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-035-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Bevéik. Vienà spintẽlė vìs dar̃ pilnà.",
+              "translation": "— Почти. Один шкафчик всё ещё полный.",
+              "note": "**beveik** — почти.\n**spintelė** — шкафчик.\n**vis dar** — всё ещё.\n**pilnas** — полный; **pilna** — форма женского рода.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-036-i-000.mp3"
+            },
+            {
+              "text": "Bèt šiañdien apiẽ ją̃ negalvósiu.",
+              "translation": "Но сегодня я о нём думать не буду.",
+              "note": "**galvoti apie + galininkas** — думать о чём-либо.\n**negalvosiu** — 1-е лицо, отрицательная форма будущего времени.\n**ją** — её, винительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-036-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Jiẽ įsidė́jo bùlvių ir̃ salõtų.",
+              "translation": "Они положили себе картофеля и салата.",
+              "note": "**įsidėti** — положить себе; **įsidėjo** — 3-е лицо мн. числа, прошедшее время.\n**bulvių ir salotų** — картофеля и салата, родительный падеж количества.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-037-i-000.mp3"
+            },
+            {
+              "text": "Víenas bùlvės krãštas bùvo labaĩ traškùs.",
+              "translation": "Один край картофелины был очень хрустящим.",
+              "note": "**bulvės kraštas** — край картофелины; **bulvės** — родительный падеж.\n**traškus** — хрустящий.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-037-i-001.mp3"
+            },
+            {
+              "text": "Vidurỹs bùvo mìnkštas.",
+              "translation": "Середина была мягкой.",
+              "note": "**vidurys** — середина.\n**minkštas** — мягкий.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-037-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Penkiomìs minùtėmis per̃ ilgaĩ?",
+              "translation": "— На пять минут слишком долго?",
+              "note": "**penkiomis minutėmis** — на пять минут, творительный падеж мн. числа.\n**per ilgai** — слишком долго.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-038-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Gál dviẽm. Bèt skanù.",
+              "translation": "— Может, на две. Но вкусно.",
+              "note": "**gal** — может быть.\n**dviem** — двумя, творительный падеж.\n**skanu** — вкусно.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-039-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tòmas nepasãkė, kàd vakariẽnė nepavỹko.",
+              "translation": "Томас не сказал, что ужин не удался.",
+              "note": "**pasakyti** — сказать; **nepasakė** — отрицательная форма прошедшего времени.\n**pavykti** — удаться; **nepavyko** — отрицательная безличная форма прошедшего времени.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-040-i-000.mp3"
+            },
+            {
+              "text": "Jìs tìk užrãšė mintysè: kìtą kar̃tą trumpiaũ.",
+              "translation": "Он лишь отметил в уме: в следующий раз короче.",
+              "note": "**užrašyti mintyse** — отметить, записать в уме; **užrašė** — прошедшее время.\n**kitą kartą** — в следующий раз.\n**trumpiau** — короче, сравнительная форма.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-040-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Válgydami jiẽ kalbė́jo apiẽ saváitę.",
+              "translation": "За едой они говорили о неделе.",
+              "note": "**valgyti** — есть; **valgydami** — деепричастная форма одновременного действия, мн. число.\n**kalbėti apie + galininkas** — говорить о чём-либо.\n**savaitė** — неделя; **savaitę** — винительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-041-i-000.mp3"
+            },
+            {
+              "text": "Tòmas papãsakojo apiẽ trum̃pą kãvą sù Antanù.",
+              "translation": "Томас рассказал о короткой встрече за кофе с Антанасом.",
+              "note": "**papasakoti** — рассказать; **papasakojo** — прошедшее время.\n**trumpa kava** — короткая встреча за кофе; **trumpą kavą** — винительный падеж.\n**su Antanu** — с Антанасом, творительный падеж после **su**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-041-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Sekmãdienį tikraĩ nebū́čiau galė́jusi ateĩti.",
+              "translation": "— В воскресенье я действительно не смогла бы прийти.",
+              "note": "**tikrai** — действительно, точно.\n**nebūčiau galėjusi** — условная форма прошедшего времени, женский род: «не смогла бы».\n**ateiti** — прийти.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-042-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Geraĩ, kàd nepérkėlėme vìsko į̃ sekmãdienį.",
+              "translation": "— Хорошо, что мы не перенесли всё на воскресенье.",
+              "note": "**perkelti** — перенести; **neperkėlėme** — 1-е лицо мн. числа, отрицательная форма прошедшего времени.\n**visko** — всего, родительный падеж при отрицании.\n**į sekmadienį** — на воскресенье, винительный падеж после **į**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-043-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Vienà trumpà kavà ir̃ vienà vakariẽnė",
+              "translation": "— Одна короткая встреча за кофе и один ужин",
+              "note": "**viena** — одна, форма женского рода.\n**trumpa kava** — короткая встреча за кофе.\n**vakarienė** — ужин.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-044-i-000.mp3"
+            },
+            {
+              "text": "geriaũ negù víenas neįmãnomas plãnas.",
+              "translation": "лучше, чем один невозможный план.",
+              "note": "**geriau negu** — лучше, чем.\n**neįmanomas** — невозможный.\n**planas** — план.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-044-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Ievà pakė́lė stiklìnę.",
+              "translation": "Ева подняла стакан.",
+              "note": "**pakelti** — поднять; **pakėlė** — прошедшее время.\n**stiklinė** — стакан; **stiklinę** — винительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-045-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Ùž įmãnomus planùs.",
+              "translation": "— За осуществимые планы.",
+              "note": "**už + galininkas** — за что-либо, тост; **už įmanomus planus** — за осуществимые планы.\n**įmanomas** — возможный, осуществимый.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-046-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Ir̃ ùž bùlves, kurióms prìreikė dẽšimties minùčių.",
+              "translation": "— И за картофель, которому понадобилось десять минут.",
+              "note": "**bulvė** — картофелина, картофель; **bulves** — винительный падеж мн. числа после **už**.\n**kuris** — который; **kurioms** — дательный падеж мн. числа женского рода.\n**prireikti** — понадобиться; **prireikė** — прошедшее время.\n**dešimties minučių** — десяти минут, родительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-047-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Põ vakariẽnės lė̃kštės bùvo tùščios.",
+              "translation": "После ужина тарелки были пустыми.",
+              "note": "**po vakarienės** — после ужина, родительный падеж после **po**.\n**lėkštė** — тарелка; **lėkštės** — множественное число.\n**tuščias** — пустой; **tuščios** — форма женского рода мн. числа.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-048-i-000.mp3"
+            },
+            {
+              "text": "Ievà nùnešė jàs priẽ kriáuklės.",
+              "translation": "Ева отнесла их к раковине.",
+              "note": "**nunešti** — отнести; **nunešė** — прошедшее время.\n**jas** — их, винительный падеж женского рода мн. числа.\n**kriauklė** — раковина; **prie kriauklės** — к раковине, родительный падеж после **prie**.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-048-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Kìtą kar̃tą àš gamìnsiu.",
+              "translation": "— В следующий раз готовить буду я.",
+              "note": "**kitą kartą** — в следующий раз.\n**gaminti** — готовить; **gaminsiu** — 1-е лицо, будущее время.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-049-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Tadà tù pasiriñksi laĩką.",
+              "translation": "— Тогда ты выберешь время.",
+              "note": "**tada** — тогда.\n**pasirinkti** — выбрать; **pasirinksi** — 2-е лицо, будущее время.\n**laikas** — время; **laiką** — винительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-050-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Susitar̃sime pãtys.",
+              "translation": "— Договоримся сами.",
+              "note": "**susitarti** — договориться; **susitarsime** — 1-е лицо мн. числа, будущее время.\n**patys** — сами, множественное число.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-051-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Añt stãlo lìko dvì tùščios viẽtos.",
+              "translation": "На столе остались два пустых места.",
+              "note": "**likti** — остаться; **liko** — прошедшее время.\n**dvi tuščios vietos** — два пустых места, форма женского рода.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-052-i-000.mp3"
+            },
+            {
+              "text": "Pìrmą vãkarą Tòmas nežinójo, kám reikė́jo dviejų̃ pòrcijų.",
+              "translation": "В первый вечер Томас не знал, для кого нужны были две порции.",
+              "note": "**pirmą vakarą** — в первый вечер, винительный падеж времени.\n**nežinoti** — не знать; **nežinojo** — прошедшее время.\n**kam** — кому, дательный падеж.\n**dviejų porcijų** — двух порций, родительный падеж.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-052-i-001.mp3"
+            },
+            {
+              "text": "Šį̃ kar̃tą jìs pàts pasiriñko, kám gamìnti.",
+              "translation": "В этот раз он сам выбрал, для кого готовить.",
+              "note": "**šį kartą** — в этот раз.\n**pasirinkti** — выбрать; **pasirinko** — 3-е лицо, прошедшее время.\n**kam** — кому, для кого, дательный падеж.\n**gaminti** — готовить.",
+              "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/p-052-i-002.mp3"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/jusu-iprastas-uzsakymas/chapter-12/chapter.mp3"
     }
   ]
 }
