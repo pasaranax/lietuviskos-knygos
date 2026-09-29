@@ -18,6 +18,15 @@
       "wordCount": 5930,
       "href": "reader.html?book=jusu-iprastas-uzsakymas",
       "readingLevel": "A2"
+    },
+    {
+      "id": "keliaujanti-biblioteka",
+      "title": "Iki paskutinio puslapio",
+      "author": "Mikhail Bulygin",
+      "cover": "assets/keliaujanti-biblioteka-cover.jpg",
+      "href": "reader.html?book=keliaujanti-biblioteka",
+      "wordCount": 469,
+      "readingLevel": "A2"
     }
   ]
 }

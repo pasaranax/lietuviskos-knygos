@@ -1,4 +1,8 @@
 {
+  "keliaujanti-biblioteka": {
+    "min": 400,
+    "max": 800
+  },
   "jusu-iprastas-uzsakymas": {
     "min": 400,
     "max": 800

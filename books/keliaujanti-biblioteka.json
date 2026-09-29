@@ -1,0 +1,725 @@
+{
+  "id": "keliaujanti-biblioteka",
+  "title": "Iki paskutinio puslapio",
+  "author": "Mikhail Bulygin",
+  "generatedBy": "Codex",
+  "readingLevel": "A2",
+  "language": "lt",
+  "translationLanguage": "ru",
+  "cover": "assets/keliaujanti-biblioteka-cover.jpg",
+  "wordCount": 469,
+  "chapters": [
+    {
+      "id": "chapter-1",
+      "title": "Paltas rytojui",
+      "label": "I",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Rytè Linà sustãbdė automobìlį priẽ akmenìnio nãmo.",
+              "translation": "Утром Лина остановила автомобиль у каменного дома.",
+              "note": "**rytas** — утро; **ryte** — местный падеж ед. числа, обозначает время: утром.\n**sustabdyti** — остановить, приостановить; **sustabdė** — 3-е лицо прошедшего времени.\n**automobilis** — автомобиль, машина; **automobilį** — винительный падеж ед. числа.\n**akmeninis** — каменный; **akmeninio** — родительный падеж ед. числа мужского рода.\n**namas** — дом, здание; **namo** — родительный падеж ед. числа после **prie**.\n**prie** — у, возле, около; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-000-i-000.mp3"
+            },
+            {
+              "text": "Añt kelių̃ gulė́jo El̃zės láiškas.",
+              "translation": "На коленях лежало письмо Эльзе.",
+              "note": "**kelis** — колено; **kelių** — родительный падеж мн. числа после **ant**.\n**gulėti** — лежать, находиться лёжа; **gulėjo** — 3-е лицо прошедшего времени.\n**laiškas** — письмо, послание; именительный падеж ед. числа.\n**Elzė** — Эльзе; **Elzės** — родительный падеж: письмо Эльзе.\n**ant** — на; при обозначении поверхности требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-000-i-001.mp3"
+            },
+            {
+              "text": "„Ateĩkite ankstì. Páltą reĩkia baĩgti ikì rytójaus.“",
+              "translation": "«Приходите рано. Пальто нужно закончить до завтра».",
+              "note": "**ateiti** — прийти, приходить; **ateikite** — повелительное наклонение, вежливое обращение на «вы».\n**anksti** — рано, заблаговременно; наречие времени.\n**paltas** — пальто; **paltą** — винительный падеж ед. числа.\n**reikėti** — требоваться, быть нужным; **reikia baigti** — безличная конструкция: нужно закончить.\n**baigti** — закончить, завершить; инфинитив после **reikia**.\n**rytojus** — завтрашний день, завтра; **rytojaus** — родительный падеж после **iki**.\n**iki** — до; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-000-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Jì atidãrė šónines durìs.",
+              "translation": "Она открыла боковые двери.",
+              "note": "**atidaryti** — открыть, отворить; **atidarė** — 3-е лицо прошедшего времени.\n**šoninis** — боковой; **šonines** — винительный падеж мн. числа женского рода.\n**durys** — дверь, двери; **duris** — винительный падеж, слово употребляется во множественном числе.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-000.mp3"
+            },
+            {
+              "text": "Ùž jų̃ bùvo dìdelis kambarỹs, pìlnas knỹgų.",
+              "translation": "За ними была большая комната, полная книг.",
+              "note": "**už** — за; место обозначается родительным падежом, **jų** — за ними.\n**būti** — быть, находиться; **buvo** — 3-е лицо прошедшего времени.\n**didelis** — большой, крупный; именительный падеж ед. числа мужского рода.\n**kambarys** — комната, помещение; именительный падеж ед. числа.\n**pilnas** — полный, наполненный; **pilnas knygų** — полный книг, дополнение в родительном падеже.\n**knyga** — книга; **knygų** — родительный падеж мн. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-001.mp3"
+            },
+            {
+              "text": "Lentýnos síekė lubàs.",
+              "translation": "Полки доходили до потолка.",
+              "note": "**lentyna** — полка, книжная полка; **lentynos** — именительный падеж мн. числа.\n**siekti** — достигать, доходить до; **siekė** — 3-е лицо прошедшего времени.\n**lubos** — потолок; **lubas** — винительный падеж, слово употребляется во множественном числе.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-002.mp3"
+            },
+            {
+              "text": "Toliaũ stovė́jo virtùvės stãlas,",
+              "translation": "Дальше стоял кухонный стол,",
+              "note": "**toliau** — дальше, далее; наречие, сравнительная форма от **toli** — далеко.\n**stovėti** — стоять, находиться; **stovėjo** — 3-е лицо прошедшего времени.\n**virtuvė** — кухня; **virtuvės** — родительный падеж ед. числа: стол кухни, кухонный стол.\n**stalas** — стол; именительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-003.mp3"
+            },
+            {
+              "text": "õ ùž užúolaidos bùvo Lìnos lóva.",
+              "translation": "а за занавеской была кровать Лины.",
+              "note": "**užuolaida** — занавеска, штора; **užuolaidos** — родительный падеж ед. числа после **už**.\n**už** — за; при обозначении места требует родительного падежа.\n**lova** — кровать, постель; именительный падеж ед. числа.\n**Lina** — Лина; **Linos** — родительный падеж: кровать Лины.\n**būti** — быть, находиться; **buvo** — 3-е лицо прошедшего времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-004.mp3"
+            },
+            {
+              "text": "Ìš laũko automobìlis atródė visái nedìdelis.",
+              "translation": "Снаружи автомобиль выглядел совсем небольшим.",
+              "note": "**laukas** — улица, пространство снаружи; **iš lauko** — снаружи, родительный падеж после **iš**.\n**automobilis** — автомобиль, машина; именительный падеж ед. числа.\n**atrodyti** — выглядеть, казаться; **atrodė** — 3-е лицо прошедшего времени.\n**visai** — совсем, совершенно; усиливает признак.\n**nedidelis** — небольшой, некрупный; отрицательная приставка **ne-** при прилагательном **didelis**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-005.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "El̃zė láukė namuosè priẽ aũkšto lángo.",
+              "translation": "Эльзе ждала дома у высокого окна.",
+              "note": "**laukti** — ждать, ожидать; **laukė** — 3-е лицо прошедшего времени.\n**namai** — дом, жилище; **namuose** — местный падеж мн. числа: дома.\n**aukštas** — высокий; **aukšto** — родительный падеж ед. числа мужского рода.\n**langas** — окно; **lango** — родительный падеж ед. числа после **prie**.\n**prie** — у, возле; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-000.mp3"
+            },
+            {
+              "text": "Añt stãlo gulė́jo tamsùs páltas.",
+              "translation": "На столе лежало тёмное пальто.",
+              "note": "**stalas** — стол; **stalo** — родительный падеж ед. числа после **ant**.\n**ant** — на; требует родительного падежа.\n**gulėti** — лежать; **gulėjo** — 3-е лицо прошедшего времени.\n**tamsus** — тёмный; именительный падеж ед. числа мужского рода.\n**paltas** — пальто; в литовском языке мужского рода.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-001.mp3"
+            },
+            {
+              "text": "Móteris pàėmė ãdatą. Jõs pir̃štai drebė́jo.",
+              "translation": "Женщина взяла иглу. Её пальцы дрожали.",
+              "note": "**moteris** — женщина; именительный падеж ед. числа.\n**paimti** — взять, поднять; **paėmė** — 3-е лицо прошедшего времени.\n**adata** — игла, иголка; **adatą** — винительный падеж ед. числа.\n**pirštas** — палец; **pirštai** — именительный падеж мн. числа.\n**drebėti** — дрожать, трястись; **drebėjo** — 3-е лицо прошедшего времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Rùdenį nukritaũ añt láiptų.",
+              "translation": "— Осенью я упала на лестнице.",
+              "note": "**ruduo** — осень; **rudenį** — винительный падеж ед. числа, обозначает время: осенью.\n**nukristi** — упасть, свалиться; **nukritau** — 1-е лицо ед. числа прошедшего времени.\n**laiptai** — лестница, ступени; **laiptų** — родительный падеж мн. числа после **ant**.\n**ant** — на; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-003-i-000.mp3"
+            },
+            {
+              "text": "Dabar̃ negaliù ilgaĩ siū́ti.",
+              "translation": "Теперь я не могу долго шить.",
+              "note": "**dabar** — сейчас, теперь; наречие времени.\n**galėti** — мочь, быть в состоянии; **negaliu** — 1-е лицо ед. числа настоящего времени с отрицанием.\n**ilgai** — долго, длительное время; наречие.\n**siūti** — шить, сшивать; инфинитив после **negaliu**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-003-i-001.mp3"
+            },
+            {
+              "text": "Õ rytój màno anū̃kas išvažiúoja.",
+              "translation": "А завтра мой внук уезжает.",
+              "note": "**rytoj** — завтра; наречие времени.\n**anūkas** — внук; именительный падеж ед. числа.\n**išvažiuoti** — уехать, выехать; **išvažiuoja** — 3-е лицо настоящего времени, здесь о запланированном будущем действии.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-003-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Ar̃ jám reĩkia naũjo pálto?",
+              "translation": "— Ему нужно новое пальто?",
+              "note": "**ar** — вопросительная частица; вводит общий вопрос.\n**jis** — он; **jam** — дательный падеж ед. числа: ему.\n**reikėti** — требоваться, быть нужным; **reikia** — безличная форма, нужная вещь стоит в родительном падеже.\n**naujas** — новый; **naujo** — родительный падеж ед. числа мужского рода.\n**paltas** — пальто; **palto** — родительный падеж ед. числа после **reikia**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-004-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Jìs jaũ tùri kìtą.",
+              "translation": "— У него уже есть другое.",
+              "note": "**turėti** — иметь; **turi** — 3-е лицо настоящего времени, буквально: он имеет.\n**jau** — уже; наречие.\n**kitas** — другой, иной; **kitą** — винительный падеж ед. числа, подразумевается другое пальто.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-005-i-000.mp3"
+            },
+            {
+              "text": "Bèt šìtą siùvo màno výras.",
+              "translation": "Но это сшил мой муж.",
+              "note": "**šitas** — этот; **šitą** — винительный падеж ед. числа мужского рода, относится к пальто.\n**siūti** — шить, сшивать; **siuvo** — 3-е лицо прошедшего времени.\n**vyras** — муж, мужчина; здесь муж, именительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-005-i-001.mp3"
+            },
+            {
+              "text": "Nóriu patì jį̃ paruõšti keliõnei.",
+              "translation": "Хочу сама подготовить его к поездке.",
+              "note": "**norėti** — хотеть, желать; **noriu** — 1-е лицо ед. числа настоящего времени.\n**pats** — сам; **pati** — именительный падеж ед. числа женского рода: сама.\n**jis** — он; **jį** — винительный падеж ед. числа: его, здесь пальто.\n**paruošti** — подготовить, приготовить; инфинитив после **noriu**.\n**kelionė** — поездка, путешествие; **kelionei** — дательный падеж ед. числа, обозначает назначение.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-005-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Linà grį̃žo į̃ bibliotèką ir̃ pàėmė knỹgą.",
+              "translation": "Лина вернулась в библиотеку и взяла книгу.",
+              "note": "**grįžti** — вернуться, возвращаться; **grįžo** — 3-е лицо прошедшего времени.\n**biblioteka** — библиотека; **biblioteką** — винительный падеж ед. числа после **į**.\n**į** — в; при направлении требует винительного падежа.\n**paimti** — взять, выбрать; **paėmė** — 3-е лицо прошедшего времени.\n**knyga** — книга; **knygą** — винительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-006-i-000.mp3"
+            },
+            {
+              "text": "Añt viršẽlio bùvo medìnė kėdė̃.",
+              "translation": "На обложке был деревянный стул.",
+              "note": "**viršelis** — обложка; **viršelio** — родительный падеж ед. числа после **ant**.\n**ant** — на; требует родительного падежа.\n**būti** — быть, находиться; **buvo** — 3-е лицо прошедшего времени.\n**medinis** — деревянный; **medinė** — именительный падеж ед. числа женского рода.\n**kėdė** — стул; в литовском языке женского рода.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-006-i-001.mp3"
+            },
+            {
+              "text": "Knygà vadìnosi „Kėdė̃ priẽ lángo“.",
+              "translation": "Книга называлась «Стул у окна».",
+              "note": "**knyga** — книга; именительный падеж ед. числа.\n**vadintis** — называться; **vadinosi** — 3-е лицо прошедшего времени, возвратный глагол.\n**kėdė** — стул; именительный падеж ед. числа.\n**langas** — окно; **lango** — родительный падеж ед. числа после **prie**.\n**prie** — у, возле; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-006-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Čià výras dãro kė̃dę sàvo dùkrai.",
+              "translation": "— Здесь мужчина делает стул для своей дочери.",
+              "note": "**čia** — здесь, тут; здесь о содержании книги.\n**vyras** — мужчина; именительный падеж ед. числа.\n**daryti** — делать, изготовлять; **daro** — 3-е лицо настоящего времени.\n**kėdė** — стул; **kėdę** — винительный падеж ед. числа.\n**dukra** — дочь; **dukrai** — дательный падеж ед. числа: дочери.\n**savo** — свой; относится к тому же мужчине, который делает стул.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-007-i-000.mp3"
+            },
+            {
+              "text": "Knygà gãli padė́ti jū́sų pir̃štams.",
+              "translation": "Книга может помочь вашим пальцам.",
+              "note": "**knyga** — книга; именительный падеж ед. числа.\n**galėti** — мочь; **gali** — 3-е лицо настоящего времени.\n**padėti** — помочь, помогать; инфинитив, получатель помощи стоит в дательном падеже.\n**pirštas** — палец; **pirštams** — дательный падеж мн. числа.\n**jūs** — вы; **jūsų** — ваш, ваши, родительный падеж.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-007-i-001.mp3"
+            },
+            {
+              "text": "Bèt tìk kelióms valandóms.",
+              "translation": "Но только на несколько часов.",
+              "note": "**tik** — только, лишь; ограничивает срок действия.\n**keli** — несколько; **kelioms** — дательный падеж мн. числа женского рода.\n**valanda** — час; **valandoms** — дательный падеж мн. числа: на несколько часов.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-007-i-002.mp3"
+            },
+            {
+              "text": "Ją̃ reĩkia pérskaityti ikì gãlo.",
+              "translation": "Её нужно прочитать до конца.",
+              "note": "**ji** — она; **ją** — винительный падеж ед. числа, здесь книгу.\n**reikėti** — быть нужным, требоваться; **reikia** — безличная форма: нужно.\n**perskaityti** — прочитать целиком; приставка **per-** обозначает завершённое чтение.\n**galas** — конец, окончание; **iki galo** — до конца, родительный падеж после **iki**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-007-i-003.mp3"
+            },
+            {
+              "text": "Paskuĩ knỹgą turė́site grąžìnti.",
+              "translation": "Потом книгу вы должны будете вернуть.",
+              "note": "**paskui** — потом, затем; наречие времени.\n**knyga** — книга; **knygą** — винительный падеж ед. числа.\n**turėti** — иметь; **turėsite grąžinti** — должны будете вернуть, 2-е лицо мн. числа будущего времени с инфинитивом.\n**grąžinti** — вернуть, возвратить; переходный глагол, здесь вернуть книгу.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-007-i-004.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Õ výras baĩgia kė̃dę?",
+              "translation": "— А мужчина заканчивает стул?",
+              "note": "**vyras** — мужчина; именительный падеж ед. числа.\n**baigti** — закончить, завершить; **baigia** — 3-е лицо настоящего времени.\n**kėdė** — стул; **kėdę** — винительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-008-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Pérskaitykite, tadà sužinósite.",
+              "translation": "— Прочитайте, тогда узнаете.",
+              "note": "**perskaityti** — прочитать целиком; **perskaitykite** — повелительное наклонение, 2-е лицо мн. числа, вежливое обращение.\n**tada** — тогда, после этого; наречие времени.\n**sužinoti** — узнать, получить сведения; **sužinosite** — 2-е лицо мн. числа будущего времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-009-i-000.mp3"
+            },
+            {
+              "text": "Õ dabar̃: kõ gãlite atsisakýti?",
+              "translation": "А сейчас: от чего вы можете отказаться?",
+              "note": "**dabar** — сейчас, теперь; наречие времени.\n**kas** — что; **ko** — родительный падеж после **atsisakyti**: от чего.\n**galėti** — мочь, быть в состоянии; **galite** — 2-е лицо мн. числа настоящего времени.\n**atsisakyti** — отказаться от, расстаться с; возвратный глагол, требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-009-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Màno siuvìmo mašìnos. Paim̃kite.",
+              "translation": "— От моей швейной машинки. Возьмите.",
+              "note": "**siuvimas** — шитьё; **siuvimo** — родительный падеж ед. числа, обозначает назначение машинки.\n**mašina** — машина, машинка; **mašinos** — родительный падеж ед. числа: ответ на вопрос, от чего можно отказаться.\n**paimti** — взять, забрать; **paimkite** — повелительное наклонение, вежливое обращение на «вы».",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-010-i-000.mp3"
+            },
+            {
+              "text": "Jì gerà. Daũg mẽtų jà dìrbau.",
+              "translation": "Она хорошая. Много лет я с ней работала.",
+              "note": "**geras** — хороший, добротный; **gera** — именительный падеж ед. числа женского рода.\n**metai** — год, годы; **metų** — родительный падеж мн. числа после **daug**.\n**daug** — много; при количестве требует родительного падежа.\n**ji** — она; **ja** — творительный падеж ед. числа: с ней, при помощи неё.\n**dirbti** — работать, трудиться; **dirbau** — 1-е лицо ед. числа прошедшего времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-010-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Õ kaĩp dìrbsite rytój?",
+              "translation": "— А как вы будете работать завтра?",
+              "note": "**kaip** — как, каким образом; вопросительное наречие.\n**dirbti** — работать; **dirbsite** — 2-е лицо мн. числа будущего времени.\n**rytoj** — завтра; наречие времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-011-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "El̃zė pažiūrė́jo į̃ mergìną priẽ stãlo.",
+              "translation": "Эльзе посмотрела на девушку у стола.",
+              "note": "**pažiūrėti** — посмотреть, взглянуть; **pažiūrėjo** — 3-е лицо прошедшего времени.\n**mergina** — девушка; **merginą** — винительный падеж ед. числа после **į**.\n**į** — в, на; здесь направление взгляда, требует винительного падежа.\n**stalas** — стол; **stalo** — родительный падеж ед. числа после **prie**.\n**prie** — у, возле; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-012-i-000.mp3"
+            },
+            {
+              "text": "Ãgnė čià dìrbo tìk mė́nesį.",
+              "translation": "Агне работала здесь только месяц.",
+              "note": "**Agnė** — Агне; имя девушки, именительный падеж.\n**dirbti** — работать; **dirbo** — 3-е лицо прошедшего времени.\n**čia** — здесь, тут; наречие места.\n**mėnuo** — месяц; **mėnesį** — винительный падеж ед. числа, обозначает длительность.\n**tik** — только, лишь; ограничивает срок.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-012-i-001.mp3"
+            },
+            {
+              "text": "Jì tỹliai dėliójo siū́lus.",
+              "translation": "Она тихо раскладывала нитки.",
+              "note": "**tyliai** — тихо, без шума; наречие от **tylus** — тихий.\n**dėlioti** — раскладывать, размещать по одному; **dėliojo** — 3-е лицо прошедшего времени.\n**siūlas** — нитка, нить; **siūlus** — винительный падеж мн. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-012-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Mašìnos reĩkia ir̃ jái,",
+              "translation": "— Машинка нужна и ей,",
+              "note": "**mašina** — машина, машинка; **mašinos** — родительный падеж ед. числа после **reikia**, здесь швейная машинка.\n**reikėti** — требоваться, быть нужным; **reikia** — безличная форма.\n**ji** — она; **jai** — дательный падеж ед. числа: ей, здесь Агне.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-013-i-000.mp3"
+            },
+            {
+              "text": "— pagaliaũ pasãkė El̃zė.",
+              "translation": "— наконец сказала Эльзе.",
+              "note": "**pagaliau** — наконец, в конце концов; наречие.\n**pasakyti** — сказать, произнести; **pasakė** — 3-е лицо прошедшего времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-013-i-001.mp3"
+            },
+            {
+              "text": "— Bèt turiù sàvo piešinių̃ knỹgą.",
+              "translation": "— Но у меня есть книга моих рисунков.",
+              "note": "**turėti** — иметь; **turiu** — 1-е лицо ед. числа настоящего времени.\n**savo** — свой, собственный; относится к говорящей Эльзе.\n**piešinys** — рисунок; **piešinių** — родительный падеж мн. числа.\n**knyga** — книга; **knygą** — винительный падеж ед. числа после **turiu**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-013-i-002.mp3"
+            },
+            {
+              "text": "Pagal̃ ją̃ gãlima siū́ti drabužiùs.",
+              "translation": "По ней можно шить одежду.",
+              "note": "**pagal** — по, согласно, на основе; требует винительного падежа, **ją** — её, здесь книгу рисунков.\n**galima** — можно, возможно; безличная форма с инфинитивом.\n**siūti** — шить, сшивать; инфинитив после **galima**.\n**drabužis** — предмет одежды; **drabužius** — винительный падеж мн. числа: одежду.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-013-i-003.mp3"
+            },
+            {
+              "text": "Ikì šiõl niẽkam jõs nèdaviau.",
+              "translation": "До сих пор я никому её не давала.",
+              "note": "**iki šiol** — до сих пор, до настоящего времени; устойчивое выражение.\n**niekas** — никто; **niekam** — дательный падеж: никому.\n**ji** — она; **jos** — родительный падеж ед. числа, здесь книга.\n**duoti** — дать, давать; **nedaviau** — 1-е лицо ед. числа прошедшего времени с отрицанием; прямое дополнение при отрицании в родительном падеже.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-013-i-004.mp3"
+            },
+            {
+              "text": "Galiù ją̃ atidúoti Ãgnei. Visám laĩkui.",
+              "translation": "Могу отдать её Агне. Навсегда.",
+              "note": "**galėti** — мочь; **galiu** — 1-е лицо ед. числа настоящего времени.\n**atiduoti** — отдать, передать; инфинитив после **galiu**.\n**Agnė** — Агне; **Agnei** — дательный падеж: Агне.\n**visam laikui** — навсегда; устойчивое сочетание, буквально «на всё время», дательный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-013-i-005.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Ãgnė pakė́lė gálvą. Linà paláukė.",
+              "translation": "Агне подняла голову. Лина подождала.",
+              "note": "**pakelti** — поднять, приподнять; **pakėlė** — 3-е лицо прошедшего времени.\n**galva** — голова; **galvą** — винительный падеж ед. числа.\n**palaukti** — подождать; **palaukė** — 3-е лицо прошедшего времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-014-i-000.mp3"
+            },
+            {
+              "text": "El̃zė padė́jo piešinių̃ knỹgą priẽ jõs siū́lų.",
+              "translation": "Эльзе положила книгу рисунков возле её ниток.",
+              "note": "**padėti** — положить, поместить; **padėjo** — 3-е лицо прошедшего времени, здесь размещение предмета.\n**piešinys** — рисунок; **piešinių** — родительный падеж мн. числа.\n**knyga** — книга; **knygą** — винительный падеж ед. числа.\n**siūlas** — нитка, нить; **siūlų** — родительный падеж мн. числа после **prie**.\n**prie** — возле, рядом с; требует родительного падежа.\n**ji** — она; **jos** — её, здесь нитки Агне.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-014-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Dabar̃ jì tàvo. Gãli pagal̃ ją̃ dìrbti.",
+              "translation": "— Теперь она твоя. Можешь по ней работать.",
+              "note": "**dabar** — теперь, сейчас; наречие времени.\n**tu** — ты; **tavo** — твой, твоя, родительный падеж.\n**galėti** — мочь; **gali** — здесь 2-е лицо ед. числа настоящего времени: ты можешь.\n**pagal** — по, согласно; **pagal ją** — по ней, винительный падеж.\n**dirbti** — работать; инфинитив после **gali**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-015-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Tadà El̃zė atsisė́do ir̃ pradė́jo skaitýti.",
+              "translation": "Тогда Эльзе села и начала читать.",
+              "note": "**tada** — тогда, после этого; наречие времени.\n**atsisėsti** — сесть, усесться; **atsisėdo** — 3-е лицо прошедшего времени, возвратный глагол.\n**pradėti** — начать, приступать; **pradėjo** — 3-е лицо прошедшего времени.\n**skaityti** — читать; инфинитив после **pradėjo**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-016-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Netrùkus atė̃jo výras, vardù Mãtas.",
+              "translation": "Вскоре пришёл мужчина по имени Матас.",
+              "note": "**netrukus** — вскоре, скоро; наречие времени.\n**ateiti** — прийти, приходить; **atėjo** — 3-е лицо прошедшего времени.\n**vyras** — мужчина; именительный падеж ед. числа.\n**vardas** — имя; **vardu** — творительный падеж ед. числа, сочетание «по имени».\n**Matas** — Матас; мужское имя, именительный падеж.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-017-i-000.mp3"
+            },
+            {
+              "text": "Jìs àtnešė mẽdžiagos páltui.",
+              "translation": "Он принёс ткани для пальто.",
+              "note": "**atnešti** — принести, доставить; **atnešė** — 3-е лицо прошедшего времени.\n**medžiaga** — ткань, материал; **medžiagos** — родительный падеж ед. числа, обозначает некоторое количество ткани.\n**paltas** — пальто; **paltui** — дательный падеж ед. числа, обозначает назначение.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-017-i-001.mp3"
+            },
+            {
+              "text": "Linà paprãšė jõ pagálbos.",
+              "translation": "Лина попросила его о помощи.",
+              "note": "**paprašyti** — попросить, обратиться с просьбой; **paprašė** — 3-е лицо прошедшего времени.\n**jis** — он; **jo** — родительный падеж: у него, после **paprašė**.\n**pagalba** — помощь, поддержка; **pagalbos** — родительный падеж ед. числа после **paprašė**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-017-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Gál gãlite atnèšti puodeliùs ìš bibliotèkos?",
+              "translation": "— Может, вы можете принести чашки из библиотеки?",
+              "note": "**gal** — может быть; здесь смягчает просьбу.\n**galėti** — мочь; **galite** — 2-е лицо мн. числа настоящего времени.\n**atnešti** — принести, доставить; инфинитив после **galite**.\n**puodelis** — чашка, кружка; **puodelius** — винительный падеж мн. числа, уменьшительное от **puodas** — горшок, кастрюля.\n**biblioteka** — библиотека; **bibliotekos** — родительный падеж ед. числа после **iš**.\n**iš** — из; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-018-i-000.mp3"
+            },
+            {
+              "text": "Jiẽ stóvi virtùvėje, añt stãlo.",
+              "translation": "Они стоят на кухне, на столе.",
+              "note": "**stovėti** — стоять, находиться; **stovi** — 3-е лицо настоящего времени.\n**virtuvė** — кухня; **virtuvėje** — местный падеж ед. числа.\n**stalas** — стол; **stalo** — родительный падеж ед. числа после **ant**.\n**ant** — на; требует родительного падежа.\n**jie** — они; мужской род мн. числа, здесь чашки.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-018-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Mãtas priẽ dùrų nuvãlė batùs.",
+              "translation": "Матас у двери вытер ботинки.",
+              "note": "**durys** — дверь, двери; **durų** — родительный падеж мн. числа после **prie**.\n**prie** — у, возле; требует родительного падежа.\n**nuvalyti** — вытереть, очистить; **nuvalė** — 3-е лицо прошедшего времени.\n**batas** — ботинок, туфля; **batus** — винительный падеж мн. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-019-i-000.mp3"
+            },
+            {
+              "text": "Vidujè jìs sustójo ir̃ apsidaĩrė.",
+              "translation": "Внутри он остановился и огляделся.",
+              "note": "**vidus** — внутренняя часть, внутреннее пространство; **viduje** — местный падеж ед. числа: внутри.\n**sustoti** — остановиться; **sustojo** — 3-е лицо прошедшего времени, сам прекратил движение.\n**apsidairyti** — оглядеться, осмотреться; **apsidairė** — 3-е лицо прошедшего времени, возвратный глагол.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-019-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Jū̃s čià ir̃ gyvẽnate?",
+              "translation": "— Вы здесь и живёте?",
+              "note": "**čia** — здесь, тут; наречие места.\n**ir** — и, также; здесь подчёркивает дополнительное действие: ещё и живёте.\n**gyventi** — жить, проживать; **gyvenate** — 2-е лицо мн. числа настоящего времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-020-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Taĩp. Tìk puodeliùs vìs tíek pláunu patì.",
+              "translation": "— Да. Только чашки всё равно мою сама.",
+              "note": "**puodelis** — чашка, кружка; **puodelius** — винительный падеж мн. числа.\n**vis tiek** — всё равно, несмотря на это; устойчивое выражение.\n**plauti** — мыть, промывать; **plaunu** — 1-е лицо ед. числа настоящего времени.\n**pats** — сам; **pati** — именительный падеж ед. числа женского рода: сама.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-021-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Mãtas nusìjuokė. Linà paródė jám virtùvę.",
+              "translation": "Матас рассмеялся. Лина показала ему кухню.",
+              "note": "**nusijuokti** — рассмеяться, коротко засмеяться; **nusijuokė** — 3-е лицо прошедшего времени, возвратный глагол.\n**parodyti** — показать, указать; **parodė** — 3-е лицо прошедшего времени.\n**jis** — он; **jam** — дательный падеж ед. числа: ему.\n**virtuvė** — кухня; **virtuvę** — винительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-022-i-000.mp3"
+            },
+            {
+              "text": "Jìs pàėmė puodeliùs ir̃ grį̃žo pàs El̃zę.",
+              "translation": "Он взял чашки и вернулся к Эльзе.",
+              "note": "**paimti** — взять, забрать; **paėmė** — 3-е лицо прошедшего времени.\n**puodelis** — чашка, кружка; **puodelius** — винительный падеж мн. числа.\n**grįžti** — вернуться, возвращаться; **grįžo** — 3-е лицо прошедшего времени.\n**pas** — к, у; здесь направление к человеку, требует винительного падежа.\n**Elzė** — Эльзе; **Elzę** — винительный падеж после **pas**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-022-i-001.mp3"
+            },
+            {
+              "text": "Vėliaũ jì nuė̃jo į̃ tur̃gų.",
+              "translation": "Позже она пошла на рынок.",
+              "note": "**vėliau** — позже, позднее; сравнительная форма наречия **vėlai** — поздно.\n**nueiti** — пойти, дойти пешком; **nuėjo** — 3-е лицо прошедшего времени.\n**turgus** — рынок, базар; **turgų** — винительный падеж ед. числа после **į**.\n**į** — в, на; при направлении требует винительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-022-i-002.mp3"
+            },
+            {
+              "text": "Nupir̃ko dúonos ir̃ juodų̃ siū́lų El̃zei.",
+              "translation": "Купила хлеба и чёрных ниток для Эльзе.",
+              "note": "**nupirkti** — купить, приобрести; **nupirko** — 3-е лицо прошедшего времени.\n**duona** — хлеб; **duonos** — родительный падеж ед. числа, некоторое количество хлеба.\n**juodas** — чёрный; **juodų** — родительный падеж мн. числа.\n**siūlas** — нитка, нить; **siūlų** — родительный падеж мн. числа, некоторое количество ниток.\n**Elzė** — Эльзе; **Elzei** — дательный падеж: для Эльзе.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-022-i-003.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "El̃zė skaĩtė bevéik penkiàs vãlandas.",
+              "translation": "Эльзе читала почти пять часов.",
+              "note": "**skaityti** — читать; **skaitė** — 3-е лицо прошедшего времени.\n**beveik** — почти; наречие.\n**penki** — пять; **penkias** — винительный падеж мн. числа женского рода.\n**valanda** — час; **valandas** — винительный падеж мн. числа, обозначает длительность.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-023-i-000.mp3"
+            },
+            {
+              "text": "Víeną pùslapį jì pérskaitė dù kartùs.",
+              "translation": "Одну страницу она прочитала два раза.",
+              "note": "**vienas** — один; **vieną** — винительный падеж ед. числа мужского рода.\n**puslapis** — страница; **puslapį** — винительный падеж ед. числа.\n**perskaityti** — прочитать; **perskaitė** — 3-е лицо прошедшего времени.\n**du** — два; винительный падеж мужского рода, согласуется с **kartus**.\n**kartas** — раз; **kartus** — винительный падеж мн. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-023-i-001.mp3"
+            },
+            {
+              "text": "Knỹgoje výras ieškójo viẽtos naũjai kė̃dei.",
+              "translation": "В книге мужчина искал место для нового стула.",
+              "note": "**knyga** — книга; **knygoje** — местный падеж ед. числа.\n**vyras** — мужчина; именительный падеж ед. числа.\n**ieškoti** — искать, разыскивать; **ieškojo** — 3-е лицо прошедшего времени, требует родительного падежа.\n**vieta** — место, пространство; **vietos** — родительный падеж ед. числа после **ieškojo**.\n**naujas** — новый; **naujai** — дательный падеж ед. числа женского рода.\n**kėdė** — стул; **kėdei** — дательный падеж ед. числа: для стула.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-023-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "„Padė́k ją̃ priẽ lángo, tė̃ti“,",
+              "translation": "«Поставь его у окна, папа»,",
+              "note": "**padėti** — положить, поставить; **padėk** — повелительное наклонение, 2-е лицо ед. числа.\n**ji** — она; **ją** — винительный падеж ед. числа, здесь стул, в литовском языке женского рода.\n**langas** — окно; **lango** — родительный падеж ед. числа после **prie**.\n**prie** — у, возле; требует родительного падежа.\n**tėtis** — папа; **tėti** — звательный падеж ед. числа, обращение.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-024-i-000.mp3"
+            },
+            {
+              "text": "— prãšė dukrà.",
+              "translation": "— просила дочь.",
+              "note": "**prašyti** — просить, обращаться с просьбой; **prašė** — 3-е лицо прошедшего времени.\n**dukra** — дочь; именительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-024-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Bèt teñ stovė́jo sunkùs dárbo stãlas.",
+              "translation": "Но там стоял тяжёлый рабочий стол.",
+              "note": "**ten** — там; наречие места.\n**stovėti** — стоять, находиться; **stovėjo** — 3-е лицо прошедшего времени.\n**sunkus** — тяжёлый, трудный; здесь о весе, именительный падеж ед. числа мужского рода.\n**darbas** — работа, труд; **darbo** — родительный падеж ед. числа: рабочий.\n**stalas** — стол; именительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-025-i-000.mp3"
+            },
+            {
+              "text": "Výras negalė́jo jõ pérkelti víenas.",
+              "translation": "Мужчина не мог переставить его один.",
+              "note": "**vyras** — мужчина; именительный падеж ед. числа.\n**galėti** — мочь; **negalėjo** — 3-е лицо прошедшего времени с отрицанием.\n**jis** — он; **jo** — родительный падеж ед. числа, отрицание меняет падеж прямого дополнения.\n**perkelti** — перенести, переставить; инфинитив после **negalėjo**.\n**vienas** — один, в одиночку; именительный падеж ед. числа мужского рода.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-025-i-001.mp3"
+            },
+            {
+              "text": "Dukrà pasìkvietė jáuną kaimýną.",
+              "translation": "Дочь позвала молодого соседа.",
+              "note": "**dukra** — дочь; именительный падеж ед. числа.\n**pasikviesti** — позвать к себе, пригласить; **pasikvietė** — 3-е лицо прошедшего времени, возвратный глагол.\n**jaunas** — молодой, юный; **jauną** — винительный падеж ед. числа мужского рода.\n**kaimynas** — сосед; **kaimyną** — винительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-025-i-002.mp3"
+            },
+            {
+              "text": "Jìs padė́jo, ir̃ priẽ lángo atsirãdo viẽtos.",
+              "translation": "Он помог, и возле окна появилось место.",
+              "note": "**padėti** — помочь, оказать помощь; **padėjo** — 3-е лицо прошедшего времени.\n**langas** — окно; **lango** — родительный падеж ед. числа после **prie**.\n**prie** — у, возле; требует родительного падежа.\n**atsirasti** — появиться, возникнуть; **atsirado** — 3-е лицо прошедшего времени, возвратный глагол.\n**vieta** — место, пространство; **vietos** — родительный падеж ед. числа, некоторое количество свободного места.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-025-i-003.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "El̃zė pérskaitė paskutìnį pùslapį ir̃ ùžvertė knỹgą.",
+              "translation": "Эльзе прочитала последнюю страницу и закрыла книгу.",
+              "note": "**perskaityti** — прочитать целиком; **perskaitė** — 3-е лицо прошедшего времени.\n**paskutinis** — последний, заключительный; **paskutinį** — винительный падеж ед. числа мужского рода.\n**puslapis** — страница; **puslapį** — винительный падеж ед. числа.\n**užversti** — закрыть книгу; **užvertė** — 3-е лицо прошедшего времени.\n**knyga** — книга; **knygą** — винительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-026-i-000.mp3"
+            },
+            {
+              "text": "Kurį̃ laĩką jì laĩkė knỹgą añt kelių̃.",
+              "translation": "Некоторое время она держала книгу на коленях.",
+              "note": "**kurį laiką** — некоторое время; устойчивое сочетание, винительный падеж времени.\n**laikyti** — держать, удерживать; **laikė** — 3-е лицо прошедшего времени.\n**knyga** — книга; **knygą** — винительный падеж ед. числа.\n**kelis** — колено; **kelių** — родительный падеж мн. числа после **ant**.\n**ant** — на; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-026-i-001.mp3"
+            },
+            {
+              "text": "Paskuĩ pàėmė ãdatą. Pir̃štai nebedrebė́jo.",
+              "translation": "Потом взяла иглу. Пальцы больше не дрожали.",
+              "note": "**paskui** — потом, затем; наречие времени.\n**paimti** — взять, поднять; **paėmė** — 3-е лицо прошедшего времени.\n**adata** — игла, иголка; **adatą** — винительный падеж ед. числа.\n**pirštas** — палец; **pirštai** — именительный падеж мн. числа.\n**drebėti** — дрожать, трястись; **nebedrebėjo** — 3-е лицо прошедшего времени, **nebe-** означает «больше не».",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-026-i-002.mp3"
+            },
+            {
+              "text": "Jì įvė́rė siū́lą į̃ ãdatą.",
+              "translation": "Она вдела нитку в иглу.",
+              "note": "**įverti** — вдеть, продеть; **įvėrė** — 3-е лицо прошедшего времени.\n**siūlas** — нитка, нить; **siūlą** — винительный падеж ед. числа.\n**adata** — игла, иголка; **adatą** — винительный падеж ед. числа после **į**.\n**į** — в; при направлении требует винительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-026-i-003.mp3"
+            },
+            {
+              "text": "Tadà pàlietė sẽną pálto kišẽnę.",
+              "translation": "Затем коснулась старого кармана пальто.",
+              "note": "**tada** — тогда, затем; наречие времени.\n**paliesti** — коснуться, потрогать; **palietė** — 3-е лицо прошедшего времени.\n**senas** — старый, прежний; **seną** — винительный падеж ед. числа женского рода.\n**paltas** — пальто; **palto** — родительный падеж ед. числа: карман пальто.\n**kišenė** — карман; **kišenę** — винительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-026-i-004.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Ãgne, palaikýk mẽdžiagą. Paródysiu, kaĩp siū́ti.",
+              "translation": "— Агне, подержи ткань. Покажу, как шить.",
+              "note": "**Agnė** — Агне; **Agne** — звательный падеж, обращение.\n**palaikyti** — подержать, поддержать; **palaikyk** — повелительное наклонение, 2-е лицо ед. числа.\n**medžiaga** — ткань, материал; **medžiagą** — винительный падеж ед. числа.\n**parodyti** — показать; **parodysiu** — 1-е лицо ед. числа будущего времени.\n**siūti** — шить, сшивать; инфинитив в сочетании **kaip siūti** — как шить.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-027-i-000.mp3"
+            },
+            {
+              "text": "Õ rytój patì galė́si taĩp dìrbti.",
+              "translation": "А завтра сама сможешь так работать.",
+              "note": "**rytoj** — завтра; наречие времени.\n**pats** — сам; **pati** — именительный падеж ед. числа женского рода: сама.\n**galėti** — мочь; **galėsi** — 2-е лицо ед. числа будущего времени.\n**taip** — так, таким образом; наречие.\n**dirbti** — работать; инфинитив после **galėsi**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-027-i-001.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Ãgnė laĩkė mẽdžiagą, õ El̃zė siùvo.",
+              "translation": "Агне держала ткань, а Эльзе шила.",
+              "note": "**laikyti** — держать, удерживать; **laikė** — 3-е лицо прошедшего времени.\n**medžiaga** — ткань, материал; **medžiagą** — винительный падеж ед. числа.\n**siūti** — шить, сшивать; **siuvo** — 3-е лицо прошедшего времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-028-i-000.mp3"
+            },
+            {
+              "text": "Kar̃tą El̃zė paprãšė atsiver̃sti piešinių̃ knỹgą.",
+              "translation": "Один раз Эльзе попросила открыть книгу рисунков.",
+              "note": "**kartas** — раз; **kartą** — винительный падеж ед. числа: один раз, однажды.\n**paprašyti** — попросить; **paprašė** — 3-е лицо прошедшего времени.\n**atsiversti** — открыть книгу, раскрыть на странице; инфинитив возвратного глагола после **paprašė**.\n**piešinys** — рисунок; **piešinių** — родительный падеж мн. числа.\n**knyga** — книга; **knygą** — винительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-028-i-001.mp3"
+            },
+            {
+              "text": "Ãgnė dabar̃ galė́jo ją̃ im̃ti bè leidìmo.",
+              "translation": "Агне теперь могла брать её без разрешения.",
+              "note": "**dabar** — теперь, сейчас; наречие времени.\n**galėti** — мочь; **galėjo** — 3-е лицо прошедшего времени.\n**imti** — брать, взять; инфинитив после **galėjo**.\n**leidimas** — разрешение, позволение; **leidimo** — родительный падеж ед. числа после **be**.\n**be** — без; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-028-i-002.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Põ dviejų̃ valandų̃ pir̃štai vė̃l pavar̃go.",
+              "translation": "Через два часа пальцы снова устали.",
+              "note": "**po** — после, через; при обозначении времени требует родительного падежа.\n**du** — два; **dviejų** — родительный падеж.\n**valanda** — час; **valandų** — родительный падеж мн. числа после **po**.\n**pirštas** — палец; **pirštai** — именительный падеж мн. числа.\n**vėl** — снова, опять; наречие.\n**pavargti** — устать, утомиться; **pavargo** — 3-е лицо прошедшего времени.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-029-i-000.mp3"
+            },
+            {
+              "text": "Bèt páltas jaũ bùvo baĩgtas.",
+              "translation": "Но пальто уже было закончено.",
+              "note": "**paltas** — пальто; именительный падеж ед. числа мужского рода.\n**jau** — уже; наречие.\n**būti** — быть; **buvo** — 3-е лицо прошедшего времени.\n**baigti** — закончить, завершить; **baigtas** — страдательное причастие прошедшего времени, мужской род ед. числа: законченный.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-029-i-001.mp3"
+            },
+            {
+              "text": "El̃zė grąžìno Lìnai knỹgą sù kėdè.",
+              "translation": "Эльзе вернула Лине книгу со стулом.",
+              "note": "**grąžinti** — вернуть, возвратить; **grąžino** — 3-е лицо прошедшего времени.\n**Lina** — Лина; **Linai** — дательный падеж: Лине.\n**knyga** — книга; **knygą** — винительный падеж ед. числа.\n**kėdė** — стул; **kėde** — творительный падеж ед. числа после **su**, здесь стул на обложке.\n**su** — с; требует творительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-029-i-002.mp3"
+            },
+            {
+              "text": "Ùž keliõnę jì sumokė́jo atskiraĩ.",
+              "translation": "За поездку она заплатила отдельно.",
+              "note": "**už** — за; при обозначении оплаты требует винительного падежа.\n**kelionė** — поездка, путешествие; **kelionę** — винительный падеж ед. числа.\n**sumokėti** — заплатить, оплатить; **sumokėjo** — 3-е лицо прошедшего времени.\n**atskirai** — отдельно, раздельно; наречие от **atskiras** — отдельный.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-029-i-003.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Bibliotèkoje Linà apžiūrė́jo viršẽlį ir̃ pùslapius.",
+              "translation": "В библиотеке Лина осмотрела обложку и страницы.",
+              "note": "**biblioteka** — библиотека; **bibliotekoje** — местный падеж ед. числа.\n**apžiūrėti** — осмотреть, проверить снаружи; **apžiūrėjo** — 3-е лицо прошедшего времени.\n**viršelis** — обложка; **viršelį** — винительный падеж ед. числа.\n**puslapis** — страница; **puslapius** — винительный падеж мн. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-030-i-000.mp3"
+            },
+            {
+              "text": "Padė́jo knỹgą į̃ jõs viẽtą lentýnoje.",
+              "translation": "Положила книгу на её место на полке.",
+              "note": "**padėti** — положить, поставить; **padėjo** — 3-е лицо прошедшего времени.\n**knyga** — книга; **knygą** — винительный падеж ед. числа.\n**vieta** — место; **vietą** — винительный падеж ед. числа после **į**.\n**į** — в, на; направление, требует винительного падежа.\n**lentyna** — полка, книжная полка; **lentynoje** — местный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-030-i-001.mp3"
+            },
+            {
+              "text": "Vakarè Mãtas grį̃žo ìš miẽsto.",
+              "translation": "Вечером Матас вернулся из города.",
+              "note": "**vakaras** — вечер; **vakare** — местный падеж ед. числа, обозначает время: вечером.\n**grįžti** — вернуться, возвращаться; **grįžo** — 3-е лицо прошедшего времени.\n**miestas** — город; **miesto** — родительный падеж ед. числа после **iš**.\n**iš** — из; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-030-i-002.mp3"
+            },
+            {
+              "text": "Priẽ dùrų jõs láukė Mãtas.",
+              "translation": "У двери её ждал Матас.",
+              "note": "**durys** — дверь, двери; **durų** — родительный падеж мн. числа после **prie**.\n**prie** — у, возле; требует родительного падежа.\n**ji** — она; **jos** — родительный падеж ед. числа после **laukti**: её.\n**laukti** — ждать, ожидать; **laukė** — 3-е лицо прошедшего времени, требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-030-i-003.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Ar̃ jū́sų knỹgos pàdeda ràsti kẽlią?",
+              "translation": "— Ваши книги помогают найти дорогу?",
+              "note": "**ar** — вопросительная частица; вводит общий вопрос.\n**jūs** — вы; **jūsų** — ваши, родительный падеж.\n**knyga** — книга; **knygos** — именительный падеж мн. числа.\n**padėti** — помочь, помогать; **padeda** — 3-е лицо настоящего времени.\n**rasti** — найти, обнаружить; инфинитив после **padeda**.\n**kelias** — дорога, путь; **kelią** — винительный падеж ед. числа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-031-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "items": [
+            {
+              "text": "Linà paródė jám kė̃dę priẽ virtùvės stãlo.",
+              "translation": "Лина показала ему стул у кухонного стола.",
+              "note": "**parodyti** — показать, указать; **parodė** — 3-е лицо прошедшего времени.\n**jis** — он; **jam** — дательный падеж ед. числа: ему.\n**kėdė** — стул; **kėdę** — винительный падеж ед. числа.\n**virtuvė** — кухня; **virtuvės** — родительный падеж ед. числа: кухонный.\n**stalas** — стол; **stalo** — родительный падеж ед. числа после **prie**.\n**prie** — у, возле; требует родительного падежа.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-032-i-000.mp3"
+            }
+          ]
+        },
+        {
+          "type": "dialogue",
+          "items": [
+            {
+              "text": "— Papãsakokite, kur̃ nórite nuvažiúoti.",
+              "translation": "— Расскажите, куда хотите поехать.",
+              "note": "**papasakoti** — рассказать, поведать; **papasakokite** — повелительное наклонение, вежливое обращение на «вы».\n**kur** — где, куда; здесь вопрос о направлении.\n**norėti** — хотеть; **norite** — 2-е лицо мн. числа настоящего времени.\n**nuvažiuoti** — поехать, доехать на транспорте; инфинитив после **norite**.",
+              "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-033-i-000.mp3"
+            }
+          ]
+        }
+      ],
+      "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/chapter.mp3"
+    }
+  ]
+}
