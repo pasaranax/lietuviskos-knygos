@@ -1,8 +1,125 @@
 {
   "provider": "Azure Speech",
   "sourceSha256": "6c11b447ae2669669377a36d9a02aa9418f44467ad6a5d26e5c3d09b72f4b009",
-  "timingVersion": 2,
-  "voiceSwitchGapSeconds": 0.0625,
+  "timingVersion": 3,
+  "alignmentMethod": "single-voice-word-boundaries",
+  "voiceRuns": [
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 0,
+      "frameCount": 1281024,
+      "sourceSha256": "282b81a4621ed60f93a439c0fa5eb26eed758d8ed40828d53155864c4c861823"
+    },
+    {
+      "voice": "lt-LT-OnaNeural",
+      "startFrame": 1281024,
+      "frameCount": 662976,
+      "sourceSha256": "f8ac0a198daa4372468a33f090fac23aacb94d05fb2b0d063ad63b28b076edb9"
+    },
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 1944000,
+      "frameCount": 226944,
+      "sourceSha256": "df8147e95c204b1bf6b813e54b73cba95f4d822df5cf020d2b4ec8db2b88a1ed"
+    },
+    {
+      "voice": "lt-LT-OnaNeural",
+      "startFrame": 2170944,
+      "frameCount": 239040,
+      "sourceSha256": "c6663f88da496060c28d07d7ca939db98c5ab9b449247897cddb28a75543ee6d"
+    },
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 2409984,
+      "frameCount": 462528,
+      "sourceSha256": "3542d06a1130983b18740756cac43ac8dd0552e04617ea3ac403b9895d23102b"
+    },
+    {
+      "voice": "lt-LT-OnaNeural",
+      "startFrame": 2872512,
+      "frameCount": 792000,
+      "sourceSha256": "5ef52d5da4bbead0d77df9e645bbeeecb5371a3daed54f83b74f42b384367b7b"
+    },
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 3664512,
+      "frameCount": 93888,
+      "sourceSha256": "380ad3135b4dd6660fc02bec894954cd4ac81d0907329384e2b580a94975f6f7"
+    },
+    {
+      "voice": "lt-LT-OnaNeural",
+      "startFrame": 3758400,
+      "frameCount": 365184,
+      "sourceSha256": "e824c3529ed053ba74728fecbd4567012c81e285f291068eb524b5d2edadfcc6"
+    },
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 4123584,
+      "frameCount": 123264,
+      "sourceSha256": "d725aa855fee17e51ad7661e5301940172c205519af3fae191ab16507a77d879"
+    },
+    {
+      "voice": "lt-LT-OnaNeural",
+      "startFrame": 4246848,
+      "frameCount": 395136,
+      "sourceSha256": "e852b130b74d9ea864e807e385439f42d67d8c6453bf45a85eebaa5f6db80946"
+    },
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 4641984,
+      "frameCount": 309888,
+      "sourceSha256": "201c190aaa2e6912d8ba20c8a348daad0d4dda05885cb58d2d87c7cdd03f6295"
+    },
+    {
+      "voice": "lt-LT-OnaNeural",
+      "startFrame": 4951872,
+      "frameCount": 176256,
+      "sourceSha256": "3af76fef57f9b8dde73a40cc6cef91bf9d862aee6f28c778413f22c5a7ce6a65"
+    },
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 5128128,
+      "frameCount": 615744,
+      "sourceSha256": "74cb62e702b17c618c80469380cf3d5f11b90cb43062226145e124e27a8a10c9"
+    },
+    {
+      "voice": "lt-LT-OnaNeural",
+      "startFrame": 5743872,
+      "frameCount": 171072,
+      "sourceSha256": "f29c3d1179a3f4c4d51174af5182bf93ebed686cf83d750e51eeae4f30b6681f"
+    },
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 5914944,
+      "frameCount": 210816,
+      "sourceSha256": "01b3f868f09360613b071da9bb0669dd6912881f0b02c397fe6c79fec4b4a911"
+    },
+    {
+      "voice": "lt-LT-OnaNeural",
+      "startFrame": 6125760,
+      "frameCount": 119808,
+      "sourceSha256": "027299ec0c2421e2a5046a071faacd6f1c7f0963e843a7474c3e17134bbf6ef9"
+    },
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 6245568,
+      "frameCount": 296064,
+      "sourceSha256": "7de39276cb1eb6151e0945aa04454181918185dc5f6ff86c848cb8f15dec6530"
+    },
+    {
+      "voice": "lt-LT-OnaNeural",
+      "startFrame": 6541632,
+      "frameCount": 46656,
+      "sourceSha256": "850085065546e023c7c766efc6e321c56e4a2424a88a82a1f3499677c6948cf3"
+    },
+    {
+      "voice": "lt-LT-LeonasNeural",
+      "startFrame": 6588288,
+      "frameCount": 243648,
+      "sourceSha256": "7bbb5f7aebc24a5095d0b5f32ae289fc55fe33658589cd4c7e66c2a299e60d64"
+    }
+  ],
+  "frameCount": 6831936,
   "sampleRate": 24000,
   "duration": 284.664,
   "phrases": [
@@ -12,8 +129,12 @@
       "item": 0,
       "text": "Ryte Lina sustabdė automobilį prie akmeninio namo.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 0,
-      "end": 4.0625,
+      "startFrame": 0,
+      "speechStartFrame": 4200,
+      "speechEndFrame": 74100,
+      "endFrame": 87900,
+      "start": 0.0,
+      "end": 3.6625,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-000-i-000.mp3"
     },
     {
@@ -22,8 +143,12 @@
       "item": 1,
       "text": "Ant kelių gulėjo Elzės laiškas.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 4.0625,
-      "end": 7.1375,
+      "startFrame": 87900,
+      "speechStartFrame": 101700,
+      "speechEndFrame": 151200,
+      "endFrame": 163500,
+      "start": 3.6625,
+      "end": 6.8125,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-000-i-001.mp3"
     },
     {
@@ -32,8 +157,12 @@
       "item": 2,
       "text": "„Ateikite anksti. Paltą reikia baigti iki rytojaus.“",
       "voice": "lt-LT-LeonasNeural",
-      "start": 7.1375,
-      "end": 12.3625,
+      "startFrame": 163500,
+      "speechStartFrame": 175800,
+      "speechEndFrame": 276600,
+      "endFrame": 289050,
+      "start": 6.8125,
+      "end": 12.04375,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-000-i-002.mp3"
     },
     {
@@ -42,8 +171,12 @@
       "item": 0,
       "text": "Ji atidarė šonines duris.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 12.3625,
-      "end": 15.1875,
+      "startFrame": 289050,
+      "speechStartFrame": 301500,
+      "speechEndFrame": 343800,
+      "endFrame": 356100,
+      "start": 12.04375,
+      "end": 14.8375,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-000.mp3"
     },
     {
@@ -52,8 +185,12 @@
       "item": 1,
       "text": "Už jų buvo didelis kambarys, pilnas knygų.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 15.1875,
-      "end": 18.7625,
+      "startFrame": 356100,
+      "speechStartFrame": 368400,
+      "speechEndFrame": 429900,
+      "endFrame": 442200,
+      "start": 14.8375,
+      "end": 18.425,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-001.mp3"
     },
     {
@@ -62,8 +199,12 @@
       "item": 2,
       "text": "Lentynos siekė lubas.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 18.7625,
-      "end": 21.225,
+      "startFrame": 442200,
+      "speechStartFrame": 454500,
+      "speechEndFrame": 489000,
+      "endFrame": 502050,
+      "start": 18.425,
+      "end": 20.91875,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-002.mp3"
     },
     {
@@ -72,8 +213,12 @@
       "item": 3,
       "text": "Toliau stovėjo virtuvės stalas,",
       "voice": "lt-LT-LeonasNeural",
-      "start": 21.225,
-      "end": 23.1625,
+      "startFrame": 502050,
+      "speechStartFrame": 515100,
+      "speechEndFrame": 555900,
+      "endFrame": 557250,
+      "start": 20.91875,
+      "end": 23.21875,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-003.mp3"
     },
     {
@@ -82,8 +227,12 @@
       "item": 4,
       "text": "o už užuolaidos buvo Linos lova.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 23.1625,
-      "end": 26.3375,
+      "startFrame": 557250,
+      "speechStartFrame": 558600,
+      "speechEndFrame": 610500,
+      "endFrame": 623550,
+      "start": 23.21875,
+      "end": 25.98125,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-004.mp3"
     },
     {
@@ -92,8 +241,12 @@
       "item": 5,
       "text": "Iš lauko automobilis atrodė visai nedidelis.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 26.3375,
-      "end": 30.075,
+      "startFrame": 623550,
+      "speechStartFrame": 636600,
+      "speechEndFrame": 700800,
+      "endFrame": 714000,
+      "start": 25.98125,
+      "end": 29.75,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-001-i-005.mp3"
     },
     {
@@ -102,8 +255,12 @@
       "item": 0,
       "text": "Elzė laukė namuose prie aukšto lango.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 30.075,
-      "end": 33.5375,
+      "startFrame": 714000,
+      "speechStartFrame": 727200,
+      "speechEndFrame": 782400,
+      "endFrame": 795900,
+      "start": 29.75,
+      "end": 33.1625,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-000.mp3"
     },
     {
@@ -112,8 +269,12 @@
       "item": 1,
       "text": "Ant stalo gulėjo tamsus paltas.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 33.5375,
-      "end": 36.6,
+      "startFrame": 795900,
+      "speechStartFrame": 809400,
+      "speechEndFrame": 858300,
+      "endFrame": 870450,
+      "start": 33.1625,
+      "end": 36.26875,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-001.mp3"
     },
     {
@@ -122,8 +283,12 @@
       "item": 2,
       "text": "Moteris paėmė adatą. Jos pirštai drebėjo.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 36.6,
-      "end": 41.5375,
+      "startFrame": 870450,
+      "speechStartFrame": 882600,
+      "speechEndFrame": 974700,
+      "endFrame": 988500,
+      "start": 36.26875,
+      "end": 41.1875,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-002.mp3"
     },
     {
@@ -132,8 +297,12 @@
       "item": 3,
       "text": "Ji bandė įverti siūlą.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 41.5375,
-      "end": 44.2375,
+      "startFrame": 988500,
+      "speechStartFrame": 1002300,
+      "speechEndFrame": 1040700,
+      "endFrame": 1053900,
+      "start": 41.1875,
+      "end": 43.9125,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-003.mp3"
     },
     {
@@ -142,8 +311,12 @@
       "item": 4,
       "text": "Adata nukrito ant grindų.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 44.2375,
-      "end": 46.9125,
+      "startFrame": 1053900,
+      "speechStartFrame": 1067100,
+      "speechEndFrame": 1102800,
+      "endFrame": 1116300,
+      "start": 43.9125,
+      "end": 46.5125,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-004.mp3"
     },
     {
@@ -152,8 +325,12 @@
       "item": 5,
       "text": "Lina ją pakėlė ir grąžino Elzei.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 46.9125,
-      "end": 50.2,
+      "startFrame": 1116300,
+      "speechStartFrame": 1129800,
+      "speechEndFrame": 1182600,
+      "endFrame": 1196100,
+      "start": 46.5125,
+      "end": 49.8375,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-005.mp3"
     },
     {
@@ -162,8 +339,12 @@
       "item": 6,
       "text": "Elzė paslėpė ranką po stalu.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 50.2,
-      "end": 53.3875,
+      "startFrame": 1196100,
+      "speechStartFrame": 1209600,
+      "speechEndFrame": 1258500,
+      "endFrame": 1281024,
+      "start": 49.8375,
+      "end": 53.376,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-002-i-006.mp3"
     },
     {
@@ -172,8 +353,12 @@
       "item": 0,
       "text": "— Rudenį nukritau ant laiptų.",
       "voice": "lt-LT-OnaNeural",
-      "start": 53.3875,
-      "end": 56.2625,
+      "startFrame": 1281024,
+      "speechStartFrame": 1283724,
+      "speechEndFrame": 1326324,
+      "endFrame": 1339374,
+      "start": 53.376,
+      "end": 55.80725,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-003-i-000.mp3"
     },
     {
@@ -182,8 +367,12 @@
       "item": 1,
       "text": "Dabar negaliu ilgai siūti.",
       "voice": "lt-LT-OnaNeural",
-      "start": 56.2625,
-      "end": 59.1625,
+      "startFrame": 1339374,
+      "speechStartFrame": 1352424,
+      "speechEndFrame": 1394724,
+      "endFrame": 1408524,
+      "start": 55.80725,
+      "end": 58.6885,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-003-i-001.mp3"
     },
     {
@@ -192,8 +381,12 @@
       "item": 2,
       "text": "O rytoj mano anūkas išvažiuoja.",
       "voice": "lt-LT-OnaNeural",
-      "start": 59.1625,
-      "end": 62.575,
+      "startFrame": 1408524,
+      "speechStartFrame": 1422324,
+      "speechEndFrame": 1478124,
+      "endFrame": 1491174,
+      "start": 58.6885,
+      "end": 62.13225,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-003-i-002.mp3"
     },
     {
@@ -202,8 +395,12 @@
       "item": 0,
       "text": "— Ar jam reikia naujo palto?",
       "voice": "lt-LT-OnaNeural",
-      "start": 62.575,
-      "end": 65.4125,
+      "startFrame": 1491174,
+      "speechStartFrame": 1504224,
+      "speechEndFrame": 1544724,
+      "endFrame": 1558824,
+      "start": 62.13225,
+      "end": 64.951,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-004-i-000.mp3"
     },
     {
@@ -212,8 +409,12 @@
       "item": 0,
       "text": "— Jis jau turi kitą.",
       "voice": "lt-LT-OnaNeural",
-      "start": 65.4125,
-      "end": 67.875,
+      "startFrame": 1558824,
+      "speechStartFrame": 1572924,
+      "speechEndFrame": 1604124,
+      "endFrame": 1617624,
+      "start": 64.951,
+      "end": 67.401,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-005-i-000.mp3"
     },
     {
@@ -222,8 +423,12 @@
       "item": 1,
       "text": "Bet šitą siuvo mano vyras.",
       "voice": "lt-LT-OnaNeural",
-      "start": 67.875,
-      "end": 70.7125,
+      "startFrame": 1617624,
+      "speechStartFrame": 1631124,
+      "speechEndFrame": 1673424,
+      "endFrame": 1686324,
+      "start": 67.401,
+      "end": 70.2635,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-005-i-001.mp3"
     },
     {
@@ -232,8 +437,12 @@
       "item": 2,
       "text": "Noriu pati jį paruošti kelionei.",
       "voice": "lt-LT-OnaNeural",
-      "start": 70.7125,
-      "end": 73.8875,
+      "startFrame": 1686324,
+      "speechStartFrame": 1699224,
+      "speechEndFrame": 1750224,
+      "endFrame": 1762824,
+      "start": 70.2635,
+      "end": 73.451,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-005-i-002.mp3"
     },
     {
@@ -242,8 +451,12 @@
       "item": 3,
       "text": "Vyras mirė prieš dvejus metus.",
       "voice": "lt-LT-OnaNeural",
-      "start": 73.8875,
-      "end": 77.05,
+      "startFrame": 1762824,
+      "speechStartFrame": 1775424,
+      "speechEndFrame": 1824624,
+      "endFrame": 1838424,
+      "start": 73.451,
+      "end": 76.601,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-005-i-003.mp3"
     },
     {
@@ -252,8 +465,12 @@
       "item": 4,
       "text": "Jis visada turėjo ką nors saldaus kišenėje.",
       "voice": "lt-LT-OnaNeural",
-      "start": 77.05,
-      "end": 81.025,
+      "startFrame": 1838424,
+      "speechStartFrame": 1852224,
+      "speechEndFrame": 1919424,
+      "endFrame": 1944000,
+      "start": 76.601,
+      "end": 81.0,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-005-i-004.mp3"
     },
     {
@@ -262,8 +479,12 @@
       "item": 0,
       "text": "Prie kito stalo sėdėjo jauna mergina.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 81.025,
-      "end": 84.4125,
+      "startFrame": 1944000,
+      "speechStartFrame": 1948800,
+      "speechEndFrame": 2002500,
+      "endFrame": 2015850,
+      "start": 81.0,
+      "end": 83.99375,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-006-i-000.mp3"
     },
     {
@@ -272,8 +493,12 @@
       "item": 1,
       "text": "Agnė čia dirbo tik mėnesį.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 84.4125,
-      "end": 87.3375,
+      "startFrame": 2015850,
+      "speechStartFrame": 2029200,
+      "speechEndFrame": 2070600,
+      "endFrame": 2085300,
+      "start": 83.99375,
+      "end": 86.8875,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-006-i-001.mp3"
     },
     {
@@ -282,8 +507,12 @@
       "item": 2,
       "text": "Ji padėjo siūlus ir priėjo arčiau.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 87.3375,
-      "end": 90.4875,
+      "startFrame": 2085300,
+      "speechStartFrame": 2100000,
+      "speechEndFrame": 2149200,
+      "endFrame": 2170944,
+      "start": 86.8875,
+      "end": 90.456,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-006-i-002.mp3"
     },
     {
@@ -292,8 +521,12 @@
       "item": 0,
       "text": "— Aš galiu baigti paltą šiandien.",
       "voice": "lt-LT-OnaNeural",
-      "start": 90.4875,
-      "end": 93.3875,
+      "startFrame": 2170944,
+      "speechStartFrame": 2173344,
+      "speechEndFrame": 2217744,
+      "endFrame": 2230344,
+      "start": 90.456,
+      "end": 92.931,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-007-i-000.mp3"
     },
     {
@@ -302,8 +535,12 @@
       "item": 1,
       "text": "Jūs tik parodykite, ką daryti.",
       "voice": "lt-LT-OnaNeural",
-      "start": 93.3875,
-      "end": 96.4375,
+      "startFrame": 2230344,
+      "speechStartFrame": 2242944,
+      "speechEndFrame": 2290344,
+      "endFrame": 2303094,
+      "start": 92.931,
+      "end": 95.96225,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-007-i-001.mp3"
     },
     {
@@ -312,8 +549,12 @@
       "item": 0,
       "text": "— Žinau. Bet noriu pati.",
       "voice": "lt-LT-OnaNeural",
-      "start": 96.4375,
-      "end": 100.45,
+      "startFrame": 2303094,
+      "speechStartFrame": 2315844,
+      "speechEndFrame": 2384844,
+      "endFrame": 2409984,
+      "start": 95.96225,
+      "end": 100.416,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-008-i-000.mp3"
     },
     {
@@ -322,8 +563,12 @@
       "item": 0,
       "text": "Elzė palietė seną palto kišenę.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 100.45,
-      "end": 103.9,
+      "startFrame": 2409984,
+      "speechStartFrame": 2414484,
+      "speechEndFrame": 2468184,
+      "endFrame": 2482884,
+      "start": 100.416,
+      "end": 103.4535,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-009-i-000.mp3"
     },
     {
@@ -332,8 +577,12 @@
       "item": 1,
       "text": "Agnė grįžo prie savo stalo.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 103.9,
-      "end": 106.825,
+      "startFrame": 2482884,
+      "speechStartFrame": 2497584,
+      "speechEndFrame": 2539584,
+      "endFrame": 2553234,
+      "start": 103.4535,
+      "end": 106.38475,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-009-i-001.mp3"
     },
     {
@@ -342,8 +591,12 @@
       "item": 2,
       "text": "Lina atsisėdo šalia Elzės.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 106.825,
-      "end": 109.875,
+      "startFrame": 2553234,
+      "speechStartFrame": 2566884,
+      "speechEndFrame": 2615484,
+      "endFrame": 2627934,
+      "start": 106.38475,
+      "end": 109.49725,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-009-i-002.mp3"
     },
     {
@@ -352,8 +605,12 @@
       "item": 0,
       "text": "Lina grįžo į biblioteką ir paėmė knygą.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 109.875,
-      "end": 113.3625,
+      "startFrame": 2627934,
+      "speechStartFrame": 2640384,
+      "speechEndFrame": 2698584,
+      "endFrame": 2711484,
+      "start": 109.49725,
+      "end": 112.9785,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-010-i-000.mp3"
     },
     {
@@ -362,8 +619,12 @@
       "item": 1,
       "text": "Ant viršelio buvo medinė kėdė.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 113.3625,
-      "end": 116.4875,
+      "startFrame": 2711484,
+      "speechStartFrame": 2724384,
+      "speechEndFrame": 2769084,
+      "endFrame": 2784834,
+      "start": 112.9785,
+      "end": 116.03475,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-010-i-001.mp3"
     },
     {
@@ -372,8 +633,12 @@
       "item": 2,
       "text": "Knyga vadinosi „Kėdė prie lango“.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 116.4875,
-      "end": 119.725,
+      "startFrame": 2784834,
+      "speechStartFrame": 2800584,
+      "speechEndFrame": 2848884,
+      "endFrame": 2872512,
+      "start": 116.03475,
+      "end": 119.688,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-010-i-002.mp3"
     },
     {
@@ -382,8 +647,12 @@
       "item": 0,
       "text": "— Čia vyras daro kėdę savo dukrai.",
       "voice": "lt-LT-OnaNeural",
-      "start": 119.725,
-      "end": 122.8,
+      "startFrame": 2872512,
+      "speechStartFrame": 2874912,
+      "speechEndFrame": 2923512,
+      "endFrame": 2936412,
+      "start": 119.688,
+      "end": 122.3505,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-011-i-000.mp3"
     },
     {
@@ -392,8 +661,12 @@
       "item": 1,
       "text": "Knyga gali padėti jūsų pirštams.",
       "voice": "lt-LT-OnaNeural",
-      "start": 122.8,
-      "end": 126.1,
+      "startFrame": 2936412,
+      "speechStartFrame": 2949312,
+      "speechEndFrame": 3002112,
+      "endFrame": 3015012,
+      "start": 122.3505,
+      "end": 125.6255,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-011-i-001.mp3"
     },
     {
@@ -402,8 +675,12 @@
       "item": 2,
       "text": "Bet tik kelioms valandoms.",
       "voice": "lt-LT-OnaNeural",
-      "start": 126.1,
-      "end": 128.8875,
+      "startFrame": 3015012,
+      "speechStartFrame": 3027912,
+      "speechEndFrame": 3068712,
+      "endFrame": 3082362,
+      "start": 125.6255,
+      "end": 128.43175,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-011-i-002.mp3"
     },
     {
@@ -412,8 +689,12 @@
       "item": 3,
       "text": "Ją reikia perskaityti iki galo.",
       "voice": "lt-LT-OnaNeural",
-      "start": 128.8875,
-      "end": 132.1875,
+      "startFrame": 3082362,
+      "speechStartFrame": 3096012,
+      "speechEndFrame": 3147912,
+      "endFrame": 3160962,
+      "start": 128.43175,
+      "end": 131.70675,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-011-i-003.mp3"
     },
     {
@@ -422,8 +703,12 @@
       "item": 4,
       "text": "Paskui knygą turėsite grąžinti.",
       "voice": "lt-LT-OnaNeural",
-      "start": 132.1875,
-      "end": 135.275,
+      "startFrame": 3160962,
+      "speechStartFrame": 3174012,
+      "speechEndFrame": 3222912,
+      "endFrame": 3235962,
+      "start": 131.70675,
+      "end": 134.83175,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-011-i-004.mp3"
     },
     {
@@ -432,8 +717,12 @@
       "item": 0,
       "text": "— O vyras baigia kėdę?",
       "voice": "lt-LT-OnaNeural",
-      "start": 135.275,
-      "end": 138.0,
+      "startFrame": 3235962,
+      "speechStartFrame": 3249012,
+      "speechEndFrame": 3287712,
+      "endFrame": 3300612,
+      "start": 134.83175,
+      "end": 137.5255,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-012-i-000.mp3"
     },
     {
@@ -442,8 +731,12 @@
       "item": 0,
       "text": "— Perskaitykite, tada sužinosite.",
       "voice": "lt-LT-OnaNeural",
-      "start": 138.0,
-      "end": 141.3,
+      "startFrame": 3300612,
+      "speechStartFrame": 3313512,
+      "speechEndFrame": 3366612,
+      "endFrame": 3379962,
+      "start": 137.5255,
+      "end": 140.83175,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-013-i-000.mp3"
     },
     {
@@ -452,8 +745,12 @@
       "item": 0,
       "text": "— O kiek laiko skaitysiu?",
       "voice": "lt-LT-OnaNeural",
-      "start": 141.3,
-      "end": 144.0625,
+      "startFrame": 3379962,
+      "speechStartFrame": 3393312,
+      "speechEndFrame": 3432912,
+      "endFrame": 3445962,
+      "start": 140.83175,
+      "end": 143.58175,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-014-i-000.mp3"
     },
     {
@@ -462,8 +759,12 @@
       "item": 1,
       "text": "Anūkas ateis ryte pasiimti palto.",
       "voice": "lt-LT-OnaNeural",
-      "start": 144.0625,
-      "end": 147.35,
+      "startFrame": 3445962,
+      "speechStartFrame": 3459012,
+      "speechEndFrame": 3511812,
+      "endFrame": 3525012,
+      "start": 143.58175,
+      "end": 146.8755,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-014-i-001.mp3"
     },
     {
@@ -472,8 +773,12 @@
       "item": 0,
       "text": "— Iki vakaro galite baigti.",
       "voice": "lt-LT-OnaNeural",
-      "start": 147.35,
-      "end": 150.1125,
+      "startFrame": 3525012,
+      "speechStartFrame": 3538212,
+      "speechEndFrame": 3579012,
+      "endFrame": 3591612,
+      "start": 146.8755,
+      "end": 149.6505,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-015-i-000.mp3"
     },
     {
@@ -482,8 +787,12 @@
       "item": 1,
       "text": "Aš šiandien liksiu mieste.",
       "voice": "lt-LT-OnaNeural",
-      "start": 150.1125,
-      "end": 152.7375,
+      "startFrame": 3591612,
+      "speechStartFrame": 3604212,
+      "speechEndFrame": 3639312,
+      "endFrame": 3664512,
+      "start": 149.6505,
+      "end": 152.688,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-015-i-001.mp3"
     },
     {
@@ -492,8 +801,12 @@
       "item": 0,
       "text": "Ji padėjo knygą ant stalo,",
       "voice": "lt-LT-LeonasNeural",
-      "start": 152.7375,
-      "end": 154.4625,
+      "startFrame": 3664512,
+      "speechStartFrame": 3669012,
+      "speechEndFrame": 3705912,
+      "endFrame": 3707262,
+      "start": 152.688,
+      "end": 154.46925,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-016-i-000.mp3"
     },
     {
@@ -502,8 +815,12 @@
       "item": 1,
       "text": "bet dar nepaleido.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 154.4625,
-      "end": 156.65,
+      "startFrame": 3707262,
+      "speechStartFrame": 3708612,
+      "speechEndFrame": 3734412,
+      "endFrame": 3758400,
+      "start": 154.46925,
+      "end": 156.6,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-016-i-001.mp3"
     },
     {
@@ -512,8 +829,12 @@
       "item": 0,
       "text": "— O dabar: ko galite atsisakyti?",
       "voice": "lt-LT-OnaNeural",
-      "start": 156.65,
-      "end": 159.9375,
+      "startFrame": 3758400,
+      "speechStartFrame": 3761700,
+      "speechEndFrame": 3813900,
+      "endFrame": 3826800,
+      "start": 156.6,
+      "end": 159.45,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-017-i-000.mp3"
     },
     {
@@ -522,8 +843,12 @@
       "item": 0,
       "text": "— Mano siuvimo mašinos. Paimkite.",
       "voice": "lt-LT-OnaNeural",
-      "start": 159.9375,
-      "end": 164.3,
+      "startFrame": 3826800,
+      "speechStartFrame": 3839700,
+      "speechEndFrame": 3916800,
+      "endFrame": 3931050,
+      "start": 159.45,
+      "end": 163.79375,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-018-i-000.mp3"
     },
     {
@@ -532,8 +857,12 @@
       "item": 1,
       "text": "Ji gera. Daug metų ja dirbau.",
       "voice": "lt-LT-OnaNeural",
-      "start": 164.3,
-      "end": 168.975,
+      "startFrame": 3931050,
+      "speechStartFrame": 3945300,
+      "speechEndFrame": 4030500,
+      "endFrame": 4045200,
+      "start": 163.79375,
+      "end": 168.55,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-018-i-001.mp3"
     },
     {
@@ -542,8 +871,12 @@
       "item": 0,
       "text": "— O kaip dirbsite rytoj?",
       "voice": "lt-LT-OnaNeural",
-      "start": 168.975,
-      "end": 171.875,
+      "startFrame": 4045200,
+      "speechStartFrame": 4059900,
+      "speechEndFrame": 4098900,
+      "endFrame": 4123584,
+      "start": 168.55,
+      "end": 171.816,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-019-i-000.mp3"
     },
     {
@@ -552,8 +885,12 @@
       "item": 0,
       "text": "Elzė pažiūrėjo į Agnę. Lina palaukė.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 171.875,
-      "end": 177.025,
+      "startFrame": 4123584,
+      "speechStartFrame": 4129584,
+      "speechEndFrame": 4222584,
+      "endFrame": 4246848,
+      "start": 171.816,
+      "end": 176.952,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-020-i-000.mp3"
     },
     {
@@ -562,8 +899,12 @@
       "item": 0,
       "text": "— Mašinos reikia ir jai.",
       "voice": "lt-LT-OnaNeural",
-      "start": 177.025,
-      "end": 179.7125,
+      "startFrame": 4246848,
+      "speechStartFrame": 4249248,
+      "speechEndFrame": 4288548,
+      "endFrame": 4301148,
+      "start": 176.952,
+      "end": 179.2145,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-021-i-000.mp3"
     },
     {
@@ -572,8 +913,12 @@
       "item": 1,
       "text": "Bet turiu savo piešinių knygą.",
       "voice": "lt-LT-OnaNeural",
-      "start": 179.7125,
-      "end": 182.525,
+      "startFrame": 4301148,
+      "speechStartFrame": 4313748,
+      "speechEndFrame": 4356348,
+      "endFrame": 4368798,
+      "start": 179.2145,
+      "end": 182.03325,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-021-i-001.mp3"
     },
     {
@@ -582,8 +927,12 @@
       "item": 2,
       "text": "Pagal ją galima siūti drabužius.",
       "voice": "lt-LT-OnaNeural",
-      "start": 182.525,
-      "end": 185.5125,
+      "startFrame": 4368798,
+      "speechStartFrame": 4381248,
+      "speechEndFrame": 4428048,
+      "endFrame": 4440648,
+      "start": 182.03325,
+      "end": 185.027,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-021-i-002.mp3"
     },
     {
@@ -592,8 +941,12 @@
       "item": 3,
       "text": "Iki šiol niekam jos nedaviau.",
       "voice": "lt-LT-OnaNeural",
-      "start": 185.5125,
-      "end": 188.5625,
+      "startFrame": 4440648,
+      "speechStartFrame": 4453248,
+      "speechEndFrame": 4500648,
+      "endFrame": 4513398,
+      "start": 185.027,
+      "end": 188.05825,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-021-i-003.mp3"
     },
     {
@@ -602,8 +955,12 @@
       "item": 4,
       "text": "Galiu ją atiduoti Agnei. Visam laikui.",
       "voice": "lt-LT-OnaNeural",
-      "start": 188.5625,
-      "end": 193.5,
+      "startFrame": 4513398,
+      "speechStartFrame": 4526148,
+      "speechEndFrame": 4616748,
+      "endFrame": 4641984,
+      "start": 188.05825,
+      "end": 193.416,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-021-i-004.mp3"
     },
     {
@@ -612,8 +969,12 @@
       "item": 0,
       "text": "Elzė atidarė stalčių ir išėmė storą knygą.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 193.5,
-      "end": 197.55,
+      "startFrame": 4641984,
+      "speechStartFrame": 4647384,
+      "speechEndFrame": 4718184,
+      "endFrame": 4731084,
+      "start": 193.416,
+      "end": 197.1285,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-022-i-000.mp3"
     },
     {
@@ -622,8 +983,12 @@
       "item": 1,
       "text": "Pirštai dar drebėjo.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 197.55,
-      "end": 199.95,
+      "startFrame": 4731084,
+      "speechStartFrame": 4743984,
+      "speechEndFrame": 4773684,
+      "endFrame": 4787334,
+      "start": 197.1285,
+      "end": 199.47225,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-022-i-001.mp3"
     },
     {
@@ -632,8 +997,12 @@
       "item": 2,
       "text": "Ji palaikė knygą prie savęs.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 199.95,
-      "end": 202.7875,
+      "startFrame": 4787334,
+      "speechStartFrame": 4800984,
+      "speechEndFrame": 4844484,
+      "endFrame": 4857084,
+      "start": 199.47225,
+      "end": 202.3785,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-022-i-002.mp3"
     },
     {
@@ -642,8 +1011,12 @@
       "item": 3,
       "text": "Agnė laukė prie stalo ir nieko nesakė.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 202.7875,
-      "end": 206.425,
+      "startFrame": 4857084,
+      "speechStartFrame": 4869684,
+      "speechEndFrame": 4927284,
+      "endFrame": 4951872,
+      "start": 202.3785,
+      "end": 206.328,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-022-i-003.mp3"
     },
     {
@@ -652,8 +1025,12 @@
       "item": 0,
       "text": "— Dabar ji tavo. Gali pagal ją dirbti.",
       "voice": "lt-LT-OnaNeural",
-      "start": 206.425,
-      "end": 211.25,
+      "startFrame": 4951872,
+      "speechStartFrame": 4954272,
+      "speechEndFrame": 5044872,
+      "endFrame": 5057772,
+      "start": 206.328,
+      "end": 210.7405,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-023-i-000.mp3"
     },
     {
@@ -662,8 +1039,12 @@
       "item": 0,
       "text": "— Ir ką nors pakeisti?",
       "voice": "lt-LT-OnaNeural",
-      "start": 211.25,
-      "end": 213.7625,
+      "startFrame": 5057772,
+      "speechStartFrame": 5070672,
+      "speechEndFrame": 5104272,
+      "endFrame": 5128128,
+      "start": 210.7405,
+      "end": 213.672,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-024-i-000.mp3"
     },
     {
@@ -672,8 +1053,12 @@
       "item": 0,
       "text": "Elzė vėl pažiūrėjo į knygą.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 213.7625,
-      "end": 216.8125,
+      "startFrame": 5128128,
+      "speechStartFrame": 5133828,
+      "speechEndFrame": 5180028,
+      "endFrame": 5193528,
+      "start": 213.672,
+      "end": 216.397,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-025-i-000.mp3"
     },
     {
@@ -682,8 +1067,12 @@
       "item": 1,
       "text": "Tada linktelėjo ir padėjo ją",
       "voice": "lt-LT-LeonasNeural",
-      "start": 216.8125,
-      "end": 218.55,
+      "startFrame": 5193528,
+      "speechStartFrame": 5207028,
+      "speechEndFrame": 5243028,
+      "endFrame": 5243328,
+      "start": 216.397,
+      "end": 218.472,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-025-i-001.mp3"
     },
     {
@@ -692,8 +1081,12 @@
       "item": 2,
       "text": "prie Agnės siūlų.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 218.55,
-      "end": 220.5375,
+      "startFrame": 5243328,
+      "speechStartFrame": 5243628,
+      "speechEndFrame": 5268828,
+      "endFrame": 5282328,
+      "start": 218.472,
+      "end": 220.097,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-025-i-002.mp3"
     },
     {
@@ -702,8 +1095,12 @@
       "item": 3,
       "text": "Tik tada Lina paleido savo knygą.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 220.5375,
-      "end": 223.6,
+      "startFrame": 5282328,
+      "speechStartFrame": 5295828,
+      "speechEndFrame": 5342628,
+      "endFrame": 5355678,
+      "start": 220.097,
+      "end": 223.15325,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-025-i-003.mp3"
     },
     {
@@ -712,8 +1109,12 @@
       "item": 0,
       "text": "Elzė atsisėdo prie lango",
       "voice": "lt-LT-LeonasNeural",
-      "start": 223.6,
-      "end": 225.3625,
+      "startFrame": 5355678,
+      "speechStartFrame": 5368728,
+      "speechEndFrame": 5406528,
+      "endFrame": 5406678,
+      "start": 223.15325,
+      "end": 225.27825,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-026-i-000.mp3"
     },
     {
@@ -722,8 +1123,12 @@
       "item": 1,
       "text": "ir atsivertė pirmą puslapį.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 225.3625,
-      "end": 227.95,
+      "startFrame": 5406678,
+      "speechStartFrame": 5406828,
+      "speechEndFrame": 5446428,
+      "endFrame": 5459778,
+      "start": 225.27825,
+      "end": 227.49075,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-026-i-001.mp3"
     },
     {
@@ -732,8 +1137,12 @@
       "item": 2,
       "text": "Adata liko ant stalo.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 227.95,
-      "end": 230.45,
+      "startFrame": 5459778,
+      "speechStartFrame": 5473128,
+      "speechEndFrame": 5506428,
+      "endFrame": 5519928,
+      "start": 227.49075,
+      "end": 229.997,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-026-i-002.mp3"
     },
     {
@@ -742,8 +1151,12 @@
       "item": 0,
       "text": "Netrukus atėjo vyras, vardu Matas.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 230.45,
-      "end": 233.8,
+      "startFrame": 5519928,
+      "speechStartFrame": 5533428,
+      "speechEndFrame": 5588628,
+      "endFrame": 5600928,
+      "start": 229.997,
+      "end": 233.372,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-027-i-000.mp3"
     },
     {
@@ -752,8 +1165,12 @@
       "item": 1,
       "text": "Jis atnešė medžiagos paltui.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 233.8,
-      "end": 236.6125,
+      "startFrame": 5600928,
+      "speechStartFrame": 5613228,
+      "speechEndFrame": 5654328,
+      "endFrame": 5667378,
+      "start": 233.372,
+      "end": 236.14075,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-027-i-001.mp3"
     },
     {
@@ -762,8 +1179,12 @@
       "item": 2,
       "text": "Lina paprašė jo pagalbos.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 236.6125,
-      "end": 239.4125,
+      "startFrame": 5667378,
+      "speechStartFrame": 5680428,
+      "speechEndFrame": 5721828,
+      "endFrame": 5743872,
+      "start": 236.14075,
+      "end": 239.328,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-027-i-002.mp3"
     },
     {
@@ -772,8 +1193,12 @@
       "item": 0,
       "text": "— Gal galite atnešti puodelius iš bibliotekos?",
       "voice": "lt-LT-OnaNeural",
-      "start": 239.4125,
-      "end": 243.3125,
+      "startFrame": 5743872,
+      "speechStartFrame": 5746872,
+      "speechEndFrame": 5814072,
+      "endFrame": 5826972,
+      "start": 239.328,
+      "end": 242.7905,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-028-i-000.mp3"
     },
     {
@@ -782,8 +1207,12 @@
       "item": 1,
       "text": "Jie stovi virtuvėje, ant stalo.",
       "voice": "lt-LT-OnaNeural",
-      "start": 243.3125,
-      "end": 246.55,
+      "startFrame": 5826972,
+      "speechStartFrame": 5839872,
+      "speechEndFrame": 5890272,
+      "endFrame": 5914944,
+      "start": 242.7905,
+      "end": 246.456,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-028-i-001.mp3"
     },
     {
@@ -792,8 +1221,12 @@
       "item": 0,
       "text": "Matas prie durų nuvalė batus.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 246.55,
-      "end": 249.5625,
+      "startFrame": 5914944,
+      "speechStartFrame": 5920044,
+      "speechEndFrame": 5967144,
+      "endFrame": 5979444,
+      "start": 246.456,
+      "end": 249.1435,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-029-i-000.mp3"
     },
     {
@@ -802,8 +1235,12 @@
       "item": 1,
       "text": "Viduje jis sustojo ir apsidairė.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 249.5625,
-      "end": 252.675,
+      "startFrame": 5979444,
+      "speechStartFrame": 5991744,
+      "speechEndFrame": 6038544,
+      "endFrame": 6052944,
+      "start": 249.1435,
+      "end": 252.206,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-029-i-001.mp3"
     },
     {
@@ -812,8 +1249,12 @@
       "item": 0,
       "text": "— Jūs čia ir gyvenate?",
       "voice": "lt-LT-LeonasNeural",
-      "start": 252.675,
-      "end": 255.325,
+      "startFrame": 6052944,
+      "speechStartFrame": 6067344,
+      "speechEndFrame": 6100644,
+      "endFrame": 6125760,
+      "start": 252.206,
+      "end": 255.24,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-030-i-000.mp3"
     },
     {
@@ -822,8 +1263,12 @@
       "item": 0,
       "text": "— Taip. Tik puodelius vis tiek plaunu pati.",
       "voice": "lt-LT-OnaNeural",
-      "start": 255.325,
-      "end": 260.325,
+      "startFrame": 6125760,
+      "speechStartFrame": 6130860,
+      "speechEndFrame": 6220860,
+      "endFrame": 6245568,
+      "start": 255.24,
+      "end": 260.232,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-031-i-000.mp3"
     },
     {
@@ -832,8 +1277,12 @@
       "item": 0,
       "text": "Matas nusijuokė. Lina parodė jam virtuvę.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 260.325,
-      "end": 265.225,
+      "startFrame": 6245568,
+      "speechStartFrame": 6250068,
+      "speechEndFrame": 6339768,
+      "endFrame": 6353418,
+      "start": 260.232,
+      "end": 264.72575,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-032-i-000.mp3"
     },
     {
@@ -842,8 +1291,12 @@
       "item": 1,
       "text": "Jis paėmė du puodelius, paskui dar vieną.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 265.225,
-      "end": 268.7375,
+      "startFrame": 6353418,
+      "speechStartFrame": 6367068,
+      "speechEndFrame": 6424668,
+      "endFrame": 6438168,
+      "start": 264.72575,
+      "end": 268.257,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-032-i-001.mp3"
     },
     {
@@ -852,8 +1305,12 @@
       "item": 0,
       "text": "— Agnei irgi? — paklausė.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 268.7375,
-      "end": 272.6625,
+      "startFrame": 6438168,
+      "speechStartFrame": 6451668,
+      "speechEndFrame": 6515268,
+      "endFrame": 6541632,
+      "start": 268.257,
+      "end": 272.568,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-033-i-000.mp3"
     },
     {
@@ -862,8 +1319,12 @@
       "item": 0,
       "text": "— Taip.",
       "voice": "lt-LT-OnaNeural",
-      "start": 272.6625,
-      "end": 274.6,
+      "startFrame": 6541632,
+      "speechStartFrame": 6546732,
+      "speechEndFrame": 6557832,
+      "endFrame": 6588288,
+      "start": 272.568,
+      "end": 274.512,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-034-i-000.mp3"
     },
     {
@@ -872,8 +1333,12 @@
       "item": 0,
       "text": "Kai jie grįžo, Elzė jau skaitė.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 274.6,
-      "end": 277.725,
+      "startFrame": 6588288,
+      "speechStartFrame": 6593688,
+      "speechEndFrame": 6642588,
+      "endFrame": 6655038,
+      "start": 274.512,
+      "end": 277.29325,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-035-i-000.mp3"
     },
     {
@@ -882,8 +1347,12 @@
       "item": 1,
       "text": "Ji nepamatė puodelio šalia knygos.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 277.725,
-      "end": 280.9125,
+      "startFrame": 6655038,
+      "speechStartFrame": 6667488,
+      "speechEndFrame": 6719088,
+      "endFrame": 6731838,
+      "start": 277.29325,
+      "end": 280.49325,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-035-i-001.mp3"
     },
     {
@@ -892,7 +1361,11 @@
       "item": 2,
       "text": "Lina nunešė kitą puodelį prie Agnės stalo.",
       "voice": "lt-LT-LeonasNeural",
-      "start": 280.9125,
+      "startFrame": 6731838,
+      "speechStartFrame": 6744588,
+      "speechEndFrame": 6807888,
+      "endFrame": 6831936,
+      "start": 280.49325,
       "end": 284.664,
       "audio": "assets/audio/keliaujanti-biblioteka/chapter-1/p-035-i-002.mp3"
     }

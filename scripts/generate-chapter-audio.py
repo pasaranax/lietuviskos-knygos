@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Generate static chapter/phrase MP3s with Azure bookmarks (no browser credentials).
+"""Generate static MP3s from sample-aligned single-voice Azure recordings.
 
 Requires ffmpeg and `pip install azure-cognitiveservices-speech==1.51.2`.
 Example (block numbers are one-based, manually reviewed speaking parts only):
   python scripts/generate-chapter-audio.py books/jusu-iprastas-uzsakymas.json \
     --chapter 1 --female-blocks 49 51 --work-dir /tmp/book-speech
 
-The work directory caches lossless audio and offsets to avoid repeat API usage.
+The work directory caches lossless audio and word events to avoid repeat API usage.
 Azure bookmark reference:
 https://learn.microsoft.com/azure/ai-services/speech-service/speech-synthesis-markup-structure#bookmark-element
 """
@@ -18,13 +18,13 @@ import json
 from pathlib import Path
 import re
 import subprocess
+import time
 import unicodedata
 import wave
 from xml.sax.saxutils import escape
 
 
-AUDIO_TIMING_VERSION = 2
-VOICE_SWITCH_GAP_SECONDS = 0.0625
+AUDIO_TIMING_VERSION = 3
 
 
 def plain_text(text):
@@ -108,20 +108,138 @@ def build_ssml(chapter, female_blocks, narrator_spans):
     return "".join(parts), phrases
 
 
-def correct_bookmark_offsets(phrases, offsets):
-    """Account for the audio gap Azure omits from offsets at each voice change."""
-    starts, previous_voice, voice_switches = [], None, 0
+def build_voice_runs(chapter, female_blocks, narrator_spans):
+    """Keep paragraph prosody; a cloud request never switches voices."""
+    _, phrases = build_ssml(chapter, female_blocks, narrator_spans)
+    runs = []
+    previous_block = None
     for phrase in phrases:
-        segments = phrase.get("segments") or [phrase]
-        for index, segment in enumerate(segments):
-            voice = segment["voice"]
-            if previous_voice is not None and voice != previous_voice:
-                voice_switches += 1
-            if index == 0:
-                starts.append(offsets[phrase["mark"]] + voice_switches * VOICE_SWITCH_GAP_SECONDS)
-            previous_voice = voice
-    starts[0] = 0
-    return starts
+        for index, segment in enumerate(phrase.get("segments") or [phrase]):
+            if not runs or runs[-1]["voice"] != segment["voice"]:
+                if runs:
+                    runs[-1]["ssml"] += "</p></voice></speak>"
+                runs.append(dict(
+                    voice=segment["voice"], parts=[],
+                    ssml='<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" '
+                         f'xml:lang="lt-LT"><voice name="{segment["voice"]}"><p>',
+                ))
+            elif phrase["block"] != previous_block:
+                runs[-1]["ssml"] += "</p><p>"
+            run = runs[-1]
+            mark = phrase["mark"] + (f"-s-{index}" if index else "")
+            run["ssml"] += f'<bookmark mark="{mark}"/>'
+            run["ssml"] += escape(segment["text"])
+            run["parts"].append(dict(mark=mark, phraseMark=phrase["mark"],
+                                     text=segment["text"]))
+            if index == len(phrase.get("segments") or [phrase]) - 1:
+                run["ssml"] += " "
+            previous_block = phrase["block"]
+    runs[-1]["ssml"] += "</p></voice></speak>"
+    return runs, phrases
+
+
+def align_voice_runs(phrases, runs):
+    """Derive phrase cuts from covered words, and join by integer PCM lengths."""
+    sample_rate = runs[0]["sampleRate"]
+    aligned = {p["mark"]: dict(p) for p in phrases}
+    pcm, provenance, base = [], [], 0
+    word_tokens = lambda text: re.findall(r"[^\W_]+(?:[-’'][^\W_]+)*", text.casefold())
+    previous_phrase = None
+    for run in runs:
+        if run["sampleRate"] != sample_rate or len(run["pcm"]) % 2:
+            raise ValueError("Incompatible PCM recordings")
+        frame_count = len(run["pcm"]) // 2
+        previous_end = 0
+        cursor = 0
+        events = sorted(run["words"], key=lambda w: w["start"])
+        for part in run["parts"]:
+            # Azure can return textOffset=-1 after closing quotes. Match the exact
+            # spoken token sequence instead; punctuation is not a spoken word.
+            expected = word_tokens(part["text"])
+            words, tokens = [], []
+            while cursor < len(events) and len(tokens) < len(expected):
+                word = events[cursor]
+                words.append(word)
+                tokens += word_tokens(word["text"])
+                cursor += 1
+            if not words or tokens != expected:
+                raise ValueError(f"Incomplete word coverage at {part['mark']}")
+            for word in words:
+                if not 0 <= word["start"] <= word["end"] <= frame_count / sample_rate:
+                    raise ValueError(f"Word outside its recording at {part['mark']}")
+                if word["start"] * sample_rate < previous_end - 1:
+                    raise ValueError(f"Word overlap at {part['mark']}")
+                previous_end = round(word["end"] * sample_rate)
+            first = round(words[0]["start"] * sample_rate)
+            last = round(words[-1]["end"] * sample_rate)
+            phrase = aligned[part["phraseMark"]]
+            if "startFrame" not in phrase:
+                # Split the gap between words, not a guessed gap between voices.
+                prior_end = 0 if previous_phrase is None else aligned[previous_phrase]["speechEndFrame"] - base
+                cut = 0 if part is run["parts"][0] else (prior_end + first) // 2
+                phrase["startFrame"] = base + cut
+                phrase["speechStartFrame"] = base + first
+            phrase["speechEndFrame"] = base + last
+            previous_phrase = part["phraseMark"]
+        if cursor != len(events):
+            raise ValueError("Extra words outside submitted phrase ranges")
+        provenance.append(dict(voice=run["voice"], startFrame=base, frameCount=frame_count,
+                               sourceSha256=hashlib.sha256(run["ssml"].encode()).hexdigest()))
+        pcm.append(run["pcm"])
+        base += frame_count
+    result = [aligned[p["mark"]] for p in phrases]
+    for index, phrase in enumerate(result):
+        end = result[index + 1]["startFrame"] if index + 1 < len(result) else base
+        phrase["endFrame"] = end
+        if not 0 <= phrase["startFrame"] <= phrase["speechStartFrame"] <= phrase["speechEndFrame"] <= end <= base:
+            raise ValueError(f"Phrase cut truncates speech at {phrase['mark']}")
+        if end <= phrase["startFrame"]:
+            raise ValueError("Empty phrase recording")
+        phrase.update(start=phrase["startFrame"] / sample_rate, end=end / sample_rate)
+    return b"".join(pcm), result, provenance
+
+
+def synthesize_voice_runs(runs, work_dir, credentials_path):
+    synthesizer, last_request = None, 0
+    for index, run in enumerate(runs):
+        digest = hashlib.sha256(run["ssml"].encode()).hexdigest()
+        wav_path = work_dir / f"{digest}.wav"
+        events_path = work_dir / f"{digest}.words.json"
+        if wav_path.exists() and events_path.exists():
+            events = json.loads(events_path.read_text())
+            print(f"Using cached voice run {index + 1}/{len(runs)}", flush=True)
+        else:
+            import azure.cognitiveservices.speech as speechsdk
+            if synthesizer is None:
+                credentials = json.loads(credentials_path.read_text())
+                if credentials.get("sku") != "F0":
+                    raise SystemExit("Expected the configured free F0 resource")
+                config = speechsdk.SpeechConfig(subscription=credentials["SPEECH_KEY"],
+                                               region=credentials["SPEECH_REGION"])
+                config.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm)
+                synthesizer = speechsdk.SpeechSynthesizer(speech_config=config, audio_config=None)
+                events = {}
+                synthesizer.synthesis_word_boundary.connect(lambda e: events["words"].append(
+                    dict(text=e.text, start=e.audio_offset / 10000000,
+                         end=e.audio_offset / 10000000 + e.duration.total_seconds(),
+                         textOffset=e.text_offset, wordLength=e.word_length)
+                ) if e.boundary_type == speechsdk.SpeechSynthesisBoundaryType.Word else None)
+            # F0 allows 20 requests/minute. This throttle affects requests, never timing.
+            time.sleep(max(0, 3.1 - (time.monotonic() - last_request)))
+            events = dict(words=[])
+            last_request = time.monotonic()
+            print(f"Synthesizing voice run {index + 1}/{len(runs)} ({run['voice']})", flush=True)
+            result = synthesizer.speak_ssml_async(run["ssml"]).get()
+            if result.reason != speechsdk.ResultReason.SynthesizingAudioCompleted:
+                raise SystemExit(f"Synthesis failed: {result.cancellation_details}")
+            wav_path.write_bytes(result.audio_data)
+            events_path.write_text(json.dumps(events, ensure_ascii=False, indent=2) + "\n")
+            (work_dir / f"{digest}.ssml").write_text(run["ssml"])
+        with wave.open(str(wav_path), "rb") as recording:
+            if recording.getnchannels() != 1 or recording.getsampwidth() != 2 or recording.getframerate() != 24000:
+                raise ValueError("Expected mono 24 kHz 16-bit PCM")
+            run.update(sampleRate=recording.getframerate(), pcm=recording.readframes(recording.getnframes()),
+                       words=events["words"])
 
 
 def main():
@@ -165,39 +283,13 @@ def main():
     ssml, phrases = build_ssml(chapter, args.female_blocks, narrator_spans)
     digest = hashlib.sha256(ssml.encode()).hexdigest()
     args.work_dir.mkdir(parents=True, exist_ok=True)
-    wav_path = args.work_dir / f"{digest}.wav"
-    marks_path = args.work_dir / f"{digest}.json"
-    if wav_path.exists() and marks_path.exists():
-        offsets = json.loads(marks_path.read_text())
-        print("Using cached synthesis", flush=True)
-    else:
-        import azure.cognitiveservices.speech as speechsdk
-        credentials = json.loads(args.credentials.read_text())
-        if credentials.get("sku") != "F0":
-            raise SystemExit("Expected the configured free F0 resource")
-        config = speechsdk.SpeechConfig(subscription=credentials["SPEECH_KEY"],
-                                       region=credentials["SPEECH_REGION"])
-        config.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm)
-        synthesizer = speechsdk.SpeechSynthesizer(speech_config=config, audio_config=None)
-        offsets = {}
-        synthesizer.bookmark_reached.connect(lambda event: offsets.update({event.text: event.audio_offset / 10000000}))
-        print(f"Synthesizing {len(phrases)} phrases, {sum(len(p['text']) for p in phrases)} characters", flush=True)
-        result = synthesizer.speak_ssml_async(ssml).get()
-        if result.reason != speechsdk.ResultReason.SynthesizingAudioCompleted:
-            raise SystemExit(f"Synthesis failed: {result.cancellation_details}")
-        wav_path.write_bytes(result.audio_data)
-        marks_path.write_text(json.dumps(offsets, indent=2) + "\n")
-        (args.work_dir / f"{digest}.ssml").write_text(ssml)
-
-    if set(offsets) != {p["mark"] for p in phrases}:
-        raise SystemExit("Missing/extra bookmarks; refusing to attach incomplete audio")
-    with wave.open(str(wav_path), "rb") as recording:
-        params = recording.getparams()
-        frames = recording.readframes(params.nframes)
-    duration = params.nframes / params.framerate
-    starts = correct_bookmark_offsets(phrases, offsets)
-    if not all(0 <= a < b <= duration for a, b in zip(starts, starts[1:] + [duration])):
-        raise SystemExit("Invalid bookmark timing; refusing to cut audio")
+    runs, phrases = build_voice_runs(chapter, args.female_blocks, narrator_spans)
+    synthesize_voice_runs(runs, args.work_dir, args.credentials)
+    frames, phrases, voice_runs = align_voice_runs(phrases, runs)
+    sample_rate = runs[0]["sampleRate"]
+    frame_count = len(frames) // 2
+    params = (1, 2, sample_rate, frame_count, "NONE", "not compressed")
+    duration = frame_count / sample_rate
 
     relative_dir = Path("assets/audio") / book["id"] / chapter["id"]
     output = book_path.parent.parent / relative_dir
@@ -213,15 +305,12 @@ def main():
                        input=buffer.getvalue(), check=True)
 
     encode(frames, output / "chapter.mp3")
-    frame_bytes = params.nchannels * params.sampwidth
-    for index, phrase in enumerate(phrases):
-        start = starts[index]
-        end = starts[index + 1] if index + 1 < len(phrases) else duration
-        first = round(start * params.framerate) * frame_bytes
-        last = round(end * params.framerate) * frame_bytes
+    for phrase in phrases:
+        first = phrase["startFrame"] * 2
+        last = phrase["endFrame"] * 2
         filename = phrase["mark"] + ".mp3"
         encode(frames[first:last], output / filename)
-        phrase.update(start=start, end=end, audio=str(relative_dir / filename))
+        phrase["audio"] = str(relative_dir / filename)
 
     # Re-read to preserve unrelated edits made while the cloud request was running.
     current = json.loads(book_path.read_text())
@@ -233,8 +322,9 @@ def main():
         current_chapter["blocks"][phrase["block"]]["items"][phrase["item"]]["audio"] = phrase["audio"]
     manifest = dict(provider="Azure Speech", sourceSha256=digest,
                     timingVersion=AUDIO_TIMING_VERSION,
-                    voiceSwitchGapSeconds=VOICE_SWITCH_GAP_SECONDS,
-                    sampleRate=params.framerate,
+                    alignmentMethod="single-voice-word-boundaries",
+                    voiceRuns=voice_runs, frameCount=frame_count,
+                    sampleRate=sample_rate,
                     duration=duration, phrases=phrases,
                     casting=dict(femaleBlocks=args.female_blocks, narratorSpans=narrator_spans))
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")

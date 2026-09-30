@@ -9,28 +9,6 @@ spec.loader.exec_module(audio)
 
 
 class CastingTest(unittest.TestCase):
-    def test_bookmark_offsets_include_every_voice_switch_gap(self):
-        phrases = [
-            {'mark': 'a', 'voice': 'lt-LT-LeonasNeural'},
-            {
-                'mark': 'b',
-                'voice': 'lt-LT-OnaNeural',
-                'segments': [
-                    {'text': 'one', 'voice': 'lt-LT-OnaNeural'},
-                    {'text': 'two', 'voice': 'lt-LT-LeonasNeural'},
-                    {'text': 'three', 'voice': 'lt-LT-OnaNeural'},
-                ],
-            },
-            {'mark': 'c', 'voice': 'lt-LT-OnaNeural'},
-            {'mark': 'd', 'voice': 'lt-LT-LeonasNeural'},
-        ]
-        offsets = {'a': 0.1, 'b': 1.0, 'c': 2.0, 'd': 3.0}
-
-        self.assertEqual(
-            [0, 1.0625, 2.1875, 3.25],
-            audio.correct_bookmark_offsets(phrases, offsets),
-        )
-
     def test_narrator_inside_female_dialogue_keeps_text_and_one_bookmark(self):
         self.assertTrue(hasattr(audio, 'build_ssml'), 'reviewed mixed-voice casting is missing')
         text = '— Ačiū. Aš Ieva, — pasakė ji.'
