@@ -1,6 +1,6 @@
 # Gemini narration by role
 
-Use this workflow for this project's new chapter narration and audio repairs. Follow the user's requested stage; updating this skill or committing files does not trigger synthesis or deployment.
+Use this workflow for this project's new chapter narration and audio repairs. Gemini is the default; `scripts/generate-chapter-audio.py` and Azure casting remain a legacy narration path only when explicitly requested. Do not regenerate accepted audio merely to change providers or clip boundaries. Follow the user's requested stage; updating this skill or committing files does not trigger synthesis or deployment.
 
 ## Persistent cast
 
@@ -80,4 +80,4 @@ The recutter proposes boundaries from word hints and measured gaps; independentl
 
 Keep chapter MP3s, item MP3s and versioned manifests under `assets/audio/<book-id>/...`, and update the canonical book's audio references together. Manifest cues cover the whole joined PCM timeline without gaps/overlaps and identify the matching items. Increment `timingVersion` when boundaries change so the shared reader does not reuse stale audio/timing. Keep raw audio, recognition reports, audition artifacts and intermediate plans out of rendered site assets.
 
-Before delivery, verify complete text/cast coverage, sentence boundaries, the suspect adjacent clips, contiguous PCM timing and decodable MP3s. Run the project's Node/Python checks, then check chapter and item playback with synchronization in the shared reader. Mute automated playback only for the check; restore ordinary audio and leave players stopped. Publish only under the authorization/scope in AGENTS.md and the current user request, and distinguish a local commit from a verified deployment.
+Before delivery, verify complete text/cast coverage, sentence boundaries, the suspect adjacent clips, contiguous PCM timing and decodable MP3s. Run the project's Node/Python checks, then check chapter and item playback with synchronization in the shared reader. Mute automated playback only for the check; restore ordinary audio and leave players stopped. For publishing scope and chapter-by-chapter delivery, follow [reader-delivery.md](reader-delivery.md) and the current user request; distinguish a local commit from a verified deployment.

@@ -1,4 +1,4 @@
-# Lithuanian language control and reader delivery
+# Lithuanian language control and annotations
 
 ## Calibrate honestly
 
@@ -10,11 +10,25 @@ Default chapter targets: 6–8 new target lemmas and 1–2 grammatical focuses. 
 
 Plan recurrence using existing story situations. Avoid synonyms added only for stylistic variety, repeated sentences serving no story purpose, and forced vocabulary checklists. Repeat useful senses and a few forms; ten unfamiliar inflections do not become easy merely because they share a lemma.
 
-When continuing or starting another book, compare concrete nouns and recurring subject matter with the reader's previous books. Expand useful objects, places and situations instead of building repeated scenes around the same familiar groceries or purchases. Ordinary high-frequency language may recur naturally; do not force synonym substitutions. Keep personal feedback and cross-book lemma/form counts in the book's vocabulary profile, separate from assumed knowledge.
+When continuing or starting another book, read its vocabulary profile in `author-plans/<book-id>-vocabulary.json` if present and compare concrete nouns and recurring subject matter with the reader's previous books. Count narrative occurrences across inflected forms using reviewed lemma/form mappings from local dictionary notes. Expand useful objects, places and situations instead of repeatedly drilling the same familiar groceries or purchases. Keep high prior exposure separate from confirmed learner knowledge. Confirmed-known words remain available when the scene calls for them; they are not banned. Ordinary high-frequency verbs, adjectives, pronouns and other everyday language may recur naturally; do not force synonym substitutions. Keep personal feedback and cross-book counts in the book's language ledger or vocabulary profile. Full local dictionary notes remain required for familiar words too.
 
 Prioritize recurrent everyday constructions as well as individual words: asking for help, making plans, checking a time or price, expressing a need, agreeing or refusing, and describing a practical problem. Reuse them across home, work, transport, and social scenes. Genre vocabulary stays a small supported addition; the reader's reward is following the story with increasingly familiar language.
 
 An aspirational 95–98% baseline-list token coverage may help keep reading light, but report its denominator, source list, treatment of names, and uncertainty. List coverage is different from learner knowledge. Do not manufacture an exact percentage using guessed lemmatization. If reliable mapping is unavailable, report checked target recurrence and a manual sample instead.
+
+## Chapter length and complete scenes
+
+Read the book's usual range in `author-plans/chapter-lengths.json` before planning. For the existing books configured at 400–800 words, plan each chapter for one reading sitting, usually 400–800 Lithuanian narrative words. Use 800 as the planning ceiling, not a target to fill. Prefer roughly 400–500 when the language or situation needs more attention; familiar language can support a longer scene. These are editorial guides, not a measured optimum for this reader. Let the scene reach a meaningful action, decision or consequence and a natural stopping point. If it runs long, remove nonessential material or divide it at a natural boundary; do not leave a scene unfinished merely to meet a count.
+
+Before narration and publication, run `python3 scripts/generate-chapter-audio.py books/<book-id>.json --chapter <N> --check-length-only`. This check is local and does not synthesize audio; record the book's usual range in `author-plans/chapter-lengths.json` first. It reports the count and flags outliers for editorial review rather than rejecting them automatically. Count only narrative `text`; translations, notes and metadata do not contribute. A count inside the range does not establish readiness either.
+
+Review three things before considering the chapter complete:
+
+- Story: the reader can follow who wants what, what changes and why the scene stops here. Develop meaningful interactions; avoid padding, repeated explanations and arbitrary cliffhangers.
+- Learning load: use the language ledger to check both target and incidental vocabulary, unfamiliar forms and constructions. New vocabulary is a budget, not a quota; a chapter may focus entirely on reuse. Extra length should mostly provide meaningful practice with familiar language, not increase the new-word allowance. Plan later encounters with underused words instead of forcing them all into this chapter.
+- Reader support: preserve clear A2-oriented clauses, contextual Russian translations and full local dictionary/grammar notes, including repeated words. Shorter chapters do not justify thinner explanations. Reader reports of difficulty or fatigue guide later pacing and language load.
+
+Compare recent chapters' length and language load when planning the next one. Distinguish intentional variation from a series of underdeveloped scenes. Do not infer a new format from the latest draft or a request to continue, and do not rewrite the guidance to make an existing result look compliant. Choose ordinary scene length independently within this brief; no per-chapter approval is needed. Keep observed vocabulary and story state in the author plan, and workflow rules in this skill. Run the Python tests as part of chapter verification.
 
 ## Forms, syntax, and counts
 
@@ -28,23 +42,111 @@ Count only Lithuanian narrative words, excluding Russian annotations and metadat
 
 Write Lithuanian directly, then review agreement, case government, tense, prefixes, idiom, and referents in full paragraph context. Verify doubtful constructions with appropriate Lithuanian dictionaries or grammar sources; simplify when uncertainty remains. Do not use an external machine translator for text or tooltip notes.
 
-Use the project's verified stress tool, default `https://kalbu.vdu.lt/mokymosi-priemones/kirciuoklis/`. Inspect its current interface rather than inventing an endpoint. Send coherent chunks up to 5000 characters. Compare returned text against the source for word changes, missing punctuation, and paragraph loss. Do not guess ambiguous stress. If unavailable, keep a clearly labelled draft and report the stress step as incomplete; do not claim a reader-ready book.
+Use the external stress tool:
 
-## Frank-reader contract
+```text
+https://kalbu.vdu.lt/mokymosi-priemones/kirciuoklis/
+```
 
-Project instructions take precedence. For the established shared JSON reader:
+Rules:
 
-- `books/<book-id>.json`: id, title, author, language `lt`, translationLanguage `ru`, cover, actual wordCount, chapters with stable ids/title/label and paragraph/dialogue blocks.
-- Items contain stressed Lithuanian `text`, Russian `translation`, and Russian `note` with bold Lithuanian lemmas/forms. Keep visible narrative Lithuanian-only.
-- For text-only items, phrase target 4–7 words; maximum 8 words or 70 characters. For narrated items, follow [gemini-narration.md](gemini-narration.md): prefer whole sentences and keep short sentences separate. Split a long sentence only at meaningful punctuation with a verified spoken pause; never cut at a bare space to satisfy a length cap. If no such pause exists, retain the whole sentence and review its tooltip on mobile. Never make punctuation alone clickable.
-- Translate exactly the fragment, retaining unfinished syntax and useful form distinctions. If a split separates a verb from its necessary object, revise the split. Preserve names and narrative ambiguity consistently.
-- Each useful vocabulary note has a dictionary lemma, contextual Russian gloss, surface form if changed, and relevant grammar. Put entries on separate lines. Include function words when their construction teaches something. Do not repeat the phrase translation, add filler notes, or bold Russian grammar labels.
-- `books/catalog.json` contains only shelf metadata and the shared reader URL. Do not fabricate human authorship; clearly identify an original generated work in agreed metadata. Use a real suitable cover; PDF extraction is irrelevant to an original story.
+- Send larger chunks, not individual phrases.
+- Use whole pages or coherent chunks up to 5000 characters.
+- Preserve paragraph boundaries and punctuation.
+- After receiving stressed text, compare with the source chunk.
+- Do not silently drop sentences or punctuation.
+- If the tool changes words unexpectedly, keep the original word and only add stress marks when confident.
+- If uncertain about Lithuanian stress, do not guess. Re-run the chunk or flag it.
 
-Work in small reviewed chunks in the canonical JSON. Keep author metadata separately; do not maintain a second translated manuscript. Update wordCount to the actual available book content, not the planned eventual length. Appending chapters should preserve old chapter/block order and reading anchors.
+Inspect the stress tool's current interface rather than inventing an endpoint. If unavailable, keep a clearly labelled draft and report the stress step as incomplete; do not claim a reader-ready book.
 
-## Verify the actual result
+## Frank-method items and tooltips
 
-Check JSON, phrase limits, content continuity, target recurrence, translation/notes, and absence of spoilers in public assets. Inspect the existing cleaner before running it: it may mutate the book. Compare the result for dropped or merged content. Run the project's required checks, then open the book and verify chapter navigation, full-phrase tooltips, cover, and mobile presentation. Do not alter the reader to solve a content-generation problem.
+The visible text must be Lithuanian only. Russian translation and notes live only in tooltips.
 
-Deliver the requested pilot before expanding the book. Useful feedback is where the reader repeatedly needed help, whether they understood the situation, and whether they want to keep reading. Reader feedback calibrates future language and pacing; revise the story arc deliberately and check continuity when changes affect earlier chapters.
+### Phrase segmentation
+
+- Prefer natural phrase-sized chunks.
+- Do not split every word.
+- Do not make huge paragraph-sized phrases unless the sentence is short.
+- Keep dialogue punctuation inside the phrase.
+- Preserve stressed Lithuanian text in `text`.
+- Frank-method descriptions use "small fragments" but do not define a universal optimal word count. Use this project's explicit limits.
+- Target phrase size: 4-7 words.
+- For text-only items, hard maximum: 8 words or 70 characters, whichever is reached first.
+- For narrated items, follow [gemini-narration.md](gemini-narration.md): prefer whole sentences, keep short sentences separate, and never split at a bare space to satisfy the size cap. A long sentence may split at meaningful punctuation with a verified spoken pause; otherwise retain it and check the tooltip on mobile.
+- In text-only items, use 8 words only when the phrase is a single natural unit and splitting it would make the reading worse.
+- For text-only items, split before the hard maximum at natural boundaries: comma, semicolon, colon, dash, dialogue pause, conjunction, prepositional phrase, or participial phrase.
+- Allow 1-3 word phrases only for short dialogue turns, idioms, fixed expressions, and sentence tails that would read unnaturally when merged.
+- For text-only items, avoid whole long sentences in one tooltip. For narrated items, the verified sentence-boundary rules above take precedence. A tooltip must fit on mobile and be readable without scanning a wall of text.
+
+### Translation
+
+- Use literal educational Russian translation.
+- Do not use polished literary translation when it hides Lithuanian structure.
+- Preserve word order where it helps learning.
+- It is acceptable if Russian sounds slightly literal.
+- The main `translation` field translates the whole Lithuanian phrase. Do not duplicate this full phrase translation again in `note`.
+- Translate exactly the current Lithuanian fragment. If the fragment is syntactically incomplete, the Russian translation must stay fragmentary too; do not complete it into a standalone sentence.
+- If a split leaves a verb without its object or an object/prepositional tail without its verb, change the phrase split instead of inventing a complete translation.
+- Punctuation is not a phrase. Never create clickable items or notes for standalone `.`, `!`, `?`, `***` or similar technical fragments. Attach punctuation to the neighboring semantic phrase, or keep section breaks as plain text without translation and note.
+- Never write filler notes like `Смотри буквальный перевод фразы выше.`. If there is no useful word, idiom or grammar explanation, leave `note` empty.
+- A Russian translation should mirror source punctuation where practical: Lithuanian comma/colon/dash usually remains an unfinished Russian fragment, not a final period.
+- If a phrase has multiple plausible Russian readings, prefer the literal reading first and add the natural Russian variant only if it clarifies meaning.
+- The `translation` field must be Russian. English output is a generation error, not an acceptable fallback.
+- Proper names, brands and car models must be transliterated or translated consistently in Russian. Example: `Pekardas / Pekarde / Pekardo` is `Паккард`, not `pecard`, `recard`, `Пекард` or English text.
+- If any draft contains English or nonsense, rewrite the phrase or word manually. Do not leave garbage in JSON.
+- Do not use Google Translate or any external machine translator for book translation or tooltip notes. Translation must be done by the agent from Lithuanian context.
+- Final `translation` and `note` content must be editor-reviewed by the agent: verify meaning from Lithuanian, fix names, cases, idioms, register and Russian wording before considering the book processed.
+- For high-risk phrases, idioms, slang, proper nouns and grammar explanations, translate manually from context instead of trusting machine output.
+- Translate in context. A word gloss must match the meaning of the word in the current sentence, not the most common dictionary meaning.
+- Use surrounding sentence/paragraph context to resolve who acts, what object is meant, tense/aspect, idiom, irony, slang and proper-name references.
+- Never translate a Lithuanian word by sending it to a machine translator. Use the sentence and paragraph context.
+- Preserve meaningful word forms in Russian because the reader is for language learning. Case, number, tense, aspect, prefixes, participles, diminutives, register and size/color suffixes can change the lesson. Do not flatten them into generic dictionary forms. Example: `staliukas` is `столик`, not generic `стол`; `taurelė` is usually `рюмка`, `стопка` or `бокальчик`, not generic `стакан`; `užstatyti deimantai` is `заложенные бриллианты`, not `построенные бриллианты`.
+
+### Notes
+
+- Keep a full contextual dictionary in every chapter, including repeated words. Never thin or omit explanations because a word appeared earlier or is assumed to be learned. The reader chooses whether to open the tooltip. Explain content words and their current forms locally; include useful grammar and constructions without filler or mechanical entries for every function word.
+- Explain important words, idioms, cases, participles, word order and fixed expressions.
+- Give each vocabulary word in its dictionary form, then translate that dictionary form.
+- After the lemma and its translation, show the surface form from the sentence when it differs and explain exactly how it changed: case, number, gender, person, tense, mood, participle type, prefix or suffix.
+- Put every vocabulary entry on a separate line. The `note` field stores these line breaks as `\n`.
+- The full phrase translation is displayed after the vocabulary entries in smaller, regular-weight text. Do not duplicate it in `note`.
+- Do not list every function word automatically. Include a preposition, conjunction, particle or pronoun only when it explains government, a fixed construction or another useful grammar point.
+- For vocabulary, include multiple Russian synonyms where useful.
+- Do not repeat the Lithuanian source phrase in the tooltip.
+- Keep notes compact but useful.
+- Default note format is word-level: `**lemma** — перевод начальной формы; **surface form** — объяснение формы в предложении.`
+- Use multi-word note entries only for real fixed expressions, phrasal constructions or idioms, not for arbitrary adjacent words.
+- For automatic generation, multi-word note entries must come from a known-expression whitelist or from a manual editor decision. Never infer arbitrary 2-4 word chunks just because words stand next to each other.
+- Do not create note entries that merely translate a large subphrase already covered by `translation`.
+- Prefer only useful vocabulary entries; a function word earns an entry only when its construction needs explanation.
+- Bold only the Lithuanian word or fixed expression. Keep Russian translations and explanations in normal weight.
+- Vocabulary glosses should normally include 2-4 Russian variants when the word has useful shades of meaning.
+- If a gloss is a single vague machine word, enrich it manually or omit it.
+- The Russian side of notes must not contain English. Latin text is allowed only inside the bold Lithuanian source term or for an explicitly approved proper name.
+- Grammar notes are required for changed forms and when the phrase uses a clear rule: preposition case government, participle, half-participle, negation, comparison, question particle, conditional form or fixed construction.
+- Grammar notes must bold the actual Lithuanian marker or form, not the Russian grammar label. Correct: `**pabėgti** — убежать; **pabėgęs** — причастная форма...`; incorrect: `**причастная форма** — ...`.
+- Notes must not be generated by blindly translating isolated surface forms. If the isolated word translation is wrong in context, use the contextual meaning.
+
+Example note style:
+
+```text
+**užsukti** — заглянуть, зайти, завернуть; **užsuko** — 3-е лицо, прошедшее время.
+**užeiga** — закусочная, трактир; **užeigą** — винительный падеж ед. числа после **į**.
+**į + galininkas** — в, внутрь; предлог направления **į** требует винительного падежа.
+```
+
+## Manual translation workflow
+
+- Process book text in small manual chunks, not by whole-chapter automatic translation.
+- Edit the canonical book file directly: `books/<book-id>.json`.
+- Do not keep a second translation file. The reviewed JSON is the source of truth.
+- After each chunk, run JSON validation and structural audits.
+- Do not mark a chunk done until `translation` and `note` are checked against the Lithuanian context by the agent.
+
+## Verify language and learning value
+
+Check source continuity, target and incidental vocabulary, useful forms, translation/notes and absence of spoilers in public content. A valid JSON file, an in-range word count and vocabulary-list coverage do not establish reader readiness. Use [reader-delivery.md](reader-delivery.md) for data validation, required tests, browser checks and delivery. Do not alter the reader to solve a content-generation problem.
+
+Deliver the authorized pilot before expanding the book. Reader feedback about difficult language, repeated lookups, fatigue and understanding calibrates later chapters. Revise the story arc deliberately and check continuity when changes affect earlier chapters.
