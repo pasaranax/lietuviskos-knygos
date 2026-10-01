@@ -1,0 +1,8987 @@
+{
+  "bookId": "keliaujanti-biblioteka",
+  "readerFeedbackDate": "2026-10-01",
+  "sourceBookId": "jusu-iprastas-uzsakymas",
+  "sourceBookSha256": "3e7865fe73c437dad92d8e4b796c6a953ae83b7fb81471f579e17fa600e3e238",
+  "confirmedKnown": {
+    "duona": {
+      "meaning": "хлеб",
+      "source": "Прямое сообщение читателя."
+    },
+    "obuolys": {
+      "meaning": "яблоко",
+      "source": "Прямое сообщение читателя."
+    }
+  },
+  "method": "Narrative tokens only; stress accents removed while Lithuanian letters are preserved. Surface-to-lemma mapping uses explicit lemma/form headers in local dictionary notes, excluding grammatical links and ambiguous mappings. duona and obuolys use manually reviewed case-form groups. Counts are observed exposure, not a claim of mastery.",
+  "sourceNarrativeTokens": 5930,
+  "manualLemmaGroups": {
+    "duona": [
+      "duona",
+      "duonos",
+      "duonai",
+      "duoną",
+      "duonoje",
+      "duonų",
+      "duonoms",
+      "duonas",
+      "duonomis",
+      "duonose"
+    ],
+    "obuolys": [
+      "obuolys",
+      "obuolio",
+      "obuoliui",
+      "obuolį",
+      "obuoliu",
+      "obuolyje",
+      "obuoliai",
+      "obuolių",
+      "obuoliams",
+      "obuolius",
+      "obuoliais",
+      "obuoliuose"
+    ]
+  },
+  "frequentPriorLemmas": [
+    "adresas",
+    "ateiti",
+    "atidaryti",
+    "atsakyti",
+    "atsisėsti",
+    "aš",
+    "batas",
+    "beveik",
+    "bulvė",
+    "būti",
+    "dabar",
+    "darbas",
+    "didelis",
+    "du",
+    "duona",
+    "durys",
+    "dėžė",
+    "gal",
+    "galėti",
+    "gaminti",
+    "gerai",
+    "grįžti",
+    "ieškoti",
+    "išeiti",
+    "kaimynas",
+    "kava",
+    "keptuvė",
+    "kiaušinis",
+    "kitas",
+    "laikas",
+    "laukti",
+    "likti",
+    "makaronai",
+    "mažas",
+    "naujas",
+    "niekas",
+    "norėti",
+    "numeris",
+    "nusijuokti",
+    "padėti",
+    "paimti",
+    "paklausti",
+    "palikti",
+    "parašyti",
+    "parduotuvė",
+    "parodyti",
+    "pasakyti",
+    "paskui",
+    "patikrinti",
+    "pats",
+    "pažiūrėti",
+    "perskaityti",
+    "pomidoras",
+    "priminimas",
+    "priminti",
+    "prisiminti",
+    "pusė",
+    "raktas",
+    "ranka",
+    "rasti",
+    "reikėti",
+    "rytoj",
+    "savo",
+    "septintas",
+    "stalas",
+    "stovėti",
+    "sąrašas",
+    "sūris",
+    "tada",
+    "telefonas",
+    "tikti",
+    "truputį",
+    "turėti",
+    "užsakymas",
+    "užtekti",
+    "vakarienė",
+    "valgyti",
+    "vanduo",
+    "vienas",
+    "vieta",
+    "virtuvė",
+    "įrašyti",
+    "šalia",
+    "šiandien",
+    "šitas",
+    "žinutė"
+  ],
+  "lemmaCounts": {
+    "abi": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "abi": 1
+      }
+    },
+    "abu": {
+      "count": 6,
+      "chapters": [
+        1,
+        6,
+        8
+      ],
+      "forms": {
+        "abi": 3,
+        "abu": 2,
+        "abiem": 1
+      }
+    },
+    "adresas": {
+      "count": 11,
+      "chapters": [
+        1,
+        3,
+        8
+      ],
+      "forms": {
+        "adresą": 5,
+        "adresas": 2,
+        "adresui": 1,
+        "adreso": 3
+      }
+    },
+    "aiškus": {
+      "count": 3,
+      "chapters": [
+        1,
+        10
+      ],
+      "forms": {
+        "aišku": 2,
+        "aiškus": 1
+      }
+    },
+    "aliejus": {
+      "count": 2,
+      "chapters": [
+        4,
+        9
+      ],
+      "forms": {
+        "aliejaus": 2
+      }
+    },
+    "anksčiau": {
+      "count": 3,
+      "chapters": [
+        4,
+        11,
+        12
+      ],
+      "forms": {
+        "anksčiau": 3
+      }
+    },
+    "antradienis": {
+      "count": 2,
+      "chapters": [
+        4,
+        5
+      ],
+      "forms": {
+        "antradienį": 2
+      }
+    },
+    "antras": {
+      "count": 5,
+      "chapters": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "forms": {
+        "antrą": 2,
+        "antroji": 1,
+        "antros": 2
+      }
+    },
+    "apačia": {
+      "count": 2,
+      "chapters": [
+        2,
+        10
+      ],
+      "forms": {
+        "apačioje": 2
+      }
+    },
+    "apačioje": {
+      "count": 3,
+      "chapters": [
+        1,
+        4,
+        5
+      ],
+      "forms": {
+        "apačioje": 3
+      }
+    },
+    "apie": {
+      "count": 8,
+      "chapters": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "forms": {
+        "apie": 7,
+        "parduotuvę": 1
+      }
+    },
+    "apmokėti": {
+      "count": 2,
+      "chapters": [
+        1,
+        10
+      ],
+      "forms": {
+        "apmokėtas": 2
+      }
+    },
+    "apsiauti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "apsiavė": 1
+      }
+    },
+    "apsipirkti": {
+      "count": 3,
+      "chapters": [
+        2,
+        11
+      ],
+      "forms": {
+        "reikės": 1,
+        "apsipirkti": 2
+      }
+    },
+    "apsirengti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "apsirengė": 1
+      }
+    },
+    "apsivilkti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "apsivilko": 1
+      }
+    },
+    "apskrusti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "apskrudo": 1
+      }
+    },
+    "arbata": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "arbatos": 1
+      }
+    },
+    "arti": {
+      "count": 2,
+      "chapters": [
+        6,
+        9
+      ],
+      "forms": {
+        "arčiau": 2
+      }
+    },
+    "ateiti": {
+      "count": 14,
+      "chapters": [
+        1,
+        2,
+        5,
+        8,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "atėjo": 4,
+        "atėjau": 2,
+        "ateis": 2,
+        "ateiti": 2,
+        "ateina": 1,
+        "neateis": 1,
+        "ateitum": 1,
+        "atėjai": 1
+      }
+    },
+    "atgal": {
+      "count": 3,
+      "chapters": [
+        5,
+        9
+      ],
+      "forms": {
+        "atgal": 3
+      }
+    },
+    "atidaryti": {
+      "count": 15,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "atidarė": 14,
+        "atidarys": 1
+      }
+    },
+    "atnešti": {
+      "count": 4,
+      "chapters": [
+        2,
+        4,
+        9
+      ],
+      "forms": {
+        "atnešė": 3,
+        "atnešiau": 1
+      }
+    },
+    "atrodyti": {
+      "count": 5,
+      "chapters": [
+        1,
+        10,
+        11
+      ],
+      "forms": {
+        "atrodė": 2,
+        "atrodo": 1,
+        "neatrodė": 2
+      }
+    },
+    "atsakymas": {
+      "count": 2,
+      "chapters": [
+        8,
+        12
+      ],
+      "forms": {
+        "atsakymo": 1,
+        "atsakymas": 1
+      }
+    },
+    "atsakyti": {
+      "count": 14,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "atsakė": 10,
+        "neatsakė": 1,
+        "atsakyti": 2,
+        "atsakysi": 1
+      }
+    },
+    "atsargiai": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "atsargiai": 1
+      }
+    },
+    "atsidaryti": {
+      "count": 3,
+      "chapters": [
+        3,
+        4,
+        8
+      ],
+      "forms": {
+        "atsidaryti": 1,
+        "atsidarė": 2
+      }
+    },
+    "atsikelti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "atsikėlė": 1
+      }
+    },
+    "atsilaužti": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "atsilaužė": 1
+      }
+    },
+    "atsiliepti": {
+      "count": 4,
+      "chapters": [
+        8,
+        11
+      ],
+      "forms": {
+        "neatsiliepė": 1,
+        "atsiliepė": 2,
+        "neatsiliepia": 1
+      }
+    },
+    "atsinešti": {
+      "count": 3,
+      "chapters": [
+        6,
+        12
+      ],
+      "forms": {
+        "atsinešk": 1,
+        "atsineš": 1,
+        "atsinešiau": 1
+      }
+    },
+    "atsipjauti": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "atsipjovė": 1
+      }
+    },
+    "atsiprašyti": {
+      "count": 4,
+      "chapters": [
+        1,
+        3,
+        4
+      ],
+      "forms": {
+        "atsiprašau": 4
+      }
+    },
+    "atsirasti": {
+      "count": 3,
+      "chapters": [
+        2,
+        10
+      ],
+      "forms": {
+        "atsirado": 3
+      }
+    },
+    "atsistoti": {
+      "count": 8,
+      "chapters": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        11,
+        12
+      ],
+      "forms": {
+        "atsistojo": 8
+      }
+    },
+    "atsisukti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "atsisuko": 1
+      }
+    },
+    "atsisėsti": {
+      "count": 13,
+      "chapters": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "atsisėdo": 12,
+        "atsisėsti": 1
+      }
+    },
+    "atsiųsti": {
+      "count": 9,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "atsiųsti": 4,
+        "atsiųsk": 1,
+        "atsiųsiu": 3,
+        "atsiuntė": 1
+      }
+    },
+    "atskirai": {
+      "count": 2,
+      "chapters": [
+        4,
+        9
+      ],
+      "forms": {
+        "atskirai": 2
+      }
+    },
+    "atskiras": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "atskiroje": 1
+      }
+    },
+    "atspausdinti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "atspausdinau": 1
+      }
+    },
+    "atvažiuoti": {
+      "count": 4,
+      "chapters": [
+        3,
+        6,
+        8
+      ],
+      "forms": {
+        "atvažiavo": 3,
+        "atvažiuoti": 1
+      }
+    },
+    "atviras": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "atviras": 1
+      }
+    },
+    "atvykti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "atvyks": 1
+      }
+    },
+    "autobusas": {
+      "count": 6,
+      "chapters": [
+        1,
+        6,
+        7,
+        8
+      ],
+      "forms": {
+        "autobusų": 2,
+        "autobuse": 2,
+        "autobusai": 1,
+        "autobusas": 1
+      }
+    },
+    "automobilis": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "automobilių": 1
+      }
+    },
+    "ačiū": {
+      "count": 7,
+      "chapters": [
+        1,
+        5,
+        6,
+        7,
+        8
+      ],
+      "forms": {
+        "ačiū": 7
+      }
+    },
+    "aš": {
+      "count": 11,
+      "chapters": [
+        1,
+        4,
+        9,
+        10
+      ],
+      "forms": {
+        "mano": 3,
+        "mane": 1,
+        "man": 6,
+        "manęs": 1
+      }
+    },
+    "aštuntas": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "aštuntą": 2
+      }
+    },
+    "aštuoni": {
+      "count": 2,
+      "chapters": [
+        5,
+        10
+      ],
+      "forms": {
+        "aštuonių": 1,
+        "aštuonios": 1
+      }
+    },
+    "aštuoniolika": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "aštuoniolika": 1
+      }
+    },
+    "baigti": {
+      "count": 9,
+      "chapters": [
+        2,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "forms": {
+        "baigė": 3,
+        "nebaigė": 3,
+        "baigsime": 1,
+        "baigti": 2
+      }
+    },
+    "baigtis": {
+      "count": 4,
+      "chapters": [
+        8,
+        10,
+        12
+      ],
+      "forms": {
+        "baigsis": 3,
+        "baigėsi": 1
+      }
+    },
+    "balsas": {
+      "count": 3,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "balsas": 2,
+        "balsu": 1
+      }
+    },
+    "baltas": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "baltas": 1
+      }
+    },
+    "bandymas": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "bandymas": 1
+      }
+    },
+    "bandyti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "bandysiu": 1
+      }
+    },
+    "batas": {
+      "count": 11,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "forms": {
+        "batus": 5,
+        "batais": 3,
+        "bate": 1,
+        "batai": 1,
+        "batų": 1
+      }
+    },
+    "beje": {
+      "count": 2,
+      "chapters": [
+        5,
+        6
+      ],
+      "forms": {
+        "beje": 2
+      }
+    },
+    "bendras": {
+      "count": 3,
+      "chapters": [
+        1,
+        2,
+        10
+      ],
+      "forms": {
+        "bendra": 2,
+        "bendras": 1
+      }
+    },
+    "bent": {
+      "count": 7,
+      "chapters": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "forms": {
+        "bent": 7
+      }
+    },
+    "beveik": {
+      "count": 10,
+      "chapters": [
+        1,
+        3,
+        4,
+        8,
+        10,
+        12
+      ],
+      "forms": {
+        "beveik": 10
+      }
+    },
+    "bilietas": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "bilietą": 1
+      }
+    },
+    "biuras": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "biuro": 1
+      }
+    },
+    "bulves": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "bulves": 1
+      }
+    },
+    "bulvė": {
+      "count": 21,
+      "chapters": [
+        4,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "bulvės": 7,
+        "bulvių": 3,
+        "bulves": 10,
+        "bulvę": 1
+      }
+    },
+    "butas": {
+      "count": 9,
+      "chapters": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "forms": {
+        "bute": 3,
+        "buto": 4,
+        "butas": 1,
+        "mažas": 1
+      }
+    },
+    "butelis": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "butelis": 1
+      }
+    },
+    "bėgti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "bėgti": 1
+      }
+    },
+    "būti": {
+      "count": 65,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "buvo": 39,
+        "yra": 3,
+        "nebuvo": 7,
+        "būtų": 2,
+        "būsiu": 4,
+        "bus": 6,
+        "nebebuvo": 1,
+        "nėra": 1,
+        "nebus": 1,
+        "būtum": 1
+      }
+    },
+    "būtinai": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "būtinai": 1
+      }
+    },
+    "centas": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "centų": 1
+      }
+    },
+    "centras": {
+      "count": 4,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "centrą": 2,
+        "centras": 1,
+        "didelis": 1
+      }
+    },
+    "dabar": {
+      "count": 14,
+      "chapters": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "forms": {
+        "dabar": 14
+      }
+    },
+    "daiktas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "daiktų": 1
+      }
+    },
+    "dalykas": {
+      "count": 3,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "dalykų": 1,
+        "dalyką": 1,
+        "dalykas": 1
+      }
+    },
+    "dalyvauti": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "dalyvauti": 1
+      }
+    },
+    "darbas": {
+      "count": 13,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        8,
+        10
+      ],
+      "forms": {
+        "darbą": 3,
+        "darbo": 7,
+        "darbe": 1,
+        "darbui": 1,
+        "darbas": 1
+      }
+    },
+    "darbo": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "darbo": 1
+      }
+    },
+    "data": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "data": 1
+      }
+    },
+    "daug": {
+      "count": 5,
+      "chapters": [
+        5,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "daugiau": 3,
+        "daug": 2
+      }
+    },
+    "daugiau": {
+      "count": 4,
+      "chapters": [
+        8,
+        9,
+        12
+      ],
+      "forms": {
+        "daugiau": 4
+      }
+    },
+    "dažnai": {
+      "count": 5,
+      "chapters": [
+        2,
+        3,
+        9
+      ],
+      "forms": {
+        "dažnai": 2,
+        "dažniau": 2,
+        "dažniausiai": 1
+      }
+    },
+    "devintas": {
+      "count": 2,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "devintą": 2
+      }
+    },
+    "dešimt": {
+      "count": 4,
+      "chapters": [
+        4,
+        8,
+        9
+      ],
+      "forms": {
+        "dešimt": 3,
+        "dešimties": 1
+      }
+    },
+    "dešimtas": {
+      "count": 2,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "dešimtą": 2
+      }
+    },
+    "dešinė": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "dešinėje": 1
+      }
+    },
+    "didelis": {
+      "count": 12,
+      "chapters": [
+        1,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "forms": {
+        "didelės": 2,
+        "didelį": 4,
+        "dideli": 3,
+        "didesnes": 1,
+        "didelio": 1,
+        "didelė": 1
+      }
+    },
+    "diena": {
+      "count": 2,
+      "chapters": [
+        1,
+        8
+      ],
+      "forms": {
+        "dieną": 2
+      }
+    },
+    "dingti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "nedingo": 1
+      }
+    },
+    "dirbti": {
+      "count": 4,
+      "chapters": [
+        1,
+        5,
+        11
+      ],
+      "forms": {
+        "dirbo": 2,
+        "dirbu": 2
+      }
+    },
+    "drabužis": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "drabužius": 1
+      }
+    },
+    "druska": {
+      "count": 6,
+      "chapters": [
+        4,
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "druska": 2,
+        "druskos": 3,
+        "druską": 1
+      }
+    },
+    "du": {
+      "count": 14,
+      "chapters": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        9
+      ],
+      "forms": {
+        "dvi": 8,
+        "dviem": 2,
+        "dviejų": 1,
+        "du": 2,
+        "dviejuose": 1
+      }
+    },
+    "dubuo": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "dubenį": 1
+      }
+    },
+    "duona": {
+      "count": 34,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "duona": 7,
+        "duonos": 17,
+        "duonai": 1,
+        "duoną": 9
+      }
+    },
+    "duoti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "duokite": 1
+      }
+    },
+    "durys": {
+      "count": 21,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        12
+      ],
+      "forms": {
+        "durų": 10,
+        "duris": 9,
+        "durys": 2
+      }
+    },
+    "dvidešimt": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "dvidešimties": 1
+      }
+    },
+    "dviem": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "dviem": 1
+      }
+    },
+    "dviese": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "dviese": 1
+      }
+    },
+    "dviratis": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "dviračiai": 1
+      }
+    },
+    "dvylika": {
+      "count": 3,
+      "chapters": [
+        5,
+        10
+      ],
+      "forms": {
+        "dvylika": 3
+      }
+    },
+    "dvylikta": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "dvyliktą": 1
+      }
+    },
+    "dėl": {
+      "count": 2,
+      "chapters": [
+        3,
+        8
+      ],
+      "forms": {
+        "dėl": 2
+      }
+    },
+    "dėti": {
+      "count": 3,
+      "chapters": [
+        2,
+        11,
+        12
+      ],
+      "forms": {
+        "dėjo": 1,
+        "dėti": 2
+      }
+    },
+    "dėžutė": {
+      "count": 4,
+      "chapters": [
+        1,
+        2,
+        4
+      ],
+      "forms": {
+        "dėžutę": 2,
+        "dėžutės": 1,
+        "dėžutėse": 1
+      }
+    },
+    "dėžė": {
+      "count": 17,
+      "chapters": [
+        1,
+        2,
+        4,
+        6,
+        8
+      ],
+      "forms": {
+        "dėžės": 2,
+        "dėžes": 3,
+        "dėžę": 6,
+        "dėžėse": 1,
+        "dėžių": 1,
+        "dėžėje": 3,
+        "dėžė": 1
+      }
+    },
+    "eilutė": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "eilutės": 1
+      }
+    },
+    "eiti": {
+      "count": 7,
+      "chapters": [
+        1,
+        3,
+        7,
+        8,
+        10
+      ],
+      "forms": {
+        "neiti": 1,
+        "eikite": 1,
+        "ėjo": 2,
+        "einam": 1,
+        "einu": 1,
+        "eiti": 1
+      }
+    },
+    "ekranas": {
+      "count": 9,
+      "chapters": [
+        1,
+        2,
+        10
+      ],
+      "forms": {
+        "ekranas": 1,
+        "ekrane": 4,
+        "ekranu": 2,
+        "ekraną": 2
+      }
+    },
+    "euras": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "eurus": 1
+      }
+    },
+    "forma": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "formą": 1
+      }
+    },
+    "gabaliukas": {
+      "count": 3,
+      "chapters": [
+        2,
+        7,
+        9
+      ],
+      "forms": {
+        "gabaliukai": 1,
+        "gabaliuką": 1,
+        "gabaliukus": 1
+      }
+    },
+    "gaila": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "gaila": 1
+      }
+    },
+    "gal": {
+      "count": 16,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "gal": 16
+      }
+    },
+    "galas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "gale": 1
+      }
+    },
+    "galima": {
+      "count": 3,
+      "chapters": [
+        1,
+        4,
+        10
+      ],
+      "forms": {
+        "galima": 3
+      }
+    },
+    "galvoti": {
+      "count": 2,
+      "chapters": [
+        1,
+        4
+      ],
+      "forms": {
+        "galvos": 1,
+        "galvojo": 1
+      }
+    },
+    "galėti": {
+      "count": 36,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "forms": {
+        "galiu": 14,
+        "galėjo": 2,
+        "gali": 7,
+        "galite": 4,
+        "galėtumėte": 1,
+        "negaliu": 2,
+        "galėčiau": 1,
+        "galime": 1,
+        "negalėsiu": 1,
+        "galėsi": 1,
+        "galėsiu": 1,
+        "galės": 1
+      }
+    },
+    "gaminti": {
+      "count": 12,
+      "chapters": [
+        1,
+        4,
+        7,
+        8,
+        9,
+        12
+      ],
+      "forms": {
+        "gamins": 1,
+        "gaminsite": 1,
+        "gaminsiu": 2,
+        "gamini": 1,
+        "gaminsime": 2,
+        "gaminate": 1,
+        "gaminti": 4
+      }
+    },
+    "gana": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "gana": 1
+      }
+    },
+    "garsiai": {
+      "count": 2,
+      "chapters": [
+        2,
+        12
+      ],
+      "forms": {
+        "garsiai": 2
+      }
+    },
+    "gatvė": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "gatvės": 1
+      }
+    },
+    "gauti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "gavau": 1
+      }
+    },
+    "gerai": {
+      "count": 17,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "forms": {
+        "gerai": 13,
+        "geriau": 4
+      }
+    },
+    "geras": {
+      "count": 5,
+      "chapters": [
+        6,
+        7,
+        8,
+        12
+      ],
+      "forms": {
+        "geros": 1,
+        "gero": 3,
+        "geras": 1
+      }
+    },
+    "gerti": {
+      "count": 2,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "gerdavo": 1,
+        "gėriau": 1
+      }
+    },
+    "greitai": {
+      "count": 5,
+      "chapters": [
+        3,
+        4,
+        9,
+        10
+      ],
+      "forms": {
+        "greičiau": 3,
+        "greitai": 2
+      }
+    },
+    "grietinė": {
+      "count": 4,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "grietinė": 1,
+        "grietinės": 3
+      }
+    },
+    "grietinėlė": {
+      "count": 2,
+      "chapters": [
+        11,
+        12
+      ],
+      "forms": {
+        "grietinėlės": 2
+      }
+    },
+    "grindys": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "grindų": 1
+      }
+    },
+    "grupė": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "grupes": 1
+      }
+    },
+    "grąžinti": {
+      "count": 5,
+      "chapters": [
+        4,
+        5,
+        8,
+        10
+      ],
+      "forms": {
+        "grąžinkite": 1,
+        "grąžinti": 3,
+        "grąžino": 1
+      }
+    },
+    "grįžti": {
+      "count": 15,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        8,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "grįžo": 12,
+        "grįžti": 2,
+        "grįšiu": 1
+      }
+    },
+    "gulėti": {
+      "count": 8,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        9,
+        12
+      ],
+      "forms": {
+        "gulėjo": 8
+      }
+    },
+    "gyvenimas": {
+      "count": 2,
+      "chapters": [
+        1,
+        4
+      ],
+      "forms": {
+        "gyvenimas": 1,
+        "gyvenimui": 1
+      }
+    },
+    "gyventi": {
+      "count": 3,
+      "chapters": [
+        1,
+        2,
+        4
+      ],
+      "forms": {
+        "gyvenu": 1,
+        "gyvenate": 1,
+        "gyveno": 1
+      }
+    },
+    "gyventojas": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "gyventoją": 1
+      }
+    },
+    "ieškoti": {
+      "count": 10,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        10
+      ],
+      "forms": {
+        "ieškojo": 4,
+        "ieškoti": 4,
+        "ieškojau": 2
+      }
+    },
+    "ilgai": {
+      "count": 4,
+      "chapters": [
+        5,
+        7,
+        8,
+        9
+      ],
+      "forms": {
+        "ilgai": 1,
+        "ilgiau": 3
+      }
+    },
+    "ilgas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "ilgas": 1
+      }
+    },
+    "imti": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "neėmė": 1
+      }
+    },
+    "indas": {
+      "count": 3,
+      "chapters": [
+        9,
+        10
+      ],
+      "forms": {
+        "indus": 1,
+        "indų": 1,
+        "indai": 1
+      }
+    },
+    "irgi": {
+      "count": 8,
+      "chapters": [
+        1,
+        4,
+        6,
+        8,
+        9
+      ],
+      "forms": {
+        "irgi": 8
+      }
+    },
+    "išbandyti": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "išbandyti": 1
+      }
+    },
+    "išbraukti": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "išbraukė": 1
+      }
+    },
+    "išdėti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "išdėjo": 1
+      }
+    },
+    "išeiti": {
+      "count": 10,
+      "chapters": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "forms": {
+        "išėjau": 1,
+        "išėjo": 4,
+        "išeiti": 3,
+        "išeinu": 1,
+        "išeisiu": 1
+      }
+    },
+    "išgerti": {
+      "count": 3,
+      "chapters": [
+        3,
+        6,
+        11
+      ],
+      "forms": {
+        "išgėrė": 3
+      }
+    },
+    "išimti": {
+      "count": 5,
+      "chapters": [
+        1,
+        6,
+        11
+      ],
+      "forms": {
+        "išimti": 1,
+        "išėmė": 4
+      }
+    },
+    "išjungti": {
+      "count": 5,
+      "chapters": [
+        2,
+        7,
+        9,
+        10
+      ],
+      "forms": {
+        "išjunk": 1,
+        "išjungta": 2,
+        "išjungė": 2
+      }
+    },
+    "išlipti": {
+      "count": 6,
+      "chapters": [
+        3,
+        4
+      ],
+      "forms": {
+        "išlipti": 2,
+        "išlipsiu": 1,
+        "išlipo": 2,
+        "išlipau": 1
+      }
+    },
+    "išnešti": {
+      "count": 2,
+      "chapters": [
+        2,
+        3
+      ],
+      "forms": {
+        "išnešiu": 1,
+        "išnešė": 1
+      }
+    },
+    "išplauti": {
+      "count": 3,
+      "chapters": [
+        2,
+        4,
+        9
+      ],
+      "forms": {
+        "išplovė": 2,
+        "išplaus": 1
+      }
+    },
+    "išsirinkti": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "išsirinko": 1
+      }
+    },
+    "išsiskirti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "išsiskyrė": 1
+      }
+    },
+    "išsiųsti": {
+      "count": 5,
+      "chapters": [
+        8,
+        10
+      ],
+      "forms": {
+        "išsiųsiu": 1,
+        "išsiuntė": 3,
+        "išsiunčiau": 1
+      }
+    },
+    "ištiesti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "ištiesė": 1
+      }
+    },
+    "ištraukti": {
+      "count": 3,
+      "chapters": [
+        2,
+        8,
+        9
+      ],
+      "forms": {
+        "ištraukė": 3
+      }
+    },
+    "išvažiuoti": {
+      "count": 2,
+      "chapters": [
+        8,
+        11
+      ],
+      "forms": {
+        "išvažiuoju": 1,
+        "išvažiuoti": 1
+      }
+    },
+    "išvirti": {
+      "count": 2,
+      "chapters": [
+        4,
+        7
+      ],
+      "forms": {
+        "išvirti": 1,
+        "išvirčiau": 1
+      }
+    },
+    "jas": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "jas": 1
+      }
+    },
+    "jei": {
+      "count": 3,
+      "chapters": [
+        4,
+        6,
+        11
+      ],
+      "forms": {
+        "jei": 3
+      }
+    },
+    "jeigu": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "jeigu": 1
+      }
+    },
+    "jūs": {
+      "count": 9,
+      "chapters": [
+        1,
+        4,
+        9
+      ],
+      "forms": {
+        "jūsų": 6,
+        "jums": 1,
+        "jūs": 2
+      }
+    },
+    "jūsų": {
+      "count": 2,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "jūsų": 2
+      }
+    },
+    "kada": {
+      "count": 4,
+      "chapters": [
+        2,
+        7,
+        8,
+        11
+      ],
+      "forms": {
+        "kada": 4
+      }
+    },
+    "kaimynas": {
+      "count": 23,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        11
+      ],
+      "forms": {
+        "kaimynas": 19,
+        "kaimynu": 1,
+        "kaimyną": 1,
+        "kaimyno": 2
+      }
+    },
+    "kaina": {
+      "count": 6,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        10
+      ],
+      "forms": {
+        "kainą": 2,
+        "kaina": 2,
+        "kainos": 1,
+        "kainas": 1
+      }
+    },
+    "kainuoti": {
+      "count": 3,
+      "chapters": [
+        3,
+        10
+      ],
+      "forms": {
+        "kainavo": 2,
+        "nekainavo": 1
+      }
+    },
+    "kairė": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "kairėje": 1
+      }
+    },
+    "kalbėti": {
+      "count": 6,
+      "chapters": [
+        2,
+        5,
+        8
+      ],
+      "forms": {
+        "kalbėjo": 2,
+        "nekalbėjo": 1,
+        "kalbate": 1,
+        "kalbės": 1,
+        "kalbėjau": 1
+      }
+    },
+    "kalbėtis": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "kalbamės": 1
+      }
+    },
+    "kalendorius": {
+      "count": 6,
+      "chapters": [
+        8,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "kalendorių": 2,
+        "kalendorius": 3,
+        "kalendoriuje": 1
+      }
+    },
+    "kam": {
+      "count": 2,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "kam": 2
+      }
+    },
+    "kambarys": {
+      "count": 5,
+      "chapters": [
+        1,
+        5,
+        6
+      ],
+      "forms": {
+        "kambariui": 1,
+        "kambario": 1,
+        "kambarį": 2,
+        "kambaryje": 1
+      }
+    },
+    "kampas": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "kampe": 1
+      }
+    },
+    "kartais": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "kartais": 1
+      }
+    },
+    "kartu": {
+      "count": 3,
+      "chapters": [
+        3,
+        7,
+        8
+      ],
+      "forms": {
+        "kartu": 3
+      }
+    },
+    "karštas": {
+      "count": 3,
+      "chapters": [
+        1,
+        4,
+        9
+      ],
+      "forms": {
+        "karšto": 1,
+        "karšta": 1,
+        "karštas": 1
+      }
+    },
+    "kas": {
+      "count": 4,
+      "chapters": [
+        1,
+        5
+      ],
+      "forms": {
+        "kas": 1,
+        "kam": 2,
+        "kuo": 1
+      }
+    },
+    "kasa": {
+      "count": 2,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "kasos": 2
+      }
+    },
+    "katė": {
+      "count": 2,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "katė": 1,
+        "katės": 1
+      }
+    },
+    "kava": {
+      "count": 10,
+      "chapters": [
+        3,
+        4,
+        6,
+        11
+      ],
+      "forms": {
+        "kavos": 5,
+        "kava": 2,
+        "kavą": 3
+      }
+    },
+    "kažkas": {
+      "count": 3,
+      "chapters": [
+        1,
+        9
+      ],
+      "forms": {
+        "kažkas": 2,
+        "kažko": 1
+      }
+    },
+    "keistas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "keista": 1
+      }
+    },
+    "keli": {
+      "count": 4,
+      "chapters": [
+        1,
+        4,
+        8,
+        9
+      ],
+      "forms": {
+        "keli": 2,
+        "kelios": 1,
+        "kelias": 1
+      }
+    },
+    "kelionė": {
+      "count": 3,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "kelionė": 3
+      }
+    },
+    "kelti": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "keliame": 1
+      }
+    },
+    "kepalas": {
+      "count": 4,
+      "chapters": [
+        7,
+        8,
+        9
+      ],
+      "forms": {
+        "kepalą": 3,
+        "kepalo": 1
+      }
+    },
+    "kepti": {
+      "count": 5,
+      "chapters": [
+        4,
+        9,
+        12
+      ],
+      "forms": {
+        "keptų": 1,
+        "kepė": 3,
+        "kepti": 1
+      }
+    },
+    "keptuvė": {
+      "count": 23,
+      "chapters": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "keptuvės": 4,
+        "keptuvę": 13,
+        "keptuvė": 3,
+        "keptuvei": 2,
+        "keptuvėje": 1
+      }
+    },
+    "keturi": {
+      "count": 2,
+      "chapters": [
+        4,
+        10
+      ],
+      "forms": {
+        "keturis": 1,
+        "keturiuose": 1
+      }
+    },
+    "keturiasdešimt": {
+      "count": 2,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "keturiasdešimt": 1,
+        "minučių": 1
+      }
+    },
+    "ketvirtadienis": {
+      "count": 5,
+      "chapters": [
+        7,
+        8
+      ],
+      "forms": {
+        "ketvirtadienį": 2,
+        "ketvirtadienio": 2,
+        "ketvirtadienis": 1
+      }
+    },
+    "kiaušinis": {
+      "count": 11,
+      "chapters": [
+        4,
+        10,
+        11
+      ],
+      "forms": {
+        "kiaušiniai": 5,
+        "kiaušinių": 1,
+        "kiaušiniais": 3,
+        "kiaušinius": 2
+      }
+    },
+    "kiaušinius": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "kiaušinius": 1
+      }
+    },
+    "kiekis": {
+      "count": 4,
+      "chapters": [
+        8,
+        10
+      ],
+      "forms": {
+        "kiekius": 2,
+        "kiekiai": 1,
+        "kiekis": 1
+      }
+    },
+    "kiekvienas": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "kiekvienas": 1
+      }
+    },
+    "kiemas": {
+      "count": 2,
+      "chapters": [
+        6,
+        8
+      ],
+      "forms": {
+        "kieme": 1,
+        "kiemo": 1
+      }
+    },
+    "kietas": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "kietas": 1
+      }
+    },
+    "kilogramas": {
+      "count": 2,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "kilogramai": 1,
+        "kilogramą": 1
+      }
+    },
+    "kilstelėti": {
+      "count": 2,
+      "chapters": [
+        1,
+        3
+      ],
+      "forms": {
+        "kilstelėjo": 2
+      }
+    },
+    "kitas": {
+      "count": 20,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "forms": {
+        "kitame": 3,
+        "kitą": 7,
+        "kitus": 1,
+        "kitoje": 1,
+        "kitos": 3,
+        "kito": 2,
+        "kiti": 1,
+        "kituose": 1,
+        "kitas": 1
+      }
+    },
+    "kitoje": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "kitoje": 1
+      }
+    },
+    "kitur": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "kitur": 1
+      }
+    },
+    "kišenė": {
+      "count": 3,
+      "chapters": [
+        1,
+        3,
+        6
+      ],
+      "forms": {
+        "kišenėje": 1,
+        "kišenę": 2
+      }
+    },
+    "klaida": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "klaidų": 1
+      }
+    },
+    "klausimas": {
+      "count": 5,
+      "chapters": [
+        1,
+        3,
+        8,
+        10
+      ],
+      "forms": {
+        "klausimai": 2,
+        "klausimas": 1,
+        "klausimus": 2
+      }
+    },
+    "klientas": {
+      "count": 5,
+      "chapters": [
+        3,
+        8
+      ],
+      "forms": {
+        "klientu": 1,
+        "klientų": 1,
+        "kliento": 1,
+        "klientas": 2
+      }
+    },
+    "kliūti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "kliuvo": 1
+      }
+    },
+    "knyga": {
+      "count": 4,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "knygos": 2,
+        "knygas": 1,
+        "knygą": 1
+      }
+    },
+    "kodėl": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "kodėl": 2
+      }
+    },
+    "kojinė": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "kojines": 1
+      }
+    },
+    "koks": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "kokio": 1
+      }
+    },
+    "kol": {
+      "count": 6,
+      "chapters": [
+        1,
+        2,
+        4,
+        7,
+        9,
+        12
+      ],
+      "forms": {
+        "kol": 6
+      }
+    },
+    "kolegė": {
+      "count": 2,
+      "chapters": [
+        3,
+        9
+      ],
+      "forms": {
+        "kolegei": 2
+      }
+    },
+    "krauti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "krovė": 1
+      }
+    },
+    "kraštas": {
+      "count": 2,
+      "chapters": [
+        11,
+        12
+      ],
+      "forms": {
+        "kraštą": 1,
+        "kraštai": 1
+      }
+    },
+    "krepšelis": {
+      "count": 4,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "krepšelį": 3,
+        "krepšelis": 1
+      }
+    },
+    "krepšys": {
+      "count": 4,
+      "chapters": [
+        6,
+        8
+      ],
+      "forms": {
+        "krepšio": 1,
+        "krepšį": 2,
+        "krepšyje": 1
+      }
+    },
+    "kryptis": {
+      "count": 3,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "kryptis": 2,
+        "kuri": 1
+      }
+    },
+    "kuo": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "kuo": 1
+      }
+    },
+    "kur": {
+      "count": 3,
+      "chapters": [
+        1,
+        3,
+        9
+      ],
+      "forms": {
+        "kur": 3
+      }
+    },
+    "kuris": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "kurioms": 1
+      }
+    },
+    "kurjeris": {
+      "count": 4,
+      "chapters": [
+        1,
+        8
+      ],
+      "forms": {
+        "kurjeris": 3,
+        "kurjeriui": 1
+      }
+    },
+    "kurti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "kurti": 1
+      }
+    },
+    "kvapas": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "kvapą": 1
+      }
+    },
+    "kvepėti": {
+      "count": 3,
+      "chapters": [
+        1,
+        9,
+        12
+      ],
+      "forms": {
+        "kvepėjo": 2,
+        "kvepia": 1
+      }
+    },
+    "kviesti": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "nekviečiau": 1,
+        "nekvietė": 1
+      }
+    },
+    "kvietimas": {
+      "count": 8,
+      "chapters": [
+        1,
+        2,
+        7,
+        10
+      ],
+      "forms": {
+        "kvietimą": 4,
+        "kvietimus": 1,
+        "kvietimas": 1,
+        "kvietimų": 1,
+        "kvietimo": 1
+      }
+    },
+    "labai": {
+      "count": 3,
+      "chapters": [
+        1,
+        12
+      ],
+      "forms": {
+        "labai": 3
+      }
+    },
+    "labas": {
+      "count": 2,
+      "chapters": [
+        6,
+        7
+      ],
+      "forms": {
+        "labas": 2
+      }
+    },
+    "laida": {
+      "count": 3,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "laida": 3
+      }
+    },
+    "laikas": {
+      "count": 15,
+      "chapters": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        10,
+        12
+      ],
+      "forms": {
+        "laiką": 6,
+        "laiko": 7,
+        "laikas": 2
+      }
+    },
+    "laikrodis": {
+      "count": 3,
+      "chapters": [
+        2,
+        3,
+        5
+      ],
+      "forms": {
+        "laikrodį": 3
+      }
+    },
+    "laiku": {
+      "count": 4,
+      "chapters": [
+        3,
+        5,
+        10
+      ],
+      "forms": {
+        "laiku": 4
+      }
+    },
+    "laikyti": {
+      "count": 8,
+      "chapters": [
+        1,
+        3,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "forms": {
+        "laikė": 8
+      }
+    },
+    "laiptai": {
+      "count": 4,
+      "chapters": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "forms": {
+        "laiptais": 4
+      }
+    },
+    "laisvas": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "laisva": 1
+      }
+    },
+    "langas": {
+      "count": 4,
+      "chapters": [
+        1,
+        5
+      ],
+      "forms": {
+        "lango": 4
+      }
+    },
+    "lapas": {
+      "count": 4,
+      "chapters": [
+        8,
+        10
+      ],
+      "forms": {
+        "lapus": 3,
+        "lapą": 1
+      }
+    },
+    "lapelis": {
+      "count": 3,
+      "chapters": [
+        1,
+        8
+      ],
+      "forms": {
+        "lapelis": 2,
+        "lapelį": 1
+      }
+    },
+    "laukas": {
+      "count": 3,
+      "chapters": [
+        3,
+        6,
+        7
+      ],
+      "forms": {
+        "lauke": 3
+      }
+    },
+    "laukti": {
+      "count": 14,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        11
+      ],
+      "forms": {
+        "laukiate": 1,
+        "laukė": 5,
+        "lauksiu": 1,
+        "nelaukia": 1,
+        "laukiau": 1,
+        "laukia": 2,
+        "laukiu": 2,
+        "laukti": 1
+      }
+    },
+    "lašėti": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "lašėjo": 1
+      }
+    },
+    "leistis": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "leidosi": 1
+      }
+    },
+    "lengva": {
+      "count": 2,
+      "chapters": [
+        4,
+        5
+      ],
+      "forms": {
+        "lengva": 1,
+        "lengviau": 1
+      }
+    },
+    "lengvai": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "lengviau": 1
+      }
+    },
+    "lentelė": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "lentelę": 1
+      }
+    },
+    "lentyna": {
+      "count": 2,
+      "chapters": [
+        2,
+        8
+      ],
+      "forms": {
+        "lentyną": 1,
+        "lentyna": 1
+      }
+    },
+    "likti": {
+      "count": 21,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "forms": {
+        "liko": 15,
+        "liks": 2,
+        "neliko": 1,
+        "lieka": 1,
+        "likti": 1,
+        "likusį": 1
+      }
+    },
+    "linksmas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "linksmas": 1
+      }
+    },
+    "linktelėti": {
+      "count": 4,
+      "chapters": [
+        2,
+        6,
+        7,
+        11
+      ],
+      "forms": {
+        "linktelėjo": 4
+      }
+    },
+    "liūdnas": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "liūdna": 1
+      }
+    },
+    "lova": {
+      "count": 3,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "lovos": 3
+      }
+    },
+    "lygiai": {
+      "count": 2,
+      "chapters": [
+        5,
+        12
+      ],
+      "forms": {
+        "lygiai": 2
+      }
+    },
+    "lyti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "lyti": 1
+      }
+    },
+    "lėkštė": {
+      "count": 4,
+      "chapters": [
+        5,
+        9,
+        12
+      ],
+      "forms": {
+        "lėkštės": 2,
+        "lėkštėje": 2
+      }
+    },
+    "lėtai": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "lėtai": 1
+      }
+    },
+    "maistas": {
+      "count": 8,
+      "chapters": [
+        1,
+        2,
+        4,
+        7,
+        10
+      ],
+      "forms": {
+        "maisto": 5,
+        "maistas": 1,
+        "maistą": 2
+      }
+    },
+    "maišas": {
+      "count": 4,
+      "chapters": [
+        1,
+        4
+      ],
+      "forms": {
+        "maišą": 2,
+        "maišai": 1,
+        "maišų": 1
+      }
+    },
+    "maišelis": {
+      "count": 7,
+      "chapters": [
+        4,
+        7,
+        9,
+        10
+      ],
+      "forms": {
+        "maišelio": 1,
+        "maišelį": 5,
+        "maišelius": 1
+      }
+    },
+    "makaronai": {
+      "count": 12,
+      "chapters": [
+        7,
+        8,
+        9
+      ],
+      "forms": {
+        "makaronų": 9,
+        "makaronus": 3
+      }
+    },
+    "mane": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "mane": 1
+      }
+    },
+    "manyti": {
+      "count": 2,
+      "chapters": [
+        2,
+        3
+      ],
+      "forms": {
+        "mano": 1,
+        "manau": 1
+      }
+    },
+    "manęs": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "manęs": 1
+      }
+    },
+    "marškiniai": {
+      "count": 4,
+      "chapters": [
+        1,
+        2,
+        12
+      ],
+      "forms": {
+        "marškinius": 2,
+        "marškiniais": 1,
+        "marškiniai": 1
+      }
+    },
+    "matyti": {
+      "count": 6,
+      "chapters": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "forms": {
+        "matė": 5,
+        "nematau": 1
+      }
+    },
+    "mažai": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "mažiau": 1
+      }
+    },
+    "mažas": {
+      "count": 15,
+      "chapters": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "forms": {
+        "mažas": 3,
+        "maža": 1,
+        "mažą": 9,
+        "mažais": 1,
+        "mažų": 1
+      }
+    },
+    "maždaug": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "maždaug": 1
+      }
+    },
+    "mažiausiai": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "mažiausiai": 1
+      }
+    },
+    "medis": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "medis": 1
+      }
+    },
+    "megztinis": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "megztiniu": 1
+      }
+    },
+    "metai": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "metų": 1
+      }
+    },
+    "miegoti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "miegos": 1
+      }
+    },
+    "minkštas": {
+      "count": 7,
+      "chapters": [
+        7,
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "minkšti": 2,
+        "minkštas": 3,
+        "minkštos": 1,
+        "minkšta": 1
+      }
+    },
+    "minutė": {
+      "count": 4,
+      "chapters": [
+        8,
+        9
+      ],
+      "forms": {
+        "minutes": 2,
+        "minučių": 2
+      }
+    },
+    "mokytis": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "mokausi": 1
+      }
+    },
+    "mokėjimas": {
+      "count": 2,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "mokėjimų": 1,
+        "mokėjimo": 1
+      }
+    },
+    "mokėti": {
+      "count": 5,
+      "chapters": [
+        2,
+        4,
+        9,
+        10
+      ],
+      "forms": {
+        "nemoka": 1,
+        "mokėti": 2,
+        "moku": 1,
+        "mokėsiu": 1
+      }
+    },
+    "moteris": {
+      "count": 4,
+      "chapters": [
+        1,
+        6
+      ],
+      "forms": {
+        "moteris": 4
+      }
+    },
+    "mėgti": {
+      "count": 2,
+      "chapters": [
+        8,
+        9
+      ],
+      "forms": {
+        "mėgsta": 1,
+        "nemėgstu": 1
+      }
+    },
+    "mėlynas": {
+      "count": 2,
+      "chapters": [
+        1,
+        6
+      ],
+      "forms": {
+        "mėlyno": 1,
+        "mėlynas": 1
+      }
+    },
+    "mėnuo": {
+      "count": 3,
+      "chapters": [
+        1,
+        10
+      ],
+      "forms": {
+        "mėnuo": 2,
+        "mėnesio": 1
+      }
+    },
+    "naktis": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "naktį": 1
+      }
+    },
+    "namai": {
+      "count": 8,
+      "chapters": [
+        1,
+        4,
+        6,
+        7,
+        8
+      ],
+      "forms": {
+        "namus": 1,
+        "namų": 3,
+        "namuose": 4
+      }
+    },
+    "namie": {
+      "count": 3,
+      "chapters": [
+        1,
+        4
+      ],
+      "forms": {
+        "namie": 3
+      }
+    },
+    "namo": {
+      "count": 2,
+      "chapters": [
+        5,
+        8
+      ],
+      "forms": {
+        "namo": 2
+      }
+    },
+    "naudoti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "nenaudojo": 1
+      }
+    },
+    "naujas": {
+      "count": 10,
+      "chapters": [
+        1,
+        6,
+        8,
+        10
+      ],
+      "forms": {
+        "naujo": 2,
+        "naujas": 3,
+        "naują": 2,
+        "numeris": 1,
+        "nauji": 1,
+        "naujame": 1
+      }
+    },
+    "nebūtina": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "nebūtina": 1
+      }
+    },
+    "nedaug": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "nedaug": 1
+      }
+    },
+    "nedidelis": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "nedidelę": 1
+      }
+    },
+    "negalvosiu": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "negalvosiu": 1
+      }
+    },
+    "negalėti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "negalėjo": 1
+      }
+    },
+    "negu": {
+      "count": 4,
+      "chapters": [
+        2,
+        3,
+        11,
+        12
+      ],
+      "forms": {
+        "negu": 4
+      }
+    },
+    "nemėgti": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "nemėgo": 1
+      }
+    },
+    "nenorėjo": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "nenorėjo": 1
+      }
+    },
+    "nepažįstamas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "nepažįstama": 1
+      }
+    },
+    "net": {
+      "count": 4,
+      "chapters": [
+        1,
+        3,
+        6
+      ],
+      "forms": {
+        "net": 4
+      }
+    },
+    "neteisingas": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "neteisingas": 1
+      }
+    },
+    "netoliese": {
+      "count": 2,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "netoliese": 2
+      }
+    },
+    "netrukus": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "netrukus": 1
+      }
+    },
+    "neįmanomas": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "neįmanomas": 1
+      }
+    },
+    "nešti": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "nešu": 1
+      }
+    },
+    "nežinoti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "nežinojo": 1
+      }
+    },
+    "niekas": {
+      "count": 12,
+      "chapters": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "forms": {
+        "niekas": 4,
+        "nieko": 6,
+        "niekam": 2
+      }
+    },
+    "niekur": {
+      "count": 2,
+      "chapters": [
+        4,
+        5
+      ],
+      "forms": {
+        "niekur": 2
+      }
+    },
+    "normaliai": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "normaliai": 1
+      }
+    },
+    "norėti": {
+      "count": 27,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "forms": {
+        "norėjo": 11,
+        "norėčiau": 1,
+        "norėtumėte": 2,
+        "nori": 1,
+        "nenorėjo": 2,
+        "nenoriu": 2,
+        "norite": 2,
+        "norėjau": 2,
+        "noriu": 2,
+        "norėti": 1,
+        "nebenoriu": 1
+      }
+    },
+    "norėtis": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "nesinorėjo": 1,
+        "norisi": 1
+      }
+    },
+    "nueiti": {
+      "count": 4,
+      "chapters": [
+        1,
+        3,
+        6,
+        9
+      ],
+      "forms": {
+        "nuėjo": 2,
+        "nueiti": 2
+      }
+    },
+    "nuimti": {
+      "count": 2,
+      "chapters": [
+        2,
+        5
+      ],
+      "forms": {
+        "nuėmė": 2
+      }
+    },
+    "nuleisti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "nuleido": 1
+      }
+    },
+    "nulipti": {
+      "count": 2,
+      "chapters": [
+        4,
+        5
+      ],
+      "forms": {
+        "nulipo": 2
+      }
+    },
+    "numeris": {
+      "count": 10,
+      "chapters": [
+        1,
+        3,
+        8,
+        10
+      ],
+      "forms": {
+        "numerį": 7,
+        "numeriu": 1,
+        "numerio": 1,
+        "numeris": 1
+      }
+    },
+    "nunešti": {
+      "count": 4,
+      "chapters": [
+        1,
+        6,
+        7,
+        12
+      ],
+      "forms": {
+        "nunešė": 2,
+        "nunešti": 2
+      }
+    },
+    "nupilti": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "nupylė": 1
+      }
+    },
+    "nupirkti": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "nupirksiu": 1
+      }
+    },
+    "nuplauti": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "nuplovė": 1
+      }
+    },
+    "nusiauti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "nusiavė": 1
+      }
+    },
+    "nusijuokti": {
+      "count": 12,
+      "chapters": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "nusijuokė": 12
+      }
+    },
+    "nusimauti": {
+      "count": 2,
+      "chapters": [
+        1,
+        5
+      ],
+      "forms": {
+        "nusimovė": 1,
+        "nenusimovė": 1
+      }
+    },
+    "nusinešti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "nusinešė": 1
+      }
+    },
+    "nusipirkti": {
+      "count": 8,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "forms": {
+        "nusipirkti": 2,
+        "nusipirko": 5,
+        "maisto": 1
+      }
+    },
+    "nusiplauti": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "nusiplovė": 1
+      }
+    },
+    "nusivilkti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "nusivilko": 1
+      }
+    },
+    "nusišypsoti": {
+      "count": 4,
+      "chapters": [
+        1,
+        2,
+        10,
+        11
+      ],
+      "forms": {
+        "nusišypsojo": 4
+      }
+    },
+    "nuspręsti": {
+      "count": 4,
+      "chapters": [
+        1,
+        2,
+        3,
+        8
+      ],
+      "forms": {
+        "nusprendė": 2,
+        "nuspręskime": 1,
+        "nuspręsti": 1
+      }
+    },
+    "nustatymas": {
+      "count": 3,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "nustatymus": 2,
+        "nustatymai": 1
+      }
+    },
+    "nustatyti": {
+      "count": 2,
+      "chapters": [
+        11,
+        12
+      ],
+      "forms": {
+        "nustatyti": 1,
+        "nustatė": 1
+      }
+    },
+    "nuvalyti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "nuvalė": 1
+      }
+    },
+    "nuvažiuoti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "nuvažiavo": 1
+      }
+    },
+    "obuolys": {
+      "count": 9,
+      "chapters": [
+        9,
+        10,
+        11
+      ],
+      "forms": {
+        "obuolys": 1,
+        "obuolio": 1,
+        "obuolį": 3,
+        "obuoliai": 1,
+        "obuolius": 3
+      }
+    },
+    "orkaitė": {
+      "count": 2,
+      "chapters": [
+        9,
+        12
+      ],
+      "forms": {
+        "orkaitėje": 1,
+        "orkaitę": 1
+      }
+    },
+    "paaiškinimas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "paaiškinimo": 1
+      }
+    },
+    "paaiškinti": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "paaiškinti": 1
+      }
+    },
+    "pabusti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "pabudo": 1
+      }
+    },
+    "padalyti": {
+      "count": 2,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "padalyti": 1,
+        "padalijo": 1
+      }
+    },
+    "padaryti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "padarė": 1
+      }
+    },
+    "padažas": {
+      "count": 5,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "padažas": 1,
+        "padažui": 1,
+        "padažo": 3
+      }
+    },
+    "paduoti": {
+      "count": 7,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        8,
+        9
+      ],
+      "forms": {
+        "padavė": 7
+      }
+    },
+    "padėjėjas": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "padėjėjas": 1
+      }
+    },
+    "padėkoti": {
+      "count": 2,
+      "chapters": [
+        3,
+        8
+      ],
+      "forms": {
+        "padėkojo": 2
+      }
+    },
+    "padėti": {
+      "count": 34,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "padėti": 4,
+        "padėjo": 28,
+        "padėjote": 1,
+        "padedu": 1
+      }
+    },
+    "pagalbininkas": {
+      "count": 8,
+      "chapters": [
+        1,
+        5,
+        7,
+        9
+      ],
+      "forms": {
+        "pagalbininkas": 7,
+        "pagalbininko": 1
+      }
+    },
+    "pagaliau": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "pagaliau": 1
+      }
+    },
+    "pagalvoti": {
+      "count": 3,
+      "chapters": [
+        2,
+        8,
+        9
+      ],
+      "forms": {
+        "nepagalvojau": 1,
+        "pagalvojo": 1,
+        "nepagalvojo": 1
+      }
+    },
+    "pagaminti": {
+      "count": 4,
+      "chapters": [
+        7,
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "pagaminti": 2,
+        "pagaminsiu": 1,
+        "pagaminau": 1
+      }
+    },
+    "pagrindinis": {
+      "count": 2,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "pagrindiniame": 1,
+        "pagrindinis": 1
+      }
+    },
+    "paimti": {
+      "count": 19,
+      "chapters": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "paėmė": 19
+      }
+    },
+    "pajusti": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "pajuto": 1
+      }
+    },
+    "pakabinti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "pakabino": 1
+      }
+    },
+    "pakakti": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "pakako": 1
+      }
+    },
+    "pakartoti": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "pakartojo": 1
+      }
+    },
+    "pakeisti": {
+      "count": 5,
+      "chapters": [
+        3,
+        8,
+        10,
+        11
+      ],
+      "forms": {
+        "pakeitė": 4,
+        "pakeisti": 1
+      }
+    },
+    "pakelis": {
+      "count": 4,
+      "chapters": [
+        4,
+        7,
+        9
+      ],
+      "forms": {
+        "pakelį": 2,
+        "pakelio": 2
+      }
+    },
+    "pakeliui": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "pakeliui": 1
+      }
+    },
+    "pakelti": {
+      "count": 3,
+      "chapters": [
+        6,
+        8,
+        12
+      ],
+      "forms": {
+        "pakėlė": 3
+      }
+    },
+    "pakilti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "pakilo": 1
+      }
+    },
+    "paklausti": {
+      "count": 15,
+      "chapters": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "forms": {
+        "paklausė": 14,
+        "paklausk": 1
+      }
+    },
+    "pakviesti": {
+      "count": 2,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "pakviesti": 1,
+        "pakvietė": 1
+      }
+    },
+    "palaukti": {
+      "count": 7,
+      "chapters": [
+        1,
+        4,
+        5,
+        9,
+        10
+      ],
+      "forms": {
+        "palaukti": 2,
+        "palaukite": 3,
+        "palauks": 2
+      }
+    },
+    "paliesti": {
+      "count": 4,
+      "chapters": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "forms": {
+        "palietė": 4
+      }
+    },
+    "palikti": {
+      "count": 12,
+      "chapters": [
+        1,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "paliks": 1,
+        "paliko": 6,
+        "palikti": 1,
+        "palikite": 2,
+        "palik": 2
+      }
+    },
+    "palinkėti": {
+      "count": 2,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "palinkėti": 1,
+        "palinkėjo": 1
+      }
+    },
+    "palydėti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "palydėjo": 1
+      }
+    },
+    "palyginti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "palyginti": 1
+      }
+    },
+    "pamaišyti": {
+      "count": 3,
+      "chapters": [
+        4,
+        9,
+        12
+      ],
+      "forms": {
+        "pamaišė": 3
+      }
+    },
+    "pamatyti": {
+      "count": 5,
+      "chapters": [
+        1,
+        7,
+        8
+      ],
+      "forms": {
+        "pamatė": 4,
+        "pamačiusi": 1
+      }
+    },
+    "pamiršti": {
+      "count": 3,
+      "chapters": [
+        1,
+        7,
+        12
+      ],
+      "forms": {
+        "nepamiršk": 1,
+        "pamirščiau": 1,
+        "pamiršti": 1
+      }
+    },
+    "papasakoti": {
+      "count": 3,
+      "chapters": [
+        2,
+        8,
+        12
+      ],
+      "forms": {
+        "papasakojo": 3
+      }
+    },
+    "papilkėti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "papilkėjo": 1
+      }
+    },
+    "paprastai": {
+      "count": 2,
+      "chapters": [
+        2,
+        11
+      ],
+      "forms": {
+        "paprasčiau": 2
+      }
+    },
+    "paprastas": {
+      "count": 3,
+      "chapters": [
+        1,
+        7,
+        8
+      ],
+      "forms": {
+        "paprastų": 1,
+        "paprasto": 1,
+        "paprastas": 1
+      }
+    },
+    "paprašyti": {
+      "count": 3,
+      "chapters": [
+        8,
+        9
+      ],
+      "forms": {
+        "paprašė": 2,
+        "paprašysiu": 1
+      }
+    },
+    "paragauti": {
+      "count": 8,
+      "chapters": [
+        4,
+        7,
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "paragavo": 6,
+        "paragaukite": 1,
+        "paragauti": 1
+      }
+    },
+    "parašyti": {
+      "count": 17,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "forms": {
+        "parašyta": 4,
+        "parašė": 8,
+        "parašysiu": 3,
+        "parašyk": 1,
+        "parašyti": 1
+      }
+    },
+    "pardavėja": {
+      "count": 5,
+      "chapters": [
+        4,
+        8
+      ],
+      "forms": {
+        "pardavėja": 5
+      }
+    },
+    "parduotuvė": {
+      "count": 12,
+      "chapters": [
+        1,
+        3,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "forms": {
+        "parduotuvė": 2,
+        "parduotuvės": 4,
+        "parduotuvėje": 5,
+        "parduotuvę": 1
+      }
+    },
+    "parodyti": {
+      "count": 11,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "parodyk": 3,
+        "parodė": 7,
+        "parodyti": 1
+      }
+    },
+    "paruošti": {
+      "count": 3,
+      "chapters": [
+        5,
+        10,
+        12
+      ],
+      "forms": {
+        "paruošė": 1,
+        "paruoštą": 1,
+        "paruošta": 1
+      }
+    },
+    "pas": {
+      "count": 2,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "pas": 2
+      }
+    },
+    "pasakoti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "nepasakojo": 1
+      }
+    },
+    "pasakyti": {
+      "count": 25,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "forms": {
+        "pasakė": 19,
+        "nepasakė": 2,
+        "pasakyti": 2,
+        "nepasakiau": 1,
+        "nepasakei": 1
+      }
+    },
+    "pasibelsti": {
+      "count": 4,
+      "chapters": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "forms": {
+        "pasibeldė": 4
+      }
+    },
+    "pasidaryti": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "pasidarė": 1
+      }
+    },
+    "pasiimti": {
+      "count": 4,
+      "chapters": [
+        3,
+        4,
+        6
+      ],
+      "forms": {
+        "pasiėmė": 3,
+        "pasiimti": 1
+      }
+    },
+    "pasikabinti": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "pasikabino": 1
+      }
+    },
+    "pasikalbėti": {
+      "count": 2,
+      "chapters": [
+        7,
+        8
+      ],
+      "forms": {
+        "pasikalbėti": 2
+      }
+    },
+    "pasikeisti": {
+      "count": 2,
+      "chapters": [
+        6,
+        8
+      ],
+      "forms": {
+        "nepasikeitė": 1,
+        "pasikeitė": 1
+      }
+    },
+    "pasirinkimas": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "pasirinkimą": 1
+      }
+    },
+    "pasirinkti": {
+      "count": 4,
+      "chapters": [
+        1,
+        7,
+        12
+      ],
+      "forms": {
+        "pasirinko": 3,
+        "pasirinksi": 1
+      }
+    },
+    "pasirodyti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "pasirodė": 1
+      }
+    },
+    "pasiruošti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "pasiruošti": 1
+      }
+    },
+    "pasiūlyti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "pasiūlė": 1
+      }
+    },
+    "paskambinti": {
+      "count": 7,
+      "chapters": [
+        1,
+        8,
+        10,
+        11
+      ],
+      "forms": {
+        "paskambino": 4,
+        "paskambins": 1,
+        "paskambinti": 1,
+        "paskambinau": 1
+      }
+    },
+    "paskirtis": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "paskirtį": 1
+      }
+    },
+    "paskolinti": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "paskolinti": 1
+      }
+    },
+    "paskui": {
+      "count": 10,
+      "chapters": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "forms": {
+        "paskui": 10
+      }
+    },
+    "paskutinis": {
+      "count": 3,
+      "chapters": [
+        6,
+        8,
+        9
+      ],
+      "forms": {
+        "paskutinį": 2,
+        "paskutiniuose": 1
+      }
+    },
+    "paspausti": {
+      "count": 3,
+      "chapters": [
+        2,
+        10,
+        11
+      ],
+      "forms": {
+        "paspaudė": 2,
+        "nepaspaudė": 1
+      }
+    },
+    "pastaba": {
+      "count": 2,
+      "chapters": [
+        11,
+        12
+      ],
+      "forms": {
+        "pastabą": 1,
+        "pastaba": 1
+      }
+    },
+    "pastatyti": {
+      "count": 7,
+      "chapters": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        12
+      ],
+      "forms": {
+        "pastatė": 7
+      }
+    },
+    "pastebėti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "pastebėjo": 1
+      }
+    },
+    "pastumti": {
+      "count": 2,
+      "chapters": [
+        2,
+        9
+      ],
+      "forms": {
+        "pastūmė": 2
+      }
+    },
+    "pasukti": {
+      "count": 2,
+      "chapters": [
+        3,
+        5
+      ],
+      "forms": {
+        "pasukite": 1,
+        "pasukti": 1
+      }
+    },
+    "pasverti": {
+      "count": 2,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "pasversiu": 1,
+        "pasvėrė": 1
+      }
+    },
+    "pataisyti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "pataisė": 1
+      }
+    },
+    "patarimas": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "patarimas": 1
+      }
+    },
+    "patiekalas": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "patiekalo": 1
+      }
+    },
+    "patikrinti": {
+      "count": 14,
+      "chapters": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "patikrino": 9,
+        "patikrink": 1,
+        "patikrinti": 3,
+        "patikrinsiu": 1
+      }
+    },
+    "patikti": {
+      "count": 3,
+      "chapters": [
+        1,
+        9
+      ],
+      "forms": {
+        "patiko": 1,
+        "man": 1,
+        "patinka": 1
+      }
+    },
+    "patraukti": {
+      "count": 2,
+      "chapters": [
+        5,
+        6
+      ],
+      "forms": {
+        "patraukė": 2
+      }
+    },
+    "pats": {
+      "count": 10,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "pats": 9,
+        "pati": 1
+      }
+    },
+    "patys": {
+      "count": 2,
+      "chapters": [
+        2,
+        12
+      ],
+      "forms": {
+        "patys": 2
+      }
+    },
+    "pavadinti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "pavadino": 1
+      }
+    },
+    "pavalgyti": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "pavalgyti": 1
+      }
+    },
+    "pavykti": {
+      "count": 4,
+      "chapters": [
+        7,
+        11,
+        12
+      ],
+      "forms": {
+        "pavyko": 1,
+        "nepavyko": 2,
+        "nepavyks": 1
+      }
+    },
+    "pavėluoti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "pavėlavo": 1
+      }
+    },
+    "paštas": {
+      "count": 2,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "pašto": 1,
+        "paštą": 1
+      }
+    },
+    "pažadinti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "pažadink": 1
+      }
+    },
+    "pažadėti": {
+      "count": 3,
+      "chapters": [
+        5,
+        7,
+        8
+      ],
+      "forms": {
+        "pažada": 1,
+        "pažadėjau": 1,
+        "pažadėjo": 1
+      }
+    },
+    "pažinoti": {
+      "count": 2,
+      "chapters": [
+        1,
+        3
+      ],
+      "forms": {
+        "nepažinojo": 1,
+        "pažinojo": 1
+      }
+    },
+    "pažiūrėti": {
+      "count": 24,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "pažiūrėjo": 22,
+        "pažiūrėti": 1,
+        "nepažiūrėjau": 1
+      }
+    },
+    "pažvelgti": {
+      "count": 3,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "pažvelgė": 3
+      }
+    },
+    "pažymėti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "pažymėjo": 1
+      }
+    },
+    "pažįstamas": {
+      "count": 3,
+      "chapters": [
+        3,
+        8
+      ],
+      "forms": {
+        "pažįstamas": 1,
+        "pažįstamą": 2
+      }
+    },
+    "peilis": {
+      "count": 4,
+      "chapters": [
+        9,
+        11
+      ],
+      "forms": {
+        "peilis": 2,
+        "peilį": 2
+      }
+    },
+    "penki": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "penkių": 1
+      }
+    },
+    "penktadienis": {
+      "count": 7,
+      "chapters": [
+        1,
+        2,
+        6,
+        8,
+        10
+      ],
+      "forms": {
+        "penktadienį": 5,
+        "penktadieniais": 1,
+        "penktadienis": 1
+      }
+    },
+    "penktas": {
+      "count": 2,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "penktą": 2
+      }
+    },
+    "per": {
+      "count": 5,
+      "chapters": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "forms": {
+        "per": 5
+      }
+    },
+    "perbraukti": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "perbraukė": 1
+      }
+    },
+    "perkelti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "neperkėlėme": 1
+      }
+    },
+    "pernešti": {
+      "count": 2,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "pernešti": 1,
+        "pernešė": 1
+      }
+    },
+    "perpjauti": {
+      "count": 3,
+      "chapters": [
+        8,
+        9
+      ],
+      "forms": {
+        "perpjauti": 1,
+        "perpjovė": 2
+      }
+    },
+    "persiųsti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "persiuntė": 1
+      }
+    },
+    "perskaityti": {
+      "count": 13,
+      "chapters": [
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "perskaitė": 10,
+        "perskaičiau": 1,
+        "perskaityti": 1,
+        "perskaitys": 1
+      }
+    },
+    "perskambinti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "perskambinti": 1
+      }
+    },
+    "peržiūrėti": {
+      "count": 3,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "peržiūrėjo": 3
+      }
+    },
+    "pienas": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "pieno": 1
+      }
+    },
+    "pietauti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "pietavo": 1
+      }
+    },
+    "pietūs": {
+      "count": 6,
+      "chapters": [
+        3,
+        8,
+        11
+      ],
+      "forms": {
+        "pietums": 1,
+        "pietus": 1,
+        "pietūs": 2,
+        "pietų": 2
+      }
+    },
+    "pietų": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "pietų": 1
+      }
+    },
+    "pilnas": {
+      "count": 3,
+      "chapters": [
+        1,
+        10,
+        12
+      ],
+      "forms": {
+        "pilnos": 1,
+        "pilnas": 1,
+        "pilna": 1
+      }
+    },
+    "pirkinys": {
+      "count": 6,
+      "chapters": [
+        4,
+        6,
+        7,
+        11
+      ],
+      "forms": {
+        "pirkinių": 5,
+        "pirkinius": 1
+      }
+    },
+    "pirkti": {
+      "count": 4,
+      "chapters": [
+        2,
+        4,
+        7
+      ],
+      "forms": {
+        "pirko": 1,
+        "pirkdavo": 1,
+        "pirkti": 2
+      }
+    },
+    "pirma": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "pirma": 1
+      }
+    },
+    "pirmadienis": {
+      "count": 4,
+      "chapters": [
+        1,
+        3,
+        10
+      ],
+      "forms": {
+        "pirmadienio": 2,
+        "pirmadienį": 2
+      }
+    },
+    "pirmadienį": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "pirmadienį": 1
+      }
+    },
+    "pirmas": {
+      "count": 5,
+      "chapters": [
+        1,
+        6,
+        8,
+        10
+      ],
+      "forms": {
+        "pirmas": 2,
+        "pirmą": 2,
+        "pirmame": 1
+      }
+    },
+    "pirmiausia": {
+      "count": 9,
+      "chapters": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        11
+      ],
+      "forms": {
+        "pirmiausia": 9
+      }
+    },
+    "pjaustymas": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "pjaustymo": 1
+      }
+    },
+    "pjaustyti": {
+      "count": 2,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "pjaustyti": 1,
+        "pjaustė": 1
+      }
+    },
+    "planas": {
+      "count": 5,
+      "chapters": [
+        4,
+        7,
+        10,
+        12
+      ],
+      "forms": {
+        "planas": 4,
+        "planus": 1
+      }
+    },
+    "planuoti": {
+      "count": 2,
+      "chapters": [
+        5,
+        11
+      ],
+      "forms": {
+        "neplanavo": 1,
+        "planavo": 1
+      }
+    },
+    "plaukas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "plaukai": 1
+      }
+    },
+    "plauti": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "plaudamas": 1
+      }
+    },
+    "plonai": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "ploniau": 1
+      }
+    },
+    "pluta": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "pluta": 1
+      }
+    },
+    "pokalbis": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "pokalbis": 1
+      }
+    },
+    "pokalbį": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "pokalbį": 1
+      }
+    },
+    "pomidoras": {
+      "count": 17,
+      "chapters": [
+        4,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "pomidorai": 7,
+        "pomidorų": 3,
+        "pomidorus": 5,
+        "pomidorą": 2
+      }
+    },
+    "popierinis": {
+      "count": 2,
+      "chapters": [
+        1,
+        4
+      ],
+      "forms": {
+        "popierinį": 2
+      }
+    },
+    "popierius": {
+      "count": 2,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "popieriaus": 1,
+        "popierius": 1
+      }
+    },
+    "porcija": {
+      "count": 5,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "porcijos": 3,
+        "porciją": 1,
+        "porcijas": 1
+      }
+    },
+    "pradėti": {
+      "count": 9,
+      "chapters": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        12
+      ],
+      "forms": {
+        "pradėjo": 4,
+        "pradėti": 3,
+        "pradėsiu": 1,
+        "pradėjau": 1
+      }
+    },
+    "praeiti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "praėjusio": 1
+      }
+    },
+    "pranešimas": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "pranešimą": 1
+      }
+    },
+    "prasidėti": {
+      "count": 3,
+      "chapters": [
+        2,
+        5
+      ],
+      "forms": {
+        "prasideda": 2,
+        "prasidėjo": 1
+      }
+    },
+    "pratęsti": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "pratęsti": 1
+      }
+    },
+    "prašau": {
+      "count": 4,
+      "chapters": [
+        1,
+        8
+      ],
+      "forms": {
+        "prašau": 4
+      }
+    },
+    "prašyti": {
+      "count": 2,
+      "chapters": [
+        1,
+        4
+      ],
+      "forms": {
+        "prašiau": 1,
+        "prašau": 1
+      }
+    },
+    "pridėti": {
+      "count": 3,
+      "chapters": [
+        8,
+        10
+      ],
+      "forms": {
+        "pridėjo": 3
+      }
+    },
+    "prieiti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "priėjo": 1
+      }
+    },
+    "priekyje": {
+      "count": 2,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "priekyje": 2
+      }
+    },
+    "prieš": {
+      "count": 3,
+      "chapters": [
+        1,
+        5
+      ],
+      "forms": {
+        "prieš": 2,
+        "septynias": 1
+      }
+    },
+    "priežastis": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "priežastis": 1
+      }
+    },
+    "priimti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "priimtas": 1
+      }
+    },
+    "prijungti": {
+      "count": 3,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "prijunkite": 1,
+        "prijungė": 1,
+        "prijungėte": 1
+      }
+    },
+    "prilaikyti": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "prilaikė": 1
+      }
+    },
+    "priminimas": {
+      "count": 11,
+      "chapters": [
+        3,
+        4,
+        8,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "priminimą": 5,
+        "priminimai": 3,
+        "priminimų": 1,
+        "priminimus": 1,
+        "priminimas": 1
+      }
+    },
+    "priminimą": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "priminimą": 1
+      }
+    },
+    "priminti": {
+      "count": 11,
+      "chapters": [
+        1,
+        5,
+        7,
+        9,
+        10,
+        12
+      ],
+      "forms": {
+        "priminti": 5,
+        "primink": 2,
+        "priminė": 3,
+        "priminsiu": 1
+      }
+    },
+    "pripilti": {
+      "count": 3,
+      "chapters": [
+        7,
+        9,
+        11
+      ],
+      "forms": {
+        "pripylė": 3
+      }
+    },
+    "priprasti": {
+      "count": 3,
+      "chapters": [
+        1,
+        3
+      ],
+      "forms": {
+        "nepripratau": 2,
+        "priprasite": 1
+      }
+    },
+    "prireikti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "prireikė": 1
+      }
+    },
+    "prisiminti": {
+      "count": 10,
+      "chapters": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12
+      ],
+      "forms": {
+        "prisiminė": 8,
+        "prisimena": 2
+      }
+    },
+    "pristatyti": {
+      "count": 2,
+      "chapters": [
+        1,
+        8
+      ],
+      "forms": {
+        "pristatytas": 1,
+        "pristatyti": 1
+      }
+    },
+    "pro": {
+      "count": 4,
+      "chapters": [
+        1,
+        3,
+        5
+      ],
+      "forms": {
+        "pro": 3,
+        "duris": 1
+      }
+    },
+    "produktas": {
+      "count": 3,
+      "chapters": [
+        8,
+        11,
+        12
+      ],
+      "forms": {
+        "produktus": 3
+      }
+    },
+    "puiku": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "puiku": 1
+      }
+    },
+    "puodas": {
+      "count": 3,
+      "chapters": [
+        1,
+        3,
+        4
+      ],
+      "forms": {
+        "puodus": 2,
+        "puodai": 1
+      }
+    },
+    "puodelis": {
+      "count": 8,
+      "chapters": [
+        1,
+        3,
+        6
+      ],
+      "forms": {
+        "puodelio": 1,
+        "puodelis": 3,
+        "kavos": 1,
+        "puodelį": 3
+      }
+    },
+    "puslapis": {
+      "count": 3,
+      "chapters": [
+        6,
+        8,
+        10
+      ],
+      "forms": {
+        "puslapyje": 1,
+        "puslapį": 2
+      }
+    },
+    "pusryčiai": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "pusryčiams": 1
+      }
+    },
+    "pusvalandis": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "pusvalandį": 1
+      }
+    },
+    "pusė": {
+      "count": 15,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        8,
+        9
+      ],
+      "forms": {
+        "pusė": 2,
+        "gatvės": 1,
+        "pusę": 7,
+        "pusės": 5
+      }
+    },
+    "pykti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "pykti": 1
+      }
+    },
+    "pyragas": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "pyragą": 1
+      }
+    },
+    "pėsčiomis": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "pėsčiomis": 1
+      }
+    },
+    "raidė": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "raides": 1
+      }
+    },
+    "rajonas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "rajono": 1
+      }
+    },
+    "raktas": {
+      "count": 17,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "forms": {
+        "rakto": 2,
+        "raktas": 5,
+        "raktą": 10
+      }
+    },
+    "ramiai": {
+      "count": 4,
+      "chapters": [
+        2,
+        3,
+        8,
+        11
+      ],
+      "forms": {
+        "ramiai": 3,
+        "ramiau": 1
+      }
+    },
+    "ramus": {
+      "count": 2,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "ramus": 2
+      }
+    },
+    "ramybė": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "ramybės": 1
+      }
+    },
+    "ranka": {
+      "count": 11,
+      "chapters": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "forms": {
+        "rankoje": 5,
+        "ranką": 3,
+        "rankas": 2,
+        "ranka": 1
+      }
+    },
+    "rankena": {
+      "count": 2,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "rankena": 2
+      }
+    },
+    "rankšluostis": {
+      "count": 3,
+      "chapters": [
+        2,
+        12
+      ],
+      "forms": {
+        "rankšluostį": 1,
+        "rankšluosčiais": 1,
+        "rankšluosčiu": 1
+      }
+    },
+    "rasti": {
+      "count": 15,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        11
+      ],
+      "forms": {
+        "rado": 8,
+        "rasim": 1,
+        "rasdavo": 1,
+        "nerandu": 1,
+        "rasi": 1,
+        "radote": 1,
+        "radau": 1,
+        "rasti": 1
+      }
+    },
+    "rašyti": {
+      "count": 2,
+      "chapters": [
+        2,
+        6
+      ],
+      "forms": {
+        "rašydavo": 1,
+        "rašyti": 1
+      }
+    },
+    "receptas": {
+      "count": 5,
+      "chapters": [
+        8,
+        9
+      ],
+      "forms": {
+        "receptą": 5
+      }
+    },
+    "reikėti": {
+      "count": 40,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "forms": {
+        "reikėjo": 15,
+        "reikia": 7,
+        "nereikia": 3,
+        "nereikėjo": 6,
+        "reikės": 5,
+        "nereikės": 4
+      }
+    },
+    "reikšti": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "nereiškė": 1
+      }
+    },
+    "retai": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "retai": 1
+      }
+    },
+    "rimtas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "rimta": 1
+      }
+    },
+    "rodyti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "rodė": 1
+      }
+    },
+    "rudas": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "rudi": 1
+      }
+    },
+    "rytas": {
+      "count": 3,
+      "chapters": [
+        3,
+        4,
+        5
+      ],
+      "forms": {
+        "rytas": 1,
+        "ryte": 2
+      }
+    },
+    "rytinis": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "rytinį": 1
+      }
+    },
+    "rytoj": {
+      "count": 15,
+      "chapters": [
+        1,
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "forms": {
+        "rytoj": 15
+      }
+    },
+    "rytojus": {
+      "count": 7,
+      "chapters": [
+        1,
+        3,
+        4,
+        8,
+        9
+      ],
+      "forms": {
+        "rytojaus": 5,
+        "rytojui": 2
+      }
+    },
+    "ryžiai": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "ryžiais": 1
+      }
+    },
+    "sakinys": {
+      "count": 3,
+      "chapters": [
+        6,
+        8,
+        12
+      ],
+      "forms": {
+        "sakinį": 3
+      }
+    },
+    "sakyti": {
+      "count": 5,
+      "chapters": [
+        2,
+        8
+      ],
+      "forms": {
+        "nieko": 1,
+        "nesakė": 1,
+        "sakiau": 1,
+        "sakau": 1,
+        "nesakiau": 1
+      }
+    },
+    "salotos": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "salotų": 1
+      }
+    },
+    "sau": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "sau": 1
+      }
+    },
+    "saulė": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "saulė": 1
+      }
+    },
+    "sausas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "sausa": 1
+      }
+    },
+    "savaitė": {
+      "count": 2,
+      "chapters": [
+        1,
+        12
+      ],
+      "forms": {
+        "savaites": 1,
+        "savaitę": 1
+      }
+    },
+    "save": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "save": 1
+      }
+    },
+    "savininkė": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "savininkės": 1
+      }
+    },
+    "savo": {
+      "count": 12,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "savo": 12
+      }
+    },
+    "savęs": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "savęs": 1
+      }
+    },
+    "sekmadienis": {
+      "count": 4,
+      "chapters": [
+        3,
+        7,
+        10,
+        11
+      ],
+      "forms": {
+        "sekmadienį": 4
+      }
+    },
+    "senas": {
+      "count": 9,
+      "chapters": [
+        1,
+        3,
+        6,
+        8,
+        10
+      ],
+      "forms": {
+        "senas": 2,
+        "sena": 1,
+        "seno": 2,
+        "seną": 2,
+        "senų": 1,
+        "seni": 1
+      }
+    },
+    "seniai": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "seniai": 1
+      }
+    },
+    "septintas": {
+      "count": 11,
+      "chapters": [
+        1,
+        4,
+        5,
+        8,
+        9
+      ],
+      "forms": {
+        "septintą": 11
+      }
+    },
+    "septintą": {
+      "count": 4,
+      "chapters": [
+        2,
+        12
+      ],
+      "forms": {
+        "septintą": 4
+      }
+    },
+    "septyni": {
+      "count": 2,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "septynių": 1,
+        "septynios": 1
+      }
+    },
+    "septynios": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "septynios": 1
+      }
+    },
+    "siauras": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "siauros": 1
+      }
+    },
+    "siekti": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "siekė": 1
+      }
+    },
+    "siūlyti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "siūlau": 1
+      }
+    },
+    "siųsti": {
+      "count": 5,
+      "chapters": [
+        1,
+        2,
+        7,
+        10
+      ],
+      "forms": {
+        "siųsti": 4,
+        "nesiųsti": 1
+      }
+    },
+    "skaityti": {
+      "count": 3,
+      "chapters": [
+        1,
+        2,
+        4
+      ],
+      "forms": {
+        "skaityti": 1,
+        "neskaitė": 1,
+        "skaitė": 1
+      }
+    },
+    "skaičiuoti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "skaičiuoti": 1
+      }
+    },
+    "skaičius": {
+      "count": 2,
+      "chapters": [
+        10,
+        11
+      ],
+      "forms": {
+        "skaičių": 1,
+        "skaičius": 1
+      }
+    },
+    "skambinti": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "neskambino": 1
+      }
+    },
+    "skambutis": {
+      "count": 3,
+      "chapters": [
+        1,
+        8,
+        9
+      ],
+      "forms": {
+        "skambutis": 2,
+        "skambučio": 1
+      }
+    },
+    "skanaus": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "skanaus": 1
+      }
+    },
+    "skanu": {
+      "count": 2,
+      "chapters": [
+        5,
+        12
+      ],
+      "forms": {
+        "skanu": 2
+      }
+    },
+    "skirti": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "skirs": 1
+      }
+    },
+    "skirtingas": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "skirtingas": 1
+      }
+    },
+    "skirtis": {
+      "count": 2,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "skyrėsi": 1,
+        "skiriasi": 1
+      }
+    },
+    "skirtumas": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "skirtumas": 1
+      }
+    },
+    "skolinti": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "skolinate": 1
+      }
+    },
+    "skolintis": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "skolintis": 1
+      }
+    },
+    "skubėti": {
+      "count": 3,
+      "chapters": [
+        2,
+        5,
+        7
+      ],
+      "forms": {
+        "neskubėjo": 1,
+        "skubėti": 2
+      }
+    },
+    "skėtis": {
+      "count": 3,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "skėtį": 3
+      }
+    },
+    "smulkiai": {
+      "count": 2,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "smulkiai": 2
+      }
+    },
+    "spinta": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "spintoje": 1
+      }
+    },
+    "spintelė": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "spintelė": 1
+      }
+    },
+    "spėti": {
+      "count": 6,
+      "chapters": [
+        3,
+        8,
+        10
+      ],
+      "forms": {
+        "spėsi": 3,
+        "spėsiu": 1,
+        "spėjo": 1,
+        "spėjai": 1
+      }
+    },
+    "stalas": {
+      "count": 16,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        8
+      ],
+      "forms": {
+        "stalo": 9,
+        "stalu": 1,
+        "stalą": 3,
+        "stalas": 2,
+        "stalui": 1
+      }
+    },
+    "stalčius": {
+      "count": 2,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "stalčiuje": 1,
+        "stalčių": 1
+      }
+    },
+    "stiklinė": {
+      "count": 5,
+      "chapters": [
+        2,
+        3,
+        7,
+        12
+      ],
+      "forms": {
+        "stiklinę": 3,
+        "dvi": 1,
+        "stiklines": 1
+      }
+    },
+    "stiprus": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "stipresnė": 1
+      }
+    },
+    "stotelė": {
+      "count": 9,
+      "chapters": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "forms": {
+        "stotelę": 1,
+        "stotelė": 3,
+        "stotelės": 4,
+        "stotelių": 1
+      }
+    },
+    "stovėti": {
+      "count": 13,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12
+      ],
+      "forms": {
+        "stovėjo": 13
+      }
+    },
+    "striukė": {
+      "count": 5,
+      "chapters": [
+        8,
+        9,
+        10,
+        12
+      ],
+      "forms": {
+        "striukę": 5
+      }
+    },
+    "sudegti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "nesudegė": 1
+      }
+    },
+    "sudužti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "nesuduš": 1
+      }
+    },
+    "sudėti": {
+      "count": 3,
+      "chapters": [
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "sudėjo": 3
+      }
+    },
+    "sudėtingas": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "sudėtingos": 1
+      }
+    },
+    "sulankstyti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "sulankstytą": 1
+      }
+    },
+    "sulaukti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "sulaukti": 1
+      }
+    },
+    "suma": {
+      "count": 2,
+      "chapters": [
+        1,
+        10
+      ],
+      "forms": {
+        "suma": 2
+      }
+    },
+    "sumažinti": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "sumažino": 1
+      }
+    },
+    "sumokėti": {
+      "count": 7,
+      "chapters": [
+        1,
+        2,
+        4,
+        8,
+        11
+      ],
+      "forms": {
+        "sumokėjau": 1,
+        "sumokėti": 1,
+        "sumokėjo": 5
+      }
+    },
+    "sumuštinis": {
+      "count": 3,
+      "chapters": [
+        5,
+        6
+      ],
+      "forms": {
+        "sumuštinius": 1,
+        "sumuštinio": 1,
+        "sumuštinį": 1
+      }
+    },
+    "sunku": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "sunku": 1
+      }
+    },
+    "sunkus": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "sunkus": 1
+      }
+    },
+    "supjaustyti": {
+      "count": 7,
+      "chapters": [
+        4,
+        7,
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "supjaustė": 6,
+        "supjaustysiu": 1
+      }
+    },
+    "suprasti": {
+      "count": 5,
+      "chapters": [
+        1,
+        7,
+        8,
+        11
+      ],
+      "forms": {
+        "suprasti": 1,
+        "suprantu": 3,
+        "suprato": 1
+      }
+    },
+    "surasti": {
+      "count": 4,
+      "chapters": [
+        1,
+        2,
+        3,
+        8
+      ],
+      "forms": {
+        "surask": 1,
+        "surasti": 1,
+        "surado": 2
+      }
+    },
+    "susitarimas": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "susitarimas": 1
+      }
+    },
+    "susitarti": {
+      "count": 3,
+      "chapters": [
+        11,
+        12
+      ],
+      "forms": {
+        "susitarti": 1,
+        "susitarėm": 1,
+        "susitarsime": 1
+      }
+    },
+    "susitikimas": {
+      "count": 6,
+      "chapters": [
+        1,
+        3,
+        8
+      ],
+      "forms": {
+        "susitikimus": 1,
+        "susitikimas": 2,
+        "susitikimo": 2,
+        "susitikime": 1
+      }
+    },
+    "suskambėti": {
+      "count": 8,
+      "chapters": [
+        1,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "suskambo": 8
+      }
+    },
+    "sustoti": {
+      "count": 4,
+      "chapters": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "forms": {
+        "sustojo": 4
+      }
+    },
+    "susukti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "susuko": 1
+      }
+    },
+    "sutalpinti": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "sutalpinti": 1
+      }
+    },
+    "sutarti": {
+      "count": 2,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "sutarta": 2
+      }
+    },
+    "sutikti": {
+      "count": 3,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "sutikau": 2,
+        "sutiko": 1
+      }
+    },
+    "sutvarkyti": {
+      "count": 2,
+      "chapters": [
+        7,
+        12
+      ],
+      "forms": {
+        "sutvarkyti": 1,
+        "sutvarkei": 1
+      }
+    },
+    "suvalgyti": {
+      "count": 4,
+      "chapters": [
+        6,
+        10,
+        11
+      ],
+      "forms": {
+        "suvalgyti": 1,
+        "suvalgė": 3
+      }
+    },
+    "sužibti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "sužibo": 1
+      }
+    },
+    "svarbiausias": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "svarbiausia": 1
+      }
+    },
+    "svarbu": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "svarbu": 1
+      }
+    },
+    "sverti": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "sverti": 1
+      }
+    },
+    "svogūnas": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "svogūnų": 2
+      }
+    },
+    "sąrašas": {
+      "count": 23,
+      "chapters": [
+        2,
+        3,
+        4,
+        7,
+        8,
+        10,
+        12
+      ],
+      "forms": {
+        "sąrašas": 4,
+        "sąrašą": 13,
+        "sąrašo": 2,
+        "sąraše": 2,
+        "sąrašai": 2
+      }
+    },
+    "sėstis": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "sėskitės": 1
+      }
+    },
+    "sūrio": {
+      "count": 2,
+      "chapters": [
+        11,
+        12
+      ],
+      "forms": {
+        "sūrio": 2
+      }
+    },
+    "sūris": {
+      "count": 11,
+      "chapters": [
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "sūriu": 1,
+        "sūris": 5,
+        "sūrio": 5
+      }
+    },
+    "tada": {
+      "count": 22,
+      "chapters": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "forms": {
+        "tada": 22
+      }
+    },
+    "taip": {
+      "count": 5,
+      "chapters": [
+        1,
+        6,
+        9
+      ],
+      "forms": {
+        "taip": 5
+      }
+    },
+    "tamsus": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "tamsios": 1
+      }
+    },
+    "tartis": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "tarėmės": 1
+      }
+    },
+    "tau": {
+      "count": 2,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "tau": 2
+      }
+    },
+    "tavo": {
+      "count": 4,
+      "chapters": [
+        3,
+        6,
+        8
+      ],
+      "forms": {
+        "tavo": 4
+      }
+    },
+    "tačiau": {
+      "count": 4,
+      "chapters": [
+        1,
+        3,
+        4,
+        11
+      ],
+      "forms": {
+        "tačiau": 4
+      }
+    },
+    "teisingas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "teisingas": 1
+      }
+    },
+    "tekti": {
+      "count": 2,
+      "chapters": [
+        2,
+        6
+      ],
+      "forms": {
+        "teko": 2
+      }
+    },
+    "telefonas": {
+      "count": 30,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "telefoną": 10,
+        "telefonas": 6,
+        "telefone": 6,
+        "telefono": 5,
+        "telefonu": 3
+      }
+    },
+    "telefone": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "telefone": 1
+      }
+    },
+    "tiesiai": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "tiesiai": 1
+      }
+    },
+    "tikrai": {
+      "count": 5,
+      "chapters": [
+        2,
+        6,
+        9,
+        12
+      ],
+      "forms": {
+        "tikrai": 5
+      }
+    },
+    "tikras": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "tikra": 1
+      }
+    },
+    "tikrinti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "tikrinsiu": 1
+      }
+    },
+    "tiksliai": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "tiksliai": 1
+      }
+    },
+    "tikti": {
+      "count": 11,
+      "chapters": [
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "tinka": 9,
+        "tiktų": 1,
+        "tiks": 1
+      }
+    },
+    "tilpti": {
+      "count": 3,
+      "chapters": [
+        2,
+        6
+      ],
+      "forms": {
+        "telpa": 1,
+        "tilps": 1,
+        "netilpo": 1
+      }
+    },
+    "tinkamas": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "tinkama": 1
+      }
+    },
+    "todėl": {
+      "count": 3,
+      "chapters": [
+        8,
+        11
+      ],
+      "forms": {
+        "todėl": 3
+      }
+    },
+    "toks": {
+      "count": 3,
+      "chapters": [
+        4,
+        8
+      ],
+      "forms": {
+        "tokį": 2,
+        "tokios": 1
+      }
+    },
+    "toli": {
+      "count": 2,
+      "chapters": [
+        7,
+        9
+      ],
+      "forms": {
+        "toli": 1,
+        "toliau": 1
+      }
+    },
+    "toliau": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "toliau": 1
+      }
+    },
+    "traškus": {
+      "count": 2,
+      "chapters": [
+        7,
+        12
+      ],
+      "forms": {
+        "traški": 1,
+        "traškus": 1
+      }
+    },
+    "trečiadienis": {
+      "count": 2,
+      "chapters": [
+        4,
+        5
+      ],
+      "forms": {
+        "trečiadienio": 1,
+        "trečiadienį": 1
+      }
+    },
+    "trukdyti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "netrukdė": 1
+      }
+    },
+    "trukti": {
+      "count": 3,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "trukdavo": 1,
+        "truks": 2
+      }
+    },
+    "trumpai": {
+      "count": 5,
+      "chapters": [
+        1,
+        5,
+        6,
+        8,
+        11
+      ],
+      "forms": {
+        "trumpai": 5
+      }
+    },
+    "trumpam": {
+      "count": 3,
+      "chapters": [
+        3,
+        4,
+        7
+      ],
+      "forms": {
+        "trumpam": 3
+      }
+    },
+    "trumpas": {
+      "count": 5,
+      "chapters": [
+        1,
+        6,
+        7,
+        8,
+        11
+      ],
+      "forms": {
+        "trumpi": 1,
+        "trumpa": 1,
+        "trumpas": 1,
+        "trumpą": 1,
+        "trumpiau": 1
+      }
+    },
+    "trumpiau": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "trumpiau": 1
+      }
+    },
+    "truputį": {
+      "count": 11,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "forms": {
+        "truputį": 11
+      }
+    },
+    "trys": {
+      "count": 4,
+      "chapters": [
+        1,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "trys": 3,
+        "tris": 1
+      }
+    },
+    "trūkti": {
+      "count": 6,
+      "chapters": [
+        3,
+        4,
+        8,
+        9,
+        11
+      ],
+      "forms": {
+        "trūko": 5,
+        "netrūko": 1
+      }
+    },
+    "tu": {
+      "count": 3,
+      "chapters": [
+        2,
+        6
+      ],
+      "forms": {
+        "tavęs": 1,
+        "tau": 2
+      }
+    },
+    "tuoj": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "tuoj": 1
+      }
+    },
+    "turbūt": {
+      "count": 3,
+      "chapters": [
+        8,
+        9
+      ],
+      "forms": {
+        "turbūt": 3
+      }
+    },
+    "turėti": {
+      "count": 18,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "forms": {
+        "turėjo": 2,
+        "turite": 5,
+        "neturėjo": 1,
+        "turiu": 4,
+        "turėsite": 1,
+        "turėsiu": 1,
+        "turi": 1,
+        "neturiu": 1,
+        "turėtų": 1,
+        "turime": 1
+      }
+    },
+    "tuščias": {
+      "count": 9,
+      "chapters": [
+        1,
+        2,
+        4,
+        8,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "tuščia": 4,
+        "tuščio": 1,
+        "tuščios": 2,
+        "tuščias": 1,
+        "tuščią": 1
+      }
+    },
+    "tvarka": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "tvarka": 1
+      }
+    },
+    "tvarkaraštis": {
+      "count": 3,
+      "chapters": [
+        3,
+        6
+      ],
+      "forms": {
+        "tvarkaraštį": 3
+      }
+    },
+    "tyla": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "tyla": 1
+      }
+    },
+    "tyliai": {
+      "count": 7,
+      "chapters": [
+        1,
+        2,
+        5,
+        8,
+        9
+      ],
+      "forms": {
+        "tyliai": 7
+      }
+    },
+    "tylu": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "tylu": 1
+      }
+    },
+    "tylus": {
+      "count": 3,
+      "chapters": [
+        1,
+        6,
+        7
+      ],
+      "forms": {
+        "tylu": 3
+      }
+    },
+    "tylėti": {
+      "count": 2,
+      "chapters": [
+        1,
+        4
+      ],
+      "forms": {
+        "tylėjo": 2
+      }
+    },
+    "tėtis": {
+      "count": 3,
+      "chapters": [
+        2,
+        11
+      ],
+      "forms": {
+        "tėtis": 1,
+        "tėčiui": 2
+      }
+    },
+    "ugnis": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "ugnį": 1
+      }
+    },
+    "užberti": {
+      "count": 2,
+      "chapters": [
+        11,
+        12
+      ],
+      "forms": {
+        "užbėrė": 2
+      }
+    },
+    "uždaryti": {
+      "count": 7,
+      "chapters": [
+        1,
+        2,
+        3,
+        8,
+        10
+      ],
+      "forms": {
+        "uždarykite": 1,
+        "uždarė": 6
+      }
+    },
+    "uždengti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "neuždengė": 1
+      }
+    },
+    "užeiti": {
+      "count": 2,
+      "chapters": [
+        1,
+        6
+      ],
+      "forms": {
+        "užeikite": 1,
+        "užeik": 1
+      }
+    },
+    "užkaisti": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "užkaisiu": 1
+      }
+    },
+    "užrašas": {
+      "count": 2,
+      "chapters": [
+        1,
+        9
+      ],
+      "forms": {
+        "užrašas": 1,
+        "užrašą": 1
+      }
+    },
+    "užrašyti": {
+      "count": 6,
+      "chapters": [
+        3,
+        7,
+        10,
+        11
+      ],
+      "forms": {
+        "užrašė": 5,
+        "užrašytas": 1
+      }
+    },
+    "užsakymas": {
+      "count": 16,
+      "chapters": [
+        1,
+        2,
+        8,
+        10
+      ],
+      "forms": {
+        "užsakymas": 4,
+        "užsakymo": 1,
+        "užsakymų": 3,
+        "užsakymą": 1,
+        "užsakymuose": 3,
+        "užsakymus": 2,
+        "užsakymai": 2
+      }
+    },
+    "užsakyti": {
+      "count": 8,
+      "chapters": [
+        1,
+        2,
+        4,
+        10,
+        11
+      ],
+      "forms": {
+        "užsakyti": 6,
+        "užsakė": 1,
+        "neužsakyti": 1
+      }
+    },
+    "užsidaryti": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "užsidarė": 1
+      }
+    },
+    "užsidėti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "užsidėjo": 1
+      }
+    },
+    "užsirašyti": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "užsirašau": 1
+      }
+    },
+    "užsukti": {
+      "count": 3,
+      "chapters": [
+        2,
+        11
+      ],
+      "forms": {
+        "užsukdavo": 1,
+        "užsuksiu": 1,
+        "užsuk": 1
+      }
+    },
+    "užtekti": {
+      "count": 16,
+      "chapters": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        12
+      ],
+      "forms": {
+        "užteks": 10,
+        "užteko": 4,
+        "neužtekti": 1,
+        "užtekti": 1
+      }
+    },
+    "užtrukti": {
+      "count": 4,
+      "chapters": [
+        8,
+        9
+      ],
+      "forms": {
+        "užtruks": 1,
+        "užtruko": 2,
+        "užtrunka": 1
+      }
+    },
+    "vadinasi": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "vadinasi": 1
+      }
+    },
+    "vairuotojas": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "vairuotojui": 1
+      }
+    },
+    "vakar": {
+      "count": 2,
+      "chapters": [
+        1,
+        7
+      ],
+      "forms": {
+        "vakar": 2
+      }
+    },
+    "vakaras": {
+      "count": 6,
+      "chapters": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "forms": {
+        "vakarą": 1,
+        "vakarų": 1,
+        "vakare": 2,
+        "vakaro": 2
+      }
+    },
+    "vakarieniauti": {
+      "count": 4,
+      "chapters": [
+        2,
+        7
+      ],
+      "forms": {
+        "vakarieniauti": 2,
+        "vakarieniaujate": 1,
+        "vakarieniausiu": 1
+      }
+    },
+    "vakarienė": {
+      "count": 18,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        10,
+        11,
+        12
+      ],
+      "forms": {
+        "vakarienę": 3,
+        "vakarienės": 8,
+        "vakarienė": 6,
+        "viena": 1
+      }
+    },
+    "vakarykštis": {
+      "count": 3,
+      "chapters": [
+        5,
+        8
+      ],
+      "forms": {
+        "vakarykštę": 3
+      }
+    },
+    "valanda": {
+      "count": 9,
+      "chapters": [
+        1,
+        3,
+        5,
+        8,
+        9,
+        11
+      ],
+      "forms": {
+        "valandą": 3,
+        "valandos": 3,
+        "valanda": 3
+      }
+    },
+    "valgyti": {
+      "count": 12,
+      "chapters": [
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        12
+      ],
+      "forms": {
+        "valgom": 1,
+        "nevalgiau": 1,
+        "valgė": 2,
+        "valgys": 1,
+        "valgyti": 5,
+        "valgau": 1,
+        "valgydami": 1
+      }
+    },
+    "vanduo": {
+      "count": 10,
+      "chapters": [
+        1,
+        2,
+        3,
+        7,
+        9
+      ],
+      "forms": {
+        "vandens": 6,
+        "vanduo": 2,
+        "vandenį": 2
+      }
+    },
+    "vardas": {
+      "count": 7,
+      "chapters": [
+        1,
+        2,
+        5,
+        6,
+        8
+      ],
+      "forms": {
+        "vardo": 2,
+        "vardą": 2,
+        "vardas": 3
+      }
+    },
+    "vargas": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "vargo": 1
+      }
+    },
+    "vazonas": {
+      "count": 2,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "vazonai": 2
+      }
+    },
+    "važiuoti": {
+      "count": 5,
+      "chapters": [
+        3,
+        7,
+        11
+      ],
+      "forms": {
+        "važiuoja": 1,
+        "važiavo": 2,
+        "nevažiavo": 1,
+        "važiuoju": 1
+      }
+    },
+    "veiksmas": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "veiksmų": 1
+      }
+    },
+    "veikti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "veikia": 1
+      }
+    },
+    "vidurys": {
+      "count": 3,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "viduryje": 1,
+        "vidurys": 2
+      }
+    },
+    "vidus": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "vidus": 1
+      }
+    },
+    "vien": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "vien": 1
+      }
+    },
+    "viena": {
+      "count": 2,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "viena": 2
+      }
+    },
+    "vienas": {
+      "count": 24,
+      "chapters": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "forms": {
+        "vienos": 2,
+        "vienam": 3,
+        "vieną": 8,
+        "vienoje": 2,
+        "vienai": 1,
+        "viena": 2,
+        "vienas": 4,
+        "vieno": 2
+      }
+    },
+    "vienodas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "vienodos": 1
+      }
+    },
+    "vienuolika": {
+      "count": 1,
+      "chapters": [
+        10
+      ],
+      "forms": {
+        "vienuoliktą": 1
+      }
+    },
+    "vienuoliktas": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "vienuoliktą": 1
+      }
+    },
+    "vienur": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "vienur": 1
+      }
+    },
+    "vieta": {
+      "count": 10,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "forms": {
+        "vietos": 3,
+        "vieta": 1,
+        "vietoje": 3,
+        "vietą": 3
+      }
+    },
+    "viešnia": {
+      "count": 3,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "viešnia": 2,
+        "viešnios": 1
+      }
+    },
+    "vilkėti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "vilkėjo": 1
+      }
+    },
+    "virti": {
+      "count": 2,
+      "chapters": [
+        7,
+        9
+      ],
+      "forms": {
+        "verdantį": 1,
+        "virti": 1
+      }
+    },
+    "virtuvė": {
+      "count": 13,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10
+      ],
+      "forms": {
+        "virtuvė": 1,
+        "virtuvėje": 7,
+        "virtuvę": 2,
+        "virtuvės": 2,
+        "virtuve": 1
+      }
+    },
+    "viryklė": {
+      "count": 2,
+      "chapters": [
+        7,
+        9
+      ],
+      "forms": {
+        "viryklę": 2
+      }
+    },
+    "virš": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "virš": 1
+      }
+    },
+    "viršuje": {
+      "count": 3,
+      "chapters": [
+        4,
+        5
+      ],
+      "forms": {
+        "viršuje": 3
+      }
+    },
+    "visai": {
+      "count": 3,
+      "chapters": [
+        3,
+        8,
+        9
+      ],
+      "forms": {
+        "visai": 3
+      }
+    },
+    "visas": {
+      "count": 5,
+      "chapters": [
+        4,
+        8,
+        9,
+        10
+      ],
+      "forms": {
+        "visam": 1,
+        "visi": 2,
+        "viso": 1,
+        "visą": 1
+      }
+    },
+    "visi": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "visų": 1
+      }
+    },
+    "viskas": {
+      "count": 6,
+      "chapters": [
+        1,
+        4,
+        8,
+        9,
+        12
+      ],
+      "forms": {
+        "viskas": 2,
+        "viską": 3,
+        "visko": 1
+      }
+    },
+    "visko": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "visko": 1
+      }
+    },
+    "visur": {
+      "count": 3,
+      "chapters": [
+        1,
+        6
+      ],
+      "forms": {
+        "visur": 3
+      }
+    },
+    "vištiena": {
+      "count": 3,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "vištieną": 1,
+        "vištiena": 1,
+        "vištienos": 1
+      }
+    },
+    "vyras": {
+      "count": 3,
+      "chapters": [
+        1,
+        8
+      ],
+      "forms": {
+        "vyras": 3
+      }
+    },
+    "vėl": {
+      "count": 8,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        11
+      ],
+      "forms": {
+        "vėl": 8
+      }
+    },
+    "vėlai": {
+      "count": 4,
+      "chapters": [
+        1,
+        7,
+        9,
+        10
+      ],
+      "forms": {
+        "vėliau": 4
+      }
+    },
+    "vėliau": {
+      "count": 3,
+      "chapters": [
+        3,
+        8,
+        11
+      ],
+      "forms": {
+        "vėliau": 3
+      }
+    },
+    "vėlu": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "vėlu": 1
+      }
+    },
+    "vėluoti": {
+      "count": 4,
+      "chapters": [
+        1,
+        3
+      ],
+      "forms": {
+        "nevėluos": 1,
+        "vėluoju": 2,
+        "vėluosiu": 1
+      }
+    },
+    "čekis": {
+      "count": 9,
+      "chapters": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "forms": {
+        "čekį": 4,
+        "čekis": 2,
+        "čekio": 1,
+        "čekiu": 1,
+        "čekiai": 1
+      }
+    },
+    "įberti": {
+      "count": 3,
+      "chapters": [
+        7,
+        9
+      ],
+      "forms": {
+        "įbėrė": 3
+      }
+    },
+    "įdėti": {
+      "count": 4,
+      "chapters": [
+        6,
+        11,
+        12
+      ],
+      "forms": {
+        "įdėjo": 4
+      }
+    },
+    "įeiti": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "įėjo": 1
+      }
+    },
+    "įjungti": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "įjungė": 1
+      }
+    },
+    "įlipti": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "įlipo": 1
+      }
+    },
+    "įmušti": {
+      "count": 2,
+      "chapters": [
+        11,
+        12
+      ],
+      "forms": {
+        "įmušė": 2
+      }
+    },
+    "įpilti": {
+      "count": 2,
+      "chapters": [
+        4,
+        9
+      ],
+      "forms": {
+        "įpylė": 2
+      }
+    },
+    "įprastas": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "įprastas": 2
+      }
+    },
+    "įrašyti": {
+      "count": 10,
+      "chapters": [
+        1,
+        3,
+        4,
+        5,
+        8,
+        10,
+        12
+      ],
+      "forms": {
+        "įrašė": 8,
+        "įrašyti": 1,
+        "įrašiau": 1
+      }
+    },
+    "įsidėti": {
+      "count": 7,
+      "chapters": [
+        2,
+        4,
+        7,
+        8,
+        9,
+        12
+      ],
+      "forms": {
+        "įsidėjo": 7
+      }
+    },
+    "įsivaizduoti": {
+      "count": 1,
+      "chapters": [
+        8
+      ],
+      "forms": {
+        "įsivaizdavo": 1
+      }
+    },
+    "šakutė": {
+      "count": 7,
+      "chapters": [
+        1,
+        2,
+        8,
+        12
+      ],
+      "forms": {
+        "šakučių": 2,
+        "šakutės": 1,
+        "šakutę": 3,
+        "šakute": 1
+      }
+    },
+    "šaldytuvas": {
+      "count": 4,
+      "chapters": [
+        1,
+        4,
+        9
+      ],
+      "forms": {
+        "šaldytuve": 2,
+        "šaldytuvas": 1,
+        "šaldytuvą": 1
+      }
+    },
+    "šalia": {
+      "count": 13,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        12
+      ],
+      "forms": {
+        "šalia": 11,
+        "stalo": 1,
+        "namo": 1
+      }
+    },
+    "šalikas": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "šalikas": 1
+      }
+    },
+    "šaltas": {
+      "count": 2,
+      "chapters": [
+        1,
+        8
+      ],
+      "forms": {
+        "šalta": 1,
+        "šalti": 1
+      }
+    },
+    "šalti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "šąla": 1
+      }
+    },
+    "šaukštas": {
+      "count": 2,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "šaukštai": 1,
+        "šaukštą": 1
+      }
+    },
+    "šeši": {
+      "count": 1,
+      "chapters": [
+        4
+      ],
+      "forms": {
+        "šešiais": 1
+      }
+    },
+    "šešiolika": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "forms": {
+        "šešiolika": 1
+      }
+    },
+    "šeštadienis": {
+      "count": 9,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        11
+      ],
+      "forms": {
+        "šeštadienis": 3,
+        "šeštadienį": 6
+      }
+    },
+    "šeštadienį": {
+      "count": 1,
+      "chapters": [
+        12
+      ],
+      "forms": {
+        "šeštadienį": 1
+      }
+    },
+    "šeštas": {
+      "count": 2,
+      "chapters": [
+        5,
+        8
+      ],
+      "forms": {
+        "šeštos": 1,
+        "šeštą": 1
+      }
+    },
+    "šiandien": {
+      "count": 21,
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "forms": {
+        "šiandien": 21
+      }
+    },
+    "šiandienos": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "šiandienos": 1
+      }
+    },
+    "šiltas": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "šiltas": 1
+      }
+    },
+    "šilti": {
+      "count": 1,
+      "chapters": [
+        7
+      ],
+      "forms": {
+        "šilo": 1
+      }
+    },
+    "šis": {
+      "count": 4,
+      "chapters": [
+        1,
+        8,
+        10
+      ],
+      "forms": {
+        "šio": 1,
+        "šį": 3
+      }
+    },
+    "šitaip": {
+      "count": 1,
+      "chapters": [
+        9
+      ],
+      "forms": {
+        "šitaip": 1
+      }
+    },
+    "šitas": {
+      "count": 13,
+      "chapters": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        9
+      ],
+      "forms": {
+        "šitas": 2,
+        "šito": 3,
+        "šitą": 3,
+        "šita": 2,
+        "šituos": 1,
+        "šituo": 1,
+        "šitame": 1
+      }
+    },
+    "šlapias": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "šlapi": 1
+      }
+    },
+    "šlepetė": {
+      "count": 2,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "šlepečių": 1,
+        "šlepetės": 1
+      }
+    },
+    "šonas": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "šoną": 1
+      }
+    },
+    "štai": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "štai": 1
+      }
+    },
+    "švarus": {
+      "count": 3,
+      "chapters": [
+        1,
+        5
+      ],
+      "forms": {
+        "švarios": 1,
+        "švarius": 1,
+        "švarią": 1
+      }
+    },
+    "šviesa": {
+      "count": 1,
+      "chapters": [
+        5
+      ],
+      "forms": {
+        "šviesos": 1
+      }
+    },
+    "šviesti": {
+      "count": 1,
+      "chapters": [
+        6
+      ],
+      "forms": {
+        "švietė": 1
+      }
+    },
+    "šviesus": {
+      "count": 2,
+      "chapters": [
+        1,
+        10
+      ],
+      "forms": {
+        "šviesiu": 1,
+        "šviesūs": 1
+      }
+    },
+    "šįkart": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "šįkart": 1
+      }
+    },
+    "žalias": {
+      "count": 5,
+      "chapters": [
+        1,
+        9
+      ],
+      "forms": {
+        "žaliu": 1,
+        "žalius": 2,
+        "žalio": 1,
+        "žalių": 1
+      }
+    },
+    "žemai": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "žemiau": 1
+      }
+    },
+    "žemyn": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "forms": {
+        "žemyn": 2
+      }
+    },
+    "žemėlapis": {
+      "count": 1,
+      "chapters": [
+        3
+      ],
+      "forms": {
+        "žemėlapį": 1
+      }
+    },
+    "žengti": {
+      "count": 1,
+      "chapters": [
+        1
+      ],
+      "forms": {
+        "žengė": 1
+      }
+    },
+    "žinoma": {
+      "count": 2,
+      "chapters": [
+        3,
+        5
+      ],
+      "forms": {
+        "žinoma": 2
+      }
+    },
+    "žinoti": {
+      "count": 7,
+      "chapters": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        12
+      ],
+      "forms": {
+        "nežinojo": 3,
+        "nebežinau": 1,
+        "žinote": 1,
+        "nežinau": 1,
+        "žinau": 1
+      }
+    },
+    "žinutė": {
+      "count": 21,
+      "chapters": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "forms": {
+        "žinutes": 4,
+        "žinutė": 3,
+        "žinutę": 6,
+        "žinutės": 3,
+        "žinutėse": 1,
+        "žinutėje": 2,
+        "žinute": 1,
+        "žinučių": 1
+      }
+    },
+    "žiupsnelis": {
+      "count": 1,
+      "chapters": [
+        11
+      ],
+      "forms": {
+        "žiupsnelį": 1
+      }
+    },
+    "žiūrėti": {
+      "count": 3,
+      "chapters": [
+        3,
+        8
+      ],
+      "forms": {
+        "žiūrėkite": 1,
+        "nežiūrėjo": 1,
+        "žiūrėti": 1
+      }
+    },
+    "žmogus": {
+      "count": 2,
+      "chapters": [
+        1,
+        4
+      ],
+      "forms": {
+        "žmogui": 1,
+        "žmogus": 1
+      }
+    },
+    "žodis": {
+      "count": 2,
+      "chapters": [
+        2,
+        4
+      ],
+      "forms": {
+        "žodis": 1,
+        "žodžio": 1
+      }
+    }
+  },
+  "planningGuidance": {
+    "focus": "Разнообразие конкретных существительных и предметных тем между книгами; хлеб и яблоки не должны становиться навязчивым содержанием сцен.",
+    "naturalHighFrequencyReuse": "Обычные частые глаголы, прилагательные, местоимения и прочая повседневная лексика повторяются свободно по смыслу. Высокая частота сама по себе не требует замены слова.",
+    "confirmedKnownPolicy": "duona и obuolys не запрещены: уместны по действию, без искусственной тренировки.",
+    "countsPolicy": "frequentPriorLemmas — статистика прежних встреч, а не список запрещённых слов и не подтверждение освоения."
+  }
+}

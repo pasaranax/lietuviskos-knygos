@@ -1,6 +1,6 @@
 ---
 name: lithuanian-storybook
-description: Use when creating or continuing original Lithuanian graded fiction for Russian-speaking learners, including A2 books in different genres, pilot chapters, recurring vocabulary, and Frank-method tooltips.
+description: Use when creating or continuing original Lithuanian graded fiction for Russian-speaking learners, including A2 books in different genres, pilot chapters, recurring vocabulary, Frank-method tooltips, and Gemini narration by character with contextual emotions.
 ---
 
 # Lithuanian storybook
@@ -64,10 +64,17 @@ When asked for a premise, give only the starting situation, protagonist's immedi
 3. Review story logic and reader knowledge. Repair the prose, not merely the outline.
 4. Review Lithuanian and Russian in context. Stress-mark verified source chunks, then segment and annotate using the reader contract.
 5. Validate the actual delivered text and inspect it in the reader. Update the dossier with actual vocabulary and narrative developments.
+6. For a completed chapter, generate and verify its narration using the established cast, then deliver it according to AGENTS.md and the user's current scope. A draft-only, local-only or skill-only request keeps that limit.
 
 A pilot normally contains 700–900 Lithuanian words, a concrete situation that makes the protagonist matter, a meaningful action or decision, and a small payoff that establishes a reason to continue. That reason may be a relationship, ambition, journey, comic predicament, or question, according to the brief. These are adjustable editorial defaults, not CEFR standards. A short-story request may instead complete the whole arc.
 
 Review scene goals, character agency, causal continuity, and whether the ending fulfills the opening's promise. Establish consequential limitations before relying on them. An ending-enabling workaround needs earlier setup and a believable cost; revise the premise if it contradicts a hard deadline or other established constraint. Keep translations and notes within the narrative knowledge available at that moment.
+
+## Narration
+
+Use Gemini TTS for new narration in this project. Keep one persistent voice per character plus a separate narrator; reuse accepted voices across chapters. The agent determines each line's emotional delivery from its context, while preserving the voice's age, timbre and normal pace. Author insertions inside dialogue belong to the narrator.
+
+Read [gemini-narration.md](references/gemini-narration.md) before voice casting, synthesis or audio repairs. It defines the role plan, separate speech instructions, caching, loudness, sentence cuts and reader verification. Store book-specific casting and performance choices in `author-plans/<book-id>-voices.json`, not in this reusable skill.
 
 ## Delivery
 

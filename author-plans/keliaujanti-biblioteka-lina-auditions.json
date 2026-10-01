@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "bookId": "keliaujanti-biblioteka",
+  "projectId": "story-writing-424018",
+  "model": "gemini-3.8-flash-tts",
+  "languageCode": "lt-LT",
+  "createdAt": "2026-10-01",
+  "status": "selected",
+  "comparison": "Один текст и одинаковые инструкции эмоций; нормализованная громкость. Текст для пробы голоса, не новая сцена книги.",
+  "parts": [
+    {
+      "text": "Labas rytas. Užsuk, durys atviros. Čia daug knygų, bet vietos užteks ir puodeliui arbatos.",
+      "style": "Warm, relaxed everyday greeting. Speak naturally and clearly at a measured conversational pace. Dry close-miked speech, without room reverberation."
+    },
+    {
+      "text": "Ar jam reikia naujo palto? Galiu palaukti iki vakaro. Neskubėk, pasakyk, kas tau svarbiausia.",
+      "style": "A sincere practical question, followed by patient, attentive reassurance. Natural clear Lithuanian at a measured pace. Dry close-miked speech."
+    },
+    {
+      "text": "Taip, aš čia gyvenu. Tik puodelius vis tiek plaunu pati.",
+      "style": "Conversational certainty with a small dry smile on the last sentence; keep the joke understated. Natural clear Lithuanian. Dry close-miked speech."
+    }
+  ],
+  "variants": [
+    {
+      "id": "lina-a",
+      "label": "1 · Ясная и лёгкая",
+      "ageYears": 24,
+      "description": "Лёгкое меццо среднего регистра. Молодой, собранный, ясный тембр; спокойная уверенность.",
+      "designPrompt": "A 24-year-old woman with a fresh, light clear mid-register mezzo, a focused clean tone and calm practical confidence. Native standard Lithuanian pronunciation, with clear consonants and natural vowels. Dry close-miked studio sound, no room echo, reverberant tail, chorus, doubled voice or airy halo.",
+      "voiceId": "voice_zgkntei7vpi9",
+      "createdAt": "2026-09-30T22:49:25.056854+00:00",
+      "apiMetadata": {
+        "id": "voice_zgkntei7vpi9",
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-09-30T22:49:23.200252284Z",
+        "display_name": "Iki paskutinio puslapio / lina-a / age 24 / v2",
+        "language_code": "lt-LT",
+        "gender": "female",
+        "usage": {
+          "total_tokens": 734,
+          "total_input_tokens": 213,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 63
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 521,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 521
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 384,
+          "raw_prompt_token": 376,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 226
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 412
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 384
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 226
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 412
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 384
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "designPreview": "author-plans/audio/keliaujanti-biblioteka/lina-auditions-v2/lina-a-design-preview.wav",
+      "testAudio": "author-plans/audio/keliaujanti-biblioteka/lina-auditions-v2/lina-a-raw.wav",
+      "interactionId": "v1_ChdfSkc5YXNEYk5wNnhrZFVQdk9lSjBBRRIXX0pHOWFzRGJOcDZ4a2RVUHZPZUowQUU",
+      "synthesisUsage": {
+        "total_tokens": 1083,
+        "total_input_tokens": 498,
+        "input_tokens_by_modality": [
+          {
+            "modality": "audio",
+            "tokens": 407
+          },
+          {
+            "modality": "text",
+            "tokens": 91
+          }
+        ],
+        "total_cached_tokens": 0,
+        "total_output_tokens": 585,
+        "output_tokens_by_modality": [
+          {
+            "modality": "audio",
+            "tokens": 585
+          }
+        ],
+        "total_tool_use_tokens": 0,
+        "total_thought_tokens": 0,
+        "raw_prompt_token": 778,
+        "model_invocation_token_counts": [
+          {
+            "prompt_tokens_details": [
+              {
+                "modality": "text",
+                "tokens": 314
+              },
+              {
+                "modality": "audio",
+                "tokens": 407
+              }
+            ],
+            "candidates_tokens_details": [
+              {
+                "modality": "text",
+                "tokens": 551
+              }
+            ]
+          }
+        ],
+        "non_grounding_model_invocation_token_counts": [
+          {
+            "prompt_tokens_details": [
+              {
+                "modality": "text",
+                "tokens": 314
+              },
+              {
+                "modality": "audio",
+                "tokens": 407
+              }
+            ],
+            "candidates_tokens_details": [
+              {
+                "modality": "text",
+                "tokens": 551
+              }
+            ]
+          }
+        ]
+      },
+      "normalizedComparisonAudio": "author-plans/audio/keliaujanti-biblioteka/lina-auditions-v2/lina-a-normalized.wav",
+      "commonTextReady": true,
+      "normalization": {
+        "targetLufs": -23.0,
+        "gainDb": -5.460000000000001,
+        "beforeLufs": -17.54,
+        "afterLufs": -22.99,
+        "afterTruePeakDbtp": -6.59,
+        "durationSeconds": 18.28,
+        "source": "common-test"
+      }
+    },
+    {
+      "id": "lina-b",
+      "label": "2 · Тёплая и мягкая",
+      "ageYears": 24,
+      "description": "Мягкое меццо чуть ниже среднего регистра. Тёплый живой голос с ясной речью, без тяжёлого резонанса.",
+      "designPrompt": "A 24-year-old woman with a youthful warm mezzo in the lower-middle register, smooth clear resonance and an easy, friendly conversational manner without a breathy or heavy sound. Native standard Lithuanian pronunciation, with clear consonants and natural vowels. Dry close-miked studio sound, no room echo, reverberant tail, chorus, doubled voice or airy halo.",
+      "voiceId": "voice_swsvlf8q2t5j",
+      "createdAt": "2026-09-30T22:50:18.492273+00:00",
+      "apiMetadata": {
+        "id": "voice_swsvlf8q2t5j",
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-09-30T22:50:16.701576765Z",
+        "display_name": "Iki paskutinio puslapio / lina-b / age 24 / v2",
+        "language_code": "lt-LT",
+        "gender": "female",
+        "usage": {
+          "total_tokens": 1514,
+          "total_input_tokens": 276,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 126
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 1238,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 1238
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 120,
+          "raw_prompt_token": 439,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 289
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 971
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 120
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 289
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 971
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 120
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "designPreview": "author-plans/audio/keliaujanti-biblioteka/lina-auditions-v2/lina-b-design-preview.wav",
+      "testAudio": "author-plans/audio/keliaujanti-biblioteka/lina-auditions-v2/lina-b-raw.wav",
+      "interactionId": "v1_ChZLcEs5YXBPV081LURrZFVQdC1YSGFREhZLcEs5YXBPV081LURrZFVQdC1YSGFR",
+      "synthesisUsage": {
+        "total_tokens": 1834,
+        "total_input_tokens": 1058,
+        "input_tokens_by_modality": [
+          {
+            "modality": "text",
+            "tokens": 91
+          },
+          {
+            "modality": "audio",
+            "tokens": 967
+          }
+        ],
+        "total_cached_tokens": 0,
+        "total_output_tokens": 776,
+        "output_tokens_by_modality": [
+          {
+            "modality": "audio",
+            "tokens": 776
+          }
+        ],
+        "total_tool_use_tokens": 0,
+        "total_thought_tokens": 0,
+        "raw_prompt_token": 1338,
+        "model_invocation_token_counts": [
+          {
+            "prompt_tokens_details": [
+              {
+                "modality": "text",
+                "tokens": 314
+              },
+              {
+                "modality": "audio",
+                "tokens": 967
+              }
+            ],
+            "candidates_tokens_details": [
+              {
+                "modality": "text",
+                "tokens": 699
+              }
+            ]
+          }
+        ],
+        "non_grounding_model_invocation_token_counts": [
+          {
+            "prompt_tokens_details": [
+              {
+                "modality": "text",
+                "tokens": 314
+              },
+              {
+                "modality": "audio",
+                "tokens": 967
+              }
+            ],
+            "candidates_tokens_details": [
+              {
+                "modality": "text",
+                "tokens": 699
+              }
+            ]
+          }
+        ]
+      },
+      "normalizedComparisonAudio": "author-plans/audio/keliaujanti-biblioteka/lina-auditions-v2/lina-b-normalized.wav",
+      "commonTextReady": true,
+      "normalization": {
+        "targetLufs": -23.0,
+        "gainDb": -2.6999999999999993,
+        "beforeLufs": -20.3,
+        "afterLufs": -23.0,
+        "afterTruePeakDbtp": -4.63,
+        "durationSeconds": 24.24,
+        "source": "common-test"
+      },
+      "listenerFeedback": "Для Лины звучит слишком взросло."
+    },
+    {
+      "id": "lina-c",
+      "label": "3 · Светлая и живая",
+      "ageYears": 24,
+      "description": "Светлый женский голос чуть выше среднего регистра. Подвижная разговорная интонация и чёткие согласные, без детской писклявости.",
+      "designPrompt": "A 24-year-old woman with a bright, clear upper-middle voice, light unforced resonance, crisp articulation and nimble understated conversational energy, fully adult and not squeaky or nasal. Native standard Lithuanian pronunciation, with clear consonants and natural vowels. Dry close-miked studio sound, no room echo, reverberant tail, chorus, doubled voice or airy halo.",
+      "voiceId": "voice_od9xrycihi9x",
+      "createdAt": "2026-09-30T22:51:03.319709+00:00",
+      "apiMetadata": {
+        "id": "voice_od9xrycihi9x",
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-09-30T22:51:01.508213047Z",
+        "display_name": "Iki paskutinio puslapio / lina-c / age 24 / v2",
+        "language_code": "lt-LT",
+        "gender": "female",
+        "usage": {
+          "total_tokens": 946,
+          "total_input_tokens": 253,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 103
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 693,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 693
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 1441,
+          "raw_prompt_token": 416,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 266
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 546
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1441
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 266
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 546
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1441
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "designPreview": "author-plans/audio/keliaujanti-biblioteka/lina-auditions-v2/lina-c-design-preview.wav",
+      "normalizedComparisonAudio": "author-plans/audio/keliaujanti-biblioteka/lina-auditions-v2/lina-c-normalized.wav",
+      "commonTextReady": false,
+      "normalization": {
+        "targetLufs": -23.0,
+        "gainDb": -1.5700000000000003,
+        "beforeLufs": -21.43,
+        "afterLufs": -23.0,
+        "afterTruePeakDbtp": -1.5,
+        "durationSeconds": 21.64,
+        "source": "voice-design-preview"
+      }
+    }
+  ],
+  "commonTextComparisonComplete": false,
+  "normalizationTargetLufs": -23.0,
+  "selectedVariant": "lina-a",
+  "selectedVoiceId": "voice_zgkntei7vpi9",
+  "selectedAt": "2026-10-01"
+}

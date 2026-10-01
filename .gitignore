@@ -3,3 +3,5 @@
 *.bak
 *.log
 node_modules/
+/.env
+/author-plans/audio/

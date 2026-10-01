@@ -10,6 +10,8 @@ Default chapter targets: 6–8 new target lemmas and 1–2 grammatical focuses. 
 
 Plan recurrence using existing story situations. Avoid synonyms added only for stylistic variety, repeated sentences serving no story purpose, and forced vocabulary checklists. Repeat useful senses and a few forms; ten unfamiliar inflections do not become easy merely because they share a lemma.
 
+When continuing or starting another book, compare concrete nouns and recurring subject matter with the reader's previous books. Expand useful objects, places and situations instead of building repeated scenes around the same familiar groceries or purchases. Ordinary high-frequency language may recur naturally; do not force synonym substitutions. Keep personal feedback and cross-book lemma/form counts in the book's vocabulary profile, separate from assumed knowledge.
+
 Prioritize recurrent everyday constructions as well as individual words: asking for help, making plans, checking a time or price, expressing a need, agreeing or refusing, and describing a practical problem. Reuse them across home, work, transport, and social scenes. Genre vocabulary stays a small supported addition; the reader's reward is following the story with increasingly familiar language.
 
 An aspirational 95–98% baseline-list token coverage may help keep reading light, but report its denominator, source list, treatment of names, and uncertainty. List coverage is different from learner knowledge. Do not manufacture an exact percentage using guessed lemmatization. If reliable mapping is unavailable, report checked target recurrence and a manual sample instead.
@@ -34,7 +36,7 @@ Project instructions take precedence. For the established shared JSON reader:
 
 - `books/<book-id>.json`: id, title, author, language `lt`, translationLanguage `ru`, cover, actual wordCount, chapters with stable ids/title/label and paragraph/dialogue blocks.
 - Items contain stressed Lithuanian `text`, Russian `translation`, and Russian `note` with bold Lithuanian lemmas/forms. Keep visible narrative Lithuanian-only.
-- Phrase target 4–7 words; hard maximum 8 words or 70 characters. Split at natural boundaries. Short items are appropriate for brief dialogue, fixed expressions, and natural tails. Never make punctuation alone clickable.
+- For text-only items, phrase target 4–7 words; maximum 8 words or 70 characters. For narrated items, follow [gemini-narration.md](gemini-narration.md): prefer whole sentences and keep short sentences separate. Split a long sentence only at meaningful punctuation with a verified spoken pause; never cut at a bare space to satisfy a length cap. If no such pause exists, retain the whole sentence and review its tooltip on mobile. Never make punctuation alone clickable.
 - Translate exactly the fragment, retaining unfinished syntax and useful form distinctions. If a split separates a verb from its necessary object, revise the split. Preserve names and narrative ambiguity consistently.
 - Each useful vocabulary note has a dictionary lemma, contextual Russian gloss, surface form if changed, and relevant grammar. Put entries on separate lines. Include function words when their construction teaches something. Do not repeat the phrase translation, add filler notes, or bold Russian grammar labels.
 - `books/catalog.json` contains only shelf metadata and the shared reader URL. Do not fabricate human authorship; clearly identify an original generated work in agreed metadata. Use a real suitable cover; PDF extraction is irrelevant to an original story.
