@@ -1,0 +1,7093 @@
+{
+  "provider": "Gemini",
+  "model": "gemini-3.8-flash-tts",
+  "bookId": "keliaujanti-biblioteka",
+  "chapterId": "chapter-3",
+  "sourceSha256": "0e490fede7f2031872f09b8069f5f2aa2b98ce5bc4587fa3f6bbd9f4eae61fd9",
+  "timingVersion": 5,
+  "alignmentMethod": "Sentence boundaries from word alignment and measured pauses on cached PCM",
+  "sampleRate": 24000,
+  "frameCount": 6072778,
+  "duration": 253.03241666666668,
+  "voiceRuns": [
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b001-s01",
+      "block": 0,
+      "text": "Po pietų Lina grįžo pas Elzę. Atnešė šilto vandens ir duonos. Elzė dar skaitė. Ant kelių gulėjo knyga. Puodelis prie lango buvo tuščias.",
+      "startFrame": 0,
+      "frameCount": 330719,
+      "sourceStartFrame": 7300320,
+      "sourceEndFrame": 7631039,
+      "sourceStartPause": {
+        "startFrame": 7284791,
+        "endFrame": 7324886,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 7626719,
+        "endFrame": 7655847,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b002-s01",
+      "block": 1,
+      "text": "Knygoje tėvas dirbo dukros namuose. Ten atsivežė savo darbo stalą. Kėdę jis jau padarė. Dukra norėjo pastatyti ją prie lango. Bet ten stovėjo sunkus stalas.",
+      "startFrame": 330719,
+      "frameCount": 335667,
+      "sourceStartFrame": 7644000,
+      "sourceEndFrame": 7979667,
+      "sourceStartPause": {
+        "startFrame": 7626719,
+        "endFrame": 7655847,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 7975347,
+        "endFrame": 8004325,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b003-s01",
+      "block": 2,
+      "text": "Tėvas padėjo abi rankas ant stalo. Stūmė. Stalas nepajudėjo. Jis atsisėdo ant naujos kėdės. Ilgai žiūrėjo į grindis.",
+      "startFrame": 666386,
+      "frameCount": 280800,
+      "sourceStartFrame": 7986720,
+      "sourceEndFrame": 8267520,
+      "sourceStartPause": {
+        "startFrame": 7975347,
+        "endFrame": 8004325,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 8263843,
+        "endFrame": 8289360,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_4j9n6wqwfj4v",
+      "speaker": "book-daughter",
+      "partId": "ch03-b004-s01",
+      "block": 3,
+      "text": "„Galiu pakviesti kaimyną.“",
+      "startFrame": 947186,
+      "frameCount": 43905,
+      "sourceStartFrame": 240,
+      "sourceEndFrame": 44145,
+      "sourceStartPause": {
+        "startFrame": 0,
+        "endFrame": 7072,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 39825,
+        "endFrame": 211065,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_crc49951qu85",
+      "speaker": "book-father",
+      "partId": "ch03-b005-s01",
+      "block": 4,
+      "text": "„Jis pasakys, kad man jau nereikia tokio stalo.“",
+      "startFrame": 991091,
+      "frameCount": 87502,
+      "sourceStartFrame": 240,
+      "sourceEndFrame": 87742,
+      "sourceStartPause": {
+        "startFrame": 0,
+        "endFrame": 5150,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 83422,
+        "endFrame": 94080,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_4j9n6wqwfj4v",
+      "speaker": "book-daughter",
+      "partId": "ch03-b006-s01",
+      "block": 5,
+      "text": "„Tai tavo stalas. Mes tik perkelsime jį.“",
+      "startFrame": 1078593,
+      "frameCount": 118057,
+      "sourceStartFrame": 184320,
+      "sourceEndFrame": 302377,
+      "sourceStartPause": {
+        "startFrame": 39825,
+        "endFrame": 211065,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 298057,
+        "endFrame": 306240,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b007-s01",
+      "block": 6,
+      "text": "Elzė pakėlė galvą. Agnė ant popieriaus piešė kišenę. Piešinių knyga gulėjo atversta šalia.",
+      "startFrame": 1196650,
+      "frameCount": 189520,
+      "sourceStartFrame": 8315520,
+      "sourceEndFrame": 8505040,
+      "sourceStartPause": {
+        "startFrame": 8311956,
+        "endFrame": 8323846,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 8503600,
+        "endFrame": 8521415,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b008-s01",
+      "block": 7,
+      "text": "— Ką pakeitei?",
+      "startFrame": 1386170,
+      "frameCount": 35588,
+      "sourceStartFrame": 3206160,
+      "sourceEndFrame": 3236640,
+      "sourceStartPause": {
+        "startFrame": 3199557,
+        "endFrame": 3214390,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 3233395,
+        "endFrame": 3247127,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_tjo96mzvb188",
+      "speaker": "agne",
+      "partId": "ch03-b009-s01",
+      "block": 8,
+      "text": "— Noriu padaryti kišenę šiek tiek didesnę. Senoje yra skylė.",
+      "startFrame": 1421758,
+      "frameCount": 95443,
+      "sourceStartFrame": 379423,
+      "sourceEndFrame": 474866,
+      "sourceStartPause": {
+        "startFrame": 336977,
+        "endFrame": 382783,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 470546,
+        "endFrame": 520447,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_tjo96mzvb188",
+      "speaker": "agne",
+      "partId": "ch03-b010-s01",
+      "block": 9,
+      "text": "— Seną kišenę išimsiu.",
+      "startFrame": 1517201,
+      "frameCount": 60648,
+      "sourceStartFrame": 493920,
+      "sourceEndFrame": 554568,
+      "sourceStartPause": {
+        "startFrame": 470546,
+        "endFrame": 520447,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 550248,
+        "endFrame": 601669,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b011-s01",
+      "block": 10,
+      "text": "Elzė padėjo ranką ant palto. Agnė sustojo.",
+      "startFrame": 1577849,
+      "frameCount": 104675,
+      "sourceStartFrame": 8545920,
+      "sourceEndFrame": 8650595,
+      "sourceStartPause": {
+        "startFrame": 8536829,
+        "endFrame": 8567769,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 8646275,
+        "endFrame": 8669090,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b012-s01",
+      "block": 11,
+      "text": "— Žiūrėk. Šitą vietą jis siuvo du kartus. Pirmą kartą paliko skylę. Mes juokėmės, kad saldainiai pabėgs.",
+      "startFrame": 1682524,
+      "frameCount": 338211,
+      "sourceStartFrame": 5069631,
+      "sourceEndFrame": 5357421,
+      "sourceStartPause": {
+        "startFrame": 4923394,
+        "endFrame": 5071071,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 5353101,
+        "endFrame": 5477713,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_tjo96mzvb188",
+      "speaker": "agne",
+      "partId": "ch03-b013-s01",
+      "block": 12,
+      "text": "— Gal seną paliekame viduje? O naują siuvame šalia.",
+      "startFrame": 2020735,
+      "frameCount": 102403,
+      "sourceStartFrame": 581280,
+      "sourceEndFrame": 683683,
+      "sourceStartPause": {
+        "startFrame": 550248,
+        "endFrame": 601669,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 679363,
+        "endFrame": 696048,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b014-s01",
+      "block": 13,
+      "text": "Elzė lėtai pakėlė ranką nuo palto.",
+      "startFrame": 2123138,
+      "frameCount": 91861,
+      "sourceStartFrame": 8682240,
+      "sourceEndFrame": 8774101,
+      "sourceStartPause": {
+        "startFrame": 8675011,
+        "endFrame": 8703645,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 8769781,
+        "endFrame": 8788153,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b015-s01",
+      "block": 14,
+      "text": "— Taip. Čia, prie šitos siūlės.",
+      "startFrame": 2214999,
+      "frameCount": 119262,
+      "sourceStartFrame": 5462400,
+      "sourceEndFrame": 5564022,
+      "sourceStartPause": {
+        "startFrame": 5353101,
+        "endFrame": 5477713,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 5559702,
+        "endFrame": 5654706,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b016-s01",
+      "block": 15,
+      "text": "Elzė įdėjo lapelį į savo knygą. Pažiūrėjo į piešinį, tada atidarė stalčių. Pastūmė Agnei mažą maišelį saldainių.",
+      "startFrame": 2334261,
+      "frameCount": 241759,
+      "sourceStartFrame": 8818560,
+      "sourceEndFrame": 9060319,
+      "sourceStartPause": {
+        "startFrame": 8801165,
+        "endFrame": 8838531,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 9055999,
+        "endFrame": 9076703,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b017-s01",
+      "block": 16,
+      "text": "— Patikrink, ar tilps.",
+      "startFrame": 2576020,
+      "frameCount": 72567,
+      "sourceStartFrame": 5651346,
+      "sourceEndFrame": 5713457,
+      "sourceStartPause": {
+        "startFrame": 5559702,
+        "endFrame": 5654706,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 5709137,
+        "endFrame": 5805377,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b018-s01",
+      "block": 17,
+      "text": "Agnė pridėjo maišelį prie piešinio. Patraukė vieną liniją toliau. Elzė grįžo prie paskutinio puslapio.",
+      "startFrame": 2648587,
+      "frameCount": 216053,
+      "sourceStartFrame": 9100320,
+      "sourceEndFrame": 9316373,
+      "sourceStartPause": {
+        "startFrame": 9084008,
+        "endFrame": 9122686,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 9312053,
+        "endFrame": 9335355,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b019-s01",
+      "block": 18,
+      "text": "Dukra grįžo su kaimynu. Jis su tėvu perkėlė stalą. Kėdė dabar stovėjo prie lango. Tėvas atsisėdo. Dukra atnešė jam arbatos. Darbo stalas liko prie kitos sienos.",
+      "startFrame": 2864640,
+      "frameCount": 351587,
+      "sourceStartFrame": 9333915,
+      "sourceEndFrame": 9685502,
+      "sourceStartPause": {
+        "startFrame": 9312053,
+        "endFrame": 9335355,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 9681182,
+        "endFrame": 9710367,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b020-s01",
+      "block": 19,
+      "text": "Elzė užvertė knygą ir padėjo ant stalo. Paimti adatą ji iš karto neskubėjo. Pirmiausia palietė seno palto kišenę. Pirštai nebedrebėjo. Elzė paėmė adatą ir įvėrė siūlą.",
+      "startFrame": 3216227,
+      "frameCount": 354562,
+      "sourceStartFrame": 9700320,
+      "sourceEndFrame": 10054882,
+      "sourceStartPause": {
+        "startFrame": 9681182,
+        "endFrame": 9710367,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 10050562,
+        "endFrame": 10071871,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b021-s01",
+      "block": 20,
+      "text": "— Agne, palaikyk medžiagą. Parodysiu, kaip siūti kišenę.",
+      "startFrame": 3570789,
+      "frameCount": 176484,
+      "sourceStartFrame": 5785440,
+      "sourceEndFrame": 5935715,
+      "sourceStartPause": {
+        "startFrame": 5709137,
+        "endFrame": 5805377,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 5931395,
+        "endFrame": 6045317,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b022-s01",
+      "block": 21,
+      "text": "Agnė laikė medžiagą abiem rankomis. Elzė siuvo lėtai. Adata ėjo per medžiagą ir vėl grįžo į jos ranką.",
+      "startFrame": 3747273,
+      "frameCount": 201335,
+      "sourceStartFrame": 10084690,
+      "sourceEndFrame": 10286025,
+      "sourceStartPause": {
+        "startFrame": 10074846,
+        "endFrame": 10088050,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 10281705,
+        "endFrame": 10301530,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b023-s01",
+      "block": 22,
+      "text": "— Dabar tu.",
+      "startFrame": 3948608,
+      "frameCount": 51680,
+      "sourceStartFrame": 6020640,
+      "sourceEndFrame": 6064876,
+      "sourceStartPause": {
+        "startFrame": 5931395,
+        "endFrame": 6045317,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 6060556,
+        "endFrame": 6173609,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_tjo96mzvb188",
+      "speaker": "agne",
+      "partId": "ch03-b024-s01",
+      "block": 23,
+      "text": "— Bijau sugadinti.",
+      "startFrame": 4000288,
+      "frameCount": 41320,
+      "sourceStartFrame": 692688,
+      "sourceEndFrame": 734008,
+      "sourceStartPause": {
+        "startFrame": 679363,
+        "endFrame": 696048,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 729688,
+        "endFrame": 754335,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b025-s01",
+      "block": 24,
+      "text": "— Tada siūk lėtai. Aš šalia.",
+      "startFrame": 4041608,
+      "frameCount": 101301,
+      "sourceStartFrame": 6145920,
+      "sourceEndFrame": 6232288,
+      "sourceStartPause": {
+        "startFrame": 6060556,
+        "endFrame": 6173609,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 6227968,
+        "endFrame": 6306071,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b026-s01",
+      "block": 25,
+      "text": "Agnė paėmė adatą. Pirmą siūlę padarė per arti krašto. Elzė parodė jai kitą vietą. Adatos iš jos rankos nepaėmė.",
+      "startFrame": 4142909,
+      "frameCount": 239520,
+      "sourceStartFrame": 10295520,
+      "sourceEndFrame": 10535040,
+      "sourceStartPause": {
+        "startFrame": 10281705,
+        "endFrame": 10301530,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 10530969,
+        "endFrame": 10544102,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_tjo96mzvb188",
+      "speaker": "agne",
+      "partId": "ch03-b027-s01",
+      "block": 26,
+      "text": "— O jeigu nespėsiu?",
+      "startFrame": 4382429,
+      "frameCount": 50277,
+      "sourceStartFrame": 772320,
+      "sourceEndFrame": 822597,
+      "sourceStartPause": {
+        "startFrame": 759300,
+        "endFrame": 795073,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 818277,
+        "endFrame": 828480,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b028-s01",
+      "block": 27,
+      "text": "— Neskubėk. Kai vėl pavargsiu, galėsiu laikyti medžiagą.",
+      "startFrame": 4432706,
+      "frameCount": 165944,
+      "sourceStartFrame": 6300000,
+      "sourceEndFrame": 6441365,
+      "sourceStartPause": {
+        "startFrame": 6227968,
+        "endFrame": 6306071,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 6439925,
+        "endFrame": 6457391,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b029-s01",
+      "block": 28,
+      "text": "Lina įpylė vandens į puodelius. Paliko juos ant kito stalo. Šalia padėjo duonos.",
+      "startFrame": 4598650,
+      "frameCount": 157643,
+      "sourceStartFrame": 10536960,
+      "sourceEndFrame": 10694603,
+      "sourceStartPause": {
+        "startFrame": 10530969,
+        "endFrame": 10544102,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 10690283,
+        "endFrame": 10744279,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b030-s01",
+      "block": 29,
+      "text": "Po dviejų valandų Elzė padėjo adatą. Pirštai vėl pavargo. Ji pabandė paimti siūlą. Ranka vėl drebėjo.",
+      "startFrame": 4756293,
+      "frameCount": 240654,
+      "sourceStartFrame": 10710720,
+      "sourceEndFrame": 10951374,
+      "sourceStartPause": {
+        "startFrame": 10690283,
+        "endFrame": 10744279,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 10947054,
+        "endFrame": 10998921,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b031-s01",
+      "block": 30,
+      "text": "— Pabaik kišenę.",
+      "startFrame": 4996947,
+      "frameCount": 54029,
+      "sourceStartFrame": 6500640,
+      "sourceEndFrame": 6546828,
+      "sourceStartPause": {
+        "startFrame": 6472051,
+        "endFrame": 6516213,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 6545388,
+        "endFrame": 6566136,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b032-s01",
+      "block": 31,
+      "text": "Dabar Elzė laikė medžiagą, o Agnė siuvo. Agnė pati baigė paskutinę siūlę. Lina pakėlė paltą. Elzė patikrino kišenę. Maišelis saldainių tilpo.",
+      "startFrame": 5050976,
+      "frameCount": 304132,
+      "sourceStartFrame": 10988160,
+      "sourceEndFrame": 11292292,
+      "sourceStartPause": {
+        "startFrame": 10947054,
+        "endFrame": 10998921,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 11287972,
+        "endFrame": 11330729,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_0clzvw9jjm49",
+      "speaker": "elze",
+      "partId": "ch03-b033-s01",
+      "block": 32,
+      "text": "— Rytoj anūkui bus ko ieškoti.",
+      "startFrame": 5355108,
+      "frameCount": 75246,
+      "sourceStartFrame": 6627450,
+      "sourceEndFrame": 6691920,
+      "sourceStartPause": {
+        "startFrame": 6582256,
+        "endFrame": 6630810,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 6685442,
+        "endFrame": 6692160,
+        "thresholdDbfs": -42
+      },
+      "tempo": 0.85,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b034-s01",
+      "block": 33,
+      "text": "Elzė grąžino knygą Linai. Šalia padėjo pinigų už kelionę. Piešinių knygą Agnė paliko ant savo stalo. Užversti jos Elzė neprašė.",
+      "startFrame": 5430354,
+      "frameCount": 265275,
+      "sourceStartFrame": 11305920,
+      "sourceEndFrame": 11571195,
+      "sourceStartPause": {
+        "startFrame": 11287972,
+        "endFrame": 11330729,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 11566875,
+        "endFrame": 11609543,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_23a12v3iqjgb",
+      "speaker": "narrator",
+      "partId": "ch03-b035-s01",
+      "block": 34,
+      "text": "Bibliotekoje Lina apžiūrėjo viršelį ir puslapius. Padėjo knygą į jos vietą lentynoje. Matas laukė prie durų. Lina pakvietė jį prie virtuvės stalo.",
+      "startFrame": 5695629,
+      "frameCount": 325571,
+      "sourceStartFrame": 11634625,
+      "sourceEndFrame": 11960196,
+      "sourceStartPause": {
+        "startFrame": 11624377,
+        "endFrame": 11637985,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 11955876,
+        "endFrame": 11963520,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    },
+    {
+      "voice": "voice_zgkntei7vpi9",
+      "speaker": "lina",
+      "partId": "ch03-b036-s01",
+      "block": 35,
+      "text": "— Dabar galime ieškoti jūsų kelio.",
+      "startFrame": 6021200,
+      "frameCount": 51578,
+      "sourceStartFrame": 4681044,
+      "sourceEndFrame": 4732622,
+      "sourceStartPause": {
+        "startFrame": 4650231,
+        "endFrame": 4684404,
+        "thresholdDbfs": -42
+      },
+      "sourceEndPause": {
+        "startFrame": 4728302,
+        "endFrame": 4735680,
+        "thresholdDbfs": -42
+      },
+      "tempo": 1.0,
+      "renderedLeadingTrimFrames": 0
+    }
+  ],
+  "phrases": [
+    {
+      "mark": "p-000-i-000",
+      "block": 0,
+      "item": 0,
+      "text": "Po pietų Lina grįžo pas Elzę.",
+      "words": [
+        {
+          "word": "Po",
+          "token": "po",
+          "part": "ch03-b001-s01",
+          "startFrame": 4320,
+          "endFrame": 24480,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pietų",
+          "token": "pietu",
+          "part": "ch03-b001-s01",
+          "startFrame": 24480,
+          "endFrame": 35520,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Lina",
+          "token": "lina",
+          "part": "ch03-b001-s01",
+          "startFrame": 35520,
+          "endFrame": 41760,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "grįžo",
+          "token": "grizo",
+          "part": "ch03-b001-s01",
+          "startFrame": 41760,
+          "endFrame": 54240,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pas",
+          "token": "pas",
+          "part": "ch03-b001-s01",
+          "startFrame": 54240,
+          "endFrame": 57120,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Elzę",
+          "token": "elze",
+          "part": "ch03-b001-s01",
+          "startFrame": 57120,
+          "endFrame": 66720,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 0,
+      "endFrame": 80374,
+      "start": 0.0,
+      "end": 3.3489166666666668,
+      "speechStartFrame": 24446,
+      "speechEndFrame": 70771,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-000-i-000.mp3"
+    },
+    {
+      "mark": "p-000-i-001",
+      "block": 0,
+      "item": 1,
+      "text": "Atnešė šilto vandens ir duonos.",
+      "words": [
+        {
+          "word": "Atnešė",
+          "token": "atnese",
+          "part": "ch03-b001-s01",
+          "startFrame": 81600,
+          "endFrame": 101760,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "šilto",
+          "token": "silto",
+          "part": "ch03-b001-s01",
+          "startFrame": 101760,
+          "endFrame": 111840,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "vandens",
+          "token": "vandens",
+          "part": "ch03-b001-s01",
+          "startFrame": 111840,
+          "endFrame": 121920,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ir",
+          "token": "ir",
+          "part": "ch03-b001-s01",
+          "startFrame": 121920,
+          "endFrame": 139680,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "duonos",
+          "token": "duonos",
+          "part": "ch03-b001-s01",
+          "startFrame": 139680,
+          "endFrame": 148800,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 80374,
+      "endFrame": 166208,
+      "start": 3.3489166666666668,
+      "end": 6.925333333333334,
+      "speechStartFrame": 89978,
+      "speechEndFrame": 154880,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-000-i-001.mp3"
+    },
+    {
+      "mark": "p-000-i-002",
+      "block": 0,
+      "item": 2,
+      "text": "Elzė dar skaitė.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b001-s01",
+          "startFrame": 164640,
+          "endFrame": 184800,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "dar",
+          "token": "dar",
+          "part": "ch03-b001-s01",
+          "startFrame": 184800,
+          "endFrame": 188640,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "skaitė",
+          "token": "skaite",
+          "part": "ch03-b001-s01",
+          "startFrame": 188640,
+          "endFrame": 202080,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 166208,
+      "endFrame": 213141,
+      "start": 6.925333333333334,
+      "end": 8.880875,
+      "speechStartFrame": 177537,
+      "speechEndFrame": 203865,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-000-i-002.mp3"
+    },
+    {
+      "mark": "p-000-i-003",
+      "block": 0,
+      "item": 3,
+      "text": "Ant kelių gulėjo knyga.",
+      "words": [
+        {
+          "word": "Ant",
+          "token": "ant",
+          "part": "ch03-b001-s01",
+          "startFrame": 204480,
+          "endFrame": 224640,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kelių",
+          "token": "keliu",
+          "part": "ch03-b001-s01",
+          "startFrame": 224640,
+          "endFrame": 235680,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "gulėjo",
+          "token": "gulejo",
+          "part": "ch03-b001-s01",
+          "startFrame": 235680,
+          "endFrame": 245280,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "knyga",
+          "token": "knyga",
+          "part": "ch03-b001-s01",
+          "startFrame": 245280,
+          "endFrame": 256800,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 213141,
+      "endFrame": 270502,
+      "start": 8.880875,
+      "end": 11.270916666666666,
+      "speechStartFrame": 222417,
+      "speechEndFrame": 259375,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-000-i-003.mp3"
+    },
+    {
+      "mark": "p-000-i-004",
+      "block": 0,
+      "item": 4,
+      "text": "Puodelis prie lango buvo tuščias.",
+      "words": [
+        {
+          "word": "Puodelis",
+          "token": "puodelis",
+          "part": "ch03-b001-s01",
+          "startFrame": 270720,
+          "endFrame": 290880,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "prie",
+          "token": "prie",
+          "part": "ch03-b001-s01",
+          "startFrame": 290880,
+          "endFrame": 294240,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "lango",
+          "token": "lango",
+          "part": "ch03-b001-s01",
+          "startFrame": 294240,
+          "endFrame": 304320,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "buvo",
+          "token": "buvo",
+          "part": "ch03-b001-s01",
+          "startFrame": 304320,
+          "endFrame": 311040,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "tuščias",
+          "token": "tuscias",
+          "part": "ch03-b001-s01",
+          "startFrame": 311040,
+          "endFrame": 322560,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 270502,
+      "endFrame": 334482,
+      "start": 11.270916666666666,
+      "end": 13.93675,
+      "speechStartFrame": 281335,
+      "speechEndFrame": 326519,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-000-i-004.mp3"
+    },
+    {
+      "mark": "p-001-i-000",
+      "block": 1,
+      "item": 0,
+      "text": "Knygoje tėvas dirbo dukros namuose.",
+      "words": [
+        {
+          "word": "Knygoje",
+          "token": "knygoje",
+          "part": "ch03-b002-s01",
+          "startFrame": 334079,
+          "endFrame": 354239,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "tėvas",
+          "token": "tevas",
+          "part": "ch03-b002-s01",
+          "startFrame": 354239,
+          "endFrame": 365759,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "dirbo",
+          "token": "dirbo",
+          "part": "ch03-b002-s01",
+          "startFrame": 365759,
+          "endFrame": 375359,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "dukros",
+          "token": "dukros",
+          "part": "ch03-b002-s01",
+          "startFrame": 375359,
+          "endFrame": 385439,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "namuose",
+          "token": "namuose",
+          "part": "ch03-b002-s01",
+          "startFrame": 385439,
+          "endFrame": 397919,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 334482,
+      "endFrame": 413098,
+      "start": 13.93675,
+      "end": 17.212416666666666,
+      "speechStartFrame": 342446,
+      "speechEndFrame": 402426,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-001-i-000.mp3"
+    },
+    {
+      "mark": "p-001-i-001",
+      "block": 1,
+      "item": 1,
+      "text": "Ten atsivežė savo darbo stalą.",
+      "words": [
+        {
+          "word": "Ten",
+          "token": "ten",
+          "part": "ch03-b002-s01",
+          "startFrame": 404639,
+          "endFrame": 424799,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "atsivežė",
+          "token": "atsiveze",
+          "part": "ch03-b002-s01",
+          "startFrame": 424799,
+          "endFrame": 439199,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "savo",
+          "token": "savo",
+          "part": "ch03-b002-s01",
+          "startFrame": 439199,
+          "endFrame": 446399,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "darbo",
+          "token": "darbo",
+          "part": "ch03-b002-s01",
+          "startFrame": 446399,
+          "endFrame": 455519,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalą",
+          "token": "stala",
+          "part": "ch03-b002-s01",
+          "startFrame": 455519,
+          "endFrame": 466559,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 413098,
+      "endFrame": 476607,
+      "start": 17.212416666666666,
+      "end": 19.858625,
+      "speechStartFrame": 423770,
+      "speechEndFrame": 468389,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-001-i-001.mp3"
+    },
+    {
+      "mark": "p-001-i-002",
+      "block": 1,
+      "item": 2,
+      "text": "Kėdę jis jau padarė.",
+      "words": [
+        {
+          "word": "Kėdę",
+          "token": "kede",
+          "part": "ch03-b002-s01",
+          "startFrame": 476159,
+          "endFrame": 496319,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "jis",
+          "token": "jis",
+          "part": "ch03-b002-s01",
+          "startFrame": 496319,
+          "endFrame": 501599,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "jau",
+          "token": "jau",
+          "part": "ch03-b002-s01",
+          "startFrame": 501599,
+          "endFrame": 507359,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "padarė",
+          "token": "padare",
+          "part": "ch03-b002-s01",
+          "startFrame": 507359,
+          "endFrame": 520319,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 476607,
+      "endFrame": 533233,
+      "start": 19.858625,
+      "end": 22.218041666666668,
+      "speechStartFrame": 484826,
+      "speechEndFrame": 522257,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-001-i-002.mp3"
+    },
+    {
+      "mark": "p-001-i-003",
+      "block": 1,
+      "item": 3,
+      "text": "Dukra norėjo pastatyti ją prie lango.",
+      "words": [
+        {
+          "word": "Dukra",
+          "token": "dukra",
+          "part": "ch03-b002-s01",
+          "startFrame": 530399,
+          "endFrame": 550559,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "norėjo",
+          "token": "norejo",
+          "part": "ch03-b002-s01",
+          "startFrame": 550559,
+          "endFrame": 556799,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pastatyti",
+          "token": "pastatyti",
+          "part": "ch03-b002-s01",
+          "startFrame": 556799,
+          "endFrame": 572639,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ją",
+          "token": "ja",
+          "part": "ch03-b002-s01",
+          "startFrame": 572639,
+          "endFrame": 575999,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "prie",
+          "token": "prie",
+          "part": "ch03-b002-s01",
+          "startFrame": 575999,
+          "endFrame": 579359,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "lango",
+          "token": "lango",
+          "part": "ch03-b002-s01",
+          "startFrame": 579359,
+          "endFrame": 592319,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 533233,
+      "endFrame": 611285,
+      "start": 22.218041666666668,
+      "end": 25.470208333333332,
+      "speechStartFrame": 544209,
+      "speechEndFrame": 603105,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-001-i-003.mp3"
+    },
+    {
+      "mark": "p-001-i-004",
+      "block": 1,
+      "item": 4,
+      "text": "Bet ten stovėjo sunkus stalas.",
+      "words": [
+        {
+          "word": "Bet",
+          "token": "bet",
+          "part": "ch03-b002-s01",
+          "startFrame": 593279,
+          "endFrame": 621119,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ten",
+          "token": "ten",
+          "part": "ch03-b002-s01",
+          "startFrame": 621119,
+          "endFrame": 623999,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stovėjo",
+          "token": "stovejo",
+          "part": "ch03-b002-s01",
+          "startFrame": 623999,
+          "endFrame": 637919,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "sunkus",
+          "token": "sunkus",
+          "part": "ch03-b002-s01",
+          "startFrame": 637919,
+          "endFrame": 646559,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalas",
+          "token": "stalas",
+          "part": "ch03-b002-s01",
+          "startFrame": 646559,
+          "endFrame": 658559,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 611285,
+      "endFrame": 673028,
+      "start": 25.470208333333332,
+      "end": 28.042833333333334,
+      "speechStartFrame": 618811,
+      "speechEndFrame": 662185,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-001-i-004.mp3"
+    },
+    {
+      "mark": "p-002-i-000",
+      "block": 2,
+      "item": 0,
+      "text": "Tėvas padėjo abi rankas ant stalo.",
+      "words": [
+        {
+          "word": "Tėvas",
+          "token": "tevas",
+          "part": "ch03-b003-s01",
+          "startFrame": 667826,
+          "endFrame": 690866,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "padėjo",
+          "token": "padejo",
+          "part": "ch03-b003-s01",
+          "startFrame": 690866,
+          "endFrame": 700946,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "abi",
+          "token": "abi",
+          "part": "ch03-b003-s01",
+          "startFrame": 700946,
+          "endFrame": 718706,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "rankas",
+          "token": "rankas",
+          "part": "ch03-b003-s01",
+          "startFrame": 700946,
+          "endFrame": 718706,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ant",
+          "token": "ant",
+          "part": "ch03-b003-s01",
+          "startFrame": 718706,
+          "endFrame": 722546,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalo",
+          "token": "stalo",
+          "part": "ch03-b003-s01",
+          "startFrame": 722546,
+          "endFrame": 734066,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 673028,
+      "endFrame": 746555,
+      "start": 28.042833333333334,
+      "end": 31.106458333333332,
+      "speechStartFrame": 683871,
+      "speechEndFrame": 736335,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-002-i-000.mp3"
+    },
+    {
+      "mark": "p-002-i-001",
+      "block": 2,
+      "item": 1,
+      "text": "Stūmė.",
+      "words": [
+        {
+          "word": "Stūmė",
+          "token": "stume",
+          "part": "ch03-b003-s01",
+          "startFrame": 755666,
+          "endFrame": 768626,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 746555,
+      "endFrame": 780323,
+      "start": 31.106458333333332,
+      "end": 32.51345833333333,
+      "speechStartFrame": 756776,
+      "speechEndFrame": 770673,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-002-i-001.mp3"
+    },
+    {
+      "mark": "p-002-i-002",
+      "block": 2,
+      "item": 2,
+      "text": "Stalas nepajudėjo.",
+      "words": [
+        {
+          "word": "Stalas",
+          "token": "stalas",
+          "part": "ch03-b003-s01",
+          "startFrame": 777266,
+          "endFrame": 800306,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "nepajudėjo",
+          "token": "nepajudejo",
+          "part": "ch03-b003-s01",
+          "startFrame": 800306,
+          "endFrame": 819026,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 780323,
+      "endFrame": 831340,
+      "start": 32.51345833333333,
+      "end": 34.63916666666667,
+      "speechStartFrame": 789973,
+      "speechEndFrame": 820966,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-002-i-002.mp3"
+    },
+    {
+      "mark": "p-002-i-003",
+      "block": 2,
+      "item": 3,
+      "text": "Jis atsisėdo ant naujos kėdės.",
+      "words": [
+        {
+          "word": "Jis",
+          "token": "jis",
+          "part": "ch03-b003-s01",
+          "startFrame": 823346,
+          "endFrame": 846386,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "atsisėdo",
+          "token": "atsisedo",
+          "part": "ch03-b003-s01",
+          "startFrame": 846386,
+          "endFrame": 860786,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ant",
+          "token": "ant",
+          "part": "ch03-b003-s01",
+          "startFrame": 860786,
+          "endFrame": 863666,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "naujos",
+          "token": "naujos",
+          "part": "ch03-b003-s01",
+          "startFrame": 863666,
+          "endFrame": 873266,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kėdės",
+          "token": "kedes",
+          "part": "ch03-b003-s01",
+          "startFrame": 873266,
+          "endFrame": 884786,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 831340,
+      "endFrame": 889147,
+      "start": 34.63916666666667,
+      "end": 37.04779166666667,
+      "speechStartFrame": 841714,
+      "speechEndFrame": 887654,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-002-i-003.mp3"
+    },
+    {
+      "mark": "p-002-i-004",
+      "block": 2,
+      "item": 4,
+      "text": "Ilgai žiūrėjo į grindis.",
+      "words": [
+        {
+          "word": "Ilgai",
+          "token": "ilgai",
+          "part": "ch03-b003-s01",
+          "startFrame": 892466,
+          "endFrame": 915506,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "žiūrėjo",
+          "token": "ziurejo",
+          "part": "ch03-b003-s01",
+          "startFrame": 915506,
+          "endFrame": 926546,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "į",
+          "token": "i",
+          "part": "ch03-b003-s01",
+          "startFrame": 926546,
+          "endFrame": 929426,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "grindis",
+          "token": "grindis",
+          "part": "ch03-b003-s01",
+          "startFrame": 929426,
+          "endFrame": 939506,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 889147,
+      "endFrame": 948763,
+      "start": 37.04779166666667,
+      "end": 39.53179166666666,
+      "speechStartFrame": 890640,
+      "speechEndFrame": 943629,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-002-i-004.mp3"
+    },
+    {
+      "mark": "p-003-i-000",
+      "block": 3,
+      "item": 0,
+      "text": "„Galiu pakviesti kaimyną.“",
+      "words": [
+        {
+          "word": "Galiu",
+          "token": "galiu",
+          "part": "ch03-b004-s01",
+          "startFrame": 923666,
+          "endFrame": 960626,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        },
+        {
+          "word": "pakviesti",
+          "token": "pakviesti",
+          "part": "ch03-b004-s01",
+          "startFrame": 960626,
+          "endFrame": 971666,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        },
+        {
+          "word": "kaimyną",
+          "token": "kaimyna",
+          "part": "ch03-b004-s01",
+          "startFrame": 971666,
+          "endFrame": 985586,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        }
+      ],
+      "startFrame": 948763,
+      "endFrame": 991386,
+      "start": 39.53179166666666,
+      "end": 41.30775,
+      "speechStartFrame": 953898,
+      "speechEndFrame": 986891,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-003-i-000.mp3"
+    },
+    {
+      "mark": "p-004-i-000",
+      "block": 4,
+      "item": 0,
+      "text": "„Jis pasakys, kad man jau nereikia tokio stalo.“",
+      "words": [
+        {
+          "word": "Jis",
+          "token": "jis",
+          "part": "ch03-b005-s01",
+          "startFrame": 967571,
+          "endFrame": 1000211,
+          "voiceId": "voice_crc49951qu85",
+          "speaker": "book-father"
+        },
+        {
+          "word": "pasakys",
+          "token": "pasakys",
+          "part": "ch03-b005-s01",
+          "startFrame": 1000211,
+          "endFrame": 1012211,
+          "voiceId": "voice_crc49951qu85",
+          "speaker": "book-father"
+        },
+        {
+          "word": "kad",
+          "token": "kad",
+          "part": "ch03-b005-s01",
+          "startFrame": 1012211,
+          "endFrame": 1015571,
+          "voiceId": "voice_crc49951qu85",
+          "speaker": "book-father"
+        },
+        {
+          "word": "man",
+          "token": "man",
+          "part": "ch03-b005-s01",
+          "startFrame": 1015571,
+          "endFrame": 1026611,
+          "voiceId": "voice_crc49951qu85",
+          "speaker": "book-father"
+        },
+        {
+          "word": "jau",
+          "token": "jau",
+          "part": "ch03-b005-s01",
+          "startFrame": 1026611,
+          "endFrame": 1039091,
+          "voiceId": "voice_crc49951qu85",
+          "speaker": "book-father"
+        },
+        {
+          "word": "nereikia",
+          "token": "nereikia",
+          "part": "ch03-b005-s01",
+          "startFrame": 1039091,
+          "endFrame": 1052051,
+          "voiceId": "voice_crc49951qu85",
+          "speaker": "book-father"
+        },
+        {
+          "word": "tokio",
+          "token": "tokio",
+          "part": "ch03-b005-s01",
+          "startFrame": 1052051,
+          "endFrame": 1059731,
+          "voiceId": "voice_crc49951qu85",
+          "speaker": "book-father"
+        },
+        {
+          "word": "stalo",
+          "token": "stalo",
+          "part": "ch03-b005-s01",
+          "startFrame": 1059731,
+          "endFrame": 1067891,
+          "voiceId": "voice_crc49951qu85",
+          "speaker": "book-father"
+        }
+      ],
+      "startFrame": 991386,
+      "endFrame": 1089805,
+      "start": 41.30775,
+      "end": 45.408541666666665,
+      "speechStartFrame": 995881,
+      "speechEndFrame": 1074393,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-004-i-000.mp3"
+    },
+    {
+      "mark": "p-005-i-000",
+      "block": 5,
+      "item": 0,
+      "text": "„Tai tavo stalas.",
+      "words": [
+        {
+          "word": "Tai",
+          "token": "tai",
+          "part": "ch03-b006-s01",
+          "startFrame": 1055073,
+          "endFrame": 1104513,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        },
+        {
+          "word": "tavo",
+          "token": "tavo",
+          "part": "ch03-b006-s01",
+          "startFrame": 1104513,
+          "endFrame": 1120353,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        },
+        {
+          "word": "stalas",
+          "token": "stalas",
+          "part": "ch03-b006-s01",
+          "startFrame": 1120353,
+          "endFrame": 1133313,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        }
+      ],
+      "startFrame": 1089805,
+      "endFrame": 1149106,
+      "start": 45.408541666666665,
+      "end": 47.879416666666664,
+      "speechStartFrame": 1105218,
+      "speechEndFrame": 1137442,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-005-i-000.mp3"
+    },
+    {
+      "mark": "p-005-i-001",
+      "block": 5,
+      "item": 1,
+      "text": "Mes tik perkelsime jį.“",
+      "words": [
+        {
+          "word": "Mes",
+          "token": "mes",
+          "part": "ch03-b006-s01",
+          "startFrame": 1136193,
+          "endFrame": 1161633,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        },
+        {
+          "word": "tik",
+          "token": "tik",
+          "part": "ch03-b006-s01",
+          "startFrame": 1161633,
+          "endFrame": 1167393,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        },
+        {
+          "word": "perkelsime",
+          "token": "perkelsime",
+          "part": "ch03-b006-s01",
+          "startFrame": 1167393,
+          "endFrame": 1185153,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        },
+        {
+          "word": "jį",
+          "token": "ji",
+          "part": "ch03-b006-s01",
+          "startFrame": 1185153,
+          "endFrame": 1191393,
+          "voiceId": "voice_4j9n6wqwfj4v",
+          "speaker": "book-daughter"
+        }
+      ],
+      "startFrame": 1149106,
+      "endFrame": 1198654,
+      "start": 47.879416666666664,
+      "end": 49.94391666666667,
+      "speechStartFrame": 1160771,
+      "speechEndFrame": 1192450,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-005-i-001.mp3"
+    },
+    {
+      "mark": "p-006-i-000",
+      "block": 6,
+      "item": 0,
+      "text": "Elzė pakėlė galvą.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b007-s01",
+          "startFrame": 1173130,
+          "endFrame": 1210570,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pakėlė",
+          "token": "pakele",
+          "part": "ch03-b007-s01",
+          "startFrame": 1210570,
+          "endFrame": 1224490,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "galvą",
+          "token": "galva",
+          "part": "ch03-b007-s01",
+          "startFrame": 1224490,
+          "endFrame": 1234570,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 1198654,
+      "endFrame": 1245557,
+      "start": 49.94391666666667,
+      "end": 51.898208333333336,
+      "speechStartFrame": 1204856,
+      "speechEndFrame": 1235573,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-006-i-000.mp3"
+    },
+    {
+      "mark": "p-006-i-001",
+      "block": 6,
+      "item": 1,
+      "text": "Agnė ant popieriaus piešė kišenę.",
+      "words": [
+        {
+          "word": "Agnė",
+          "token": "agne",
+          "part": "ch03-b007-s01",
+          "startFrame": 1240810,
+          "endFrame": 1261930,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ant",
+          "token": "ant",
+          "part": "ch03-b007-s01",
+          "startFrame": 1261930,
+          "endFrame": 1266730,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "popieriaus",
+          "token": "popieriaus",
+          "part": "ch03-b007-s01",
+          "startFrame": 1266730,
+          "endFrame": 1278730,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "piešė",
+          "token": "piese",
+          "part": "ch03-b007-s01",
+          "startFrame": 1278730,
+          "endFrame": 1289290,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kišenę",
+          "token": "kisene",
+          "part": "ch03-b007-s01",
+          "startFrame": 1289290,
+          "endFrame": 1302730,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 1245557,
+      "endFrame": 1313203,
+      "start": 51.898208333333336,
+      "end": 54.716791666666666,
+      "speechStartFrame": 1255541,
+      "speechEndFrame": 1303702,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-006-i-001.mp3"
+    },
+    {
+      "mark": "p-006-i-002",
+      "block": 6,
+      "item": 2,
+      "text": "Piešinių knyga gulėjo atversta šalia.",
+      "words": [
+        {
+          "word": "Piešinių",
+          "token": "piesiniu",
+          "part": "ch03-b007-s01",
+          "startFrame": 1310890,
+          "endFrame": 1332010,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "knyga",
+          "token": "knyga",
+          "part": "ch03-b007-s01",
+          "startFrame": 1332010,
+          "endFrame": 1340650,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "gulėjo",
+          "token": "gulejo",
+          "part": "ch03-b007-s01",
+          "startFrame": 1340650,
+          "endFrame": 1362730,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "atversta",
+          "token": "atversta",
+          "part": "ch03-b007-s01",
+          "startFrame": 1362730,
+          "endFrame": 1372810,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "šalia",
+          "token": "salia",
+          "part": "ch03-b007-s01",
+          "startFrame": 1372810,
+          "endFrame": 1381930,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 1313203,
+      "endFrame": 1390037,
+      "start": 54.716791666666666,
+      "end": 57.91820833333333,
+      "speechStartFrame": 1322704,
+      "speechEndFrame": 1384850,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-006-i-002.mp3"
+    },
+    {
+      "mark": "p-007-i-000",
+      "block": 7,
+      "item": 0,
+      "text": "— Ką pakeitei?",
+      "words": [
+        {
+          "word": "Ką",
+          "token": "ka",
+          "part": "ch03-b008-s01",
+          "sourceStartFrame": 3200160,
+          "sourceEndFrame": 3215040,
+          "startFrame": 1379164,
+          "endFrame": 1396538,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "pakeitei",
+          "token": "pakeitei",
+          "part": "ch03-b008-s01",
+          "sourceStartFrame": 3215040,
+          "sourceEndFrame": 3232320,
+          "startFrame": 1396538,
+          "endFrame": 1416714,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 1390037,
+      "endFrame": 1421600,
+      "start": 57.91820833333333,
+      "end": 59.233333333333334,
+      "speechStartFrame": 1395224,
+      "speechEndFrame": 1418203,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-007-i-000.mp3"
+    },
+    {
+      "mark": "p-008-i-000",
+      "block": 8,
+      "item": 0,
+      "text": "— Noriu padaryti kišenę šiek tiek didesnę.",
+      "words": [
+        {
+          "word": "Noriu",
+          "token": "noriu",
+          "part": "ch03-b009-s01",
+          "startFrame": 1414558,
+          "endFrame": 1430878,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "padaryti",
+          "token": "padaryti",
+          "part": "ch03-b009-s01",
+          "startFrame": 1430878,
+          "endFrame": 1439038,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "kišenę",
+          "token": "kisene",
+          "part": "ch03-b009-s01",
+          "startFrame": 1439038,
+          "endFrame": 1453918,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "šiek",
+          "token": "siek",
+          "part": "ch03-b009-s01",
+          "startFrame": 1453918,
+          "endFrame": 1458238,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "tiek",
+          "token": "tiek",
+          "part": "ch03-b009-s01",
+          "startFrame": 1458238,
+          "endFrame": 1464478,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "didesnę",
+          "token": "didesne",
+          "part": "ch03-b009-s01",
+          "startFrame": 1464478,
+          "endFrame": 1475038,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        }
+      ],
+      "startFrame": 1421600,
+      "endFrame": 1482808,
+      "start": 59.233333333333334,
+      "end": 61.78366666666667,
+      "speechStartFrame": 1424999,
+      "speechEndFrame": 1476168,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-008-i-000.mp3"
+    },
+    {
+      "mark": "p-008-i-001",
+      "block": 8,
+      "item": 1,
+      "text": "Senoje yra skylė.",
+      "words": [
+        {
+          "word": "Senoje",
+          "token": "senoje",
+          "part": "ch03-b009-s01",
+          "startFrame": 1492798,
+          "endFrame": 1497598,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "yra",
+          "token": "yra",
+          "part": "ch03-b009-s01",
+          "startFrame": 1497598,
+          "endFrame": 1502398,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "skylė",
+          "token": "skyle",
+          "part": "ch03-b009-s01",
+          "startFrame": 1502398,
+          "endFrame": 1511998,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        }
+      ],
+      "startFrame": 1482808,
+      "endFrame": 1528304,
+      "start": 61.78366666666667,
+      "end": 63.67933333333333,
+      "speechStartFrame": 1489449,
+      "speechEndFrame": 1513001,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-008-i-001.mp3"
+    },
+    {
+      "mark": "p-009-i-000",
+      "block": 9,
+      "item": 0,
+      "text": "— Seną kišenę išimsiu.",
+      "words": [
+        {
+          "word": "Seną",
+          "token": "sena",
+          "part": "ch03-b010-s01",
+          "startFrame": 1530641,
+          "endFrame": 1551761,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "kišenę",
+          "token": "kisene",
+          "part": "ch03-b010-s01",
+          "startFrame": 1551761,
+          "endFrame": 1562321,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "išimsiu",
+          "token": "isimsiu",
+          "part": "ch03-b010-s01",
+          "startFrame": 1562321,
+          "endFrame": 1572401,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        }
+      ],
+      "startFrame": 1528304,
+      "endFrame": 1586613,
+      "start": 63.67933333333333,
+      "end": 66.108875,
+      "speechStartFrame": 1543608,
+      "speechEndFrame": 1573649,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-009-i-000.mp3"
+    },
+    {
+      "mark": "p-010-i-000",
+      "block": 10,
+      "item": 0,
+      "text": "Elzė padėjo ranką ant palto.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b011-s01",
+          "startFrame": 1587449,
+          "endFrame": 1605689,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "padėjo",
+          "token": "padejo",
+          "part": "ch03-b011-s01",
+          "startFrame": 1605689,
+          "endFrame": 1616729,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ranką",
+          "token": "ranka",
+          "part": "ch03-b011-s01",
+          "startFrame": 1616729,
+          "endFrame": 1624889,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ant",
+          "token": "ant",
+          "part": "ch03-b011-s01",
+          "startFrame": 1624889,
+          "endFrame": 1626809,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "palto",
+          "token": "palto",
+          "part": "ch03-b011-s01",
+          "startFrame": 1626809,
+          "endFrame": 1635929,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 1586613,
+      "endFrame": 1647987,
+      "start": 66.108875,
+      "end": 68.666125,
+      "speechStartFrame": 1599578,
+      "speechEndFrame": 1639014,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-010-i-000.mp3"
+    },
+    {
+      "mark": "p-010-i-001",
+      "block": 10,
+      "item": 1,
+      "text": "Agnė sustojo.",
+      "words": [
+        {
+          "word": "Agnė",
+          "token": "agne",
+          "part": "ch03-b011-s01",
+          "startFrame": 1644089,
+          "endFrame": 1662329,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "sustojo",
+          "token": "sustojo",
+          "part": "ch03-b011-s01",
+          "startFrame": 1662329,
+          "endFrame": 1676249,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 1647987,
+      "endFrame": 1681084,
+      "start": 68.666125,
+      "end": 70.04516666666666,
+      "speechStartFrame": 1656960,
+      "speechEndFrame": 1678324,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-010-i-001.mp3"
+    },
+    {
+      "mark": "p-011-i-000",
+      "block": 11,
+      "item": 0,
+      "text": "— Žiūrėk.",
+      "words": [
+        {
+          "word": "Žiūrėk",
+          "token": "ziurek",
+          "part": "ch03-b012-s01",
+          "startFrame": 1659004,
+          "endFrame": 1698364,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 1681084,
+      "endFrame": 1716789,
+      "start": 70.04516666666666,
+      "end": 71.532875,
+      "speechStartFrame": 1683849,
+      "speechEndFrame": 1704128,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-011-i-000.mp3"
+    },
+    {
+      "mark": "p-011-i-001",
+      "block": 11,
+      "item": 1,
+      "text": "Šitą vietą jis siuvo du kartus.",
+      "words": [
+        {
+          "word": "Šitą",
+          "token": "sita",
+          "part": "ch03-b012-s01",
+          "startFrame": 1700764,
+          "endFrame": 1743004,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "vietą",
+          "token": "vieta",
+          "part": "ch03-b012-s01",
+          "startFrame": 1743004,
+          "endFrame": 1759324,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "jis",
+          "token": "jis",
+          "part": "ch03-b012-s01",
+          "startFrame": 1759324,
+          "endFrame": 1765564,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "siuvo",
+          "token": "siuvo",
+          "part": "ch03-b012-s01",
+          "startFrame": 1765564,
+          "endFrame": 1778524,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "du",
+          "token": "du",
+          "part": "ch03-b012-s01",
+          "startFrame": 1778524,
+          "endFrame": 1788124,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "kartus",
+          "token": "kartus",
+          "part": "ch03-b012-s01",
+          "startFrame": 1788124,
+          "endFrame": 1805884,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 1716789,
+      "endFrame": 1821398,
+      "start": 71.532875,
+      "end": 75.89158333333333,
+      "speechStartFrame": 1729451,
+      "speechEndFrame": 1810939,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-011-i-001.mp3"
+    },
+    {
+      "mark": "p-011-i-002",
+      "block": 11,
+      "item": 2,
+      "text": "Pirmą kartą paliko skylę.",
+      "words": [
+        {
+          "word": "Pirmą",
+          "token": "pirma",
+          "part": "ch03-b012-s01",
+          "startFrame": 1829884,
+          "endFrame": 1841404,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "kartą",
+          "token": "karta",
+          "part": "ch03-b012-s01",
+          "startFrame": 1841404,
+          "endFrame": 1851964,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "paliko",
+          "token": "paliko",
+          "part": "ch03-b012-s01",
+          "startFrame": 1851964,
+          "endFrame": 1862524,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "skylę",
+          "token": "skyle",
+          "part": "ch03-b012-s01",
+          "startFrame": 1862524,
+          "endFrame": 1880764,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 1821398,
+      "endFrame": 1895035,
+      "start": 75.89158333333333,
+      "end": 78.95979166666666,
+      "speechStartFrame": 1831858,
+      "speechEndFrame": 1882778,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-011-i-002.mp3"
+    },
+    {
+      "mark": "p-011-i-003",
+      "block": 11,
+      "item": 3,
+      "text": "Mes juokėmės, kad saldainiai pabėgs.",
+      "words": [
+        {
+          "word": "Mes",
+          "token": "mes",
+          "part": "ch03-b012-s01",
+          "startFrame": 1914364,
+          "endFrame": 1940284,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "juokėmės",
+          "token": "juokemes",
+          "part": "ch03-b012-s01",
+          "startFrame": 1940284,
+          "endFrame": 1966204,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "kad",
+          "token": "kad",
+          "part": "ch03-b012-s01",
+          "startFrame": 1966204,
+          "endFrame": 1980604,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "saldainiai",
+          "token": "saldainiai",
+          "part": "ch03-b012-s01",
+          "startFrame": 1980604,
+          "endFrame": 1997884,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "pabėgs",
+          "token": "pabegs",
+          "part": "ch03-b012-s01",
+          "startFrame": 1997884,
+          "endFrame": 2011804,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 1895035,
+      "endFrame": 2028427,
+      "start": 78.95979166666666,
+      "end": 84.51779166666667,
+      "speechStartFrame": 1907293,
+      "speechEndFrame": 2015851,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-011-i-003.mp3"
+    },
+    {
+      "mark": "p-012-i-000",
+      "block": 12,
+      "item": 0,
+      "text": "— Gal seną paliekame viduje?",
+      "words": [
+        {
+          "word": "Gal",
+          "token": "gal",
+          "part": "ch03-b013-s01",
+          "startFrame": 2023135,
+          "endFrame": 2041375,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "seną",
+          "token": "sena",
+          "part": "ch03-b013-s01",
+          "startFrame": 2041375,
+          "endFrame": 2055775,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "paliekame",
+          "token": "paliekame",
+          "part": "ch03-b013-s01",
+          "startFrame": 2055775,
+          "endFrame": 2064895,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "viduje",
+          "token": "viduje",
+          "part": "ch03-b013-s01",
+          "startFrame": 2064895,
+          "endFrame": 2072095,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        }
+      ],
+      "startFrame": 2028427,
+      "endFrame": 2084310,
+      "start": 84.51779166666667,
+      "end": 86.84625,
+      "speechStartFrame": 2041004,
+      "speechEndFrame": 2077924,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-012-i-000.mp3"
+    },
+    {
+      "mark": "p-012-i-001",
+      "block": 12,
+      "item": 1,
+      "text": "O naują siuvame šalia.",
+      "words": [
+        {
+          "word": "O",
+          "token": "o",
+          "part": "ch03-b013-s01",
+          "startFrame": 2075935,
+          "endFrame": 2091295,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "naują",
+          "token": "nauja",
+          "part": "ch03-b013-s01",
+          "startFrame": 2091295,
+          "endFrame": 2102335,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "siuvame",
+          "token": "siuvame",
+          "part": "ch03-b013-s01",
+          "startFrame": 2102335,
+          "endFrame": 2108575,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "šalia",
+          "token": "salia",
+          "part": "ch03-b013-s01",
+          "startFrame": 2108575,
+          "endFrame": 2115775,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        }
+      ],
+      "startFrame": 2084310,
+      "endFrame": 2131687,
+      "start": 86.84625,
+      "end": 88.82029166666666,
+      "speechStartFrame": 2090696,
+      "speechEndFrame": 2118938,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-012-i-001.mp3"
+    },
+    {
+      "mark": "p-013-i-000",
+      "block": 13,
+      "item": 0,
+      "text": "Elzė lėtai pakėlė ranką nuo palto.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b014-s01",
+          "startFrame": 2134178,
+          "endFrame": 2153378,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "lėtai",
+          "token": "letai",
+          "part": "ch03-b014-s01",
+          "startFrame": 2153378,
+          "endFrame": 2172578,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pakėlė",
+          "token": "pakele",
+          "part": "ch03-b014-s01",
+          "startFrame": 2172578,
+          "endFrame": 2186018,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ranką",
+          "token": "ranka",
+          "part": "ch03-b014-s01",
+          "startFrame": 2186018,
+          "endFrame": 2194178,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "nuo",
+          "token": "nuo",
+          "part": "ch03-b014-s01",
+          "startFrame": 2194178,
+          "endFrame": 2196578,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "palto",
+          "token": "palto",
+          "part": "ch03-b014-s01",
+          "startFrame": 2196578,
+          "endFrame": 2206178,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2131687,
+      "endFrame": 2221594,
+      "start": 88.82029166666666,
+      "end": 92.56641666666667,
+      "speechStartFrame": 2144446,
+      "speechEndFrame": 2210799,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-013-i-000.mp3"
+    },
+    {
+      "mark": "p-014-i-000",
+      "block": 14,
+      "item": 0,
+      "text": "— Taip.",
+      "words": [
+        {
+          "word": "Taip",
+          "token": "taip",
+          "part": "ch03-b015-s01",
+          "startFrame": 2191479,
+          "endFrame": 2237559,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 2221594,
+      "endFrame": 2255727,
+      "start": 92.56641666666667,
+      "end": 93.988625,
+      "speechStartFrame": 2232390,
+      "speechEndFrame": 2244172,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-014-i-000.mp3"
+    },
+    {
+      "mark": "p-014-i-001",
+      "block": 14,
+      "item": 1,
+      "text": "Čia, prie šitos siūlės.",
+      "words": [
+        {
+          "word": "Čia",
+          "token": "cia",
+          "part": "ch03-b015-s01",
+          "startFrame": 2243319,
+          "endFrame": 2269239,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "prie",
+          "token": "prie",
+          "part": "ch03-b015-s01",
+          "startFrame": 2269239,
+          "endFrame": 2317239,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "šitos",
+          "token": "sitos",
+          "part": "ch03-b015-s01",
+          "startFrame": 2269239,
+          "endFrame": 2317239,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "siūlės",
+          "token": "siules",
+          "part": "ch03-b015-s01",
+          "startFrame": 2317239,
+          "endFrame": 2325879,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 2255727,
+      "endFrame": 2341705,
+      "start": 93.988625,
+      "end": 97.57104166666667,
+      "speechStartFrame": 2267283,
+      "speechEndFrame": 2329299,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-014-i-001.mp3"
+    },
+    {
+      "mark": "p-015-i-000",
+      "block": 15,
+      "item": 0,
+      "text": "Elzė įdėjo lapelį į savo knygą.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b016-s01",
+          "startFrame": 2340981,
+          "endFrame": 2362101,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "įdėjo",
+          "token": "idejo",
+          "part": "ch03-b016-s01",
+          "startFrame": 2362101,
+          "endFrame": 2367861,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "lapelį",
+          "token": "lapeli",
+          "part": "ch03-b016-s01",
+          "startFrame": 2367861,
+          "endFrame": 2380341,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "į",
+          "token": "i",
+          "part": "ch03-b016-s01",
+          "startFrame": 2380341,
+          "endFrame": 2382261,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "savo",
+          "token": "savo",
+          "part": "ch03-b016-s01",
+          "startFrame": 2382261,
+          "endFrame": 2389941,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "knygą",
+          "token": "knyga",
+          "part": "ch03-b016-s01",
+          "startFrame": 2389941,
+          "endFrame": 2400501,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2341705,
+      "endFrame": 2410667,
+      "start": 97.57104166666667,
+      "end": 100.44445833333333,
+      "speechStartFrame": 2354112,
+      "speechEndFrame": 2401761,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-015-i-000.mp3"
+    },
+    {
+      "mark": "p-015-i-001",
+      "block": 15,
+      "item": 1,
+      "text": "Pažiūrėjo į piešinį, tada atidarė stalčių.",
+      "words": [
+        {
+          "word": "Pažiūrėjo",
+          "token": "paziurejo",
+          "part": "ch03-b016-s01",
+          "startFrame": 2419701,
+          "endFrame": 2429301,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "į",
+          "token": "i",
+          "part": "ch03-b016-s01",
+          "startFrame": 2429301,
+          "endFrame": 2432661,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "piešinį",
+          "token": "piesini",
+          "part": "ch03-b016-s01",
+          "startFrame": 2432661,
+          "endFrame": 2446581,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "tada",
+          "token": "tada",
+          "part": "ch03-b016-s01",
+          "startFrame": 2447061,
+          "endFrame": 2465781,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "atidarė",
+          "token": "atidare",
+          "part": "ch03-b016-s01",
+          "startFrame": 2465781,
+          "endFrame": 2478261,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalčių",
+          "token": "stalciu",
+          "part": "ch03-b016-s01",
+          "startFrame": 2478261,
+          "endFrame": 2491701,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2410667,
+      "endFrame": 2502068,
+      "start": 100.44445833333333,
+      "end": 104.25283333333333,
+      "speechStartFrame": 2419574,
+      "speechEndFrame": 2492235,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-015-i-001.mp3"
+    },
+    {
+      "mark": "p-015-i-002",
+      "block": 15,
+      "item": 2,
+      "text": "Pastūmė Agnei mažą maišelį saldainių.",
+      "words": [
+        {
+          "word": "Pastūmė",
+          "token": "pastume",
+          "part": "ch03-b016-s01",
+          "startFrame": 2509941,
+          "endFrame": 2521941,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Agnei",
+          "token": "agnei",
+          "part": "ch03-b016-s01",
+          "startFrame": 2521941,
+          "endFrame": 2534421,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "mažą",
+          "token": "maza",
+          "part": "ch03-b016-s01",
+          "startFrame": 2534421,
+          "endFrame": 2548341,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "maišelį",
+          "token": "maiseli",
+          "part": "ch03-b016-s01",
+          "startFrame": 2534421,
+          "endFrame": 2548341,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "saldainių",
+          "token": "saldainiu",
+          "part": "ch03-b016-s01",
+          "startFrame": 2548341,
+          "endFrame": 2571381,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2502068,
+      "endFrame": 2575628,
+      "start": 104.25283333333333,
+      "end": 107.31783333333334,
+      "speechStartFrame": 2511901,
+      "speechEndFrame": 2571820,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-015-i-002.mp3"
+    },
+    {
+      "mark": "p-016-i-000",
+      "block": 16,
+      "item": 0,
+      "text": "— Patikrink, ar tilps.",
+      "words": [
+        {
+          "word": "Patikrink",
+          "token": "patikrink",
+          "part": "ch03-b017-s01",
+          "startFrame": 2588980,
+          "endFrame": 2622580,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "ar",
+          "token": "ar",
+          "part": "ch03-b017-s01",
+          "startFrame": 2622580,
+          "endFrame": 2640340,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "tilps",
+          "token": "tilps",
+          "part": "ch03-b017-s01",
+          "startFrame": 2622580,
+          "endFrame": 2640340,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 2575628,
+      "endFrame": 2657360,
+      "start": 107.31783333333334,
+      "end": 110.72333333333333,
+      "speechStartFrame": 2579436,
+      "speechEndFrame": 2643887,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-016-i-000.mp3"
+    },
+    {
+      "mark": "p-017-i-000",
+      "block": 17,
+      "item": 0,
+      "text": "Agnė pridėjo maišelį prie piešinio.",
+      "words": [
+        {
+          "word": "Agnė",
+          "token": "agne",
+          "part": "ch03-b018-s01",
+          "startFrame": 2657707,
+          "endFrame": 2678827,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pridėjo",
+          "token": "pridejo",
+          "part": "ch03-b018-s01",
+          "startFrame": 2678827,
+          "endFrame": 2690347,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "maišelį",
+          "token": "maiseli",
+          "part": "ch03-b018-s01",
+          "startFrame": 2690347,
+          "endFrame": 2701867,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "prie",
+          "token": "prie",
+          "part": "ch03-b018-s01",
+          "startFrame": 2701867,
+          "endFrame": 2704267,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "piešinio",
+          "token": "piesinio",
+          "part": "ch03-b018-s01",
+          "startFrame": 2704267,
+          "endFrame": 2718667,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2657360,
+      "endFrame": 2729919,
+      "start": 110.72333333333333,
+      "end": 113.746625,
+      "speechStartFrame": 2670834,
+      "speechEndFrame": 2720416,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-017-i-000.mp3"
+    },
+    {
+      "mark": "p-017-i-001",
+      "block": 17,
+      "item": 1,
+      "text": "Patraukė vieną liniją toliau.",
+      "words": [
+        {
+          "word": "Patraukė",
+          "token": "patrauke",
+          "part": "ch03-b018-s01",
+          "startFrame": 2739787,
+          "endFrame": 2750347,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "vieną",
+          "token": "viena",
+          "part": "ch03-b018-s01",
+          "startFrame": 2750347,
+          "endFrame": 2758507,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "liniją",
+          "token": "linija",
+          "part": "ch03-b018-s01",
+          "startFrame": 2758507,
+          "endFrame": 2767627,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "toliau",
+          "token": "toliau",
+          "part": "ch03-b018-s01",
+          "startFrame": 2767627,
+          "endFrame": 2777707,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2729919,
+      "endFrame": 2790015,
+      "start": 113.746625,
+      "end": 116.250625,
+      "speechStartFrame": 2739423,
+      "speechEndFrame": 2778323,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-017-i-001.mp3"
+    },
+    {
+      "mark": "p-017-i-002",
+      "block": 17,
+      "item": 2,
+      "text": "Elzė grįžo prie paskutinio puslapio.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b018-s01",
+          "startFrame": 2801707,
+          "endFrame": 2807947,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "grįžo",
+          "token": "grizo",
+          "part": "ch03-b018-s01",
+          "startFrame": 2807947,
+          "endFrame": 2829067,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "prie",
+          "token": "prie",
+          "part": "ch03-b018-s01",
+          "startFrame": 2829067,
+          "endFrame": 2833387,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "paskutinio",
+          "token": "paskutinio",
+          "part": "ch03-b018-s01",
+          "startFrame": 2833387,
+          "endFrame": 2846347,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "puslapio",
+          "token": "puslapio",
+          "part": "ch03-b018-s01",
+          "startFrame": 2846347,
+          "endFrame": 2858347,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2790015,
+      "endFrame": 2863200,
+      "start": 116.250625,
+      "end": 119.3,
+      "speechStartFrame": 2801638,
+      "speechEndFrame": 2860440,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-017-i-002.mp3"
+    },
+    {
+      "mark": "p-018-i-000",
+      "block": 18,
+      "item": 0,
+      "text": "Dukra grįžo su kaimynu.",
+      "words": [
+        {
+          "word": "Dukra",
+          "token": "dukra",
+          "part": "ch03-b019-s01",
+          "startFrame": 2872320,
+          "endFrame": 2890560,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "grįžo",
+          "token": "grizo",
+          "part": "ch03-b019-s01",
+          "startFrame": 2890560,
+          "endFrame": 2899680,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "su",
+          "token": "su",
+          "part": "ch03-b019-s01",
+          "startFrame": 2899680,
+          "endFrame": 2902080,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kaimynu",
+          "token": "kaimynu",
+          "part": "ch03-b019-s01",
+          "startFrame": 2902080,
+          "endFrame": 2914560,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2863200,
+      "endFrame": 2927087,
+      "start": 119.3,
+      "end": 121.96195833333333,
+      "speechStartFrame": 2865960,
+      "speechEndFrame": 2916015,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-018-i-000.mp3"
+    },
+    {
+      "mark": "p-018-i-001",
+      "block": 18,
+      "item": 1,
+      "text": "Jis su tėvu perkėlė stalą.",
+      "words": [
+        {
+          "word": "Jis",
+          "token": "jis",
+          "part": "ch03-b019-s01",
+          "startFrame": 2922240,
+          "endFrame": 2940480,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "su",
+          "token": "su",
+          "part": "ch03-b019-s01",
+          "startFrame": 2940480,
+          "endFrame": 2945280,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "tėvu",
+          "token": "tevu",
+          "part": "ch03-b019-s01",
+          "startFrame": 2945280,
+          "endFrame": 2954400,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "perkėlė",
+          "token": "perkele",
+          "part": "ch03-b019-s01",
+          "startFrame": 2954400,
+          "endFrame": 2965920,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalą",
+          "token": "stala",
+          "part": "ch03-b019-s01",
+          "startFrame": 2965920,
+          "endFrame": 2976480,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2927087,
+      "endFrame": 2987933,
+      "start": 121.96195833333333,
+      "end": 124.49720833333333,
+      "speechStartFrame": 2938160,
+      "speechEndFrame": 2977645,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-018-i-001.mp3"
+    },
+    {
+      "mark": "p-018-i-002",
+      "block": 18,
+      "item": 2,
+      "text": "Kėdė dabar stovėjo prie lango.",
+      "words": [
+        {
+          "word": "Kėdė",
+          "token": "kede",
+          "part": "ch03-b019-s01",
+          "startFrame": 2985600,
+          "endFrame": 3003840,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "dabar",
+          "token": "dabar",
+          "part": "ch03-b019-s01",
+          "startFrame": 3003840,
+          "endFrame": 3008640,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stovėjo",
+          "token": "stovejo",
+          "part": "ch03-b019-s01",
+          "startFrame": 3008640,
+          "endFrame": 3020160,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "prie",
+          "token": "prie",
+          "part": "ch03-b019-s01",
+          "startFrame": 3020160,
+          "endFrame": 3024480,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "lango",
+          "token": "lango",
+          "part": "ch03-b019-s01",
+          "startFrame": 3024480,
+          "endFrame": 3035040,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 2987933,
+      "endFrame": 3048746,
+      "start": 124.49720833333333,
+      "end": 127.03108333333333,
+      "speechStartFrame": 2998222,
+      "speechEndFrame": 3036407,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-018-i-002.mp3"
+    },
+    {
+      "mark": "p-018-i-003",
+      "block": 18,
+      "item": 3,
+      "text": "Tėvas atsisėdo.",
+      "words": [
+        {
+          "word": "Tėvas",
+          "token": "tevas",
+          "part": "ch03-b019-s01",
+          "startFrame": 3049920,
+          "endFrame": 3068160,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "atsisėdo",
+          "token": "atsisedo",
+          "part": "ch03-b019-s01",
+          "startFrame": 3068160,
+          "endFrame": 3083520,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3048746,
+      "endFrame": 3095211,
+      "start": 127.03108333333333,
+      "end": 128.967125,
+      "speechStartFrame": 3061086,
+      "speechEndFrame": 3085295,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-018-i-003.mp3"
+    },
+    {
+      "mark": "p-018-i-004",
+      "block": 18,
+      "item": 4,
+      "text": "Dukra atnešė jam arbatos.",
+      "words": [
+        {
+          "word": "Dukra",
+          "token": "dukra",
+          "part": "ch03-b019-s01",
+          "startFrame": 3095040,
+          "endFrame": 3113280,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "atnešė",
+          "token": "atnese",
+          "part": "ch03-b019-s01",
+          "startFrame": 3113280,
+          "endFrame": 3122880,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "jam",
+          "token": "jam",
+          "part": "ch03-b019-s01",
+          "startFrame": 3122880,
+          "endFrame": 3125760,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "arbatos",
+          "token": "arbatos",
+          "part": "ch03-b019-s01",
+          "startFrame": 3125760,
+          "endFrame": 3139680,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3095211,
+      "endFrame": 3156638,
+      "start": 128.967125,
+      "end": 131.52658333333332,
+      "speechStartFrame": 3105128,
+      "speechEndFrame": 3148666,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-018-i-004.mp3"
+    },
+    {
+      "mark": "p-018-i-005",
+      "block": 18,
+      "item": 5,
+      "text": "Darbo stalas liko prie kitos sienos.",
+      "words": [
+        {
+          "word": "Darbo",
+          "token": "darbo",
+          "part": "ch03-b019-s01",
+          "startFrame": 3153600,
+          "endFrame": 3171840,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalas",
+          "token": "stalas",
+          "part": "ch03-b019-s01",
+          "startFrame": 3171840,
+          "endFrame": 3180000,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "liko",
+          "token": "liko",
+          "part": "ch03-b019-s01",
+          "startFrame": 3180000,
+          "endFrame": 3187200,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "prie",
+          "token": "prie",
+          "part": "ch03-b019-s01",
+          "startFrame": 3187200,
+          "endFrame": 3191520,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kitos",
+          "token": "kitos",
+          "part": "ch03-b019-s01",
+          "startFrame": 3191520,
+          "endFrame": 3198720,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "sienos",
+          "token": "sienos",
+          "part": "ch03-b019-s01",
+          "startFrame": 3198720,
+          "endFrame": 3208320,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3156638,
+      "endFrame": 3219090,
+      "start": 131.52658333333332,
+      "end": 134.12875,
+      "speechStartFrame": 3164611,
+      "speechEndFrame": 3212027,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-018-i-005.mp3"
+    },
+    {
+      "mark": "p-019-i-000",
+      "block": 19,
+      "item": 0,
+      "text": "Elzė užvertė knygą ir padėjo ant stalo.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b020-s01",
+          "startFrame": 3228227,
+          "endFrame": 3246467,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "užvertė",
+          "token": "uzverte",
+          "part": "ch03-b020-s01",
+          "startFrame": 3246467,
+          "endFrame": 3260387,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "knygą",
+          "token": "knyga",
+          "part": "ch03-b020-s01",
+          "startFrame": 3260387,
+          "endFrame": 3270467,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ir",
+          "token": "ir",
+          "part": "ch03-b020-s01",
+          "startFrame": 3270467,
+          "endFrame": 3272387,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "padėjo",
+          "token": "padejo",
+          "part": "ch03-b020-s01",
+          "startFrame": 3272387,
+          "endFrame": 3281027,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ant",
+          "token": "ant",
+          "part": "ch03-b020-s01",
+          "startFrame": 3281027,
+          "endFrame": 3284867,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalo",
+          "token": "stalo",
+          "part": "ch03-b020-s01",
+          "startFrame": 3284867,
+          "endFrame": 3293987,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3219090,
+      "endFrame": 3307629,
+      "start": 134.12875,
+      "end": 137.817875,
+      "speechStartFrame": 3226154,
+      "speechEndFrame": 3296972,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-019-i-000.mp3"
+    },
+    {
+      "mark": "p-019-i-001",
+      "block": 19,
+      "item": 1,
+      "text": "Paimti adatą ji iš karto neskubėjo.",
+      "words": [
+        {
+          "word": "Paimti",
+          "token": "paimti",
+          "part": "ch03-b020-s01",
+          "startFrame": 3316547,
+          "endFrame": 3325187,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "adatą",
+          "token": "adata",
+          "part": "ch03-b020-s01",
+          "startFrame": 3325187,
+          "endFrame": 3336707,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ji",
+          "token": "ji",
+          "part": "ch03-b020-s01",
+          "startFrame": 3336707,
+          "endFrame": 3340547,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "iš",
+          "token": "is",
+          "part": "ch03-b020-s01",
+          "startFrame": 3340547,
+          "endFrame": 3342467,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "karto",
+          "token": "karto",
+          "part": "ch03-b020-s01",
+          "startFrame": 3342467,
+          "endFrame": 3348227,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "neskubėjo",
+          "token": "neskubejo",
+          "part": "ch03-b020-s01",
+          "startFrame": 3348227,
+          "endFrame": 3363587,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3307629,
+      "endFrame": 3379039,
+      "start": 137.817875,
+      "end": 140.79329166666668,
+      "speechStartFrame": 3318286,
+      "speechEndFrame": 3371726,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-019-i-001.mp3"
+    },
+    {
+      "mark": "p-019-i-002",
+      "block": 19,
+      "item": 2,
+      "text": "Pirmiausia palietė seno palto kišenę.",
+      "words": [
+        {
+          "word": "Pirmiausia",
+          "token": "pirmiausia",
+          "part": "ch03-b020-s01",
+          "startFrame": 3384707,
+          "endFrame": 3395747,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "palietė",
+          "token": "paliete",
+          "part": "ch03-b020-s01",
+          "startFrame": 3395747,
+          "endFrame": 3405827,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "seno",
+          "token": "seno",
+          "part": "ch03-b020-s01",
+          "startFrame": 3405827,
+          "endFrame": 3414467,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "palto",
+          "token": "palto",
+          "part": "ch03-b020-s01",
+          "startFrame": 3414467,
+          "endFrame": 3424547,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kišenę",
+          "token": "kisene",
+          "part": "ch03-b020-s01",
+          "startFrame": 3424547,
+          "endFrame": 3437987,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3379039,
+      "endFrame": 3448398,
+      "start": 140.79329166666668,
+      "end": 143.68325,
+      "speechStartFrame": 3386353,
+      "speechEndFrame": 3439238,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-019-i-002.mp3"
+    },
+    {
+      "mark": "p-019-i-003",
+      "block": 19,
+      "item": 3,
+      "text": "Pirštai nebedrebėjo.",
+      "words": [
+        {
+          "word": "Pirštai",
+          "token": "pirstai",
+          "part": "ch03-b020-s01",
+          "startFrame": 3456707,
+          "endFrame": 3464387,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "nebedrebėjo",
+          "token": "nebedrebejo",
+          "part": "ch03-b020-s01",
+          "startFrame": 3464387,
+          "endFrame": 3481667,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3448398,
+      "endFrame": 3492304,
+      "start": 143.68325,
+      "end": 145.51266666666666,
+      "speechStartFrame": 3457558,
+      "speechEndFrame": 3482994,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-019-i-003.mp3"
+    },
+    {
+      "mark": "p-019-i-004",
+      "block": 19,
+      "item": 4,
+      "text": "Elzė paėmė adatą ir įvėrė siūlą.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b020-s01",
+          "startFrame": 3502787,
+          "endFrame": 3507107,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "paėmė",
+          "token": "paeme",
+          "part": "ch03-b020-s01",
+          "startFrame": 3507107,
+          "endFrame": 3519587,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "adatą",
+          "token": "adata",
+          "part": "ch03-b020-s01",
+          "startFrame": 3519587,
+          "endFrame": 3531587,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ir",
+          "token": "ir",
+          "part": "ch03-b020-s01",
+          "startFrame": 3531587,
+          "endFrame": 3546467,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "įvėrė",
+          "token": "ivere",
+          "part": "ch03-b020-s01",
+          "startFrame": 3546467,
+          "endFrame": 3556067,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "siūlą",
+          "token": "siula",
+          "part": "ch03-b020-s01",
+          "startFrame": 3556067,
+          "endFrame": 3565187,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3492304,
+      "endFrame": 3580108,
+      "start": 145.51266666666666,
+      "end": 149.17116666666666,
+      "speechStartFrame": 3501615,
+      "speechEndFrame": 3566589,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-019-i-004.mp3"
+    },
+    {
+      "mark": "p-020-i-000",
+      "block": 20,
+      "item": 0,
+      "text": "— Agne, palaikyk medžiagą.",
+      "words": [
+        {
+          "word": "Agne",
+          "token": "agne",
+          "part": "ch03-b021-s01",
+          "startFrame": 3547269,
+          "endFrame": 3599109,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "palaikyk",
+          "token": "palaikyk",
+          "part": "ch03-b021-s01",
+          "startFrame": 3605349,
+          "endFrame": 3642309,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "medžiagą",
+          "token": "medziaga",
+          "part": "ch03-b021-s01",
+          "startFrame": 3642309,
+          "endFrame": 3661989,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 3580108,
+      "endFrame": 3675002,
+      "start": 149.17116666666666,
+      "end": 153.12508333333332,
+      "speechStartFrame": 3593628,
+      "speechEndFrame": 3663807,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-020-i-000.mp3"
+    },
+    {
+      "mark": "p-020-i-001",
+      "block": 20,
+      "item": 1,
+      "text": "Parodysiu, kaip siūti kišenę.",
+      "words": [
+        {
+          "word": "Parodysiu",
+          "token": "parodysiu",
+          "part": "ch03-b021-s01",
+          "startFrame": 3670149,
+          "endFrame": 3703749,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "kaip",
+          "token": "kaip",
+          "part": "ch03-b021-s01",
+          "startFrame": 3703749,
+          "endFrame": 3709989,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "siūti",
+          "token": "siuti",
+          "part": "ch03-b021-s01",
+          "startFrame": 3709989,
+          "endFrame": 3720069,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "kišenę",
+          "token": "kisene",
+          "part": "ch03-b021-s01",
+          "startFrame": 3720069,
+          "endFrame": 3740229,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 3675002,
+      "endFrame": 3746431,
+      "start": 153.12508333333332,
+      "end": 156.10129166666667,
+      "speechStartFrame": 3686198,
+      "speechEndFrame": 3742349,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-020-i-001.mp3"
+    },
+    {
+      "mark": "p-021-i-000",
+      "block": 21,
+      "item": 0,
+      "text": "Agnė laikė medžiagą abiem rankomis.",
+      "words": [
+        {
+          "word": "Agnė",
+          "token": "agne",
+          "part": "ch03-b022-s01",
+          "startFrame": 3723753,
+          "endFrame": 3757353,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "laikė",
+          "token": "laike",
+          "part": "ch03-b022-s01",
+          "startFrame": 3757353,
+          "endFrame": 3767913,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "medžiagą",
+          "token": "medziaga",
+          "part": "ch03-b022-s01",
+          "startFrame": 3767913,
+          "endFrame": 3778473,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "abiem",
+          "token": "abiem",
+          "part": "ch03-b022-s01",
+          "startFrame": 3778473,
+          "endFrame": 3783273,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "rankomis",
+          "token": "rankomis",
+          "part": "ch03-b022-s01",
+          "startFrame": 3783273,
+          "endFrame": 3798633,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3746431,
+      "endFrame": 3812186,
+      "start": 156.10129166666667,
+      "end": 158.84108333333333,
+      "speechStartFrame": 3750513,
+      "speechEndFrame": 3805102,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-021-i-000.mp3"
+    },
+    {
+      "mark": "p-021-i-001",
+      "block": 21,
+      "item": 1,
+      "text": "Elzė siuvo lėtai.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b022-s01",
+          "startFrame": 3808233,
+          "endFrame": 3826473,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "siuvo",
+          "token": "siuvo",
+          "part": "ch03-b022-s01",
+          "startFrame": 3826473,
+          "endFrame": 3833193,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "lėtai",
+          "token": "letai",
+          "part": "ch03-b022-s01",
+          "startFrame": 3833193,
+          "endFrame": 3843273,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3812186,
+      "endFrame": 3855912,
+      "start": 158.84108333333333,
+      "end": 160.663,
+      "speechStartFrame": 3819270,
+      "speechEndFrame": 3846524,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-021-i-001.mp3"
+    },
+    {
+      "mark": "p-021-i-002",
+      "block": 21,
+      "item": 2,
+      "text": "Adata ėjo per medžiagą ir vėl grįžo į jos ranką.",
+      "words": [
+        {
+          "word": "Adata",
+          "token": "adata",
+          "part": "ch03-b022-s01",
+          "startFrame": 3854313,
+          "endFrame": 3872553,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ėjo",
+          "token": "ejo",
+          "part": "ch03-b022-s01",
+          "startFrame": 3872553,
+          "endFrame": 3878793,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "per",
+          "token": "per",
+          "part": "ch03-b022-s01",
+          "startFrame": 3878793,
+          "endFrame": 3884553,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "medžiagą",
+          "token": "medziaga",
+          "part": "ch03-b022-s01",
+          "startFrame": 3884553,
+          "endFrame": 3897033,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ir",
+          "token": "ir",
+          "part": "ch03-b022-s01",
+          "startFrame": 3897033,
+          "endFrame": 3911433,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "vėl",
+          "token": "vel",
+          "part": "ch03-b022-s01",
+          "startFrame": 3911433,
+          "endFrame": 3918153,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "grįžo",
+          "token": "grizo",
+          "part": "ch03-b022-s01",
+          "startFrame": 3918153,
+          "endFrame": 3927273,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "į",
+          "token": "i",
+          "part": "ch03-b022-s01",
+          "startFrame": 3927273,
+          "endFrame": 3929193,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "jos",
+          "token": "jos",
+          "part": "ch03-b022-s01",
+          "startFrame": 3929193,
+          "endFrame": 3932073,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ranką",
+          "token": "ranka",
+          "part": "ch03-b022-s01",
+          "startFrame": 3932073,
+          "endFrame": 3943113,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 3855912,
+      "endFrame": 3960749,
+      "start": 160.663,
+      "end": 165.03120833333332,
+      "speechStartFrame": 3865300,
+      "speechEndFrame": 3944408,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-021-i-002.mp3"
+    },
+    {
+      "mark": "p-022-i-000",
+      "block": 22,
+      "item": 0,
+      "text": "— Dabar tu.",
+      "words": [
+        {
+          "word": "Dabar",
+          "token": "dabar",
+          "part": "ch03-b023-s01",
+          "startFrame": 3960128,
+          "endFrame": 3993728,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "tu",
+          "token": "tu",
+          "part": "ch03-b023-s01",
+          "startFrame": 3960128,
+          "endFrame": 3993728,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 3960749,
+      "endFrame": 3999387,
+      "start": 165.03120833333332,
+      "end": 166.641125,
+      "speechStartFrame": 3977091,
+      "speechEndFrame": 3995247,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-022-i-000.mp3"
+    },
+    {
+      "mark": "p-023-i-000",
+      "block": 23,
+      "item": 0,
+      "text": "— Bijau sugadinti.",
+      "words": [
+        {
+          "word": "Bijau",
+          "token": "bijau",
+          "part": "ch03-b024-s01",
+          "startFrame": 3976768,
+          "endFrame": 4017088,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "sugadinti",
+          "token": "sugadinti",
+          "part": "ch03-b024-s01",
+          "startFrame": 4017088,
+          "endFrame": 4031968,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        }
+      ],
+      "startFrame": 3999387,
+      "endFrame": 4055552,
+      "start": 166.641125,
+      "end": 168.98133333333334,
+      "speechStartFrame": 4003528,
+      "speechEndFrame": 4037408,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-023-i-000.mp3"
+    },
+    {
+      "mark": "p-024-i-000",
+      "block": 24,
+      "item": 0,
+      "text": "— Tada siūk lėtai.",
+      "words": [
+        {
+          "word": "Tada",
+          "token": "tada",
+          "part": "ch03-b025-s01",
+          "startFrame": 4049768,
+          "endFrame": 4074728,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "siūk",
+          "token": "siuk",
+          "part": "ch03-b025-s01",
+          "startFrame": 4074728,
+          "endFrame": 4086728,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "lėtai",
+          "token": "letai",
+          "part": "ch03-b025-s01",
+          "startFrame": 4086728,
+          "endFrame": 4099208,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 4055552,
+      "endFrame": 4113129,
+      "start": 168.98133333333334,
+      "end": 171.380375,
+      "speechStartFrame": 4073697,
+      "speechEndFrame": 4103441,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-024-i-000.mp3"
+    },
+    {
+      "mark": "p-024-i-001",
+      "block": 24,
+      "item": 1,
+      "text": "Aš šalia.",
+      "words": [
+        {
+          "word": "Aš",
+          "token": "as",
+          "part": "ch03-b025-s01",
+          "startFrame": 4099208,
+          "endFrame": 4133768,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "šalia",
+          "token": "salia",
+          "part": "ch03-b025-s01",
+          "startFrame": 4099208,
+          "endFrame": 4133768,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 4113129,
+      "endFrame": 4143402,
+      "start": 171.380375,
+      "end": 172.64175,
+      "speechStartFrame": 4122817,
+      "speechEndFrame": 4138006,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-024-i-001.mp3"
+    },
+    {
+      "mark": "p-025-i-000",
+      "block": 25,
+      "item": 0,
+      "text": "Agnė paėmė adatą.",
+      "words": [
+        {
+          "word": "Agnė",
+          "token": "agne",
+          "part": "ch03-b026-s01",
+          "startFrame": 4155389,
+          "endFrame": 4172669,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "paėmė",
+          "token": "paeme",
+          "part": "ch03-b026-s01",
+          "startFrame": 4172669,
+          "endFrame": 4182269,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "adatą",
+          "token": "adata",
+          "part": "ch03-b026-s01",
+          "startFrame": 4182269,
+          "endFrame": 4191869,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4143402,
+      "endFrame": 4202293,
+      "start": 172.64175,
+      "end": 175.09554166666666,
+      "speechStartFrame": 4148799,
+      "speechEndFrame": 4193311,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-025-i-000.mp3"
+    },
+    {
+      "mark": "p-025-i-001",
+      "block": 25,
+      "item": 1,
+      "text": "Pirmą siūlę padarė per arti krašto.",
+      "words": [
+        {
+          "word": "Pirmą",
+          "token": "pirma",
+          "part": "ch03-b026-s01",
+          "startFrame": 4210109,
+          "endFrame": 4216829,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "siūlę",
+          "token": "siule",
+          "part": "ch03-b026-s01",
+          "startFrame": 4216829,
+          "endFrame": 4224509,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "padarė",
+          "token": "padare",
+          "part": "ch03-b026-s01",
+          "startFrame": 4224509,
+          "endFrame": 4233629,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "per",
+          "token": "per",
+          "part": "ch03-b026-s01",
+          "startFrame": 4233629,
+          "endFrame": 4236509,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "arti",
+          "token": "arti",
+          "part": "ch03-b026-s01",
+          "startFrame": 4236509,
+          "endFrame": 4253309,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "krašto",
+          "token": "krasto",
+          "part": "ch03-b026-s01",
+          "startFrame": 4236509,
+          "endFrame": 4253309,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4202293,
+      "endFrame": 4266327,
+      "start": 175.09554166666666,
+      "end": 177.763625,
+      "speechStartFrame": 4211275,
+      "speechEndFrame": 4257199,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-025-i-001.mp3"
+    },
+    {
+      "mark": "p-025-i-002",
+      "block": 25,
+      "item": 2,
+      "text": "Elzė parodė jai kitą vietą.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b026-s01",
+          "startFrame": 4277789,
+          "endFrame": 4282109,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "parodė",
+          "token": "parode",
+          "part": "ch03-b026-s01",
+          "startFrame": 4282109,
+          "endFrame": 4293629,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "jai",
+          "token": "jai",
+          "part": "ch03-b026-s01",
+          "startFrame": 4293629,
+          "endFrame": 4298909,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kitą",
+          "token": "kita",
+          "part": "ch03-b026-s01",
+          "startFrame": 4298909,
+          "endFrame": 4306109,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "vietą",
+          "token": "vieta",
+          "part": "ch03-b026-s01",
+          "startFrame": 4306109,
+          "endFrame": 4314749,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4266327,
+      "endFrame": 4325311,
+      "start": 177.763625,
+      "end": 180.22129166666667,
+      "speechStartFrame": 4275460,
+      "speechEndFrame": 4315913,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-025-i-002.mp3"
+    },
+    {
+      "mark": "p-025-i-003",
+      "block": 25,
+      "item": 3,
+      "text": "Adatos iš jos rankos nepaėmė.",
+      "words": [
+        {
+          "word": "Adatos",
+          "token": "adatos",
+          "part": "ch03-b026-s01",
+          "startFrame": 4336829,
+          "endFrame": 4342589,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "iš",
+          "token": "is",
+          "part": "ch03-b026-s01",
+          "startFrame": 4342589,
+          "endFrame": 4348829,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "jos",
+          "token": "jos",
+          "part": "ch03-b026-s01",
+          "startFrame": 4348829,
+          "endFrame": 4351229,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "rankos",
+          "token": "rankos",
+          "part": "ch03-b026-s01",
+          "startFrame": 4351229,
+          "endFrame": 4362269,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "nepaėmė",
+          "token": "nepaeme",
+          "part": "ch03-b026-s01",
+          "startFrame": 4362269,
+          "endFrame": 4377149,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4325311,
+      "endFrame": 4391770,
+      "start": 180.22129166666667,
+      "end": 182.99041666666668,
+      "speechStartFrame": 4334709,
+      "speechEndFrame": 4378478,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-025-i-003.mp3"
+    },
+    {
+      "mark": "p-026-i-000",
+      "block": 26,
+      "item": 0,
+      "text": "— O jeigu nespėsiu?",
+      "words": [
+        {
+          "word": "O",
+          "token": "o",
+          "part": "ch03-b027-s01",
+          "sourceStartFrame": 771360,
+          "sourceEndFrame": 795840,
+          "startFrame": 4381469,
+          "endFrame": 4405949,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "jeigu",
+          "token": "jeigu",
+          "part": "ch03-b027-s01",
+          "sourceStartFrame": 795840,
+          "sourceEndFrame": 802080,
+          "startFrame": 4405949,
+          "endFrame": 4412189,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        },
+        {
+          "word": "nespėsiu",
+          "token": "nespesiu",
+          "part": "ch03-b027-s01",
+          "sourceStartFrame": 802080,
+          "sourceEndFrame": 816960,
+          "startFrame": 4412189,
+          "endFrame": 4427069,
+          "voiceId": "voice_tjo96mzvb188",
+          "speaker": "agne"
+        }
+      ],
+      "startFrame": 4391770,
+      "endFrame": 4433931,
+      "start": 182.99041666666668,
+      "end": 184.747125,
+      "speechStartFrame": 4405062,
+      "speechEndFrame": 4428506,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-026-i-000.mp3"
+    },
+    {
+      "mark": "p-027-i-000",
+      "block": 27,
+      "item": 0,
+      "text": "— Neskubėk.",
+      "words": [
+        {
+          "word": "Neskubėk",
+          "token": "neskubek",
+          "part": "ch03-b028-s01",
+          "startFrame": 4409186,
+          "endFrame": 4465346,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 4433931,
+      "endFrame": 4472483,
+      "start": 184.747125,
+      "end": 186.35345833333332,
+      "speechStartFrame": 4439357,
+      "speechEndFrame": 4470944,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-027-i-000.mp3"
+    },
+    {
+      "mark": "p-027-i-001",
+      "block": 27,
+      "item": 1,
+      "text": "Kai vėl pavargsiu, galėsiu laikyti medžiagą.",
+      "words": [
+        {
+          "word": "Kai",
+          "token": "kai",
+          "part": "ch03-b028-s01",
+          "startFrame": 4469186,
+          "endFrame": 4494146,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "vėl",
+          "token": "vel",
+          "part": "ch03-b028-s01",
+          "startFrame": 4494146,
+          "endFrame": 4507586,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "pavargsiu",
+          "token": "pavargsiu",
+          "part": "ch03-b028-s01",
+          "startFrame": 4507586,
+          "endFrame": 4528706,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "galėsiu",
+          "token": "galesiu",
+          "part": "ch03-b028-s01",
+          "startFrame": 4529186,
+          "endFrame": 4558946,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "laikyti",
+          "token": "laikyti",
+          "part": "ch03-b028-s01",
+          "startFrame": 4558946,
+          "endFrame": 4576226,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "medžiagą",
+          "token": "medziaga",
+          "part": "ch03-b028-s01",
+          "startFrame": 4576226,
+          "endFrame": 4595906,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 4472483,
+      "endFrame": 4601338,
+      "start": 186.35345833333332,
+      "end": 191.72241666666667,
+      "speechStartFrame": 4474059,
+      "speechEndFrame": 4597004,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-027-i-001.mp3"
+    },
+    {
+      "mark": "p-028-i-000",
+      "block": 28,
+      "item": 0,
+      "text": "Lina įpylė vandens į puodelius.",
+      "words": [
+        {
+          "word": "Lina",
+          "token": "lina",
+          "part": "ch03-b029-s01",
+          "startFrame": 4575130,
+          "endFrame": 4610650,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "įpylė",
+          "token": "ipyle",
+          "part": "ch03-b029-s01",
+          "startFrame": 4610650,
+          "endFrame": 4624090,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "vandens",
+          "token": "vandens",
+          "part": "ch03-b029-s01",
+          "startFrame": 4624090,
+          "endFrame": 4633210,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "į",
+          "token": "i",
+          "part": "ch03-b029-s01",
+          "startFrame": 4633210,
+          "endFrame": 4637530,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "puodelius",
+          "token": "puodelius",
+          "part": "ch03-b029-s01",
+          "startFrame": 4637530,
+          "endFrame": 4649050,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4601338,
+      "endFrame": 4661707,
+      "start": 191.72241666666667,
+      "end": 194.23779166666668,
+      "speechStartFrame": 4605672,
+      "speechEndFrame": 4654469,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-028-i-000.mp3"
+    },
+    {
+      "mark": "p-028-i-001",
+      "block": 28,
+      "item": 1,
+      "text": "Paliko juos ant kito stalo.",
+      "words": [
+        {
+          "word": "Paliko",
+          "token": "paliko",
+          "part": "ch03-b029-s01",
+          "startFrame": 4652890,
+          "endFrame": 4674970,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "juos",
+          "token": "juos",
+          "part": "ch03-b029-s01",
+          "startFrame": 4674970,
+          "endFrame": 4679770,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ant",
+          "token": "ant",
+          "part": "ch03-b029-s01",
+          "startFrame": 4679770,
+          "endFrame": 4684090,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kito",
+          "token": "kito",
+          "part": "ch03-b029-s01",
+          "startFrame": 4684090,
+          "endFrame": 4687450,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalo",
+          "token": "stalo",
+          "part": "ch03-b029-s01",
+          "startFrame": 4687450,
+          "endFrame": 4699450,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4661707,
+      "endFrame": 4711162,
+      "start": 194.23779166666668,
+      "end": 196.29841666666667,
+      "speechStartFrame": 4668946,
+      "speechEndFrame": 4703142,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-028-i-001.mp3"
+    },
+    {
+      "mark": "p-028-i-002",
+      "block": 28,
+      "item": 2,
+      "text": "Šalia padėjo duonos.",
+      "words": [
+        {
+          "word": "Šalia",
+          "token": "salia",
+          "part": "ch03-b029-s01",
+          "startFrame": 4707610,
+          "endFrame": 4725850,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "padėjo",
+          "token": "padejo",
+          "part": "ch03-b029-s01",
+          "startFrame": 4725850,
+          "endFrame": 4737850,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "duonos",
+          "token": "duonos",
+          "part": "ch03-b029-s01",
+          "startFrame": 4737850,
+          "endFrame": 4746970,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4711162,
+      "endFrame": 4770912,
+      "start": 196.29841666666667,
+      "end": 198.788,
+      "speechStartFrame": 4719182,
+      "speechEndFrame": 4752093,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-028-i-002.mp3"
+    },
+    {
+      "mark": "p-029-i-000",
+      "block": 29,
+      "item": 0,
+      "text": "Po dviejų valandų Elzė padėjo adatą.",
+      "words": [
+        {
+          "word": "Po",
+          "token": "po",
+          "part": "ch03-b030-s01",
+          "startFrame": 4767813,
+          "endFrame": 4789893,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "dviejų",
+          "token": "dvieju",
+          "part": "ch03-b030-s01",
+          "startFrame": 4789893,
+          "endFrame": 4798533,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "valandų",
+          "token": "valandu",
+          "part": "ch03-b030-s01",
+          "startFrame": 4798533,
+          "endFrame": 4809573,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b030-s01",
+          "startFrame": 4809573,
+          "endFrame": 4819173,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "padėjo",
+          "token": "padejo",
+          "part": "ch03-b030-s01",
+          "startFrame": 4819173,
+          "endFrame": 4832613,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "adatą",
+          "token": "adata",
+          "part": "ch03-b030-s01",
+          "startFrame": 4832613,
+          "endFrame": 4846053,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4770912,
+      "endFrame": 4857563,
+      "start": 198.788,
+      "end": 202.39845833333334,
+      "speechStartFrame": 4789732,
+      "speechEndFrame": 4847623,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-029-i-000.mp3"
+    },
+    {
+      "mark": "p-029-i-001",
+      "block": 29,
+      "item": 1,
+      "text": "Pirštai vėl pavargo.",
+      "words": [
+        {
+          "word": "Pirštai",
+          "token": "pirstai",
+          "part": "ch03-b030-s01",
+          "startFrame": 4852773,
+          "endFrame": 4874853,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "vėl",
+          "token": "vel",
+          "part": "ch03-b030-s01",
+          "startFrame": 4874853,
+          "endFrame": 4880133,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pavargo",
+          "token": "pavargo",
+          "part": "ch03-b030-s01",
+          "startFrame": 4880133,
+          "endFrame": 4891173,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4857563,
+      "endFrame": 4904520,
+      "start": 202.39845833333334,
+      "end": 204.355,
+      "speechStartFrame": 4867504,
+      "speechEndFrame": 4894771,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-029-i-001.mp3"
+    },
+    {
+      "mark": "p-029-i-002",
+      "block": 29,
+      "item": 2,
+      "text": "Ji pabandė paimti siūlą.",
+      "words": [
+        {
+          "word": "Ji",
+          "token": "ji",
+          "part": "ch03-b030-s01",
+          "startFrame": 4894053,
+          "endFrame": 4916133,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pabandė",
+          "token": "pabande",
+          "part": "ch03-b030-s01",
+          "startFrame": 4916133,
+          "endFrame": 4927173,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "paimti",
+          "token": "paimti",
+          "part": "ch03-b030-s01",
+          "startFrame": 4927173,
+          "endFrame": 4935813,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "siūlą",
+          "token": "siula",
+          "part": "ch03-b030-s01",
+          "startFrame": 4935813,
+          "endFrame": 4947333,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4904520,
+      "endFrame": 4960463,
+      "start": 204.355,
+      "end": 206.68595833333333,
+      "speechStartFrame": 4914269,
+      "speechEndFrame": 4954022,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-029-i-002.mp3"
+    },
+    {
+      "mark": "p-029-i-003",
+      "block": 29,
+      "item": 3,
+      "text": "Ranka vėl drebėjo.",
+      "words": [
+        {
+          "word": "Ranka",
+          "token": "ranka",
+          "part": "ch03-b030-s01",
+          "startFrame": 4948293,
+          "endFrame": 4973733,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "vėl",
+          "token": "vel",
+          "part": "ch03-b030-s01",
+          "startFrame": 4973733,
+          "endFrame": 4979493,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "drebėjo",
+          "token": "drebejo",
+          "part": "ch03-b030-s01",
+          "startFrame": 4979493,
+          "endFrame": 4990533,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 4960463,
+      "endFrame": 5003863,
+      "start": 206.68595833333333,
+      "end": 208.49429166666667,
+      "speechStartFrame": 4966904,
+      "speechEndFrame": 4992747,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-029-i-003.mp3"
+    },
+    {
+      "mark": "p-030-i-000",
+      "block": 30,
+      "item": 0,
+      "text": "— Pabaik kišenę.",
+      "words": [
+        {
+          "word": "Pabaik",
+          "token": "pabaik",
+          "part": "ch03-b031-s01",
+          "sourceStartFrame": 6505920,
+          "sourceEndFrame": 6528960,
+          "startFrame": 5003123,
+          "endFrame": 5030075,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "kišenę",
+          "token": "kisene",
+          "part": "ch03-b031-s01",
+          "sourceStartFrame": 6505920,
+          "sourceEndFrame": 6528960,
+          "startFrame": 5003123,
+          "endFrame": 5030075,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 5003863,
+      "endFrame": 5055495,
+      "start": 208.49429166666667,
+      "end": 210.645625,
+      "speechStartFrame": 5014980,
+      "speechEndFrame": 5049374,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-030-i-000.mp3"
+    },
+    {
+      "mark": "p-031-i-000",
+      "block": 31,
+      "item": 0,
+      "text": "Dabar Elzė laikė medžiagą, o Agnė siuvo.",
+      "words": [
+        {
+          "word": "Dabar",
+          "token": "dabar",
+          "part": "ch03-b032-s01",
+          "startFrame": 5046656,
+          "endFrame": 5065856,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b032-s01",
+          "startFrame": 5065856,
+          "endFrame": 5073536,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "laikė",
+          "token": "laike",
+          "part": "ch03-b032-s01",
+          "startFrame": 5073536,
+          "endFrame": 5083616,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "medžiagą",
+          "token": "medziaga",
+          "part": "ch03-b032-s01",
+          "startFrame": 5083616,
+          "endFrame": 5095616,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "o",
+          "token": "o",
+          "part": "ch03-b032-s01",
+          "startFrame": 5096096,
+          "endFrame": 5109056,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Agnė",
+          "token": "agne",
+          "part": "ch03-b032-s01",
+          "startFrame": 5109056,
+          "endFrame": 5119616,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "siuvo",
+          "token": "siuvo",
+          "part": "ch03-b032-s01",
+          "startFrame": 5119616,
+          "endFrame": 5126816,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5055495,
+      "endFrame": 5141122,
+      "start": 210.645625,
+      "end": 214.21341666666666,
+      "speechStartFrame": 5061617,
+      "speechEndFrame": 5132324,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-031-i-000.mp3"
+    },
+    {
+      "mark": "p-031-i-001",
+      "block": 31,
+      "item": 1,
+      "text": "Agnė pati baigė paskutinę siūlę.",
+      "words": [
+        {
+          "word": "Agnė",
+          "token": "agne",
+          "part": "ch03-b032-s01",
+          "startFrame": 5149856,
+          "endFrame": 5155136,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pati",
+          "token": "pati",
+          "part": "ch03-b032-s01",
+          "startFrame": 5155136,
+          "endFrame": 5164736,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "baigė",
+          "token": "baige",
+          "part": "ch03-b032-s01",
+          "startFrame": 5164736,
+          "endFrame": 5172416,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "paskutinę",
+          "token": "paskutine",
+          "part": "ch03-b032-s01",
+          "startFrame": 5172416,
+          "endFrame": 5184416,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "siūlę",
+          "token": "siule",
+          "part": "ch03-b032-s01",
+          "startFrame": 5184416,
+          "endFrame": 5193536,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5141122,
+      "endFrame": 5204022,
+      "start": 214.21341666666666,
+      "end": 216.83425,
+      "speechStartFrame": 5149920,
+      "speechEndFrame": 5195626,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-031-i-001.mp3"
+    },
+    {
+      "mark": "p-031-i-002",
+      "block": 31,
+      "item": 2,
+      "text": "Lina pakėlė paltą.",
+      "words": [
+        {
+          "word": "Lina",
+          "token": "lina",
+          "part": "ch03-b032-s01",
+          "startFrame": 5215616,
+          "endFrame": 5220416,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pakėlė",
+          "token": "pakele",
+          "part": "ch03-b032-s01",
+          "startFrame": 5220416,
+          "endFrame": 5233376,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "paltą",
+          "token": "palta",
+          "part": "ch03-b032-s01",
+          "startFrame": 5233376,
+          "endFrame": 5243456,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5204022,
+      "endFrame": 5253388,
+      "start": 216.83425,
+      "end": 218.89116666666666,
+      "speechStartFrame": 5212418,
+      "speechEndFrame": 5245177,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-031-i-002.mp3"
+    },
+    {
+      "mark": "p-031-i-003",
+      "block": 31,
+      "item": 3,
+      "text": "Elzė patikrino kišenę.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b032-s01",
+          "startFrame": 5261696,
+          "endFrame": 5264096,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "patikrino",
+          "token": "patikrino",
+          "part": "ch03-b032-s01",
+          "startFrame": 5264096,
+          "endFrame": 5278496,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kišenę",
+          "token": "kisene",
+          "part": "ch03-b032-s01",
+          "startFrame": 5278496,
+          "endFrame": 5293376,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5253388,
+      "endFrame": 5302077,
+      "start": 218.89116666666666,
+      "end": 220.919875,
+      "speechStartFrame": 5261599,
+      "speechEndFrame": 5294776,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-031-i-003.mp3"
+    },
+    {
+      "mark": "p-031-i-004",
+      "block": 31,
+      "item": 4,
+      "text": "Maišelis saldainių tilpo.",
+      "words": [
+        {
+          "word": "Maišelis",
+          "token": "maiselis",
+          "part": "ch03-b032-s01",
+          "startFrame": 5309216,
+          "endFrame": 5322656,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "saldainių",
+          "token": "saldainiu",
+          "part": "ch03-b032-s01",
+          "startFrame": 5322656,
+          "endFrame": 5336096,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "tilpo",
+          "token": "tilpo",
+          "part": "ch03-b032-s01",
+          "startFrame": 5336096,
+          "endFrame": 5349056,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5302077,
+      "endFrame": 5354733,
+      "start": 220.919875,
+      "end": 223.113875,
+      "speechStartFrame": 5309379,
+      "speechEndFrame": 5350823,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-031-i-004.mp3"
+    },
+    {
+      "mark": "p-032-i-000",
+      "block": 32,
+      "item": 0,
+      "text": "— Rytoj anūkui bus ko ieškoti.",
+      "words": [
+        {
+          "word": "Rytoj",
+          "token": "rytoj",
+          "part": "ch03-b033-s01",
+          "startFrame": 5331588,
+          "endFrame": 5371428,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "anūkui",
+          "token": "anukui",
+          "part": "ch03-b033-s01",
+          "startFrame": 5371428,
+          "endFrame": 5385348,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "bus",
+          "token": "bus",
+          "part": "ch03-b033-s01",
+          "startFrame": 5385348,
+          "endFrame": 5389668,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "ko",
+          "token": "ko",
+          "part": "ch03-b033-s01",
+          "startFrame": 5389668,
+          "endFrame": 5397348,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        },
+        {
+          "word": "ieškoti",
+          "token": "ieskoti",
+          "part": "ch03-b033-s01",
+          "startFrame": 5397348,
+          "endFrame": 5418468,
+          "voiceId": "voice_0clzvw9jjm49",
+          "speaker": "elze"
+        }
+      ],
+      "startFrame": 5354733,
+      "endFrame": 5439102,
+      "start": 223.113875,
+      "end": 226.62925,
+      "speechStartFrame": 5358644,
+      "speechEndFrame": 5423136,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-032-i-000.mp3"
+    },
+    {
+      "mark": "p-033-i-000",
+      "block": 33,
+      "item": 0,
+      "text": "Elzė grąžino knygą Linai.",
+      "words": [
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b034-s01",
+          "startFrame": 5439954,
+          "endFrame": 5459154,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "grąžino",
+          "token": "grazino",
+          "part": "ch03-b034-s01",
+          "startFrame": 5459154,
+          "endFrame": 5469714,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "knygą",
+          "token": "knyga",
+          "part": "ch03-b034-s01",
+          "startFrame": 5469714,
+          "endFrame": 5479314,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Linai",
+          "token": "linai",
+          "part": "ch03-b034-s01",
+          "startFrame": 5479314,
+          "endFrame": 5486034,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5439102,
+      "endFrame": 5496516,
+      "start": 226.62925,
+      "end": 229.0215,
+      "speechStartFrame": 5455043,
+      "speechEndFrame": 5489059,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-033-i-000.mp3"
+    },
+    {
+      "mark": "p-033-i-001",
+      "block": 33,
+      "item": 1,
+      "text": "Šalia padėjo pinigų už kelionę.",
+      "words": [
+        {
+          "word": "Šalia",
+          "token": "salia",
+          "part": "ch03-b034-s01",
+          "startFrame": 5491314,
+          "endFrame": 5510514,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "padėjo",
+          "token": "padejo",
+          "part": "ch03-b034-s01",
+          "startFrame": 5510514,
+          "endFrame": 5520594,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pinigų",
+          "token": "pinigu",
+          "part": "ch03-b034-s01",
+          "startFrame": 5520594,
+          "endFrame": 5530674,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "už",
+          "token": "uz",
+          "part": "ch03-b034-s01",
+          "startFrame": 5530674,
+          "endFrame": 5532594,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "kelionę",
+          "token": "kelione",
+          "part": "ch03-b034-s01",
+          "startFrame": 5532594,
+          "endFrame": 5545074,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5496516,
+      "endFrame": 5556302,
+      "start": 229.0215,
+      "end": 231.51258333333334,
+      "speechStartFrame": 5503973,
+      "speechEndFrame": 5546259,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-033-i-001.mp3"
+    },
+    {
+      "mark": "p-033-i-002",
+      "block": 33,
+      "item": 2,
+      "text": "Piešinių knygą Agnė paliko ant savo stalo.",
+      "words": [
+        {
+          "word": "Piešinių",
+          "token": "piesiniu",
+          "part": "ch03-b034-s01",
+          "startFrame": 5557074,
+          "endFrame": 5576274,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "knygą",
+          "token": "knyga",
+          "part": "ch03-b034-s01",
+          "startFrame": 5576274,
+          "endFrame": 5586354,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Agnė",
+          "token": "agne",
+          "part": "ch03-b034-s01",
+          "startFrame": 5586354,
+          "endFrame": 5602194,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "paliko",
+          "token": "paliko",
+          "part": "ch03-b034-s01",
+          "startFrame": 5602194,
+          "endFrame": 5609874,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ant",
+          "token": "ant",
+          "part": "ch03-b034-s01",
+          "startFrame": 5609874,
+          "endFrame": 5614194,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "savo",
+          "token": "savo",
+          "part": "ch03-b034-s01",
+          "startFrame": 5614194,
+          "endFrame": 5620914,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalo",
+          "token": "stalo",
+          "part": "ch03-b034-s01",
+          "startFrame": 5620914,
+          "endFrame": 5630514,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5556302,
+      "endFrame": 5641814,
+      "start": 231.51258333333334,
+      "end": 235.07558333333333,
+      "speechStartFrame": 5566345,
+      "speechEndFrame": 5633160,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-033-i-002.mp3"
+    },
+    {
+      "mark": "p-033-i-003",
+      "block": 33,
+      "item": 3,
+      "text": "Užversti jos Elzė neprašė.",
+      "words": [
+        {
+          "word": "Užversti",
+          "token": "uzversti",
+          "part": "ch03-b034-s01",
+          "startFrame": 5640114,
+          "endFrame": 5659314,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "jos",
+          "token": "jos",
+          "part": "ch03-b034-s01",
+          "startFrame": 5659314,
+          "endFrame": 5664114,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Elzė",
+          "token": "elze",
+          "part": "ch03-b034-s01",
+          "startFrame": 5664114,
+          "endFrame": 5672274,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "neprašė",
+          "token": "neprase",
+          "part": "ch03-b034-s01",
+          "startFrame": 5672274,
+          "endFrame": 5690034,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5641814,
+      "endFrame": 5695149,
+      "start": 235.07558333333333,
+      "end": 237.297875,
+      "speechStartFrame": 5650469,
+      "speechEndFrame": 5691429,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-033-i-003.mp3"
+    },
+    {
+      "mark": "p-034-i-000",
+      "block": 34,
+      "item": 0,
+      "text": "Bibliotekoje Lina apžiūrėjo viršelį ir puslapius.",
+      "words": [
+        {
+          "word": "Bibliotekoje",
+          "token": "bibliotekoje",
+          "part": "ch03-b035-s01",
+          "startFrame": 5700909,
+          "endFrame": 5722029,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "Lina",
+          "token": "lina",
+          "part": "ch03-b035-s01",
+          "startFrame": 5722029,
+          "endFrame": 5741229,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "apžiūrėjo",
+          "token": "apziurejo",
+          "part": "ch03-b035-s01",
+          "startFrame": 5741229,
+          "endFrame": 5757549,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "viršelį",
+          "token": "virseli",
+          "part": "ch03-b035-s01",
+          "startFrame": 5757549,
+          "endFrame": 5773389,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "ir",
+          "token": "ir",
+          "part": "ch03-b035-s01",
+          "startFrame": 5773389,
+          "endFrame": 5783949,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "puslapius",
+          "token": "puslapius",
+          "part": "ch03-b035-s01",
+          "startFrame": 5783949,
+          "endFrame": 5797389,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5695149,
+      "endFrame": 5811016,
+      "start": 237.297875,
+      "end": 242.12566666666666,
+      "speechStartFrame": 5698869,
+      "speechEndFrame": 5801007,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-034-i-000.mp3"
+    },
+    {
+      "mark": "p-034-i-001",
+      "block": 34,
+      "item": 1,
+      "text": "Padėjo knygą į jos vietą lentynoje.",
+      "words": [
+        {
+          "word": "Padėjo",
+          "token": "padejo",
+          "part": "ch03-b035-s01",
+          "startFrame": 5821389,
+          "endFrame": 5829069,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "knygą",
+          "token": "knyga",
+          "part": "ch03-b035-s01",
+          "startFrame": 5829069,
+          "endFrame": 5841549,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "į",
+          "token": "i",
+          "part": "ch03-b035-s01",
+          "startFrame": 5841549,
+          "endFrame": 5854989,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "jos",
+          "token": "jos",
+          "part": "ch03-b035-s01",
+          "startFrame": 5854989,
+          "endFrame": 5858829,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "vietą",
+          "token": "vieta",
+          "part": "ch03-b035-s01",
+          "startFrame": 5858829,
+          "endFrame": 5867949,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "lentynoje",
+          "token": "lentynoje",
+          "part": "ch03-b035-s01",
+          "startFrame": 5867949,
+          "endFrame": 5883789,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5811016,
+      "endFrame": 5894817,
+      "start": 242.12566666666666,
+      "end": 245.617375,
+      "speechStartFrame": 5821025,
+      "speechEndFrame": 5885300,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-034-i-001.mp3"
+    },
+    {
+      "mark": "p-034-i-002",
+      "block": 34,
+      "item": 2,
+      "text": "Matas laukė prie durų.",
+      "words": [
+        {
+          "word": "Matas",
+          "token": "matas",
+          "part": "ch03-b035-s01",
+          "startFrame": 5904429,
+          "endFrame": 5913549,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "laukė",
+          "token": "lauke",
+          "part": "ch03-b035-s01",
+          "startFrame": 5913549,
+          "endFrame": 5924109,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "prie",
+          "token": "prie",
+          "part": "ch03-b035-s01",
+          "startFrame": 5924109,
+          "endFrame": 5926509,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "durų",
+          "token": "duru",
+          "part": "ch03-b035-s01",
+          "startFrame": 5926509,
+          "endFrame": 5935629,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5894817,
+      "endFrame": 5946947,
+      "start": 245.617375,
+      "end": 247.78945833333333,
+      "speechStartFrame": 5904334,
+      "speechEndFrame": 5936921,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-034-i-002.mp3"
+    },
+    {
+      "mark": "p-034-i-003",
+      "block": 34,
+      "item": 3,
+      "text": "Lina pakvietė jį prie virtuvės stalo.",
+      "words": [
+        {
+          "word": "Lina",
+          "token": "lina",
+          "part": "ch03-b035-s01",
+          "startFrame": 5956749,
+          "endFrame": 5961549,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "pakvietė",
+          "token": "pakviete",
+          "part": "ch03-b035-s01",
+          "startFrame": 5961549,
+          "endFrame": 5974989,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "jį",
+          "token": "ji",
+          "part": "ch03-b035-s01",
+          "startFrame": 5974989,
+          "endFrame": 5980269,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "prie",
+          "token": "prie",
+          "part": "ch03-b035-s01",
+          "startFrame": 5980269,
+          "endFrame": 5993229,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "virtuvės",
+          "token": "virtuves",
+          "part": "ch03-b035-s01",
+          "startFrame": 5993229,
+          "endFrame": 6004749,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        },
+        {
+          "word": "stalo",
+          "token": "stalo",
+          "part": "ch03-b035-s01",
+          "startFrame": 6004749,
+          "endFrame": 6013869,
+          "voiceId": "voice_23a12v3iqjgb",
+          "speaker": "narrator"
+        }
+      ],
+      "startFrame": 5946947,
+      "endFrame": 6020720,
+      "start": 247.78945833333333,
+      "end": 250.86333333333334,
+      "speechStartFrame": 5956972,
+      "speechEndFrame": 6016999,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-034-i-003.mp3"
+    },
+    {
+      "mark": "p-035-i-000",
+      "block": 35,
+      "item": 0,
+      "text": "— Dabar galime ieškoti jūsų kelio.",
+      "words": [
+        {
+          "word": "Dabar",
+          "token": "dabar",
+          "part": "ch03-b036-s01",
+          "startFrame": 5997680,
+          "endFrame": 6028880,
+          "voiceId": "voice_zgkntei7vpi9",
+          "speaker": "lina"
+        },
+        {
+          "word": "galime",
+          "token": "galime",
+          "part": "ch03-b036-s01",
+          "startFrame": 6028880,
+          "endFrame": 6039440,
+          "voiceId": "voice_zgkntei7vpi9",
+          "speaker": "lina"
+        },
+        {
+          "word": "ieškoti",
+          "token": "ieskoti",
+          "part": "ch03-b036-s01",
+          "startFrame": 6039440,
+          "endFrame": 6050480,
+          "voiceId": "voice_zgkntei7vpi9",
+          "speaker": "lina"
+        },
+        {
+          "word": "jūsų",
+          "token": "jusu",
+          "part": "ch03-b036-s01",
+          "startFrame": 6050480,
+          "endFrame": 6059120,
+          "voiceId": "voice_zgkntei7vpi9",
+          "speaker": "lina"
+        },
+        {
+          "word": "kelio",
+          "token": "kelio",
+          "part": "ch03-b036-s01",
+          "startFrame": 6059120,
+          "endFrame": 6065840,
+          "voiceId": "voice_zgkntei7vpi9",
+          "speaker": "lina"
+        }
+      ],
+      "startFrame": 6020720,
+      "endFrame": 6072778,
+      "start": 250.86333333333334,
+      "end": 253.03241666666668,
+      "speechStartFrame": 6024441,
+      "speechEndFrame": 6068578,
+      "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-035-i-000.mp3"
+    }
+  ],
+  "waveformBoundaries": [
+    {
+      "before": "p-000-i-000",
+      "after": "p-000-i-001",
+      "hintFrame": 74160,
+      "cutFrame": 80374,
+      "pause": {
+        "startFrame": 70651,
+        "endFrame": 90098,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 258.9166666666667
+    },
+    {
+      "before": "p-000-i-001",
+      "after": "p-000-i-002",
+      "hintFrame": 156720,
+      "cutFrame": 166208,
+      "pause": {
+        "startFrame": 154760,
+        "endFrame": 177657,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 395.3333333333333
+    },
+    {
+      "before": "p-000-i-002",
+      "after": "p-000-i-003",
+      "hintFrame": 203280,
+      "cutFrame": 213141,
+      "pause": {
+        "startFrame": 203745,
+        "endFrame": 222537,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 410.875
+    },
+    {
+      "before": "p-000-i-003",
+      "after": "p-000-i-004",
+      "hintFrame": 263760,
+      "cutFrame": 270502,
+      "pause": {
+        "startFrame": 259550,
+        "endFrame": 281455,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 280.91666666666663
+    },
+    {
+      "before": "p-000-i-004",
+      "after": "p-001-i-000",
+      "hintFrame": 330719,
+      "cutFrame": 334482,
+      "pause": {
+        "startFrame": 326399,
+        "endFrame": 342566,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 156.79166666666666
+    },
+    {
+      "before": "p-001-i-000",
+      "after": "p-001-i-001",
+      "hintFrame": 401279,
+      "cutFrame": 413098,
+      "pause": {
+        "startFrame": 402306,
+        "endFrame": 423890,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 492.4583333333333
+    },
+    {
+      "before": "p-001-i-001",
+      "after": "p-001-i-002",
+      "hintFrame": 471359,
+      "cutFrame": 476607,
+      "pause": {
+        "startFrame": 468269,
+        "endFrame": 484946,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 218.66666666666669
+    },
+    {
+      "before": "p-001-i-002",
+      "after": "p-001-i-003",
+      "hintFrame": 525359,
+      "cutFrame": 533233,
+      "pause": {
+        "startFrame": 522137,
+        "endFrame": 544329,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 328.0833333333333
+    },
+    {
+      "before": "p-001-i-003",
+      "after": "p-001-i-004",
+      "hintFrame": 592799,
+      "cutFrame": 611285,
+      "pause": {
+        "startFrame": 603640,
+        "endFrame": 618931,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 770.25
+    },
+    {
+      "before": "p-001-i-004",
+      "after": "p-002-i-000",
+      "hintFrame": 666386,
+      "cutFrame": 673028,
+      "pause": {
+        "startFrame": 662066,
+        "endFrame": 683991,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 276.75
+    },
+    {
+      "before": "p-002-i-000",
+      "after": "p-002-i-001",
+      "hintFrame": 744866,
+      "cutFrame": 746555,
+      "pause": {
+        "startFrame": 736215,
+        "endFrame": 756896,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 70.375
+    },
+    {
+      "before": "p-002-i-001",
+      "after": "p-002-i-002",
+      "hintFrame": 772946,
+      "cutFrame": 780323,
+      "pause": {
+        "startFrame": 770553,
+        "endFrame": 790093,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 307.375
+    },
+    {
+      "before": "p-002-i-002",
+      "after": "p-002-i-003",
+      "hintFrame": 821186,
+      "cutFrame": 831340,
+      "pause": {
+        "startFrame": 820846,
+        "endFrame": 841834,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 423.0833333333333
+    },
+    {
+      "before": "p-002-i-003",
+      "after": "p-002-i-004",
+      "hintFrame": 888626,
+      "cutFrame": 889147,
+      "pause": {
+        "startFrame": 887535,
+        "endFrame": 890760,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 21.708333333333332
+    },
+    {
+      "before": "p-002-i-004",
+      "after": "p-003-i-000",
+      "hintFrame": 947186,
+      "cutFrame": 948763,
+      "pause": {
+        "startFrame": 943509,
+        "endFrame": 954018,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 65.70833333333333
+    },
+    {
+      "before": "p-003-i-000",
+      "after": "p-004-i-000",
+      "hintFrame": 991091,
+      "cutFrame": 991386,
+      "pause": {
+        "startFrame": 986771,
+        "endFrame": 996001,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 12.291666666666666
+    },
+    {
+      "before": "p-004-i-000",
+      "after": "p-005-i-000",
+      "hintFrame": 1078593,
+      "cutFrame": 1089805,
+      "pause": {
+        "startFrame": 1074273,
+        "endFrame": 1105338,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 467.1666666666667
+    },
+    {
+      "before": "p-005-i-000",
+      "after": "p-005-i-001",
+      "hintFrame": 1134753,
+      "cutFrame": 1149106,
+      "pause": {
+        "startFrame": 1137322,
+        "endFrame": 1160891,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 598.0416666666667
+    },
+    {
+      "before": "p-005-i-001",
+      "after": "p-006-i-000",
+      "hintFrame": 1196650,
+      "cutFrame": 1198654,
+      "pause": {
+        "startFrame": 1192332,
+        "endFrame": 1204976,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 83.5
+    },
+    {
+      "before": "p-006-i-000",
+      "after": "p-006-i-001",
+      "hintFrame": 1237690,
+      "cutFrame": 1245557,
+      "pause": {
+        "startFrame": 1235453,
+        "endFrame": 1255661,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 327.79166666666663
+    },
+    {
+      "before": "p-006-i-001",
+      "after": "p-006-i-002",
+      "hintFrame": 1306810,
+      "cutFrame": 1313203,
+      "pause": {
+        "startFrame": 1303582,
+        "endFrame": 1322824,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 266.375
+    },
+    {
+      "before": "p-006-i-002",
+      "after": "p-007-i-000",
+      "hintFrame": 1386170,
+      "cutFrame": 1390037,
+      "pause": {
+        "startFrame": 1384730,
+        "endFrame": 1395344,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 161.125
+    },
+    {
+      "before": "p-007-i-000",
+      "after": "p-008-i-000",
+      "hintFrame": 1421758,
+      "cutFrame": 1421600,
+      "pause": {
+        "startFrame": 1418083,
+        "endFrame": 1425118,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -6.583333333333333
+    },
+    {
+      "before": "p-008-i-000",
+      "after": "p-008-i-001",
+      "hintFrame": 1483918,
+      "cutFrame": 1482808,
+      "pause": {
+        "startFrame": 1476048,
+        "endFrame": 1489569,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -46.25
+    },
+    {
+      "before": "p-008-i-001",
+      "after": "p-009-i-000",
+      "hintFrame": 1517201,
+      "cutFrame": 1528304,
+      "pause": {
+        "startFrame": 1512881,
+        "endFrame": 1543728,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 462.625
+    },
+    {
+      "before": "p-009-i-000",
+      "after": "p-010-i-000",
+      "hintFrame": 1577849,
+      "cutFrame": 1586613,
+      "pause": {
+        "startFrame": 1573529,
+        "endFrame": 1599698,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 365.16666666666663
+    },
+    {
+      "before": "p-010-i-000",
+      "after": "p-010-i-001",
+      "hintFrame": 1640009,
+      "cutFrame": 1647987,
+      "pause": {
+        "startFrame": 1638894,
+        "endFrame": 1657080,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 332.4166666666667
+    },
+    {
+      "before": "p-010-i-001",
+      "after": "p-011-i-000",
+      "hintFrame": 1682524,
+      "cutFrame": 1681084,
+      "pause": {
+        "startFrame": 1678204,
+        "endFrame": 1683964,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -60.0
+    },
+    {
+      "before": "p-011-i-000",
+      "after": "p-011-i-001",
+      "hintFrame": 1699564,
+      "cutFrame": 1716789,
+      "pause": {
+        "startFrame": 1704008,
+        "endFrame": 1729571,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 717.7083333333333
+    },
+    {
+      "before": "p-011-i-001",
+      "after": "p-011-i-002",
+      "hintFrame": 1817884,
+      "cutFrame": 1821398,
+      "pause": {
+        "startFrame": 1810819,
+        "endFrame": 1831978,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 146.41666666666666
+    },
+    {
+      "before": "p-011-i-002",
+      "after": "p-011-i-003",
+      "hintFrame": 1897564,
+      "cutFrame": 1895035,
+      "pause": {
+        "startFrame": 1882658,
+        "endFrame": 1907413,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -105.375
+    },
+    {
+      "before": "p-011-i-003",
+      "after": "p-012-i-000",
+      "hintFrame": 2020735,
+      "cutFrame": 2028427,
+      "pause": {
+        "startFrame": 2015731,
+        "endFrame": 2041124,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 320.5
+    },
+    {
+      "before": "p-012-i-000",
+      "after": "p-012-i-001",
+      "hintFrame": 2074015,
+      "cutFrame": 2084310,
+      "pause": {
+        "startFrame": 2077805,
+        "endFrame": 2090816,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 428.9583333333333
+    },
+    {
+      "before": "p-012-i-001",
+      "after": "p-013-i-000",
+      "hintFrame": 2123138,
+      "cutFrame": 2131687,
+      "pause": {
+        "startFrame": 2118818,
+        "endFrame": 2144556,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 356.20833333333337
+    },
+    {
+      "before": "p-013-i-000",
+      "after": "p-014-i-000",
+      "hintFrame": 2214999,
+      "cutFrame": 2221594,
+      "pause": {
+        "startFrame": 2210679,
+        "endFrame": 2232510,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 274.79166666666663
+    },
+    {
+      "before": "p-014-i-000",
+      "after": "p-014-i-001",
+      "hintFrame": 2240439,
+      "cutFrame": 2255727,
+      "pause": {
+        "startFrame": 2244052,
+        "endFrame": 2267403,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 637.0
+    },
+    {
+      "before": "p-014-i-001",
+      "after": "p-015-i-000",
+      "hintFrame": 2334261,
+      "cutFrame": 2341705,
+      "pause": {
+        "startFrame": 2329179,
+        "endFrame": 2354232,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 310.16666666666663
+    },
+    {
+      "before": "p-015-i-000",
+      "after": "p-015-i-001",
+      "hintFrame": 2410101,
+      "cutFrame": 2410667,
+      "pause": {
+        "startFrame": 2401641,
+        "endFrame": 2419694,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 23.583333333333336
+    },
+    {
+      "before": "p-015-i-001",
+      "after": "p-015-i-002",
+      "hintFrame": 2500821,
+      "cutFrame": 2502068,
+      "pause": {
+        "startFrame": 2492115,
+        "endFrame": 2512021,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 51.958333333333336
+    },
+    {
+      "before": "p-015-i-002",
+      "after": "p-016-i-000",
+      "hintFrame": 2576020,
+      "cutFrame": 2575628,
+      "pause": {
+        "startFrame": 2571700,
+        "endFrame": 2579556,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -16.333333333333332
+    },
+    {
+      "before": "p-016-i-000",
+      "after": "p-017-i-000",
+      "hintFrame": 2648587,
+      "cutFrame": 2657360,
+      "pause": {
+        "startFrame": 2643767,
+        "endFrame": 2670954,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 365.54166666666663
+    },
+    {
+      "before": "p-017-i-000",
+      "after": "p-017-i-001",
+      "hintFrame": 2729227,
+      "cutFrame": 2729919,
+      "pause": {
+        "startFrame": 2720296,
+        "endFrame": 2739543,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 28.833333333333332
+    },
+    {
+      "before": "p-017-i-001",
+      "after": "p-017-i-002",
+      "hintFrame": 2789707,
+      "cutFrame": 2790015,
+      "pause": {
+        "startFrame": 2778272,
+        "endFrame": 2801758,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 12.833333333333334
+    },
+    {
+      "before": "p-017-i-002",
+      "after": "p-018-i-000",
+      "hintFrame": 2864640,
+      "cutFrame": 2863200,
+      "pause": {
+        "startFrame": 2860320,
+        "endFrame": 2866080,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -60.0
+    },
+    {
+      "before": "p-018-i-000",
+      "after": "p-018-i-001",
+      "hintFrame": 2918400,
+      "cutFrame": 2927087,
+      "pause": {
+        "startFrame": 2915895,
+        "endFrame": 2938280,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 361.9583333333333
+    },
+    {
+      "before": "p-018-i-001",
+      "after": "p-018-i-002",
+      "hintFrame": 2981040,
+      "cutFrame": 2987933,
+      "pause": {
+        "startFrame": 2977525,
+        "endFrame": 2998341,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 287.20833333333337
+    },
+    {
+      "before": "p-018-i-002",
+      "after": "p-018-i-003",
+      "hintFrame": 3042480,
+      "cutFrame": 3048746,
+      "pause": {
+        "startFrame": 3036287,
+        "endFrame": 3061206,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 261.0833333333333
+    },
+    {
+      "before": "p-018-i-003",
+      "after": "p-018-i-004",
+      "hintFrame": 3089280,
+      "cutFrame": 3095211,
+      "pause": {
+        "startFrame": 3085175,
+        "endFrame": 3105248,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 247.125
+    },
+    {
+      "before": "p-018-i-004",
+      "after": "p-018-i-005",
+      "hintFrame": 3146640,
+      "cutFrame": 3156638,
+      "pause": {
+        "startFrame": 3148546,
+        "endFrame": 3164731,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 416.58333333333337
+    },
+    {
+      "before": "p-018-i-005",
+      "after": "p-019-i-000",
+      "hintFrame": 3216227,
+      "cutFrame": 3219090,
+      "pause": {
+        "startFrame": 3211907,
+        "endFrame": 3226274,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 119.29166666666667
+    },
+    {
+      "before": "p-019-i-000",
+      "after": "p-019-i-001",
+      "hintFrame": 3305267,
+      "cutFrame": 3307629,
+      "pause": {
+        "startFrame": 3296852,
+        "endFrame": 3318406,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 98.41666666666667
+    },
+    {
+      "before": "p-019-i-001",
+      "after": "p-019-i-002",
+      "hintFrame": 3374147,
+      "cutFrame": 3379039,
+      "pause": {
+        "startFrame": 3371606,
+        "endFrame": 3386473,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 203.83333333333334
+    },
+    {
+      "before": "p-019-i-002",
+      "after": "p-019-i-003",
+      "hintFrame": 3447347,
+      "cutFrame": 3448398,
+      "pause": {
+        "startFrame": 3439118,
+        "endFrame": 3457678,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 43.791666666666664
+    },
+    {
+      "before": "p-019-i-003",
+      "after": "p-019-i-004",
+      "hintFrame": 3492227,
+      "cutFrame": 3492304,
+      "pause": {
+        "startFrame": 3482874,
+        "endFrame": 3501735,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 3.2083333333333335
+    },
+    {
+      "before": "p-019-i-004",
+      "after": "p-020-i-000",
+      "hintFrame": 3570789,
+      "cutFrame": 3580108,
+      "pause": {
+        "startFrame": 3566469,
+        "endFrame": 3593748,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 388.29166666666663
+    },
+    {
+      "before": "p-020-i-000",
+      "after": "p-020-i-001",
+      "hintFrame": 3666069,
+      "cutFrame": 3675002,
+      "pause": {
+        "startFrame": 3663687,
+        "endFrame": 3686318,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 372.2083333333333
+    },
+    {
+      "before": "p-020-i-001",
+      "after": "p-021-i-000",
+      "hintFrame": 3747273,
+      "cutFrame": 3746431,
+      "pause": {
+        "startFrame": 3742229,
+        "endFrame": 3750633,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -35.083333333333336
+    },
+    {
+      "before": "p-021-i-000",
+      "after": "p-021-i-001",
+      "hintFrame": 3803433,
+      "cutFrame": 3812186,
+      "pause": {
+        "startFrame": 3804982,
+        "endFrame": 3819390,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 364.70833333333337
+    },
+    {
+      "before": "p-021-i-001",
+      "after": "p-021-i-002",
+      "hintFrame": 3848793,
+      "cutFrame": 3855912,
+      "pause": {
+        "startFrame": 3846404,
+        "endFrame": 3865420,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 296.625
+    },
+    {
+      "before": "p-021-i-002",
+      "after": "p-022-i-000",
+      "hintFrame": 3948608,
+      "cutFrame": 3960749,
+      "pause": {
+        "startFrame": 3944288,
+        "endFrame": 3977211,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 505.87499999999994
+    },
+    {
+      "before": "p-022-i-000",
+      "after": "p-023-i-000",
+      "hintFrame": 4000288,
+      "cutFrame": 3999387,
+      "pause": {
+        "startFrame": 3995127,
+        "endFrame": 4003648,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -37.541666666666664
+    },
+    {
+      "before": "p-023-i-000",
+      "after": "p-024-i-000",
+      "hintFrame": 4041608,
+      "cutFrame": 4055552,
+      "pause": {
+        "startFrame": 4037288,
+        "endFrame": 4073817,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 581.0
+    },
+    {
+      "before": "p-024-i-000",
+      "after": "p-024-i-001",
+      "hintFrame": 4099208,
+      "cutFrame": 4113129,
+      "pause": {
+        "startFrame": 4103321,
+        "endFrame": 4122937,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 580.0416666666666
+    },
+    {
+      "before": "p-024-i-001",
+      "after": "p-025-i-000",
+      "hintFrame": 4142909,
+      "cutFrame": 4143402,
+      "pause": {
+        "startFrame": 4137886,
+        "endFrame": 4148919,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 20.541666666666668
+    },
+    {
+      "before": "p-025-i-000",
+      "after": "p-025-i-001",
+      "hintFrame": 4200989,
+      "cutFrame": 4202293,
+      "pause": {
+        "startFrame": 4193191,
+        "endFrame": 4211395,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 54.33333333333333
+    },
+    {
+      "before": "p-025-i-001",
+      "after": "p-025-i-002",
+      "hintFrame": 4265549,
+      "cutFrame": 4266327,
+      "pause": {
+        "startFrame": 4257079,
+        "endFrame": 4275575,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 32.41666666666667
+    },
+    {
+      "before": "p-025-i-002",
+      "after": "p-025-i-003",
+      "hintFrame": 4325789,
+      "cutFrame": 4325311,
+      "pause": {
+        "startFrame": 4315793,
+        "endFrame": 4334829,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -19.916666666666664
+    },
+    {
+      "before": "p-025-i-003",
+      "after": "p-026-i-000",
+      "hintFrame": 4382429,
+      "cutFrame": 4391770,
+      "pause": {
+        "startFrame": 4378358,
+        "endFrame": 4405182,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 389.2083333333333
+    },
+    {
+      "before": "p-026-i-000",
+      "after": "p-027-i-000",
+      "hintFrame": 4432706,
+      "cutFrame": 4433931,
+      "pause": {
+        "startFrame": 4428386,
+        "endFrame": 4439477,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 51.041666666666664
+    },
+    {
+      "before": "p-027-i-000",
+      "after": "p-027-i-001",
+      "hintFrame": 4467266,
+      "cutFrame": 4472483,
+      "pause": {
+        "startFrame": 4470824,
+        "endFrame": 4474143,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 217.375
+    },
+    {
+      "before": "p-027-i-001",
+      "after": "p-028-i-000",
+      "hintFrame": 4598650,
+      "cutFrame": 4601338,
+      "pause": {
+        "startFrame": 4596884,
+        "endFrame": 4605792,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 112.0
+    },
+    {
+      "before": "p-028-i-000",
+      "after": "p-028-i-001",
+      "hintFrame": 4650970,
+      "cutFrame": 4661707,
+      "pause": {
+        "startFrame": 4654349,
+        "endFrame": 4669066,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 447.375
+    },
+    {
+      "before": "p-028-i-001",
+      "after": "p-028-i-002",
+      "hintFrame": 4703530,
+      "cutFrame": 4711162,
+      "pause": {
+        "startFrame": 4703022,
+        "endFrame": 4719302,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 318.0
+    },
+    {
+      "before": "p-028-i-002",
+      "after": "p-029-i-000",
+      "hintFrame": 4756293,
+      "cutFrame": 4770912,
+      "pause": {
+        "startFrame": 4751973,
+        "endFrame": 4789852,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 609.125
+    },
+    {
+      "before": "p-029-i-000",
+      "after": "p-029-i-001",
+      "hintFrame": 4849413,
+      "cutFrame": 4857563,
+      "pause": {
+        "startFrame": 4847503,
+        "endFrame": 4867624,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 339.58333333333337
+    },
+    {
+      "before": "p-029-i-001",
+      "after": "p-029-i-002",
+      "hintFrame": 4892613,
+      "cutFrame": 4904520,
+      "pause": {
+        "startFrame": 4894651,
+        "endFrame": 4914389,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 496.125
+    },
+    {
+      "before": "p-029-i-002",
+      "after": "p-029-i-003",
+      "hintFrame": 4947813,
+      "cutFrame": 4960463,
+      "pause": {
+        "startFrame": 4953902,
+        "endFrame": 4967024,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 527.0833333333334
+    },
+    {
+      "before": "p-029-i-003",
+      "after": "p-030-i-000",
+      "hintFrame": 4996947,
+      "cutFrame": 5003863,
+      "pause": {
+        "startFrame": 4992627,
+        "endFrame": 5015100,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 288.1666666666667
+    },
+    {
+      "before": "p-030-i-000",
+      "after": "p-031-i-000",
+      "hintFrame": 5050976,
+      "cutFrame": 5055495,
+      "pause": {
+        "startFrame": 5049254,
+        "endFrame": 5061737,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 188.29166666666666
+    },
+    {
+      "before": "p-031-i-000",
+      "after": "p-031-i-001",
+      "hintFrame": 5138336,
+      "cutFrame": 5141122,
+      "pause": {
+        "startFrame": 5132204,
+        "endFrame": 5150040,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 116.08333333333333
+    },
+    {
+      "before": "p-031-i-001",
+      "after": "p-031-i-002",
+      "hintFrame": 5204576,
+      "cutFrame": 5204022,
+      "pause": {
+        "startFrame": 5195506,
+        "endFrame": 5212538,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -23.083333333333336
+    },
+    {
+      "before": "p-031-i-002",
+      "after": "p-031-i-003",
+      "hintFrame": 5252576,
+      "cutFrame": 5253388,
+      "pause": {
+        "startFrame": 5245057,
+        "endFrame": 5261719,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 33.833333333333336
+    },
+    {
+      "before": "p-031-i-003",
+      "after": "p-031-i-004",
+      "hintFrame": 5301296,
+      "cutFrame": 5302077,
+      "pause": {
+        "startFrame": 5294656,
+        "endFrame": 5309499,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 32.54166666666667
+    },
+    {
+      "before": "p-031-i-004",
+      "after": "p-032-i-000",
+      "hintFrame": 5355108,
+      "cutFrame": 5354733,
+      "pause": {
+        "startFrame": 5350703,
+        "endFrame": 5358764,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -15.625
+    },
+    {
+      "before": "p-032-i-000",
+      "after": "p-033-i-000",
+      "hintFrame": 5430354,
+      "cutFrame": 5439102,
+      "pause": {
+        "startFrame": 5423042,
+        "endFrame": 5455163,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 364.5
+    },
+    {
+      "before": "p-033-i-000",
+      "after": "p-033-i-001",
+      "hintFrame": 5488674,
+      "cutFrame": 5496516,
+      "pause": {
+        "startFrame": 5488939,
+        "endFrame": 5504093,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 326.75
+    },
+    {
+      "before": "p-033-i-001",
+      "after": "p-033-i-002",
+      "hintFrame": 5551074,
+      "cutFrame": 5556302,
+      "pause": {
+        "startFrame": 5546139,
+        "endFrame": 5566465,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 217.83333333333331
+    },
+    {
+      "before": "p-033-i-002",
+      "after": "p-033-i-003",
+      "hintFrame": 5635314,
+      "cutFrame": 5641814,
+      "pause": {
+        "startFrame": 5633040,
+        "endFrame": 5650589,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 270.8333333333333
+    },
+    {
+      "before": "p-033-i-003",
+      "after": "p-034-i-000",
+      "hintFrame": 5695629,
+      "cutFrame": 5695149,
+      "pause": {
+        "startFrame": 5691309,
+        "endFrame": 5698989,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -20.0
+    },
+    {
+      "before": "p-034-i-000",
+      "after": "p-034-i-001",
+      "hintFrame": 5809389,
+      "cutFrame": 5811016,
+      "pause": {
+        "startFrame": 5800887,
+        "endFrame": 5821145,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 67.79166666666667
+    },
+    {
+      "before": "p-034-i-001",
+      "after": "p-034-i-002",
+      "hintFrame": 5894109,
+      "cutFrame": 5894817,
+      "pause": {
+        "startFrame": 5885180,
+        "endFrame": 5904454,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 29.5
+    },
+    {
+      "before": "p-034-i-002",
+      "after": "p-034-i-003",
+      "hintFrame": 5946189,
+      "cutFrame": 5946947,
+      "pause": {
+        "startFrame": 5936802,
+        "endFrame": 5957092,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": 31.583333333333332
+    },
+    {
+      "before": "p-034-i-003",
+      "after": "p-035-i-000",
+      "hintFrame": 6021200,
+      "cutFrame": 6020720,
+      "pause": {
+        "startFrame": 6016879,
+        "endFrame": 6024561,
+        "thresholdDbfs": -42
+      },
+      "shiftMs": -20.0
+    }
+  ],
+  "voices": [
+    {
+      "speaker": "narrator",
+      "voiceId": "voice_23a12v3iqjgb",
+      "tempo": 1.0,
+      "loudnessGainDb": -0.0799999999999983
+    },
+    {
+      "speaker": "elze",
+      "voiceId": "voice_0clzvw9jjm49",
+      "tempo": 0.85,
+      "loudnessGainDb": -0.4800000000000004
+    },
+    {
+      "speaker": "lina",
+      "voiceId": "voice_zgkntei7vpi9",
+      "tempo": 1.0,
+      "loudnessGainDb": -0.16000000000000014
+    },
+    {
+      "speaker": "agne",
+      "voiceId": "voice_tjo96mzvb188",
+      "tempo": 1.0,
+      "loudnessGainDb": -0.019999999999999574
+    },
+    {
+      "speaker": "matas",
+      "voiceId": "voice_z76lfy5z8nka",
+      "tempo": 1.0,
+      "loudnessGainDb": -0.1700000000000017
+    },
+    {
+      "speaker": "nora",
+      "voiceId": "voice_mtrqwax7evxs",
+      "tempo": 1.0,
+      "loudnessGainDb": 0.07000000000000028
+    },
+    {
+      "speaker": "book-daughter",
+      "voiceId": "voice_4j9n6wqwfj4v",
+      "tempo": 1.0,
+      "loudnessGainDb": 0.05999999999999872
+    },
+    {
+      "speaker": "book-father",
+      "voiceId": "voice_crc49951qu85",
+      "tempo": 1.0,
+      "loudnessGainDb": -0.129999999999999
+    }
+  ],
+  "normalizationTargetLufs": -23,
+  "sourceAudioSha256": "5ce814e702b8afaf7205d10dd2c95a4789d6db55bf83743779e1dd94ebf2831d",
+  "audioSegmentation": "sentences"
+}

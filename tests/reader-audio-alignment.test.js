@@ -7,6 +7,28 @@ const test = require("node:test");
 const root = path.resolve(__dirname, "..");
 const book = JSON.parse(fs.readFileSync(path.join(root, "books/keliaujanti-biblioteka.json")));
 
+test("traveling-library audio is never cut at a bare space", () => {
+  for (const chapter of book.chapters) {
+    for (const block of chapter.blocks) {
+      for (const item of block.items.slice(0, -1)) {
+        assert.match(item.text.trim(), /[.!?,;:—][»“”"]*$/, `${chapter.id}: unsafe cut after ${item.text}`);
+      }
+    }
+  }
+});
+
+test("short sentences keep their own audio instead of inheriting the next sentence", () => {
+  for (const chapter of book.chapters) {
+    for (const block of chapter.blocks) {
+      for (const item of block.items) {
+        const endings = Array.from(item.text.matchAll(/[.!?]+[»“”"]*(?=\s|$)/g));
+        assert.ok(!endings.length || endings[0].index + endings[0][0].length === item.text.length,
+          `${chapter.id}: joined sentences in ${item.text}`);
+      }
+    }
+  }
+});
+
 test("traveling-library clips contain complete speech on the joined PCM timeline", () => {
   for (const chapter of book.chapters) {
     const manifest = JSON.parse(fs.readFileSync(path.join(root, path.dirname(chapter.audio), "manifest.json")));
