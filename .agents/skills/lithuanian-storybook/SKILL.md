@@ -76,6 +76,19 @@ Use Gemini TTS for new narration in this project. Keep one persistent voice per 
 
 Read [gemini-narration.md](references/gemini-narration.md) before voice casting, synthesis or audio repairs. It defines the role plan, separate speech instructions, caching, loudness, sentence cuts and reader verification. Store book-specific casting and performance choices in `author-plans/<book-id>-voices.json`, not in this reusable skill.
 
+## Causal and dialogue review
+
+Before treating a draft or revision as finished, read the prose without the dossier. Check the consequential actions through **desire → reason to act now → action → result**. The reader must be able to infer these links from the scene; a motive written only in the plan does not repair the text. Everyday transitions can remain implicit when they are clear.
+
+- A request for help needs a believable practical reason: a real load, limited time, occupied hands, needed knowledge, or another concrete benefit. If the purpose is company, hospitality, or a private conversation, let the character invite or ask for that. Do not invent helplessness or a pointless errand just to bring people together.
+- Follow through on stated intentions. If a character says they are going somewhere, buying something, returning an object, or doing a job, show the relevant outcome, an obstacle, or an understandable change of plan. When a pretext or lie is intentional, give the reader evidence appropriate to the scene; do not let an accidental contradiction become unexplained characterization.
+- Check who has important objects, who moves between places and why, elapsed time, and what each character knows. Reconcile established facts and open commitments in the book dossier after a revision; also review affected later scenes. Track what matters to choices or comprehension, not every routine gesture.
+- Establish a new place through the entering character's experience: where it is, how they enter, and the layout or scale needed to understand later actions. An extraordinary feature needs an observable contrast and a plausible reaction. Keep explanations within the current scene's knowledge and avoid a tour of irrelevant lore.
+- At the start of dialogue, after a pause or an intervening action, and when a third person joins, make the speaker clear with a name, a reporting clause, or a meaningful action next to the speech. Clear alternating exchanges do not need a tag on every line. Attribute speakers in an embedded story separately from the people reading it.
+- Prefer simple actions that reveal attention, hesitation, an obstacle, or a decision. Keep hands and objects consistent with those actions. Avoid repetitive nodding, smiling, looking, and decorative gestures that identify a speaker but add no scene information. A2 permits short action sentences and ordinary reporting verbs; modest extra length is preferable to ambiguous speakers.
+
+Repair weak links in the prose before validating language, annotations, and narration. A checklist or a corrected outline alone is not a repair.
+
 ## Delivery
 
 Report the artifact, editorial findings, unresolved language uncertainty, and what was actually verified. Never equate valid JSON, an agent's confidence, or vocabulary-list coverage with certified A2 or guaranteed reader enjoyment. The pilot's reader feedback calibrates subsequent chapters; if the user authorized only the pilot, stop after delivering it. Skill-only requests produce the skill first.
