@@ -67,9 +67,9 @@ When asked for a premise, give only the starting situation, protagonist's immedi
 ## Writing loop
 
 1. Design the ending and causal chapter outline before drafting prose. For a pilot, a compact whole-story skeleton is enough.
-2. Draft one chapter within its lexical and grammatical budget. Prefer scenes, specific choices, conflicting desires, dialogue, and consequences over explanatory lectures.
+2. Draft one chapter within its lexical and grammatical budget, adding Lithuanian stress marks yourself as you write. Verify doubtful forms with dictionaries and accentuation rules; no automatic stress service is needed. Prefer scenes, specific choices, conflicting desires, dialogue, and consequences over explanatory lectures.
 3. Review story logic and reader knowledge. Repair the prose, not merely the outline.
-4. Review Lithuanian and Russian in context. Stress-mark verified source chunks, then segment and annotate using the reader contract.
+4. Review Lithuanian and Russian in context. Check both stress position and syllable accent (priegaidė) against the actual meaning and grammatical form, following [language-and-reader.md](references/language-and-reader.md), then segment and annotate using the reader contract.
 5. Validate the actual delivered text and inspect it in the reader. Update the dossier with actual vocabulary and narrative developments.
 6. For a completed chapter, generate and verify its narration using the established cast, then deliver it according to [reader-delivery.md](references/reader-delivery.md) and the user's current scope. A draft-only, local-only or skill-only request keeps that limit.
 

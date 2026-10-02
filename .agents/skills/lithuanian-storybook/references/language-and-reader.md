@@ -42,23 +42,23 @@ Count only Lithuanian narrative words, excluding Russian annotations and metadat
 
 Write Lithuanian directly, then review agreement, case government, tense, prefixes, idiom, and referents in full paragraph context. Verify doubtful constructions with appropriate Lithuanian dictionaries or grammar sources; simplify when uncertainty remains. Do not use an external machine translator for text or tooltip notes.
 
-Use the external stress tool:
+The agent adds Lithuanian stress marks directly during composition; for imported books, add them to the reviewed source without rewriting it. An automatic external accentuation service is not required. Do not submit passages to a stress service as part of the normal workflow.
 
-```text
-https://kalbu.vdu.lt/mokymosi-priemones/kirciuoklis/
-```
+Use dictionaries to resolve doubtful words and forms:
 
-Rules:
+- [Dabartinės lietuvių kalbos žodynas](https://ekalba.lt/dabartines-lietuviu-kalbos-zodynas/) and [Bendrinės lietuvių kalbos žodynas](https://ekalba.lt/bendrines-lietuviu-kalbos-zodynas/) for lemmas, meanings, accentuation classes and verb forms.
+- [VLKK personal-name register](https://vardai.vlkk.lt/) for names and their declension. Retain an accepted variant consistently instead of replacing it with another valid variant.
+- [Lithuanian accentuation handbook (VDU)](https://portalcris.vdu.lt/server/api/core/bitstreams/0936e448-61b7-4b57-871b-bb8f816cf98d/content) for deriving inflected forms and checking syllable accents.
 
-- Send larger chunks, not individual phrases.
-- Use whole pages or coherent chunks up to 5000 characters.
-- Preserve paragraph boundaries and punctuation.
-- After receiving stressed text, compare with the source chunk.
-- Do not silently drop sentences or punctuation.
-- If the tool changes words unexpectedly, keep the original word and only add stress marks when confident.
-- If uncertain about Lithuanian stress, do not guess. Re-run the chunk or flag it.
+For each doubtful form, determine its part of speech, meaning and grammatical role in the sentence. Verify the relevant dictionary entry, then use its accentuation class or the verb's three principal forms to derive the actual case, number, person, tense or mood. Check prefix and reflexive rules separately. Derive future and imperative forms from the infinitive rather than assuming the present or past stem has the same stress.
 
-Inspect the stress tool's current interface rather than inventing an endpoint. If unavailable, keep a clearly labelled draft and report the stress step as incomplete; do not claim a reader-ready book.
+Check both the stressed syllable and the exact mark: grave (U+0300), acute (U+0301) or circumflex (U+0303). Homographs can differ by meaning or grammar; examples include màno/mãno, nãmo/namõ and dative abíem/instrumental abiẽm. Do not change a dictionary-confirmed form merely because another pronunciation feels more familiar.
+
+For invented names, choose a linguistically plausible canonical stress and declension, record them in the book's author dossier, and apply them consistently. These are author choices, not dictionary attestations.
+
+When correcting existing text, preserve every underlying letter, word, sentence, paragraph boundary and punctuation mark, as well as translations, notes and audio metadata. Compare before and after with only U+0300, U+0301 and U+0303 removed after NFD normalization, then normalize back to NFC. Never remove all combining marks: that damages Lithuanian letters such as ė and ū.
+
+Resolve uncertainty through the dictionary and grammar sources rather than guessing or rerunning an automatic service. If a specific form remains unresolved, identify that form and the remaining question; do not make readiness depend on access to a stress service.
 
 ## Frank-method items and tooltips
 

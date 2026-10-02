@@ -70,7 +70,7 @@
           "type": "paragraph",
           "items": [
             {
-              "text": "El̃zė láukė namuosè priẽ aũkšto lángo.",
+              "text": "El̃zė láukė namuosè priẽ áukšto lángo.",
               "translation": "Эльзе ждала дома у высокого окна.",
               "note": "**laukti** — ждать, ожидать; **laukė** — 3-е лицо прошедшего времени.\n**namai** — дом, жилище; **namuose** — местный падеж мн. числа: дома.\n**aukštas** — высокий; **aukšto** — родительный падеж ед. числа мужского рода.\n**langas** — окно; **lango** — родительный падеж ед. числа после **prie**.\n**prie** — у, возле; требует родительного падежа.",
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-1/p-002-i-000.mp3"
@@ -644,7 +644,7 @@
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v5/chapter-1/p-028-i-001.mp3"
             },
             {
-              "text": "— Virtùvė mãno bibliotèkoje.",
+              "text": "— Virtùvė màno bibliotèkoje.",
               "translation": "— Кухня в моей библиотеке.",
               "note": "**virtuvė** — кухня.\n**biblioteka** — библиотека; **bibliotekoje** — местный падеж ед. числа: в библиотеке.\n**aš** — я; **mano** — притяжательная форма: мой, моя.",
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v5/chapter-1/p-028-i-002.mp3"
@@ -714,7 +714,7 @@
           "type": "dialogue",
           "items": [
             {
-              "text": "— Visà taĩ šiamè furgonè?",
+              "text": "— Vìsa taĩ šiamè furgonè?",
               "translation": "— Всё это в этом фургоне?",
               "note": "**visas** — весь, целый; **visa tai** — всё это, сочетание среднего рода.\n**šis** — этот; **šiame** — местный падеж ед. числа мужского рода.\n**furgonas** — фургон, крытый автомобиль; **furgone** — местный падеж ед. числа.",
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v5/chapter-1/p-030-i-000.mp3"
@@ -935,7 +935,7 @@
           "type": "paragraph",
           "items": [
             {
-              "text": "Ardavoje jiẽ ė̃jo aukštỹn akmeninè gatvè.",
+              "text": "Ar̃davoje jiẽ ė̃jo aukštỹn akmeninè gatvè.",
               "translation": "В Ардаве они шли вверх по каменной улице.",
               "note": "**Ardava** — Ардава, название города; **Ardavoje** — местный падеж.\n**eiti** — идти; **ėjo** — 3-е лицо прошедшего времени.\n**aukštyn** — вверх, наверх.\n**akmeninis** — каменный; **akmenine** — творительный падеж ед. числа женского рода.\n**gatvė** — улица; **gatve** — творительный падеж ед. числа: путь движения.",
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-2/p-004-i-000.mp3"
@@ -992,7 +992,7 @@
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-2/p-007-i-000.mp3"
             },
             {
-              "text": "Jì gyvẽna Tilvene.",
+              "text": "Jì gyvẽna Tilvenè.",
               "translation": "Она живёт в Тильвенасе.",
               "note": "**gyventi** — жить, проживать; **gyvena** — 3-е лицо настоящего времени.\n**Tilvenas** — Тильвенас, название города; **Tilvene** — местный падеж.",
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-2/p-007-i-001.mp3"
@@ -1061,7 +1061,7 @@
           "type": "paragraph",
           "items": [
             {
-              "text": "Añt pùslapio bùvo ãdresas: „Tilvenas, Sõdų gãtvė, 12.“",
+              "text": "Añt pùslapio bùvo ãdresas: „Tilvẽnas, Sõdų gãtvė, 12.“",
               "translation": "На странице был адрес: «Тильвенас, Садовая улица, 12».",
               "note": "**puslapis** — страница; **puslapio** — родительный падеж ед. числа после **ant**.\n**būti** — быть, находиться; **buvo** — 3-е лицо прошедшего времени.\n**adresas** — адрес.\n**ant** — на; требует родительного падежа.\n**Tilvenas** — Тильвенас, название города.\n**sodas** — сад; **sodų** — родительный падеж мн. числа; название улицы буквально «улица Садов».\n**gatvė** — улица.",
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-2/p-010-i-000.mp3"
@@ -1125,7 +1125,7 @@
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-2/p-012-i-001.mp3"
             },
             {
-              "text": "Namõ nėrà.",
+              "text": "Nãmo nėrà.",
               "translation": "Дома нет.",
               "note": "**namas** — дом, здание; **namo** — родительный падеж ед. числа при отрицании.\n**būti** — быть; **nėra** — отрицательная форма 3-го лица настоящего времени.",
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-2/p-012-i-002.mp3"
@@ -1292,7 +1292,7 @@
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-2/p-019-i-005.mp3"
             },
             {
-              "text": "Esù Ardavoje.“",
+              "text": "Esù Ar̃davoje.“",
               "translation": "Я в Ардаве».",
               "note": "**būti** — быть, находиться; **esu** — 1-е лицо ед. числа настоящего времени.\n**Ardava** — Ардава, название города; **Ardavoje** — местный падеж.",
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-2/p-019-i-006.mp3"
@@ -2095,7 +2095,7 @@
           "type": "paragraph",
           "items": [
             {
-              "text": "Ãgnė laĩkė mẽdžiagą abíem rañkomis.",
+              "text": "Ãgnė laĩkė mẽdžiagą abiẽm rañkomis.",
               "translation": "Агне держала ткань обеими руками.",
               "note": "**laikyti** — держать; **laikė** — 3-е лицо прошедшего времени.\n**medžiaga** — ткань, материал; **medžiagą** — винительный падеж ед. числа.\n**abi** — обе; **abiem** — творительный падеж мн. числа.\n**ranka** — рука; **rankomis** — творительный падеж мн. числа.",
               "audio": "assets/audio/keliaujanti-biblioteka/gemini-v4/chapter-3/p-021-i-000.mp3"
