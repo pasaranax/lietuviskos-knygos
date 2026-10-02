@@ -1,19 +1,26 @@
 ---
 name: lithuanian-storybook
-description: Use when creating or continuing original Lithuanian graded fiction for Russian-speaking learners, including A2 books in different genres, pilot chapters, recurring vocabulary, Frank-method tooltips, and Gemini narration by character with contextual emotions.
+description: Create or continue original Lithuanian graded fiction, process existing Lithuanian books for the shared reader, and generate or repair Gemini narration by character with contextual emotions. Covers A2 language planning, Russian Frank-method annotations, reader integration and chapter delivery.
 ---
 
 # Lithuanian storybook
 
-Create engaging adult fiction whose language load is deliberately controlled. A simple language level does not require childish characters or simplistic conflicts. Default to Lithuanian A2 and Russian explanations; honor the user's genre, level, length, and authorized stage. This skill belongs to this project, not the user's global skill collection.
+This project skill owns book creation, source-book processing, annotations, narration and reader delivery. For original fiction, create engaging adult stories with deliberately controlled language: a simple language level does not require childish characters or simplistic conflicts. Default to Lithuanian A2 and Russian explanations for new fiction; preserve existing source books. Honor the user's level, scope and authorized stage.
 
 ## Start or resume
 
-Read the project's instructions, book catalog, and existing book/planning state. Reuse the shared reader and canonical book JSON. Determine whether the request is for a concept, pilot, revision, or continuation; do the requested stage without generating the entire book prematurely. Do not ask again for already-authorized work.
+Read the book catalog and canonical book/planning state relevant to the request. Reuse the shared reader; do not create per-book HTML readers. Determine whether the request is for a concept, pilot, revision, continuation, source-book import, narration or reader work. Do the requested stage without generating the entire book prematurely. Do not ask again for already-authorized work.
 
 For a new book, choose reversible defaults for missing details and state them briefly. Ask only about choices that materially change the experience and cannot be inferred. Do not treat an example premise as mandatory. Keep plots and learner-specific vocabulary out of this reusable skill.
 
-Read [language-and-reader.md](references/language-and-reader.md) for language calibration and reader delivery.
+Load only the references needed for the current stage:
+
+- [language-and-reader.md](references/language-and-reader.md): language budgets, chapter length, stress marks, contextual Russian translations and full dictionary/grammar notes. Read before drafting or annotating text.
+- [reader-delivery.md](references/reader-delivery.md): project structure, JSON contract, reader architecture, checks, publishing scope and chapter delivery. Read before integrating or delivering a book/chapter, or modifying the reader.
+- [import-existing-book.md](references/import-existing-book.md): metadata, PDF text/cover extraction and source chapters. Read for existing-book imports; do not use the original-fiction planning loop to rewrite a source book.
+- [gemini-narration.md](references/gemini-narration.md): persistent casting, contextual performance, synthesis, loudness, cached audio repair and sentence cuts. Read before voice work.
+
+The fiction/world/genre rules below apply to original writing. Source imports and audio-only repairs preserve accepted text and use their relevant references.
 
 ## Everyday language and a recognizable world
 
@@ -51,7 +58,7 @@ Keep one canonical author dossier per book in the repository at `author-plans/<b
 
 Keep the dossier focused on the book's content and learning targets, not the agent's workflow. After each accepted chapter, reconcile it with the canonical text: distinguish established events from planned ones, update character knowledge and vocabulary recurrence, and resolve contradictions. Replace outdated planning state instead of accumulating old versions or a work log; Git preserves history.
 
-Do not put agent instructions, local paths, commands, test or deployment reports, or cover-generation history in the dossier. Workflow rules belong in this skill or AGENTS.md, not in the story plan.
+Do not put agent instructions, local paths, commands, test or deployment reports, or cover-generation history in the dossier. Workflow rules belong in this skill and its references, not in the story plan.
 
 This is planning metadata, not a second copy of the translated book. The user is the reader and wants to discover the story through reading. Keep the ending, causes of unexplained events, hidden motives, future turns, and clue payoffs out of chat, progress updates, filenames, covers, tooltips, and delivery summaries. Do not automatically open or offer a link to the author dossier. If a later explicit request asks for spoilers, provide only the requested scope. Resume from the dossier and canonical chapter text, not recollection alone.
 
@@ -64,7 +71,7 @@ When asked for a premise, give only the starting situation, protagonist's immedi
 3. Review story logic and reader knowledge. Repair the prose, not merely the outline.
 4. Review Lithuanian and Russian in context. Stress-mark verified source chunks, then segment and annotate using the reader contract.
 5. Validate the actual delivered text and inspect it in the reader. Update the dossier with actual vocabulary and narrative developments.
-6. For a completed chapter, generate and verify its narration using the established cast, then deliver it according to AGENTS.md and the user's current scope. A draft-only, local-only or skill-only request keeps that limit.
+6. For a completed chapter, generate and verify its narration using the established cast, then deliver it according to [reader-delivery.md](references/reader-delivery.md) and the user's current scope. A draft-only, local-only or skill-only request keeps that limit.
 
 A pilot normally contains 700–900 Lithuanian words, a concrete situation that makes the protagonist matter, a meaningful action or decision, and a small payoff that establishes a reason to continue. That reason may be a relationship, ambition, journey, comic predicament, or question, according to the brief. These are adjustable editorial defaults, not CEFR standards. A short-story request may instead complete the whole arc.
 
