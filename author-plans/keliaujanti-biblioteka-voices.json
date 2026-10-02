@@ -5,7 +5,7 @@
   "projectId": "story-writing-424018",
   "model": "gemini-3.8-flash-tts",
   "languageCode": "lt-LT",
-  "version": 2,
+  "version": 3,
   "createdAt": "2026-10-01",
   "identityPolicy": "Один постоянный voiceId для каждой роли; не пересоздавать голос между репликами и главами. Возраст в описании — актёрская характеристика, а не новый факт сюжета.",
   "performancePolicy": {
@@ -758,6 +758,176 @@
       "createdDesignPrompt": "An adult woman with a soft clear mid-register voice, smooth unforced resonance and patient, gently deliberate phrasing. Native standard Lithuanian pronunciation, tender but practical, without huskiness, girlish brightness or whispery breathiness.",
       "futureDesignPrompt": "Voice age: 27 years. An adult woman with a soft clear mid-register voice, smooth unforced resonance and patient, gently deliberate phrasing. Native standard Lithuanian pronunciation, tender but practical, without huskiness, girlish brightness or whispery breathiness.",
       "normalizedPreview": "author-plans/audio/keliaujanti-biblioteka/voices/book-daughter-v1-normalized.wav"
+    },
+    "viktoras": {
+      "name": "Viktoras",
+      "label": "Викторас",
+      "gender": "male",
+      "ageYears": 48,
+      "description": "Плотный средний баритон, чёткая деловая речь, энергичная уверенность без карикатуры.",
+      "designPrompt": "A 48-year-old man with a firm medium baritone, slightly nasal forward resonance and clipped but natural businesslike phrasing. Native standard Lithuanian, clear articulation. Persuasive everyday confidence, no villainous affect. Dry close-miked studio sound, no echo.",
+      "voiceId": "voice_8tsyez5igp7w",
+      "status": "created",
+      "createdAt": "2026-10-02T19:31:14.084683+00:00",
+      "apiMetadata": {
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-02T19:31:12.644204813Z",
+        "display_name": "Iki paskutinio puslapio / Viktoras / v1",
+        "language_code": "lt-LT",
+        "gender": "male",
+        "usage": {
+          "total_tokens": 1230,
+          "total_input_tokens": 278,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 128
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 952,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 952
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 117,
+          "raw_prompt_token": 441,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 291
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 748
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 117
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 291
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 748
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 117
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/voices/viktoras-v1.wav"
+    },
+    "rasa": {
+      "name": "Rasa",
+      "label": "Раса",
+      "gender": "female",
+      "ageYears": 40,
+      "description": "Ровный зрелый голос среднего регистра, спокойная чёткая речь.",
+      "designPrompt": "A 40-year-old woman with a clear mature mid-register voice, lightly textured resonance and steady, matter-of-fact conversational phrasing. Native standard Lithuanian, precise natural articulation. Calm and practical, distinctly fuller than a young light mezzo. Dry close-miked studio sound, no echo.",
+      "voiceId": "voice_ozua4vlsy030",
+      "status": "created",
+      "createdAt": "2026-10-02T19:31:39.479760+00:00",
+      "apiMetadata": {
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-02T19:31:37.922886537Z",
+        "display_name": "Iki paskutinio puslapio / Rasa / v1",
+        "language_code": "lt-LT",
+        "gender": "female",
+        "usage": {
+          "total_tokens": 1636,
+          "total_input_tokens": 244,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 94
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 1392,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 1392
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 753,
+          "raw_prompt_token": 407,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 257
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1092
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 753
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 257
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1092
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 753
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/voices/rasa-v1.wav"
     }
   },
   "batchingPolicy": {
