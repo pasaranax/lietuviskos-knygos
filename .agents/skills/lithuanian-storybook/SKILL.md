@@ -64,11 +64,24 @@ This is planning metadata, not a second copy of the translated book. The user is
 
 When asked for a premise, give only the starting situation, protagonist's immediate concern, and opening disturbance, like a short back-cover blurb. Do not outline later chapters or explain what the story will turn out to mean. Designing the ending before prose is author work; it is not a reason to reveal it to the reader. A premise-only request does not require drafting a full chapter or finalizing a whole-book dossier.
 
+## Adult conflict, tension, and consequences
+
+Keep original fiction adult in its conflicts and emotional consequences while controlling the language level. Apply the intensity appropriate to the current brief; a suspenseful story needs credible pressure, not a quota of deaths or catastrophes in every chapter.
+
+- Give consequential scenes a concrete desire, an active obstacle, and something the protagonist can lose. Escalate through choices, opposed interests, time pressure, or information the reader understands. A threat must affect what characters do; suspense cannot depend on arbitrary stupidity or facts withheld only to manufacture a surprise.
+- Let protagonists fail, make damaging mistakes, and suffer losses. Do not protect them because they are central characters. Lost money, damaged property, injury, broken trust, lost opportunities, and death can carry real weight when earned by the story. Show the aftermath and let it change later choices. Avoid a convenient refund, instant reconciliation, miraculous restoration, or other reset that erases the price of the scene.
+- Allow antagonists to be cruel, manipulative, selfish, or vindictive. Give them motives, resources, and agency; they need not become reasonable when the protagonist explains the rules. Their actions and any retreat must follow from what they want, what they risk, and the established situation. Do not soften deliberate harm into a harmless misunderstanding just to secure a comfortable ending.
+- Build sharp turns and confrontations from earlier setup. Make the spatial action, available objects, character knowledge, and opportunity to intervene clear enough that the reader can follow why harm occurs. Use moments of relief without dissolving unresolved danger or cancelling its consequences.
+- Allow natural Lithuanian profanity, insults, and threats when they fit the character and situation. Simple A2 syntax can express anger and menace; do not force polite substitutes. Explain unfamiliar coarse words and their register in Russian notes. Choose force and frequency by voice and dramatic purpose, rather than putting a curse in every line.
+- Earn humor through character, situation, and differing reactions. Avoid stock domestic quips and laughter used to tell the reader that a weak joke was funny. A failed joke may itself work through an unimpressed response, awkward silence, or the speaker's embarrassment and self-reproach. Use those reactions when they reveal the characters, not as a replacement formula for every joke.
+
+Record meaningful losses and their continuing effects in the book dossier. Before narration, review whether the pressure is credible, the protagonist pays a real price where the scene calls for one, harmful characters act coherently, and any comic reaction is earned. Repair weak scenes in the actual prose.
+
 ## Writing loop
 
 1. Design the ending and causal chapter outline before drafting prose. For a pilot, a compact whole-story skeleton is enough.
 2. Draft one chapter within its lexical and grammatical budget, adding Lithuanian stress marks yourself as you write. Verify doubtful forms with dictionaries and accentuation rules; no automatic stress service is needed. Prefer scenes, specific choices, conflicting desires, dialogue, and consequences over explanatory lectures.
-3. Review story logic and reader knowledge. Repair the prose, not merely the outline.
+3. Review story logic, reader knowledge, tension, consequences, and dialogue reactions. Use the relevant Codex writing skills required by `AGENTS.md`; for suspense or consequential character setbacks, consider `compound-writing:cw-hitchcock` and `compound-writing:cw-vonnegut`. Repair the prose, not merely the outline, before narration.
 4. Review Lithuanian and Russian in context. Check both stress position and syllable accent (priegaidė) against the actual meaning and grammatical form, following [language-and-reader.md](references/language-and-reader.md), then segment and annotate using the reader contract.
 5. Validate the actual delivered text and inspect it in the reader. Update the dossier with actual vocabulary and narrative developments.
 6. For a completed chapter, generate and verify its narration using the established cast, then deliver it according to [reader-delivery.md](references/reader-delivery.md) and the user's current scope. A draft-only, local-only or skill-only request keeps that limit.
