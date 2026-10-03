@@ -6,7 +6,6 @@ import hashlib
 import json
 from pathlib import Path
 import re
-import shutil
 import subprocess
 import unicodedata
 import wave
@@ -172,7 +171,10 @@ def main():
         cuts.append(len(pcm)//2)
         destination = args.output_directory / chapter['id']
         destination.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(source_audio, destination / 'chapter.mp3')
+        # VBR MP3 byte seeks can land on neighbouring sentences in browsers.
+        subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', str(source_wav),
+                        '-codec:a', 'libmp3lame', '-b:a', '96k',
+                        str(destination / 'chapter.mp3')], check=True)
         chapter['audio'] = str(destination / 'chapter.mp3')
         for index, phrase in enumerate(phrases):
             start, end = cuts[index:index+2]

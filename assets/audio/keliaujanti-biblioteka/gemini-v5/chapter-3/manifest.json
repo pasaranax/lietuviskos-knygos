@@ -5,7 +5,7 @@
   "chapterId": "chapter-3",
   "sourceSha256": "8ec084884e59df24476ca0e366f3a0943b7b2391c802364d10a57f045e3b9785",
   "castingSha256": "e4a3a1a3b050aa83ac611cc74da2ffc7dc5902037fa574a0b52d4569cdc5cbee",
-  "timingVersion": 6,
+  "timingVersion": 7,
   "alignmentMethod": "Ordered exact source words; accepted sentence PCM plus waveform-isolated new role parts, each independently recognized; joined by exact PCM sample counts.",
   "sampleRate": 24000,
   "frameCount": 6681952,
@@ -13242,5 +13242,6 @@
   "normalizationTargetLufs": -23,
   "sourceAudioSha256": "c5ff422a9f7152dac047f78538f64770c2ff6672c9c70e0a9a64c58405279fa1",
   "audioSegmentation": "sentences",
-  "reusedItems": 92
+  "reusedItems": 92,
+  "chapterEncoding": "MP3 CBR 96 kbps for accurate browser seeking"
 }

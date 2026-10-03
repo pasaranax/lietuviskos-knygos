@@ -5,7 +5,7 @@
   "chapterId": "chapter-5",
   "sourceSha256": "2376bb1bd39f81523e61c4885244b0b981b9d16db5feed8e3fa028aebac5440f",
   "castingSha256": "6c548451e003ea229850fdc69e27085609389d68ef358d760570e70e1c934d34",
-  "timingVersion": 7,
+  "timingVersion": 8,
   "alignmentMethod": "Reviewed whole sentences; exact source words aligned locally; waveform-isolated and independently recognized PCM joined in narrative order by sample counts.",
   "sampleRate": 24000,
   "frameCount": 5163113,
@@ -12727,5 +12727,6 @@
   },
   "normalizationTargetLufs": -23,
   "sourceAudioSha256": "8756063a0af28a6b15d565bc93a3870401a017a82cd0e60de2c99b8b451b34bc",
-  "audioSegmentation": "sentences"
+  "audioSegmentation": "sentences",
+  "chapterEncoding": "MP3 CBR 96 kbps for accurate browser seeking"
 }
