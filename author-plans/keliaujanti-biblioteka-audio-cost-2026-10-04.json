@@ -1,0 +1,58 @@
+{
+  "provider": "Gemini",
+  "model": "gemini-3.8-flash-tts",
+  "requests": 7,
+  "inputTokens": 9740,
+  "outputAudioTokens": 4913,
+  "inputUsdPerMillion": 0.5,
+  "outputAudioUsdPerMillion": 9,
+  "calculatedUsd": 0.049087000000000006,
+  "tariffSource": "https://ai.google.dev/gemini-api/docs/pricing#gemini-3.8-flash-tts",
+  "date": "2026-10-04",
+  "method": "Usage-reported tokens times standard published tariff; billing discounts or credits not included.",
+  "newOrChangedSentences": 27,
+  "requestsDetail": [
+    {
+      "batch": "ch1-narrator",
+      "inputTokens": 1390,
+      "outputAudioTokens": 562,
+      "calculatedUsd": 0.005753
+    },
+    {
+      "batch": "ch2-narrator",
+      "inputTokens": 1376,
+      "outputAudioTokens": 474,
+      "calculatedUsd": 0.004954
+    },
+    {
+      "batch": "ch3-narrator",
+      "inputTokens": 1476,
+      "outputAudioTokens": 1634,
+      "calculatedUsd": 0.015444
+    },
+    {
+      "batch": "ch4-narrator",
+      "inputTokens": 1349,
+      "outputAudioTokens": 160,
+      "calculatedUsd": 0.0021145
+    },
+    {
+      "batch": "ch5-narrator",
+      "inputTokens": 1411,
+      "outputAudioTokens": 1391,
+      "calculatedUsd": 0.0132245
+    },
+    {
+      "batch": "ch6-narrator",
+      "inputTokens": 1348,
+      "outputAudioTokens": 159,
+      "calculatedUsd": 0.002105
+    },
+    {
+      "batch": "ch4-narrator-per-chapter",
+      "inputTokens": 1390,
+      "outputAudioTokens": 533,
+      "calculatedUsd": 0.005492
+    }
+  ]
+}

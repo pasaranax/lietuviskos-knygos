@@ -8,7 +8,7 @@ Read the canonical book and `author-plans/<book-id>-voices.json`. Keep a separat
 
 A voice ID alone does not preserve delivery: repeat the role's baseline pace and relevant age/acoustic traits in each synthesis part's style. Use dry, clear studio speech when that is the accepted sound. Compare new samples using the same Lithuanian passage and measured loudness. Generated voice-creation previews may speak another language; only offer a sample after verifying that it reads the intended Lithuanian text.
 
-Keep secrets in the ignored root `.env` as `GEMINI_API_KEY`. Use the configured free project and model recorded in the casting file; the existing working cast uses `gemini-3.8-flash-tts`. If an accepted voice becomes unavailable, report that and prepare a replacement audition instead of silently changing the character's voice.
+Keep secrets in the ignored root `.env` as `GEMINI_API_KEY`. Use the configured project and model recorded in the casting file; the existing working cast uses `gemini-3.8-flash-tts`. Follow the user's current billing authorization rather than assuming this project is free. When paid synthesis is authorized, preserve accepted audio, synthesize only changed or missing speech, cache successful responses, and retain request usage for a final cost report using the current official tariff. Distinguish a usage-based calculation from an actual billing charge. If an accepted voice becomes unavailable, report that and prepare a replacement audition instead of silently changing the character's voice.
 
 ## Contextual performance plan
 
@@ -48,7 +48,7 @@ This is the request shape used successfully in the project's current recordings.
 
 With these custom voices, a batch contains one role. Combine compatible paragraphs or separated parts of that role within the current chapter, preserving per-part style and enough detectable pauses to restore scene order. Respect current input/output limits; a larger request is useful only if its parts can be aligned reliably. Cache the request fingerprint, response metadata and original lossless PCM before further processing. Cache identity includes model, voice, text and performance instructions. Resume from matching cached recordings instead of repeating successful requests.
 
-Use returned rate/channel/sample-width metadata, validate PCM, and keep exact sample counts. Treat quota responses as evidence: wait according to the retry information for a minute limit; preserve completed work and stop on an exhausted daily/free allowance. Do not switch to billing or another provider automatically. Playback in the reader must never call Gemini.
+Use returned rate/channel/sample-width metadata, validate PCM, and keep exact sample counts. Treat quota responses as evidence: wait according to the retry information for a minute limit; preserve completed work and stop on an exhausted allowance. Do not enable billing or switch providers without the user's authorization; an already-authorized paid project does not require repeated permission. Playback in the reader must never call Gemini.
 
 ## Loudness and pace
 
