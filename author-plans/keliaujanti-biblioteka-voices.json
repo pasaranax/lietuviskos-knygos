@@ -9,8 +9,17 @@
   "createdAt": "2026-10-01",
   "identityPolicy": "Один постоянный voiceId для каждой роли; не пересоздавать голос между репликами и главами. Возраст в описании — актёрская характеристика, а не новый факт сюжета.",
   "performancePolicy": {
-    "pace": "Спокойная естественная речь для изучающего литовский: отчётливые слова и паузы по смыслу, без растягивания слогов.",
-    "emotion": "Размечать каждую реплику по окружающему тексту: намерение, настроение, степень сдержанности. Эмоции не должны менять тембр и личность голоса. Допускать локальное ускорение речи, когда контекст предполагает спешку, волнение или перебивание; не выравнивать все реплики под один темп.",
+    "pace": "Естественный, понятный изучающему литовский темп: отчётливые слова и паузы по смыслу, без растягивания слогов. Сохранять базовый темп каждого голоса; напряжение выражать интонацией, акцентами и паузами без указаний ускорять речь.",
+    "acceptedEmotionReference": {
+      "acceptedAt": "2026-10-04",
+      "speaker": "lina",
+      "sample": "author-plans/audio/keliaujanti-biblioteka/emotion-demo-2026-10-04-v3/lina.mp3",
+      "request": "author-plans/audio/keliaujanti-biblioteka/emotion-demo-2026-10-04-v3/request.json",
+      "userFeedback": "отлично получилось! будем делать так",
+      "scope": "Одобрена эмоциональная подача образца и подход для дальнейшей озвучки этой книги.",
+      "method": "Короткая инструкция эмоционального исполнения в speech_metadata.style плюс документированные точечные теги голосовых реакций по контексту. Принятый третий образец Лины — ориентир для речи сквозь слёзы; другие эмоции получают собственные указания, а не одинаковые всхлипы."
+    },
+    "emotion": "Уточнение пользователя от 2026-10-04: эмоциональные моменты обязательно получают явную разметку исполнения. Для каждой реплики определять по сцене намерение, эмоцию, её силу, степень выражения или попытку скрыть её и смысловые паузы; менять указания при эмоциональном повороте внутри разговора. Допустимы сильные реакции: вспышка гнева, ошеломление, резкий отказ, обида, горе, речь сквозь слёзы, отчаяние, нежность; не сглаживать всё до спокойной заботы. Выбирать то, что следует из текста, без обязательного крика или плача в каждой напряжённой реплике. Сохранять тембр, личность и понятную артикуляцию каждого голоса. Передавать указания в style / speech_metadata отдельно от произносимого текста; разметка должна реально входить в запрос синтеза. Для точечных невербальных звуков использовать документированные теги, например <sob> для всхлипа, с короткой инструкцией подачи; отдельно проверять, что теги не произнесены и слова не добавлены. Перед принятием новой записи проверить слова и разборчивость по аудио. Эмоциональную подачу отдельно оценивать моделью, принимающей само аудио, по голосу, дыханию, паузам и невербальным звукам; передавать ей запись без желаемой эмоции и инструкции синтеза. Транскрипция сама по себе эмоции не проверяет. Оценка аудиомодели — вывод модели, а не личное прослушивание агентом или подтверждение читателя; различать эти источники в отчёте.",
     "narrator": "Авторские вставки внутри диалога читает рассказчик. Письма и цитаты персонажа можно читать его голосом; это явно указывается в плане озвучки.",
     "transcript": "Озвучивать канонический текст дословно. Убирать только добавленные знаки ударения, сохраняя литовские буквы. Эмоциональные инструкции передавать отдельно от текста.",
     "cost": "С 2026-10-04 пользователь подключил биллинг и явно разрешил платный Gemini TTS для правок озвучки. Сохранять принятые записи, генерировать только изменённые или отсутствующие фрагменты, учитывать usage успешных запросов и сообщать стоимость по действующему тарифу. Не расширять платный синтез сверх запрошенной работы.",
@@ -928,6 +937,261 @@
         }
       },
       "preview": "author-plans/audio/keliaujanti-biblioteka/voices/rasa-v1.wav"
+    },
+    "domas": {
+      "name": "Domas",
+      "label": "Домас",
+      "gender": "male",
+      "ageYears": 28,
+      "ageMeaning": "Возрастная подача голоса, не новый факт сюжета.",
+      "designPrompt": "A 28-year-old adult man with a grounded mid-register tenor, slightly rough textured edges, open warm resonance and easy clear conversational phrasing. Native standard Lithuanian with distinct vowels and consonants; natural unforced pace that a learner can follow. Dry close-miked studio sound. Distinct from a light smiling baritone and a formal audiobook narrator.",
+      "status": "created",
+      "voiceId": "voice_yx9gdjnfkyue",
+      "createdAt": "2026-10-04T16:40:54.961150+00:00",
+      "apiMetadata": {
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-04T16:40:53.202235216Z",
+        "display_name": "Iki paskutinio puslapio / Domas / v1",
+        "language_code": "lt-LT",
+        "gender": "male",
+        "usage": {
+          "total_tokens": 850,
+          "total_input_tokens": 267,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 117
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 583,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 583
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 780,
+          "raw_prompt_token": 430,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 280
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 460
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 780
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 280
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 460
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 780
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/voices/domas-v1.wav"
+    },
+    "dock-worker": {
+      "name": "Darbininkas",
+      "label": "Рабочий у пристани",
+      "gender": "male",
+      "ageYears": 50,
+      "ageMeaning": "Возрастная подача голоса, не новый факт сюжета.",
+      "designPrompt": "A 50-year-old adult male dock worker with a low gravelly bass-baritone, broad chest resonance and plain deliberate conversational phrasing. Native standard Lithuanian with clear articulation at a natural understandable pace. Dry close-miked studio sound. No comic accent and no booming narration.",
+      "status": "created",
+      "voiceId": "voice_i3f9cuvoo36i",
+      "createdAt": "2026-10-04T16:41:13.118241+00:00",
+      "apiMetadata": {
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-04T16:41:11.902694339Z",
+        "display_name": "Iki paskutinio puslapio / Darbininkas / v1",
+        "language_code": "lt-LT",
+        "gender": "male",
+        "usage": {
+          "total_tokens": 706,
+          "total_input_tokens": 236,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 86
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 470,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 470
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 826,
+          "raw_prompt_token": 399,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 249
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 372
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 826
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 249
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 372
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 826
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/voices/dock-worker-v1.wav"
+    },
+    "bookbinder": {
+      "name": "Knygrišys",
+      "label": "Переплётчик",
+      "gender": "male",
+      "ageYears": 60,
+      "ageMeaning": "Возрастная подача голоса, не новый факт сюжета.",
+      "designPrompt": "A 60-year-old adult man with a narrow gentle mid-high baritone, a papery dry timbre and patient precise conversational phrasing. Native standard Lithuanian with clear careful consonants and natural pauses. Dry close-miked studio sound. Distinct from a rounded deep narrator and a young conversational male voice.",
+      "status": "created",
+      "voiceId": "voice_mwjufoqdabov",
+      "createdAt": "2026-10-04T16:41:30.371378+00:00",
+      "apiMetadata": {
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-04T16:41:28.818339222Z",
+        "display_name": "Iki paskutinio puslapio / Knygrišys / v1",
+        "language_code": "lt-LT",
+        "gender": "male",
+        "usage": {
+          "total_tokens": 1178,
+          "total_input_tokens": 229,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 79
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 949,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 949
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 135,
+          "raw_prompt_token": 392,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 242
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 746
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 135
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 242
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 746
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 135
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/voices/bookbinder-v1.wav"
     }
   },
   "batchingPolicy": {
