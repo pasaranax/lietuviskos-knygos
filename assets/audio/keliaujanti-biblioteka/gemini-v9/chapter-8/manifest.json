@@ -3,7 +3,7 @@
   "model": "gemini-3.8-flash-tts",
   "bookId": "keliaujanti-biblioteka",
   "chapterId": "chapter-8",
-  "sourceSha256": "d11765100097c3221ba7d5672575a95047ba891e4c8f7b378f6a1cdae07c3716",
+  "sourceSha256": "54a374f223cd486f57055e0edaa5c68bda326b4157de47e3810e3f7267a9e448",
   "castingSha256": "83971ca6a4bfc6cab2eaa3749c66da53b99b9b11b8301bce559b2095dd6ece2e",
   "timingVersion": 11,
   "alignmentMethod": "Reviewed whole sentences; exact source words aligned locally; waveform-isolated and independently recognized PCM joined in narrative order by sample counts.",
