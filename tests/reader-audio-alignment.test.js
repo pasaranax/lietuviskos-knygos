@@ -41,7 +41,10 @@ test("traveling-library clips contain complete speech on the joined PCM timeline
     }
     assert.equal(frame, manifest.frameCount);
     assert.equal(manifest.duration, frame / manifest.sampleRate);
-    const items = chapter.blocks.flatMap(block => block.items);
+    const allItems = chapter.blocks.flatMap(block => block.items);
+    const sceneBreaks = allItems.filter(item => item.text === "* * *");
+    for (const item of sceneBreaks) assert.ok(!item.audio, `${chapter.id}: narrated scene separator`);
+    const items = allItems.filter(item => item.text !== "* * *");
     assert.equal(manifest.phrases.length, items.length);
     frame = 0;
     for (const [index, phrase] of manifest.phrases.entries()) {

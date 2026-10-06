@@ -1192,6 +1192,176 @@
         }
       },
       "preview": "author-plans/audio/keliaujanti-biblioteka/voices/bookbinder-v1.wav"
+    },
+    "paulius": {
+      "name": "Paulius",
+      "label": "Паулюс",
+      "gender": "male",
+      "ageYears": 55,
+      "ageMeaning": "Актёрская характеристика; не новый факт сюжета.",
+      "designPrompt": "A 55-year-old man with a warm low-mid baritone, a slightly breathy weathered timbre, thoughtful unforced conversational phrasing and a naturally measured baseline. Native standard Lithuanian, distinct consonants and clear vowels. Dry close studio sound, no reverberation. Different from a formal rounded narrator or a gravelly bass.",
+      "status": "created",
+      "voiceId": "voice_zavzfg8nw565",
+      "createdAt": "2026-10-06T13:32:21.850589+00:00",
+      "apiMetadata": {
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-06T13:32:19.773557107Z",
+        "display_name": "Iki paskutinio puslapio / Paulius / v1",
+        "language_code": "lt-LT",
+        "gender": "male",
+        "usage": {
+          "total_tokens": 1307,
+          "total_input_tokens": 246,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 96
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 1061,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 1061
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 114,
+          "raw_prompt_token": 409,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 259
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1066
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 114
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 259
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1066
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 114
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/voices/paulius-v1.wav"
+    },
+    "bird": {
+      "name": "Pašto paukštis",
+      "label": "Почтовая птица",
+      "gender": "male",
+      "ageYears": null,
+      "ageMeaning": "Актёрская характеристика; не новый факт сюжета.",
+      "designPrompt": "A character voice imitating memorized Lithuanian postal phrases: a narrow mid-high register with a dry scratchy grain and lightly nasal edges, clear distinct syllables and deliberate short pauses. A small serious matter-of-fact delivery, no comic squeaking, no added caws or animal sounds. Dry close studio sound.",
+      "status": "created",
+      "voiceId": "voice_g24faos4zqil",
+      "createdAt": "2026-10-06T13:32:41.373017+00:00",
+      "apiMetadata": {
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-06T13:32:39.724649882Z",
+        "display_name": "Iki paskutinio puslapio / Pašto paukštis / v1",
+        "language_code": "lt-LT",
+        "gender": "male",
+        "usage": {
+          "total_tokens": 1229,
+          "total_input_tokens": 240,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 90
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 989,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 989
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 146,
+          "raw_prompt_token": 403,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 253
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 993
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 146
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 253
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 993
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 146
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/voices/bird-v1.wav"
     }
   },
   "batchingPolicy": {
