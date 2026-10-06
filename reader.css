@@ -251,6 +251,11 @@ body.theme-dark {
   text-indent: 0;
 }
 
+.text p.scene-break {
+  text-align: center;
+  text-indent: 0;
+}
+
 .phrase {
   cursor: help;
   touch-action: manipulation;

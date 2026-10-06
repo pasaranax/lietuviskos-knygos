@@ -138,6 +138,9 @@
         paragraph.classList.add("reader-paragraph");
         paragraph.dataset.paragraphIndex = String(paragraphIndex);
         if (block.type === "dialogue") paragraph.classList.add("dialogue");
+        if (block.items.length === 1 && /^\s*(?:\*\s*){3,}$/.test(block.items[0].text || "")) {
+          paragraph.classList.add("scene-break");
+        }
         block.items.forEach(function (item, itemIndex) {
           if (itemIndex > 0) paragraph.append(document.createTextNode(" "));
           var phrase = renderItem(item);
