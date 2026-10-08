@@ -32,7 +32,7 @@ Compare recent chapters' length and language load when planning the next one. Di
 
 ## Forms, syntax, and counts
 
-Prefer concrete everyday verbs, short clauses, clear referents, natural Lithuanian word order, and simple causal/temporal links. Use present, past, future, requests, and common case government as the story needs them. Avoid dense participial chains, obscure idioms, literary synonyms, and technical abstraction. Retain a difficult term only if it earns its place and receives contextual support and recurrence.
+Prefer concrete everyday verbs, clear clauses and referents, natural Lithuanian word order, and simple causal/temporal links. Connect related clauses with familiar conjunctions in developed sentences, following the skill's connected-prose and natural-dialogue guidance; A2 does not require a succession of very short sentences. Use present, past, future, requests, and common case government as the story needs them. Avoid dense participial chains, obscure idioms, literary synonyms, and technical abstraction. Retain a difficult term only if it earns its place and receives contextual support and recurrence.
 
 Track lemmas, senses, and surface forms separately. Prefixed verbs are not automatically interchangeable instances of their unprefixed base. Proper names and very frequent function words must not inflate the reported repetition of target vocabulary.
 
@@ -66,19 +66,14 @@ The visible text must be Lithuanian only. Russian translation and notes live onl
 
 ### Phrase segmentation
 
-- Prefer natural phrase-sized chunks.
-- Do not split every word.
-- Do not make huge paragraph-sized phrases unless the sentence is short.
-- Keep dialogue punctuation inside the phrase.
-- Preserve stressed Lithuanian text in `text`.
-- Frank-method descriptions use "small fragments" but do not define a universal optimal word count. Use this project's explicit limits.
-- Target phrase size: 4-7 words.
-- For text-only items, hard maximum: 8 words or 70 characters, whichever is reached first.
-- For narrated items, follow [gemini-narration.md](gemini-narration.md): prefer whole sentences, keep short sentences separate, and never split at a bare space to satisfy the size cap. A long sentence may split at meaningful punctuation with a verified spoken pause; otherwise retain it and check the tooltip on mobile.
-- In text-only items, use 8 words only when the phrase is a single natural unit and splitting it would make the reading worse.
-- For text-only items, split before the hard maximum at natural boundaries: comma, semicolon, colon, dash, dialogue pause, conjunction, prepositional phrase, or participial phrase.
-- Allow 1-3 word phrases only for short dialogue turns, idioms, fixed expressions, and sentence tails that would read unnaturally when merged.
-- For text-only items, avoid whole long sentences in one tooltip. For narrated items, the verified sentence-boundary rules above take precedence. A tooltip must fit on mobile and be readable without scanning a wall of text.
+- Keep the literary sentence intact in the joined paragraph, but divide its tooltip support into natural phrase-sized chunks. Use the same learning-size guidance for narrated and text-only passages; a recording is not a reason to show a whole long sentence in one tooltip.
+- Target 4–7 words per fragment. Treat 8 words as a soft review threshold, not a hard cap; retain a longer indivisible phrase when splitting would impair comprehension. Do not impose an automatic character cap.
+- Prefer meaningful commas and other clause punctuation; when absent, use a natural conjunction, prepositional or participial group, or another semantic boundary. Do not cut at arbitrary spaces or after every comma without checking the sense. A long sentence can need three or more fragments.
+- Roughly one line across the phone's reading area at the reader's chosen font size is a visual guide, not a fixed layout or limit. Check the resulting tooltip's translation and full local notes on mobile as well as the highlighted phrase.
+- Short 1–3 word clauses, replies, idioms and natural sentence tails are acceptable; a coherent six-word sentence can remain whole. Do not split every word or merge unrelated short sentences just to meet a target.
+- Count the actual words when reporting a fragment size; stress marks do not create extra words and punctuation-only tokens do not count. For example, `Jis stabtelėjo prie durų,` / `pamatęs už lentynų didelę virtuvę,` / `nors kieme stovėjo mažas automobilis.` contains **4 / 5 / 5 words**.
+- Keep dialogue punctuation inside the phrase and preserve stressed Lithuanian in `text`. Match each fragment's Russian translation and full contextual dictionary/grammar notes to that fragment, without importing the rest of the sentence into its tooltip.
+- For narrated fragments, also read [gemini-narration.md](gemini-narration.md): semantic segmentation and safe audio boundaries are separate checks. Preserve natural continuous delivery and verify the actual spoken boundary before cutting a clip.
 
 ### Translation
 
