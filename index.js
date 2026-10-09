@@ -4,6 +4,24 @@
   var shelfEntries = [];
   var profilePositions = {};
 
+  function arrangeShelfBoards() {
+    var rows = new Map();
+    shelf.querySelectorAll(".book-slot").forEach(function (slot) {
+      var top = slot.offsetTop;
+      rows.set(top, Math.max(rows.get(top) || 0, top + slot.offsetHeight));
+    });
+    shelf.querySelectorAll(".shelf-board").forEach(function (board) { board.remove(); });
+    rows.forEach(function (bottom) {
+      var board = document.createElement("span");
+      board.className = "shelf-board";
+      board.setAttribute("aria-hidden", "true");
+      board.style.top = (bottom + 6) + "px";
+      shelf.append(board);
+    });
+  }
+
+  new ResizeObserver(arrangeShelfBoards).observe(shelf);
+
   function formatNumber(value) {
     return new Intl.NumberFormat("ru-RU").format(value);
   }
@@ -69,6 +87,7 @@
       if (!meta) return;
       setProgress(meta, readProgress(entry.book, entry.totalParagraphs));
     });
+    arrangeShelfBoards();
   }
 
   function renderBook(book, details) {
@@ -153,6 +172,7 @@
         shelfEntries.forEach(function (entry) {
           shelf.append(renderBook(entry.book, entry.details));
         });
+        arrangeShelfBoards();
         refreshProfileProgress();
       });
     })

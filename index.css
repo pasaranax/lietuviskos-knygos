@@ -44,13 +44,12 @@ h1 {
   padding: 18px 10px 46px;
 }
 
-.book-shelf::before {
-  content: "";
+.shelf-board {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
   height: 20px;
+  pointer-events: none;
   border-top: 1px solid rgba(255, 230, 178, 0.22);
   border-bottom: 1px solid rgba(22, 14, 7, 0.82);
   background:
@@ -180,7 +179,7 @@ h1 {
   .book-shelf {
     min-height: 0;
     justify-content: center;
-    gap: 16px;
+    gap: 40px 16px;
     padding-bottom: 50px;
   }
 
