@@ -37,24 +37,6 @@
     } catch (_) {}
   }
 
-  // Same 100 ms speech gate as Voisya: keep onset, discard quiet noise/clicks.
-  function MicGate() { this.reset(); }
-  MicGate.prototype.reset = function () { this.buffer = []; this.voiced = this.tail = 0; };
-  MicGate.prototype.push = function (chunk, rms) {
-    var loud = rms >= .006;
-    this.voiced = loud ? this.voiced + 1 : 0;
-    if (this.tail) {
-      this.tail = loud ? 5 : this.tail - 1;
-      return [chunk];
-    }
-    this.buffer.push(chunk);
-    if (this.buffer.length > 3) this.buffer.shift();
-    if (this.voiced < 2) return [];
-    var chunks = this.buffer;
-    this.buffer = []; this.tail = 5;
-    return chunks;
-  };
-
   ReaderVoice.prototype.start = async function (input) {
     this.stop();
     var self = this;
@@ -80,7 +62,6 @@
       if (!status.allowed) throw new Error(status.message || 'На сегодня 10 минут голосового помощника закончились. Возвращайся завтра.');
       this.active = true;
       this.onState('connecting');
-      call.gate = new MicGate();
       call.silentFrame = btoa('\0'.repeat(3200));
       var stream = await navigator.mediaDevices.getUserMedia({ audio: {
         channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: false
@@ -116,7 +97,9 @@
         if (!call.outputMeter) self.meterActivity(call, call.inputLevel, 0);
         var bytes = new Uint8Array(event.data), binary = '';
         for (var b = 0; b < bytes.length; b++) binary += String.fromCharCode(bytes[b]);
-        var chunks = micReady ? call.gate.push(btoa(binary), call.inputLevel) : [];
+        // Send quiet/short speech intact; Gemini VAD decides whether it is speech.
+        // Muting during the greeting and reference playback still prevents their echo.
+        var chunks = micReady ? [btoa(binary)] : [];
         if (!chunks.length) chunks = [call.silentFrame];
         if (call.socket.readyState === 1) chunks.forEach(function (chunk) {
           call.socket.send(JSON.stringify({ realtimeInput: { audio: { data: chunk, mimeType: 'audio/pcm;rate=16000' } } }));
@@ -160,9 +143,10 @@
             var grant = await endpoint('readerCallTime', { callId: call.session.callId, action: 'start' });
             if (call.closed) return;
             call.ready = true;
-            self.cue('start', call.audio);
             clearTimeout(call.connectTimer);
-            self.onState('listening');
+            call.firstAudioTimer = setTimeout(function () {
+              if (!call.closed && !call.firstVoice) { self.stop(); self.onError('Помощник не ответил. Попробуй подключиться ещё раз.'); }
+            }, 20000);
             call.endTimer = setTimeout(function () { self.stop(); self.onError('Время разговора закончилось.'); }, grant.remainingSeconds * 1000);
             call.heartbeat = setInterval(function () {
               if (call.checking || call.closed) return;
@@ -218,6 +202,11 @@
       sum += samples[i] * samples[i];
     }
     if (!samples.length) return;
+    if (!call.firstVoice) {
+      clearTimeout(call.firstAudioTimer);
+      // The connection becomes audible only when Gemini has produced its first audio.
+      call.cursor = call.audio.currentTime + this.cue('start', call.audio) / 1000;
+    }
     var buffer = call.audio.createBuffer(1, samples.length, rate);
     buffer.copyToChannel(samples, 0);
     var source = call.audio.createBufferSource();
@@ -240,7 +229,6 @@
   ReaderVoice.prototype.releaseGreeting = function (call) {
     if (call.closed || call.greetingDone || !call.firstVoice || !call.greetingTurnComplete || call.sources.size) return;
     call.greetingDone = true;
-    call.gate.reset();
     call.inputLevel = 0;
     if (call.pendingContext) {
       var context = call.pendingContext; call.pendingContext = null;
@@ -268,7 +256,7 @@
     if (!Offline) return Promise.reject(new Error('Этот браузер не поддерживает передачу записи.'));
     var reference = { controller: new AbortController(), finished: false, started: false };
     call.reference = reference;
-    call.gate.reset(); call.inputLevel = 0;
+    call.inputLevel = 0;
     this.interrupt(call);
     return new Promise(function (resolve, reject) {
       reference.finish = function (error) {
@@ -282,7 +270,7 @@
           reference.source.disconnect();
         }
         if (call.reference === reference) call.reference = null;
-        call.gate.reset(); call.inputLevel = 0;
+        call.inputLevel = 0;
         // Let the speaker tail fade before accepting microphone frames again.
         call.micResumeAt = call.audio.currentTime + .35;
         if (reference.started && !call.closed && call.socket.readyState === 1) {
@@ -341,7 +329,7 @@
   };
 
   ReaderVoice.prototype.meterActivity = function (call, inputRms, outputRms) {
-    if (call.closed || !call.ready) return;
+    if (call.closed || !call.ready || !call.firstVoice) return;
     var speaker = inputRms > .015 ? 'user' : outputRms > .008 ? 'assistant' : null;
     var status = speaker === 'user' ? 'user-speaking' : speaker === 'assistant' ? 'speaking' : 'listening';
     if (call.visualState !== status) { call.visualState = status; this.onState(status); }
@@ -352,7 +340,7 @@
     call.sources.forEach(function (source) { source.onended = null; try { source.stop(); } catch (_) {} });
     call.sources.clear();
     call.cursor = call.audio ? call.audio.currentTime : 0;
-    if (!call.closed) this.onState('listening');
+    if (!call.closed) this.onState(call.firstVoice ? 'listening' : 'connecting');
     this.onLevel(0);
   };
 
@@ -441,22 +429,22 @@
     }
   };
 
-  ReaderVoice.prototype.cue = function (type, audio) {
+  ReaderVoice.prototype.cue = function (type, audio, finished) {
     if (!audio || !audio.createOscillator || audio.state === 'closed') return 0;
     var notes = type === 'start' ? [523.25, 783.99] : [783.99, 523.25];
     var now = audio.currentTime;
     notes.forEach(function (frequency, index) {
-      var start = now + index * .12;
+      var start = now + index * .14;
       var oscillator = audio.createOscillator(), gain = audio.createGain();
       oscillator.type = 'sine'; oscillator.frequency.value = frequency;
       gain.gain.setValueAtTime(0, start);
-      gain.gain.linearRampToValueAtTime(.045, start + .015);
-      gain.gain.exponentialRampToValueAtTime(.0001, start + .16);
+      gain.gain.linearRampToValueAtTime(.12, start + .02);
+      gain.gain.exponentialRampToValueAtTime(.0001, start + .21);
       oscillator.connect(gain); gain.connect(audio.destination);
-      oscillator.onended = function () { oscillator.disconnect(); gain.disconnect(); };
-      oscillator.start(start); oscillator.stop(start + .17);
+      oscillator.onended = function () { oscillator.disconnect(); gain.disconnect(); if (index === notes.length - 1 && finished) finished(); };
+      oscillator.start(start); oscillator.stop(start + .22);
     });
-    return 320;
+    return 420;
   };
 
   ReaderVoice.prototype.stop = function () {
@@ -466,7 +454,7 @@
     this.active = false;
     if (call) {
       call.closed = true;
-      clearTimeout(call.connectTimer); clearTimeout(call.endTimer); clearInterval(call.heartbeat); clearInterval(call.meterTimer);
+      clearTimeout(call.connectTimer); clearTimeout(call.firstAudioTimer); clearTimeout(call.endTimer); clearInterval(call.heartbeat); clearInterval(call.meterTimer);
       if (call.rejectConnect) call.rejectConnect(new DOMException('Cancelled', 'AbortError'));
       if (call.socket) call.socket.close();
       if (call.stream) call.stream.getTracks().forEach(function (track) { track.stop(); });
@@ -476,9 +464,19 @@
       if (call.outputMeter) call.outputMeter.disconnect();
       this.interrupt(call);
       if (call.audio && call.audio.state !== 'closed') {
-        var cueMs = call.ready ? this.cue('end', call.audio) : 0;
-        if (cueMs) setTimeout(function () { call.audio.close().catch(function () {}); }, cueMs);
-        else call.audio.close().catch(function () {});
+        var self = this, closeTimer, closing = false;
+        var closeAudio = function () {
+          if (closing) return;
+          closing = true; clearTimeout(closeTimer);
+          call.audio.close().catch(function () {});
+        };
+        var endCue = function () {
+          if (!self.cue('end', call.audio, closeAudio)) closeAudio();
+          else closeTimer = setTimeout(closeAudio, 2000);
+        };
+        if (!call.ready) closeAudio();
+        else if (call.audio.resume) Promise.resolve(call.audio.resume()).then(endCue, closeAudio);
+        else endCue();
       }
       this.flushUsage(call);
       this.release(call);

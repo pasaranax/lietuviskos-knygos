@@ -52,7 +52,7 @@ await mkdir('tgcloud/lib', { recursive: true });
 const bookData = {};
 for (const entry of catalog.books) {
   const book = JSON.parse(await readFile(`books/${entry.id}.json`, 'utf8'));
-  bookData[entry.id] = { chapters: book.chapters.map(chapter => ({ blocks: chapter.blocks.map(block => ({
+  bookData[entry.id] = { chapters: book.chapters.map(chapter => ({ title: chapter.title || '', blocks: chapter.blocks.map(block => ({
     items: block.items.map(({ text, translation, note }) => ({ text, translation, note }))
   })) })) };
 }

@@ -74,6 +74,7 @@ test('phrase switches reuse the session, pass a silent context update and stoppi
   assert.equal(requests.filter(request => request.name === 'startReaderCall').length, 1);
   assert.equal(voice.active, true);
   voice.stop();
+  await new Promise(setImmediate);
   assert.equal(microphoneStops, 1);
   assert.equal(audioClosed, 1);
   assert.ok(requests.some(request => request.name === 'readerCallTime' && request.input.action === 'end'));
@@ -84,7 +85,7 @@ test('circle contracts for user audio, expands for assistant audio and returns t
   vm.runInContext(fs.readFileSync(filename, 'utf8'), ctx);
   const states = [], levels = [];
   const voice = new ctx.window.ReaderVoice({ onState: s => states.push(s), onLevel: (level, speaker) => levels.push({ level, speaker }) });
-  const call = { ready: true, closed: false };
+  const call = { ready: true, closed: false, firstVoice: true };
   voice.meterActivity(call, 0, .05);
   assert.equal(states.at(-1), 'speaking'); assert.equal(levels.at(-1).speaker, 'assistant');
   voice.meterActivity(call, .1, .05);
@@ -103,6 +104,19 @@ test('connected and ended cues use opposite soft note sequences', () => {
     createOscillator() { const oscillator = { frequency: {}, connect() {}, disconnect() {}, start() { notes.push(oscillator.frequency.value); }, stop() {} }; return oscillator; },
     createGain: () => ({ connect() {}, disconnect() {}, gain: { setValueAtTime() {}, linearRampToValueAtTime() {}, exponentialRampToValueAtTime() {} } })
   };
-  assert.equal(voice.cue('start', audio), 320); assert.deepEqual(notes, [523.25, 783.99]);
+  assert.equal(voice.cue('start', audio), 420); assert.deepEqual(notes, [523.25, 783.99]);
   notes.length = 0; voice.cue('end', audio); assert.deepEqual(notes, [783.99, 523.25]);
+});
+test('ending a suspended call resumes audio and closes only after its cue ends', async () => {
+  const notes=[],ctx=vm.createContext({window:{},DOMException,setTimeout,clearTimeout,setInterval,clearInterval});
+  vm.runInContext(fs.readFileSync(filename,'utf8'),ctx);
+  const voice=new ctx.window.ReaderVoice({});let resumes=0,closed=0,last;
+  const audio={state:'suspended',currentTime:0,destination:{},
+    async resume(){resumes++;this.state='running';},async close(){closed++;this.state='closed';},
+    createOscillator(){const oscillator={frequency:{},connect(){},disconnect(){},start(){notes.push(oscillator.frequency.value);},stop(){}};last=oscillator;return oscillator;},
+    createGain:()=>({connect(){},disconnect(){},gain:{setValueAtTime(){},linearRampToValueAtTime(){},exponentialRampToValueAtTime(){}}})};
+  voice.call={audio,ready:true,sources:new Set()};voice.stop();
+  await new Promise(setImmediate);
+  assert.equal(resumes,1);assert.deepEqual(notes,[783.99,523.25]);assert.equal(closed,0);
+  last.onended();assert.equal(closed,1);
 });

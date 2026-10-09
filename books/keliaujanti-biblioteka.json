@@ -12,6 +12,7 @@
     {
       "id": "chapter-1",
       "title": "Paltas rytojui",
+      "titleTranslation": "Пальто на завтра",
       "label": "I",
       "blocks": [
         {
@@ -934,6 +935,7 @@
     {
       "id": "chapter-2",
       "title": "Adresas",
+      "titleTranslation": "Адрес",
       "label": "II",
       "blocks": [
         {
@@ -1909,6 +1911,7 @@
     {
       "id": "chapter-3",
       "title": "Prie lango",
+      "titleTranslation": "У окна",
       "label": "III",
       "blocks": [
         {
@@ -3051,6 +3054,7 @@
     {
       "id": "chapter-4",
       "title": "Kelionė",
+      "titleTranslation": "Поездка",
       "label": "IV",
       "blocks": [
         {
@@ -3793,6 +3797,7 @@
     {
       "id": "chapter-5",
       "title": "Prie upės",
+      "titleTranslation": "У реки",
       "label": "V",
       "blocks": [
         {
@@ -4571,6 +4576,7 @@
     {
       "id": "chapter-6",
       "title": "Atverstas puslapis",
+      "titleTranslation": "Открытая страница",
       "label": "VI",
       "blocks": [
         {
@@ -5494,6 +5500,7 @@
     {
       "id": "chapter-7",
       "title": "Iki vakaro",
+      "titleTranslation": "До вечера",
       "label": "VII",
       "blocks": [
         {
@@ -6530,6 +6537,7 @@
     {
       "id": "chapter-8",
       "title": "Adresas kelyje",
+      "titleTranslation": "Адрес в пути",
       "label": "VIII",
       "blocks": [
         {
@@ -7113,6 +7121,7 @@
     {
       "id": "chapter-9",
       "title": "Karaliaus vakaras",
+      "titleTranslation": "Вечер короля",
       "label": "IX",
       "blocks": [
         {
@@ -7702,6 +7711,7 @@
     {
       "id": "chapter-10",
       "title": "Vėjas tarp lentynų",
+      "titleTranslation": "Ветер между полками",
       "label": "X",
       "blocks": [
         {
@@ -8261,6 +8271,7 @@
     {
       "id": "chapter-11",
       "title": "Ką jis pasakė",
+      "titleTranslation": "Что он сказал",
       "label": "XI",
       "blocks": [
         {
@@ -8789,6 +8800,7 @@
     {
       "id": "chapter-12",
       "title": "Žalia kepurė",
+      "titleTranslation": "Зелёная шапка",
       "label": "XII",
       "blocks": [
         {

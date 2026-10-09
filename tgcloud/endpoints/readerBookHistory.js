@@ -10,5 +10,5 @@ export default async function (input, ctx) {
   try { phraseContext(book, input?.location); }
   catch { throw new EndpointError('Выбери место в книге.', { code: 'INVALID_LOCATION' }); }
   return { chapters: (summaries[input.bookId] || []).slice(0, Math.max(0, input.location.chapter - 1))
-    .map((text, chapter) => ({ chapter, text })) };
+    .map((text, chapter) => ({ chapter, number: chapter + 1, title: book.chapters[chapter].title || '', text })) };
 }

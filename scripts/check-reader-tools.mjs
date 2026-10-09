@@ -5,7 +5,7 @@ import {execFileSync} from 'node:child_process';
 import vm from 'node:vm';
 import {deployedCall} from './deployed-api.mjs';
 import {getFiles,runFunction} from '../node_modules/@tgcloud/cli/src/api/endpoints.js';
-const userId=900000000034,bookId='keliaujanti-biblioteka',location={chapter:10,block:0,item:0};
+const userId=900000000035,bookId='keliaujanti-biblioteka',location={chapter:10,block:0,item:0};
 const book=JSON.parse(await readFile('books/'+bookId+'.json','utf8'));
 const item=book.chapters[0].blocks[0].items[1];
 const pcm=execFileSync('ffmpeg',['-v','error','-i',item.audio,'-f','s16le','-ar','16000','-ac','1','pipe:1']);
@@ -45,6 +45,7 @@ socket.addEventListener('message',async({data})=>{
     if(fn.name==='get_book_history'){
      const result=await deployedCall('readerBookHistory',{bookId,location},userId);
      assert.equal(result.chapters.length,9);assert.ok(result.chapters.every(c=>c.chapter<9));historyCalled=true;
+     assert.ok(result.chapters.every(c=>c.number===c.chapter+1&&c.title===book.chapters[c.chapter].title));
      socket.send(JSON.stringify({toolResponse:{functionResponses:[{id:fn.id,name:fn.name,response:result}]}}));
     }else{
      assert.equal(fn.name,'play_selected_phrase');assert.equal(playCalled,false);playCalled=true;
@@ -61,9 +62,10 @@ socket.addEventListener('message',async({data})=>{
   if(stage==='greeting'){
    assert.match(transcript,/граммат|слов/i);assert.doesNotMatch(transcript,/произн|повтор|потренир|вслух/i);
    console.log('Deployed grammar greeting received.');stage='history';transcript='';
-   text('Для ответа нужен сюжет первой главы, его сейчас нет в тексте. Получи сводку через get_book_history и одним предложением скажи, зачем Лина приезжала к Эльзе.');
+   text('Что было в первой главе? Назови её номер и название, затем кратко напомни события.');
   }else if(stage==='history'&&historyCalled){
-   console.log(JSON.stringify({historyTool:true,futureExcluded:true,transcript:transcript.slice(0,180)}));transcript='';stage='play';
+   assert.match(transcript,/Paltas|Палтас|пальто/i);
+   console.log(JSON.stringify({historyTool:true,chapterNumbersAndTitles:true,futureExcluded:true,transcript:transcript.slice(0,450)}));transcript='';stage='play';
    text('reading_update: '+JSON.stringify({reading:learning.ReaderLearning.readingContext(book,{chapter:0,block:0,item:1}),selection:learning.ReaderLearning.phraseContext(book,{chapter:0,block:0,item:1}).phrase}),false);
    text('Теперь хочу услышать выбранную фразу. Сам включи готовую запись инструментом play_selected_phrase, не читай её своим голосом.');
   }else if(stage==='reference'){

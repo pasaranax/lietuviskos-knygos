@@ -19,12 +19,24 @@
       }
     }
     return { before: paragraphs.join('\n\n'), phrase: {
-      text: phrase.text, translation: phrase.translation || '', note: phrase.note || ''
+      text: phrase.text, translation: phrase.translation || '', note: phrase.note || '',
+      chapter: { number: location.chapter + 1, title: chapter.title || '' }
     } };
   }
   function readingContext(book, location) {
-    var context = phraseContext(book, location);
-    return context.before + (context.before ? (location.item > 0 ? ' ' : '\n\n') : '') + context.phrase.text;
+    phraseContext(book, location); // Validate the boundary before collecting any source text.
+    var chapters = [];
+    for (var c = Math.max(0, location.chapter - 1); c <= location.chapter; c++) {
+      var chapter = book.chapters[c], paragraphs = [];
+      var count = c === location.chapter ? location.block + 1 : chapter.blocks.length;
+      for (var b = 0; b < count; b++) {
+        var items = chapter.blocks[b].items;
+        if (c === location.chapter && b === location.block) items = items.slice(0, location.item + 1);
+        if (items.length) paragraphs.push(items.map(function (item) { return item.text; }).join(' '));
+      }
+      chapters.push('Глава ' + (c + 1) + (chapter.title ? ' — ' + chapter.title : '') + '\n' + paragraphs.join('\n\n'));
+    }
+    return chapters.join('\n\n');
   }
   root.ReaderLearning = { phraseContext: phraseContext, readingContext: readingContext };
 })(typeof window === 'undefined' ? globalThis : window);

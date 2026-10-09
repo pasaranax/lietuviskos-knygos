@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-09T17:49:18.777Z",
+  "model": "gemini-3.8-live",
+  "captureDspTested": false,
+  "baseline": "working tree",
+  "sourceHashes": {
+    "mic": "2b66783d366bb2c9f0280edb999b4a4dd18bbe41a0a8ca70994963bcb7814685",
+    "session": "d52da5f77c5200bc0ee792f37f40a9075371f8aedf0b5b0f6084939a6acfd9ea"
+  },
+  "notes": "Accepted narration fed at real time into learner realtimeInput. Browser echo/noise capture DSP is not exercised by this digital-input test. Quiet copies scale loudest 100ms frame to RMS 0.003.",
+  "results": [
+    {
+      "clip": 0,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "expected": "Sustójo priẽ akmenìnio nãmo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-1/p-000-i-001.mp3",
+      "stats": {
+        "durationSeconds": 2.637125,
+        "gain": 1,
+        "maxFrameRms": 0.12643763234002703,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "su stovykla prie Akmeninio namo",
+      "outputTranscript": "Я расслышал «sustovykla prie akmeninio namo». Вы действительно произнесли эти слова?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "su stovykla prie Akmeninio namo",
+          "output": "Я расслышал «sustovykla prie akmeninio namo». Вы действительно произнесли эти слова?"
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 2187,
+          "responseTokenCount": 92,
+          "totalTokenCount": 2279,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1947
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 92
+            }
+          ],
+          "thoughtsTokenCount": 56
+        },
+        {
+          "promptTokenCount": 2429,
+          "responseTokenCount": 158,
+          "totalTokenCount": 2587,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 2011
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 347
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 158
+            }
+          ],
+          "thoughtsTokenCount": 109
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "8947ef8a36167c1a32ca724c53d10335b2c1d880de9d6b871a518b4098fa0299",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 1,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "expected": "Ar̃ gãlite nupir̃kti?",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-2/p-001-i-001.mp3",
+      "stats": {
+        "durationSeconds": 1.486625,
+        "gain": 1,
+        "maxFrameRms": 0.09183061148788109,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Ar galite nupirkti?",
+      "outputTranscript": "Вы произнесли всё очень четко и правильно. Явных ошибок в произношении или ударениях я не услышал.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Ar galite nupirkti?",
+          "output": "Вы произнесли всё очень четко и правильно. Явных ошибок в произношении или ударениях я не услышал."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 2120,
+          "responseTokenCount": 90,
+          "totalTokenCount": 2210,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1880
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 90
+            }
+          ],
+          "thoughtsTokenCount": 56
+        },
+        {
+          "promptTokenCount": 2326,
+          "responseTokenCount": 167,
+          "totalTokenCount": 2493,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1942
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 313
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 167
+            }
+          ],
+          "thoughtsTokenCount": 135
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "df39ebb3d76a84c8706b350f05cd35338756b21d76ac54186d9a3615dc6dae75",
+      "exactInput": true,
+      "exactEcho": false
+    },
+    {
+      "clip": 2,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "expected": "Kìtą rýtą príeplaukoje žmónės láukė naũjo laĩvo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v9/chapter-6/p-000-i-000.mp3",
+      "stats": {
+        "durationSeconds": 3.8870625,
+        "gain": 1,
+        "maxFrameRms": 0.1353222700120945,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+      "outputTranscript": "Я расслышал слово «Kėdainių» вместо «Kìtą rýtą». Подскажите, пожалуйста, вы произнесли именно эти слова?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+          "output": "Я расслышал слово «Kėdainių» вместо «Kìtą rýtą». Подскажите, пожалуйста, вы произнесли именно эти слова?",
+          "incomplete": true
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 2283,
+          "responseTokenCount": 85,
+          "totalTokenCount": 2368,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 2043
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 85
+            }
+          ],
+          "thoughtsTokenCount": 46
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "db9bddb46379d70861c568695d01726aa87775025527796ed9d629414e5ffafa",
+      "exactInput": false,
+      "exactEcho": false
+    }
+  ]
+}

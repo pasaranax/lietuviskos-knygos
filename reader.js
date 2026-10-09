@@ -67,7 +67,11 @@
     onState: function (status) {
       voiceAssistant.hidden = status === "idle";
       voiceOrb.dataset.state = status;
-      if (status === "idle") waterOrb.stop(); else waterOrb.start();
+      if (status === "idle") waterOrb.stop();
+      else if (status === "connecting") waterOrb.load();
+      else waterOrb.ready();
+      voiceOrb.setAttribute("aria-busy", String(status === "connecting"));
+      voiceOrb.setAttribute("aria-label", status === "connecting" ? "Подключение помощника. Нажми, чтобы отменить" : "Завершить разговор");
       topbarVoiceButton.dataset.state = status;
       tooltipVoiceButton.setAttribute("aria-pressed", String(status !== "idle"));
       topbarVoiceButton.setAttribute("aria-pressed", String(status !== "idle"));
@@ -188,7 +192,17 @@
       title.className = "chapter-title";
       title.id = chapter.id;
       title.dataset.chapterTitle = chapterTitle;
-      title.textContent = chapter.label || chapterTitle;
+      var label = document.createElement("div");
+      label.className = "chapter-number";
+      label.textContent = chapter.label || String(chapterIndex + 1);
+      title.append(label);
+      if (chapter.title) {
+        var titleItem = { text: chapter.title, translation: chapter.titleTranslation || "" };
+        var titlePhrase = renderItem(titleItem);
+        if (titlePhrase.nodeType === 1) titlePhrase.dataset.chapterId = chapter.id;
+        state.renderedItems.push({ node: titlePhrase, item: titleItem });
+        title.append(titlePhrase);
+      }
       textWrap.append(title);
 
       chapter.blocks.forEach(function (block, blockIndex) {
@@ -504,6 +518,10 @@
     fontUpButton.disabled = !state.profileReady || state.fontSize >= 32;
     translationButton.textContent = state.language === "ru" ? "Русский" : "Литовский";
     translationButton.setAttribute("aria-pressed", String(state.language === "ru"));
+    if (state.book) state.book.chapters.forEach(function (chapter, index) {
+      chapterSelect.options[index].textContent = (index + 1) + ". " +
+        (state.language === "ru" && chapter.titleTranslation ? chapter.titleTranslation : chapter.title || "Глава " + (index + 1));
+    });
     content.lang = state.language;
     var text = document.getElementById("readerText");
     if (text) {
@@ -533,14 +551,17 @@
     state.activePhrase = phrase;
     state.activeData = phrase._phraseData;
     voiceError.hidden = true;
-    if (!hoverOnly && voice.active) {
+    if (!hoverOnly && voice.active && phrase._location) {
       voice.updateContext({ reading: window.ReaderLearning.readingContext(state.book, phrase._location),
         selection: window.ReaderLearning.phraseContext(state.book, phrase._location).phrase }, phrase._location);
     }
     phrase.classList.add("is-active");
-    tooltipTranslation.textContent = state.activeData.translation;
+    tooltipTranslation.textContent = state.language === "ru" ? state.activeData.text : state.activeData.translation;
+    tooltipTranslation.lang = state.language === "ru" ? "lt" : "ru";
     renderRichText(tooltipNote, state.activeData.note);
+    tooltipNote.hidden = !state.activeData.note;
     tooltipAudioButton.hidden = !state.activeData.audio;
+    tooltipVoiceButton.hidden = !phrase._location;
     tooltipAudioError.hidden = true;
     tooltip.hidden = false;
     positionTooltip(event);
@@ -953,6 +974,7 @@
     var viewport = getViewport();
     var end = null;
     state.renderedItems.forEach(function (entry) {
+      if (!entry.node._location) return;
       var rect;
       if (entry.node.nodeType === 1) rect = entry.node.getBoundingClientRect();
       else {

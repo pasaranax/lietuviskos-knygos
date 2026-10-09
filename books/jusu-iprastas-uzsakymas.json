@@ -11,6 +11,7 @@
     {
       "id": "chapter-1",
       "title": "Dvi porcijos",
+      "titleTranslation": "Две порции",
       "label": "I",
       "blocks": [
         {
@@ -1107,6 +1108,7 @@
     {
       "id": "chapter-2",
       "title": "Prie vieno stalo",
+      "titleTranslation": "За одним столом",
       "label": "II",
       "blocks": [
         {
@@ -2159,6 +2161,7 @@
     {
       "id": "chapter-3",
       "title": "Pirmadienio rytas",
+      "titleTranslation": "Утро понедельника",
       "label": "III",
       "blocks": [
         {
@@ -3098,6 +3101,7 @@
     {
       "id": "chapter-4",
       "title": "Po šeštos",
+      "titleTranslation": "После шести",
       "label": "IV",
       "blocks": [
         {
@@ -3915,6 +3919,7 @@
     {
       "id": "chapter-5",
       "title": "Prie lango",
+      "titleTranslation": "У окна",
       "label": "V",
       "blocks": [
         {
@@ -4509,6 +4514,7 @@
     {
       "id": "chapter-6",
       "title": "Šeštadienio šviesa",
+      "titleTranslation": "Свет субботы",
       "label": "VI",
       "blocks": [
         {
@@ -5174,6 +5180,7 @@
     {
       "id": "chapter-7",
       "title": "Sekmadienio vakaras",
+      "titleTranslation": "Вечер воскресенья",
       "label": "VII",
       "blocks": [
         {
@@ -5736,6 +5743,7 @@
     {
       "id": "chapter-8",
       "title": "Ketvirtadienio popietė",
+      "titleTranslation": "После полудня в четверг",
       "label": "VIII",
       "blocks": [
         {
@@ -6965,6 +6973,7 @@
     {
       "id": "chapter-9",
       "title": "Ketvirtadienio vakaras",
+      "titleTranslation": "Вечер четверга",
       "label": "IX",
       "blocks": [
         {
@@ -7776,6 +7785,7 @@
     {
       "id": "chapter-10",
       "title": "Penktadienio rytas",
+      "titleTranslation": "Утро пятницы",
       "label": "X",
       "blocks": [
         {
@@ -8493,6 +8503,7 @@
     {
       "id": "chapter-11",
       "title": "Šeštadienio planai",
+      "titleTranslation": "Планы на субботу",
       "label": "XI",
       "blocks": [
         {
@@ -9212,6 +9223,7 @@
     {
       "id": "chapter-12",
       "title": "Kitas penktadienis",
+      "titleTranslation": "Следующая пятница",
       "label": "XII",
       "blocks": [
         {

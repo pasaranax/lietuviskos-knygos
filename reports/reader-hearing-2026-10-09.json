@@ -1,0 +1,2031 @@
+{
+  "date": "2026-10-09T17:41:00.179Z",
+  "model": "gemini-3.8-live",
+  "captureDspTested": false,
+  "notes": "Accepted narration fed at real time into learner realtimeInput. Browser echo/noise capture DSP is not exercised by this digital-input test. Quiet copies scale loudest 100ms frame to RMS 0.003. Russian learner utterances synthesized locally by macOS Milena (155 wpm); not human speech.",
+  "results": [
+    {
+      "clip": 0,
+      "quiet": false,
+      "gated": true,
+      "assess": false,
+      "expected": "Sustójo priẽ akmenìnio nãmo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-1/p-000-i-001.mp3",
+      "stats": {
+        "durationSeconds": 2.637125,
+        "gain": 1,
+        "maxFrameRms": 0.12643763234002703,
+        "zeroedFrames": 14,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Su stoviu prie akmeninio namo.",
+      "outputTranscript": "Su stoviu prie akmeninio namo.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Su stoviu prie akmeninio namo.",
+          "output": "Su stoviu prie akmeninio namo."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 88,
+          "totalTokenCount": 1809,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 88
+            }
+          ],
+          "thoughtsTokenCount": 53
+        },
+        {
+          "promptTokenCount": 1968,
+          "responseTokenCount": 106,
+          "totalTokenCount": 2074,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1554
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 343
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 106
+            }
+          ],
+          "thoughtsTokenCount": 95
+        }
+      ],
+      "errors": [],
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 0,
+      "quiet": false,
+      "gated": false,
+      "assess": false,
+      "expected": "Sustójo priẽ akmenìnio nãmo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-1/p-000-i-001.mp3",
+      "stats": {
+        "durationSeconds": 2.637125,
+        "gain": 1,
+        "maxFrameRms": 0.12643763234002703,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "su stovykla prie Akmeninio namo",
+      "outputTranscript": "su stovykla prie Akmeninio namo",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "su stovykla prie Akmeninio namo",
+          "output": "su stovykla prie Akmeninio namo"
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 94,
+          "totalTokenCount": 1815,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 94
+            }
+          ],
+          "thoughtsTokenCount": 60
+        },
+        {
+          "promptTokenCount": 1972,
+          "responseTokenCount": 100,
+          "totalTokenCount": 2072,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1554
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 349
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 100
+            }
+          ],
+          "thoughtsTokenCount": 87
+        }
+      ],
+      "errors": [],
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 0,
+      "quiet": true,
+      "gated": true,
+      "assess": false,
+      "expected": "Sustójo priẽ akmenìnio nãmo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-1/p-000-i-001.mp3",
+      "stats": {
+        "durationSeconds": 2.637125,
+        "gain": 0.02372711307921474,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 42,
+        "retainedEnergyPercent": 0
+      },
+      "inputTranscript": "",
+      "outputTranscript": "",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 89,
+          "totalTokenCount": 1810,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 89
+            }
+          ],
+          "thoughtsTokenCount": 53
+        }
+      ],
+      "errors": [],
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 0,
+      "quiet": true,
+      "gated": false,
+      "assess": false,
+      "expected": "Sustójo priẽ akmenìnio nãmo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-1/p-000-i-001.mp3",
+      "stats": {
+        "durationSeconds": 2.637125,
+        "gain": 0.02372711307921474,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "sostojo prie akmeninio namo",
+      "outputTranscript": "Sostojo prie akmeninio namo.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "sostojo prie akmeninio namo",
+          "output": "Sostojo prie akmeninio namo."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 97,
+          "totalTokenCount": 1818,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 97
+            }
+          ],
+          "thoughtsTokenCount": 110
+        },
+        {
+          "promptTokenCount": 1972,
+          "responseTokenCount": 88,
+          "totalTokenCount": 2060,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1553
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 348
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 88
+            }
+          ],
+          "thoughtsTokenCount": 49
+        }
+      ],
+      "errors": [],
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 1,
+      "quiet": false,
+      "gated": true,
+      "assess": false,
+      "expected": "Ar̃ gãlite nupir̃kti?",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-2/p-001-i-001.mp3",
+      "stats": {
+        "durationSeconds": 1.486625,
+        "gain": 1,
+        "maxFrameRms": 0.09183061148788109,
+        "zeroedFrames": 15,
+        "retainedEnergyPercent": 99.99990790161901
+      },
+      "inputTranscript": "Ar galite nupirkti?",
+      "outputTranscript": "Ar galite nupirkti?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Ar galite nupirkti?",
+          "output": "Ar galite nupirkti?"
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 93,
+          "totalTokenCount": 1814,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 93
+            }
+          ],
+          "thoughtsTokenCount": 58
+        },
+        {
+          "promptTokenCount": 1939,
+          "responseTokenCount": 64,
+          "totalTokenCount": 2003,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1552
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 316
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 64
+            }
+          ],
+          "thoughtsTokenCount": 61
+        }
+      ],
+      "errors": [],
+      "exactInput": true,
+      "exactEcho": true
+    },
+    {
+      "clip": 1,
+      "quiet": false,
+      "gated": false,
+      "assess": false,
+      "expected": "Ar̃ gãlite nupir̃kti?",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-2/p-001-i-001.mp3",
+      "stats": {
+        "durationSeconds": 1.486625,
+        "gain": 1,
+        "maxFrameRms": 0.09183061148788109,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Ar galite nupirkti?",
+      "outputTranscript": "Ar galite nupirkti?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Ar galite nupirkti?",
+          "output": "Ar galite nupirkti?"
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 84,
+          "totalTokenCount": 1805,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 84
+            }
+          ],
+          "thoughtsTokenCount": 54
+        },
+        {
+          "promptTokenCount": 1930,
+          "responseTokenCount": 50,
+          "totalTokenCount": 1980,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1552
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 307
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 50
+            }
+          ],
+          "thoughtsTokenCount": 54
+        }
+      ],
+      "errors": [],
+      "exactInput": true,
+      "exactEcho": true
+    },
+    {
+      "clip": 1,
+      "quiet": true,
+      "gated": true,
+      "assess": false,
+      "expected": "Ar̃ gãlite nupir̃kti?",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-2/p-001-i-001.mp3",
+      "stats": {
+        "durationSeconds": 1.486625,
+        "gain": 0.03266884485894892,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 30,
+        "retainedEnergyPercent": 0
+      },
+      "inputTranscript": "",
+      "outputTranscript": "",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 99,
+          "totalTokenCount": 1820,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 99
+            }
+          ],
+          "thoughtsTokenCount": 61
+        }
+      ],
+      "errors": [],
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 1,
+      "quiet": true,
+      "gated": false,
+      "assess": false,
+      "expected": "Ar̃ gãlite nupir̃kti?",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-2/p-001-i-001.mp3",
+      "stats": {
+        "durationSeconds": 1.486625,
+        "gain": 0.03266884485894892,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Ar galite nupirkti?",
+      "outputTranscript": "Ar galite nupirkti?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Ar galite nupirkti?",
+          "output": "Ar galite nupirkti?"
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 94,
+          "totalTokenCount": 1815,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 94
+            }
+          ],
+          "thoughtsTokenCount": 53
+        },
+        {
+          "promptTokenCount": 1934,
+          "responseTokenCount": 69,
+          "totalTokenCount": 2003,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1552
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 311
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 69
+            }
+          ],
+          "thoughtsTokenCount": 50
+        }
+      ],
+      "errors": [],
+      "exactInput": true,
+      "exactEcho": true
+    },
+    {
+      "clip": 2,
+      "quiet": false,
+      "gated": true,
+      "assess": false,
+      "expected": "Kìtą rýtą príeplaukoje žmónės láukė naũjo laĩvo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v9/chapter-6/p-000-i-000.mp3",
+      "stats": {
+        "durationSeconds": 3.8870625,
+        "gain": 1,
+        "maxFrameRms": 0.1353222700120945,
+        "zeroedFrames": 14,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Kada Rita prieplaukoje žmonės laukia naujo laivo?",
+      "outputTranscript": "Kada Rita prieplaukoje žmonės laukia naujo laivo?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Kada Rita prieplaukoje žmonės laukia naujo laivo?",
+          "output": "Kada Rita prieplaukoje žmonės laukia naujo laivo?"
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 90,
+          "totalTokenCount": 1811,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 90
+            }
+          ],
+          "thoughtsTokenCount": 59
+        },
+        {
+          "promptTokenCount": 2008,
+          "responseTokenCount": 117,
+          "totalTokenCount": 2125,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1562
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 375
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 117
+            }
+          ],
+          "thoughtsTokenCount": 144
+        }
+      ],
+      "errors": [],
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 2,
+      "quiet": false,
+      "gated": false,
+      "assess": false,
+      "expected": "Kìtą rýtą príeplaukoje žmónės láukė naũjo laĩvo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v9/chapter-6/p-000-i-000.mp3",
+      "stats": {
+        "durationSeconds": 3.8870625,
+        "gain": 1,
+        "maxFrameRms": 0.1353222700120945,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+      "outputTranscript": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+          "output": "Kėdainių prieplaukoje žmonės laukia naujo laivo."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 91,
+          "totalTokenCount": 1812,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 91
+            }
+          ],
+          "thoughtsTokenCount": 57
+        },
+        {
+          "promptTokenCount": 2012,
+          "responseTokenCount": 127,
+          "totalTokenCount": 2139,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1563
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 378
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 127
+            }
+          ],
+          "thoughtsTokenCount": 113
+        }
+      ],
+      "errors": [],
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 2,
+      "quiet": true,
+      "gated": true,
+      "assess": false,
+      "expected": "Kìtą rýtą príeplaukoje žmónės láukė naũjo laĩvo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v9/chapter-6/p-000-i-000.mp3",
+      "stats": {
+        "durationSeconds": 3.8870625,
+        "gain": 0.02216929999572039,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 54,
+        "retainedEnergyPercent": 0
+      },
+      "inputTranscript": "",
+      "outputTranscript": "",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 99,
+          "totalTokenCount": 1820,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 99
+            }
+          ],
+          "thoughtsTokenCount": 56
+        }
+      ],
+      "errors": [],
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 2,
+      "quiet": true,
+      "gated": false,
+      "assess": false,
+      "expected": "Kìtą rýtą príeplaukoje žmónės láukė naũjo laĩvo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v9/chapter-6/p-000-i-000.mp3",
+      "stats": {
+        "durationSeconds": 3.8870625,
+        "gain": 0.02216929999572039,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Klaipėda prieplaukoje žmonės laukia naujo laivo.",
+      "outputTranscript": "Klaipėdoje prieplaukoje žmonės laukia naujo laivo.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Klaipėda prieplaukoje žmonės laukia naujo laivo.",
+          "output": "Klaipėdoje prieplaukoje žmonės laukia naujo laivo."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 90,
+          "totalTokenCount": 1811,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 90
+            }
+          ],
+          "thoughtsTokenCount": 52
+        },
+        {
+          "promptTokenCount": 2008,
+          "responseTokenCount": 154,
+          "totalTokenCount": 2162,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1564
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 373
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 154
+            }
+          ],
+          "thoughtsTokenCount": 85
+        }
+      ],
+      "errors": [],
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 0,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "safePrompt": false,
+      "expected": "Sustójo priẽ akmenìnio nãmo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-1/p-000-i-001.mp3",
+      "stats": {
+        "durationSeconds": 2.637125,
+        "gain": 1,
+        "maxFrameRms": 0.12643763234002703,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "su stovykla prie Akmeninio namo",
+      "outputTranscript": "Вы прочитали «su stovykla» вместо «sustójo». Пожалуйста, обратите внимание на ударный слог в слове «akmenìnio» и долготу гласных.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "su stovykla prie Akmeninio namo",
+          "output": "Вы прочитали «su stovykla» вместо «sustójo». Пожалуйста, обратите внимание на ударный слог в слове «akmenìnio» и долготу гласных.",
+          "incomplete": true
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1862,
+          "responseTokenCount": 102,
+          "totalTokenCount": 1964,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1622
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 102
+            }
+          ],
+          "thoughtsTokenCount": 53
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "94ecdb424c203f85c543df8a671afce47123277e252410f936fb6f8d613b19cc",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 0,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "safePrompt": true,
+      "expected": "Sustójo priẽ akmenìnio nãmo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-1/p-000-i-001.mp3",
+      "stats": {
+        "durationSeconds": 2.637125,
+        "gain": 1,
+        "maxFrameRms": 0.12643763234002703,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "su stovykla prie Akmeninio namo",
+      "outputTranscript": "К сожалению, в первом слове прозвучало «su stovykla» вместо «sustójo». И в слове «namo» ударение лучше сделать на первый слог.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "su stovykla prie Akmeninio namo",
+          "output": "К сожалению, в первом слове прозвучало «su stovykla» вместо «sustójo». И в слове «namo» ударение лучше сделать на первый слог.",
+          "incomplete": true
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1897,
+          "responseTokenCount": 108,
+          "totalTokenCount": 2005,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1657
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 108
+            }
+          ],
+          "thoughtsTokenCount": 64
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "a9c0360477941e1fad0d0bb8479d92066dd18f0349e92e4c579397f1c53abd92",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 1,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "safePrompt": false,
+      "expected": "Ar̃ gãlite nupir̃kti?",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-2/p-001-i-001.mp3",
+      "stats": {
+        "durationSeconds": 1.486625,
+        "gain": 1,
+        "maxFrameRms": 0.09183061148788109,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Ar galite nupirkti?",
+      "outputTranscript": "Вы произнесли всё верно. Только обратите внимание на ударение в слове «galite». В литовском оно падает на первый слог, и гласную «a» нужно произнести более протяжно.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Ar galite nupirkti?",
+          "output": "Вы произнесли всё верно. Только обратите внимание на ударение в слове «galite». В литовском оно падает на первый слог, и гласную «a» нужно произнести более протяжно.",
+          "incomplete": true
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1798,
+          "responseTokenCount": 94,
+          "totalTokenCount": 1892,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1558
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 94
+            }
+          ],
+          "thoughtsTokenCount": 61
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "3c159953483799312fb72f7f7f5b6694e661c30731f422a1c44b97ac528fc226",
+      "exactInput": true,
+      "exactEcho": false
+    },
+    {
+      "clip": 1,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "safePrompt": true,
+      "expected": "Ar̃ gãlite nupir̃kti?",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-2/p-001-i-001.mp3",
+      "stats": {
+        "durationSeconds": 1.486625,
+        "gain": 1,
+        "maxFrameRms": 0.09183061148788109,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Ar galite nupirkti?",
+      "outputTranscript": "Вы произнесли фразу очень хорошо и понятно. Ошибок я не расслышал.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Ar galite nupirkti?",
+          "output": "Вы произнесли фразу очень хорошо и понятно. Ошибок я не расслышал."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1833,
+          "responseTokenCount": 90,
+          "totalTokenCount": 1923,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1593
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 90
+            }
+          ],
+          "thoughtsTokenCount": 79
+        },
+        {
+          "promptTokenCount": 2039,
+          "responseTokenCount": 125,
+          "totalTokenCount": 2164,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1655
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 313
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 125
+            }
+          ],
+          "thoughtsTokenCount": 117
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "1d0233634c785f1a8b2872ab93b46b5942a7f2b14de5ad7eca9bd29f866679df",
+      "exactInput": true,
+      "exactEcho": false
+    },
+    {
+      "clip": 2,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "safePrompt": false,
+      "expected": "Kìtą rýtą príeplaukoje žmónės láukė naũjo laĩvo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v9/chapter-6/p-000-i-000.mp3",
+      "stats": {
+        "durationSeconds": 3.8870625,
+        "gain": 1,
+        "maxFrameRms": 0.1353222700120945,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+      "outputTranscript": "Вы прочитали «Kėdainių» вместо «Kìtą rýtą» и использовали глагол «laũkia» вместо «laũkė». Также обратите внимание на местоимение в начале фразы. Хотите еще раз попробовать прочесть в точности как в подсказке?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+          "output": "Вы прочитали «Kėdainių» вместо «Kìtą rýtą» и использовали глагол «laũkia» вместо «laũkė». Также обратите внимание на местоимение в начале фразы. Хотите еще раз попробовать прочесть в точности как в подсказке?",
+          "incomplete": true
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1958,
+          "responseTokenCount": 87,
+          "totalTokenCount": 2045,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1718
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 87
+            }
+          ],
+          "thoughtsTokenCount": 81
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "7890dea4e84e2e49a67b48f92358ba3b86391161e5ff8aed4b43be89d3e13c6e",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 2,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "safePrompt": true,
+      "expected": "Kìtą rýtą príeplaukoje žmónės láukė naũjo laĩvo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v9/chapter-6/p-000-i-000.mp3",
+      "stats": {
+        "durationSeconds": 3.8870625,
+        "gain": 1,
+        "maxFrameRms": 0.1353222700120945,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+      "outputTranscript": "Вы прочитали слова, которые отличаются от выбранной фразы и её формы. Хотите разобрать грамматику оригинальной фразы или повторить её произношение?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+          "output": "Вы прочитали слова, которые отличаются от выбранной фразы и её формы. Хотите разобрать грамматику оригинальной фразы или повторить её произношение?",
+          "incomplete": true
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1993,
+          "responseTokenCount": 85,
+          "totalTokenCount": 2078,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1753
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 85
+            }
+          ],
+          "thoughtsTokenCount": 59
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "8ac962fb66fbd3d8ef97fcaf3c2957c6203a30d18990537c02ed08bd882d2f76",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 0,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "safePrompt": "confirm",
+      "expected": "Sustójo priẽ akmenìnio nãmo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-1/p-000-i-001.mp3",
+      "stats": {
+        "durationSeconds": 2.637125,
+        "gain": 1,
+        "maxFrameRms": 0.12643763234002703,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "su stovykla prie Akmeninio namo",
+      "outputTranscript": "Вы произнесли «su stovykla». Подскажите, вы действительно сказали именно эти слова?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "su stovykla prie Akmeninio namo",
+          "output": "Вы произнесли «su stovykla». Подскажите, вы действительно сказали именно эти слова?"
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 2010,
+          "responseTokenCount": 97,
+          "totalTokenCount": 2107,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1770
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 97
+            }
+          ],
+          "thoughtsTokenCount": 53
+        },
+        {
+          "promptTokenCount": 2257,
+          "responseTokenCount": 163,
+          "totalTokenCount": 2420,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1834
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 352
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 163
+            }
+          ],
+          "thoughtsTokenCount": 164
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "12998a204ec0ecad8fad32bff2f79423fc4bdfecfca9807c32a6ac0a778aa01d",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 1,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "safePrompt": "confirm",
+      "expected": "Ar̃ gãlite nupir̃kti?",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-2/p-001-i-001.mp3",
+      "stats": {
+        "durationSeconds": 1.486625,
+        "gain": 1,
+        "maxFrameRms": 0.09183061148788109,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Ar galite nupirkti?",
+      "outputTranscript": "Вы отлично произнесли эту фразу! Всё прозвучало очень чётко, а ударения и звуки были правильными. Явных ошибок нет.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Ar galite nupirkti?",
+          "output": "Вы отлично произнесли эту фразу! Всё прозвучало очень чётко, а ударения и звуки были правильными. Явных ошибок нет.",
+          "incomplete": true
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1946,
+          "responseTokenCount": 90,
+          "totalTokenCount": 2036,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1706
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 90
+            }
+          ],
+          "thoughtsTokenCount": 95
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "0130d0e353edaf940211bb16595355c764f0fe94560aa6cc22d9ba25c80eb49f",
+      "exactInput": true,
+      "exactEcho": false
+    },
+    {
+      "clip": 2,
+      "quiet": false,
+      "gated": false,
+      "assess": true,
+      "safePrompt": "confirm",
+      "expected": "Kìtą rýtą príeplaukoje žmónės láukė naũjo laĩvo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v9/chapter-6/p-000-i-000.mp3",
+      "stats": {
+        "durationSeconds": 3.8870625,
+        "gain": 1,
+        "maxFrameRms": 0.1353222700120945,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+      "outputTranscript": "Вы произнесли слова, которые отличаются от текста выбранной фразы. Подскажите, пожалуйста, вы прочитали именно эти слова?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Kėdainių prieplaukoje žmonės laukia naujo laivo.",
+          "output": "Вы произнесли слова, которые отличаются от текста выбранной фразы. Подскажите, пожалуйста, вы прочитали именно эти слова?"
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 2106,
+          "responseTokenCount": 93,
+          "totalTokenCount": 2199,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1866
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 93
+            }
+          ],
+          "thoughtsTokenCount": 60
+        },
+        {
+          "promptTokenCount": 2390,
+          "responseTokenCount": 194,
+          "totalTokenCount": 2584,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1939
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 380
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 194
+            }
+          ],
+          "thoughtsTokenCount": 206
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "f7e4f29c2df9405fa77c3c8f82c444978ca970822847e086c2ce846ddfea7c64",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 0,
+      "quiet": true,
+      "gated": false,
+      "highVad": true,
+      "expected": "Sustójo priẽ akmenìnio nãmo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-1/p-000-i-001.mp3",
+      "stats": {
+        "durationSeconds": 2.637125,
+        "gain": 0.02372711307921474,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "sostojo prie akmeninio namo",
+      "outputTranscript": "Sostojo prie akmeninio namo.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "sostojo prie akmeninio namo",
+          "output": "Sostojo prie akmeninio namo."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 95,
+          "totalTokenCount": 1816,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 95
+            }
+          ],
+          "thoughtsTokenCount": 54
+        },
+        {
+          "promptTokenCount": 1970,
+          "responseTokenCount": 83,
+          "totalTokenCount": 2053,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1553
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 348
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 83
+            }
+          ],
+          "thoughtsTokenCount": 47
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_HIGH",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "48d84143b97e199d03631389eb753529574d08da97e0c03f79b1fa3162bb6f51",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 1,
+      "quiet": true,
+      "gated": false,
+      "highVad": true,
+      "expected": "Ar̃ gãlite nupir̃kti?",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v8/chapter-2/p-001-i-001.mp3",
+      "stats": {
+        "durationSeconds": 1.486625,
+        "gain": 0.03266884485894892,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Ar galite nupirkti?",
+      "outputTranscript": "Ar galite nupirkti?",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Ar galite nupirkti?",
+          "output": "Ar galite nupirkti?"
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 97,
+          "totalTokenCount": 1818,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 97
+            }
+          ],
+          "thoughtsTokenCount": 82
+        },
+        {
+          "promptTokenCount": 1939,
+          "responseTokenCount": 46,
+          "totalTokenCount": 1985,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1552
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 316
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 46
+            }
+          ],
+          "thoughtsTokenCount": 39
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_HIGH",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "48d84143b97e199d03631389eb753529574d08da97e0c03f79b1fa3162bb6f51",
+      "exactInput": true,
+      "exactEcho": true
+    },
+    {
+      "clip": 2,
+      "quiet": true,
+      "gated": false,
+      "highVad": true,
+      "expected": "Kìtą rýtą príeplaukoje žmónės láukė naũjo laĩvo.",
+      "source": "assets/audio/keliaujanti-biblioteka/gemini-v9/chapter-6/p-000-i-000.mp3",
+      "stats": {
+        "durationSeconds": 3.8870625,
+        "gain": 0.02216929999572039,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "Klaipėda prieplaukoje žmonės laukia naujo laivo.",
+      "outputTranscript": "Klaipėdoje prieplaukoje žmonės laukia naujo laivo.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Klaipėda prieplaukoje žmonės laukia naujo laivo.",
+          "output": "Klaipėdoje prieplaukoje žmonės laukia naujo laivo."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1721,
+          "responseTokenCount": 90,
+          "totalTokenCount": 1811,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1481
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 90
+            }
+          ],
+          "thoughtsTokenCount": 63
+        },
+        {
+          "promptTokenCount": 2008,
+          "responseTokenCount": 120,
+          "totalTokenCount": 2128,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1564
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 373
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 120
+            }
+          ],
+          "thoughtsTokenCount": 95
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_HIGH",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "48d84143b97e199d03631389eb753529574d08da97e0c03f79b1fa3162bb6f51",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 3,
+      "quiet": true,
+      "gated": true,
+      "russian": true,
+      "expected": "Почему здесь местный падеж? Объясни правило, а не произношение.",
+      "source": "/tmp/reader-hearing-russian-0.aiff",
+      "stats": {
+        "durationSeconds": 4.2736875,
+        "gain": 0.013031890828621082,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 58,
+        "retainedEnergyPercent": 0
+      },
+      "inputTranscript": "",
+      "outputTranscript": "",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1877,
+          "responseTokenCount": 90,
+          "totalTokenCount": 1967,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1637
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 90
+            }
+          ],
+          "thoughtsTokenCount": 61
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "96689aa388392c7b7cdc636f23486446d02c5122c7ee4ea8bb826574acd2462e",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 3,
+      "quiet": true,
+      "gated": false,
+      "russian": true,
+      "expected": "Почему здесь местный падеж? Объясни правило, а не произношение.",
+      "source": "/tmp/reader-hearing-russian-0.aiff",
+      "stats": {
+        "durationSeconds": 4.2736875,
+        "gain": 0.013031890828621082,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 100
+      },
+      "inputTranscript": "здесь местный падеж. Объясни правила.",
+      "outputTranscript": "В этой фразе нет местного падежа. Предлог priẽ требует родительного падежа, поэтому слова akmenìnio и nãmo стоят именно в родительном падеже.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "здесь местный падеж. Объясни правила.",
+          "output": "В этой фразе нет местного падежа. Предлог priẽ требует родительного падежа, поэтому слова akmenìnio и nãmo стоят именно в родительном падеже.",
+          "incomplete": true
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1877,
+          "responseTokenCount": 84,
+          "totalTokenCount": 1961,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1637
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 84
+            }
+          ],
+          "thoughtsTokenCount": 67
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "96689aa388392c7b7cdc636f23486446d02c5122c7ee4ea8bb826574acd2462e",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 4,
+      "quiet": true,
+      "gated": true,
+      "russian": true,
+      "expected": "Нет, я спрашиваю про грамматику.",
+      "source": "/tmp/reader-hearing-russian-1.aiff",
+      "stats": {
+        "durationSeconds": 2.330125,
+        "gain": 0.01368311117775486,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 39,
+        "retainedEnergyPercent": 0
+      },
+      "inputTranscript": "",
+      "outputTranscript": "",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1877,
+          "responseTokenCount": 98,
+          "totalTokenCount": 1975,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1637
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 98
+            }
+          ],
+          "thoughtsTokenCount": 60
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "96689aa388392c7b7cdc636f23486446d02c5122c7ee4ea8bb826574acd2462e",
+      "exactInput": false,
+      "exactEcho": false
+    },
+    {
+      "clip": 4,
+      "quiet": true,
+      "gated": false,
+      "russian": true,
+      "expected": "Нет, я спрашиваю про грамматику.",
+      "source": "/tmp/reader-hearing-russian-1.aiff",
+      "stats": {
+        "durationSeconds": 2.330125,
+        "gain": 0.01368311117775486,
+        "maxFrameRms": 0.003,
+        "zeroedFrames": 0,
+        "retainedEnergyPercent": 99.99999999999999
+      },
+      "inputTranscript": "Нет, я спрашиваю про грамматику.",
+      "outputTranscript": "Конечно. В этой фразе предлог *prie* требует после себя родительного падежа. Поэтому существительное *namas* и прилагательное *akmeninis* стоят в форме родительного падежа: *akmeninio nãmo*.",
+      "turns": [
+        {
+          "phase": "greeting",
+          "input": "",
+          "output": "Я здесь. Можем разобрать слова и грамматику."
+        },
+        {
+          "phase": "audio",
+          "input": "Нет, я спрашиваю про грамматику.",
+          "output": "Конечно. В этой фразе предлог *prie* требует после себя родительного падежа. Поэтому существительное *namas* и прилагательное *akmeninis* стоят в форме родительного падежа: *akmeninio nãmo*.",
+          "incomplete": true
+        }
+      ],
+      "usageMetadata": [
+        {
+          "promptTokenCount": 1877,
+          "responseTokenCount": 104,
+          "totalTokenCount": 1981,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1637
+            },
+            {
+              "modality": "AUDIO",
+              "tokenCount": 187
+            }
+          ],
+          "responseTokensDetails": [
+            {
+              "modality": "AUDIO",
+              "tokenCount": 104
+            }
+          ],
+          "thoughtsTokenCount": 57
+        }
+      ],
+      "errors": [],
+      "vad": {
+        "disabled": false,
+        "prefixPaddingMs": 200,
+        "silenceDurationMs": 700,
+        "startOfSpeechSensitivity": "START_SENSITIVITY_LOW",
+        "endOfSpeechSensitivity": "END_SENSITIVITY_HIGH"
+      },
+      "promptSha256": "96689aa388392c7b7cdc636f23486446d02c5122c7ee4ea8bb826574acd2462e",
+      "exactInput": true,
+      "exactEcho": false
+    }
+  ],
+  "baseline": "42ffe44",
+  "sourceHashes": {
+    "mic": "b57012ec3445e2a1045ce0702de857f3a6269edd0de5ee19987cfe92e77429bc",
+    "session": "cbb9d16d5a44dce7ec2030869c06556aff05aeee88bea73b1ce71072a7aa61a6"
+  }
+}

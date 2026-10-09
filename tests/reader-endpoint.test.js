@@ -43,7 +43,7 @@ test('server ignores supplied prompt/text and derives Lithuanian boundary and to
   assert.equal(result.token, 'auth_tokens/example');
   const prompt = tokenRequest.bidiGenerateContentSetup.systemInstruction.parts[0].text;
   const sent = JSON.parse(prompt.split('<reading_context>')[1].split('</reading_context>')[0]);
-  assert.equal(sent.reading, 'Rytè. Sustójo.');
+  assert.equal(sent.reading, 'Глава 1\nRytè. Sustójo.');
   assert.equal(sent.selection.text, 'Rytè.');
   assert.equal(sent.selection.translation, 'Утром.');
   assert.equal(sent.selection.note, book.chapters[0].blocks[0].items[0].note);

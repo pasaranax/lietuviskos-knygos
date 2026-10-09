@@ -164,6 +164,8 @@ body.theme-dark {
 .water-back { fill: #99c8b8; }
 .water-front { fill: #5c958d; stroke: #d4eee3; stroke-width: .65; }
 .water-splashes { fill: #76b4a5; }
+.voice-orb[data-state="connecting"] { transform: none; }
+.water-pour { fill: none; stroke: #5c958d; stroke-width: 3; stroke-linecap: round; }
 .topbar-voice-button[aria-pressed="true"] { background: #486854; }
 .tooltip-audio-button.tooltip-voice-button svg { width: 20px; height: 20px; flex: 0 0 20px; }
 .telegram-hint {
@@ -293,6 +295,11 @@ body.theme-dark {
   font-family: var(--serif-stack);
   font-size: 26px;
   font-weight: 700;
+}
+
+.chapter-number {
+  margin-bottom: 6px;
+  font-size: .72em;
 }
 
 .text {

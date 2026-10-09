@@ -10,8 +10,8 @@ const api = context.ReaderLearning || {};
 const item = (text) => ({ text, translation: 'перевод ' + text, note: '**слово** — разбор' });
 const selected = item('kirčiúota');
 const book = { id: 'sample', chapters: [
-  { blocks: [{ items: [item('pradžia'), item('kartojama')] }] },
-  { blocks: [{ items: [item('kartojama'), selected, item('ateitis')] }] },
+  { title: 'Pradžia', blocks: [{ items: [item('pradžia'), item('kartojama')] }] },
+  { title: 'Kelionė', blocks: [{ items: [item('kartojama'), selected, item('ateitis')] }] },
   { title: 'slaptas pavadinimas', blocks: [{ items: [item('pabaiga')] }] }
 ] };
 
@@ -31,8 +31,12 @@ test('invalid location cannot accidentally send an entire book', () => {
   assert.throws(() => api.phraseContext(book, { chapter: 0, block: 0, item: -1 }));
 });
 
-test('reading context includes the last visible phrase and only Lithuanian source, without its tooltip', () => {
+test('reading context labels previous/current chapters and includes only read Lithuanian source, without tooltip or future titles', () => {
   assert.equal(typeof api.readingContext, 'function');
-  assert.equal(api.readingContext(book, { chapter: 1, block: 0, item: 1 }), 'pradžia kartojama\n\nkartojama kirčiúota');
+  assert.equal(api.readingContext(book, { chapter: 1, block: 0, item: 1 }), 'Глава 1 — Pradžia\npradžia kartojama\n\nГлава 2 — Kelionė\nkartojama kirčiúota');
   assert.doesNotMatch(api.readingContext(book, { chapter: 1, block: 0, item: 1 }), /перевод|разбор|ateitis|pabaiga/);
+});
+test('first phrase retains its current chapter label even with no preceding text', () => {
+  assert.equal(api.readingContext(book, {chapter:0,block:0,item:0}), 'Глава 1 — Pradžia\npradžia');
+  assert.deepEqual(JSON.parse(JSON.stringify(api.phraseContext(book,{chapter:1,block:0,item:1}).phrase.chapter)),{number:2,title:'Kelionė'});
 });

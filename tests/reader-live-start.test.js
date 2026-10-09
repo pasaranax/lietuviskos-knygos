@@ -54,7 +54,18 @@ test('exhausted allowance shows message without microphone, Gemini connection or
     assert.match(h.errors[0], /10 минут/);
   } finally { h.voice.stop(); }
 });
-test('greeting echo stays silent until turn complete and playback ends, then speech onset passes but isolated noise does not', async () => {
+test('connection stays loading through silence until the first assistant audio arrives', async () => {
+  const h=harness();
+  try {
+    await h.voice.start({});
+    assert.equal(h.states.at(-1),'connecting');
+    h.voice.meterActivity(h.voice.call,0,0);
+    assert.equal(h.states.at(-1),'connecting');
+    await h.socket().message({serverContent:{modelTurn:{parts:[{inlineData:{mimeType:'audio/pcm;rate=24000',data:Buffer.alloc(4800).toString('base64')}}]}}});
+    assert.notEqual(h.states.at(-1),'connecting');
+  } finally {h.voice.stop();}
+});
+test('greeting echo stays silent until playback ends, then quiet and short learner audio reaches server VAD intact', async () => {
   const h = harness();
   try {
     await h.voice.start({});
@@ -66,10 +77,13 @@ test('greeting echo stays silent until turn complete and playback ends, then spe
     frame(.1); frame(.1);
     assert.equal(speech(), false, 'server completion must wait for local playback');
     h.sources[0].onended();
-    frame(.002); frame(.1); frame(0); frame(.002);
-    assert.equal(speech(), false, 'one click and quiet background are not a user turn');
-    frame(.1); frame(.1);
-    assert.equal(speech(), true, 'actual speech must pass after the greeting');
+    const before=h.sent.length;
+    frame(.002);
+    const received=h.sent.slice(before).filter(m=>m.realtimeInput?.audio);
+    assert.equal(received.length,1,'one quiet frame must not require a second loud frame');
+    assert.equal(Buffer.from(received[0].realtimeInput.audio.data,'base64').readInt16LE(0),Math.trunc(.002*32768));
+    frame(.1);
+    assert.equal(speech(), true, 'short speech must pass after the greeting');
     assert.equal(h.sent.filter(m => m.clientContent?.turnComplete === true).length, 1);
   } finally { h.voice.stop(); }
 });

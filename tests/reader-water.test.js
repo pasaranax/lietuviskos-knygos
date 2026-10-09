@@ -20,3 +20,18 @@ test('water has one animation loop, contracts for user, expands for teacher and 
   orb.stop(); assert.equal(frames.size,0); assert.equal(scale,1);
   assert.ok(drops.every(drop=>drop.attributes.opacity==='0'));
 });
+test('connecting pours water for about three seconds and stays loading until actual readiness', () => {
+  const frames=new Map();let next=0;
+  const node=()=>({attributes:{},setAttribute(k,v){this.attributes[k]=v;}});
+  const front=node(),back=node(),pour=node();
+  const window={matchMedia:()=>({matches:false}),requestAnimationFrame:fn=>{frames.set(++next,fn);return next;},cancelAnimationFrame:id=>frames.delete(id)};
+  const ctx=vm.createContext({window});vm.runInContext(fs.readFileSync(require('node:path').join(__dirname,'../reader-water.js'),'utf8'),ctx);
+  const orb=new window.ReaderWaterOrb({querySelector:s=>({'.water-front':front,'.water-back':back,'.water-pour':pour}[s]),querySelectorAll:()=>[]},{style:{setProperty(){}}});
+  const tick=t=>{const[id,fn]=frames.entries().next().value;frames.delete(id);fn(t);};
+  const height=()=>Number(/^M-8 ([\d.]+)/.exec(front.attributes.d)[1]);
+  orb.load();orb.load();assert.equal(frames.size,1);tick(0);assert.ok(height()>95);
+  tick(1400);assert.ok(height()>55&&height()<70);tick(3500);assert.ok(height()>45&&height()<55);
+  assert.equal(pour.attributes.opacity,'1','elapsed time must not pretend connection is ready');
+  orb.ready();assert.equal(pour.attributes.opacity,'0');assert.equal(frames.size,1);
+  orb.stop();assert.equal(frames.size,0);assert.equal(pour.attributes.opacity,'0');
+});
