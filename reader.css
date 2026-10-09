@@ -115,6 +115,76 @@ body.theme-dark {
   gap: 7px;
 }
 
+.control-button.settings-button { min-width: 40px; min-height: 38px; padding: 5px; }
+.settings-button svg { display: block; width: 26px; height: 26px; }
+.topbar-voice-button {
+  width: 34px; height: 34px; flex: 0 0 34px; padding: 0;
+  border: 0; border-radius: 50%; cursor: pointer; color: #fff;
+  background: #587765;
+}
+.topbar-voice-button svg { display: block; width: 100%; height: 100%; }
+.topbar-voice-button:hover { background: #486854; }
+
+.settings-menu {
+  position: fixed;
+  inset: calc(62px + env(safe-area-inset-top)) 12px auto auto;
+  margin: 0;
+  width: min(300px, calc(100vw - 24px));
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 8px 28px #0002;
+  font: 14px/1.5 var(--sans-stack);
+}
+.settings-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 7px 0; }
+.settings-actions { display: flex; gap: 6px; }
+.settings-menu .family-button { width: auto; padding: 0 10px; font-size: 13px; }
+.settings-menu .control-button { min-height: 38px; }
+
+.voice-assistant {
+  position: fixed; z-index: 70;
+  bottom: calc(14px + env(safe-area-inset-bottom)); left: 50%;
+  transform: translateX(-50%); text-align: center;
+}
+.voice-assistant[hidden], .voice-error[hidden] { display: none; }
+.voice-orb {
+  --voice-scale: 1;
+  display: block; margin: 0 auto; width: 86px; height: 86px;
+  border: 0; border-radius: 50%; color: white;
+  background: #587765;
+  transform: scale(var(--voice-scale));
+  transition: transform 100ms; cursor: pointer;
+
+}
+.voice-orb { padding: 0; overflow: hidden; background: #dce9e0; }
+.water-orb { display: block; width: 100%; height: 100%; }
+.water-air { fill: #dce9e0; }
+.water-back { fill: #99c8b8; }
+.water-front { fill: #5c958d; stroke: #d4eee3; stroke-width: .65; }
+.water-splashes { fill: #76b4a5; }
+.topbar-voice-button[aria-pressed="true"] { background: #486854; }
+.tooltip-audio-button.tooltip-voice-button svg { width: 20px; height: 20px; flex: 0 0 20px; }
+.telegram-hint {
+  position: fixed; inset: calc(62px + env(safe-area-inset-top)) 12px auto auto; margin: 0;
+  max-width: calc(100vw - 24px); padding: 14px 18px; border: 1px solid var(--line);
+  border-radius: 12px; background: var(--surface); color: var(--ink);
+  box-shadow: 0 8px 28px #0002; font: 14px/1.5 var(--sans-stack);
+}
+.telegram-hint p { margin: 0 0 7px; }
+.telegram-hint a { color: var(--ink); font-weight: 650; text-underline-offset: 3px; }
+/* Keep connection state available to screen readers, with no visual caption. */
+.voice-status { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.voice-error {
+  position: fixed; z-index: 75; bottom: calc(48px + env(safe-area-inset-bottom));
+  left: 12px; right: 12px; width: fit-content; max-width: calc(100vw - 24px);
+  margin: auto; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--surface); color: var(--ink); font-size: 13px;
+}
+
+@media (prefers-reduced-motion: reduce) { .voice-orb { transition: none; transform: none; } }
+
 .control-button {
   display: inline-flex;
   align-items: center;
@@ -291,15 +361,22 @@ body:not(.chapter-playing) .phrase:focus,
 }
 
 .tooltip-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 6px 12px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: end;
+  gap: 12px;
   margin-top: 10px;
 }
 
+.tooltip-actions {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 12px;
+}
+
 .tooltip-translation {
-  flex: 1 1 auto;
+  min-width: 0;
   max-width: 100%;
   color: var(--tooltip-muted);
   font-size: 13px;
@@ -308,11 +385,11 @@ body:not(.chapter-playing) .phrase:focus,
 }
 
 .tooltip-audio-button {
+  min-height: 28px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
   flex: 0 0 auto;
-  margin-left: auto;
   white-space: nowrap;
   padding: 3px 7px;
   border: 0;
@@ -445,4 +522,13 @@ body:not(.chapter-playing) .phrase:focus,
   .controls .family-button {
     width: 32px;
   }
+}
+
+@media (max-width: 380px) {
+  .tooltip-footer { gap: 8px; }
+  .tooltip-actions { gap: 6px; }
+  .tooltip-actions .tooltip-audio-button { padding: 4px; font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .topbar-voice-button { animation: none !important; }
 }

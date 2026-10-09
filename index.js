@@ -2,9 +2,10 @@
   var shelf = document.getElementById("bookShelf");
   var wordsPerPage = 250;
   var shelfEntries = [];
+  var profilePositions = {};
 
   function formatNumber(value) {
-    return new Intl.NumberFormat("lt-LT").format(value);
+    return new Intl.NumberFormat("ru-RU").format(value);
   }
 
   function estimatePages(wordCount) {
@@ -24,11 +25,11 @@
   function readProgress(book, totalParagraphs) {
     try {
       var prefix = "frankReader." + book.id + ".";
-      var paragraphIndex = parseInt(window.localStorage.getItem(prefix + "paragraphIndex") || "", 10);
+      var paragraphIndex = window.ReaderProfile.enabled ? (profilePositions[book.id] || {}).index : parseInt(window.localStorage.getItem(prefix + "paragraphIndex") || "", 10);
       var ratio = 0;
       if (Number.isFinite(paragraphIndex) && paragraphIndex > 0 && totalParagraphs > 0) {
         ratio = paragraphIndex / totalParagraphs;
-      } else {
+      } else if (!window.ReaderProfile.enabled) {
         ratio = parseFloat(window.localStorage.getItem(prefix + "scrollRatio") || "0");
       }
       if (!Number.isFinite(ratio) || ratio <= 0.003) return 0;
@@ -46,10 +47,18 @@
         existing.className = "book-progress";
         meta.append(existing);
       }
-      existing.textContent = "Perskaityta " + progress + "%";
+      existing.textContent = "Прочитано " + progress + "%";
     } else if (existing) {
       existing.remove();
     }
+  }
+
+  function refreshProfileProgress() {
+    if (!window.ReaderProfile.enabled) return updateShelfProgress();
+    window.ReaderProfile.load().then(function (positions) {
+      profilePositions = positions;
+      updateShelfProgress();
+    }).catch(function () {});
   }
 
   function updateShelfProgress() {
@@ -93,7 +102,7 @@
     meta.className = "book-meta";
 
     var stats = document.createElement("span");
-    stats.textContent = formatNumber(book.wordCount) + " žodžiai · " + formatNumber(estimatePages(book.wordCount)) + " psl.";
+    stats.textContent = formatNumber(book.wordCount) + " слов · " + formatNumber(estimatePages(book.wordCount)) + " стр.";
 
     meta.append(stats);
     setProgress(meta, readProgress(book, totalParagraphs));
@@ -115,7 +124,7 @@
       if (!catalog.books || catalog.books.length === 0) {
         var empty = document.createElement("p");
         empty.className = "empty-state";
-        empty.textContent = "Knygų dar nėra.";
+        empty.textContent = "Пока нет книг.";
         shelf.append(empty);
         return;
       }
@@ -142,19 +151,19 @@
         shelfEntries.forEach(function (entry) {
           shelf.append(renderBook(entry.book, entry.details));
         });
-        updateShelfProgress();
+        refreshProfileProgress();
       });
     })
     .catch(function () {
       var error = document.createElement("p");
       error.className = "error-state";
-      error.textContent = "Nepavyko įkelti katalogo.";
+      error.textContent = "Не удалось загрузить каталог.";
       shelf.replaceChildren(error);
     });
 
-  window.addEventListener("pageshow", updateShelfProgress);
-  window.addEventListener("focus", updateShelfProgress);
+  window.addEventListener("pageshow", refreshProfileProgress);
+  window.addEventListener("focus", refreshProfileProgress);
   document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") updateShelfProgress();
+    if (document.visibilityState === "visible") refreshProfileProgress();
   });
 })();

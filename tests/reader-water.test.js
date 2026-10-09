@@ -1,0 +1,22 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const vm = require('node:vm');
+const fs = require('node:fs');
+test('water has one animation loop, contracts for user, expands for teacher and stops cleanly', () => {
+  const frames = new Map(); let next = 0, scale = 1;
+  const node = () => ({ attributes: {}, setAttribute(k,v) { this.attributes[k]=v; } });
+  const front = node(), back = node(), drops = Array.from({length:16},node);
+  const svg = { querySelector: s => s.includes('front') ? front : back, querySelectorAll: () => drops };
+  const window = { matchMedia: () => ({matches:false}), requestAnimationFrame: f => { frames.set(++next,f); return next; }, cancelAnimationFrame: id => frames.delete(id) };
+  const ctx = vm.createContext({window}); vm.runInContext(fs.readFileSync(require('node:path').join(__dirname,'../reader-water.js'),'utf8'), ctx);
+  const orb = new window.ReaderWaterOrb(svg,{style:{setProperty: (k,v) => {scale=Number(v);}}});
+  assert.ok(front.attributes.d.includes('50.00'));
+  const tick = t => { const [id,fn] = frames.entries().next().value; frames.delete(id); fn(t); };
+  orb.start(); orb.start(); assert.equal(frames.size,1); tick(0);
+  orb.activity(1,'user'); tick(50); assert.ok(scale < 1); assert.notEqual(front.attributes.d,back.attributes.d);
+  orb.activity(0,null); tick(100); assert.ok(scale < 1, 'silence relaxes a contraction without overshooting');
+  orb.activity(1,'assistant'); tick(150); assert.ok(scale > 1);
+  assert.ok(drops.some(drop=>Number(drop.attributes.opacity)>0));
+  orb.stop(); assert.equal(frames.size,0); assert.equal(scale,1);
+  assert.ok(drops.every(drop=>drop.attributes.opacity==='0'));
+});

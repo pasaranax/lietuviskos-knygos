@@ -36,7 +36,7 @@ test("a book not found returns to the shelf; existing books still load", async (
     const book = { title: "Test book", chapters: [] };
     const context = vm.createContext({
       bookId: "requested-book", state: {},
-      window: { location: { replace: (url) => destinations.push(url) } },
+      window: { location: { replace: (url) => destinations.push(url) }, ReaderProfile: { enabled: false } },
       document: { createElement: () => ({}) },
       content: { append: (error) => errors.push(error) },
       fetch: async () => ({ ok: status === 200, status, json: async () => book }),

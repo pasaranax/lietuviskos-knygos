@@ -27,7 +27,11 @@
     fontSize: readStore("fontSize", "23"),
     fontFamily: readStore("fontFamily", "serif"),
     theme: readStore("theme", "light"),
+    language: readStore("language", "lt"),
+    voice: readStore("voice", "egle"),
+    renderedItems: [],
     saveTimer: null,
+    profileReady: !window.ReaderProfile.enabled,
     restored: false
   };
 
@@ -35,17 +39,40 @@
   var topbar = document.getElementById("topbar");
   var progressText = document.getElementById("progressText");
   var chapterProgressText = document.getElementById("chapterProgressText");
-  var chapterCountText = document.getElementById("chapterCountText");
   var chapterSelect = document.getElementById("chapterSelect");
   var themeButton = document.getElementById("themeButton");
   var fontDownButton = document.getElementById("fontDownButton");
   var fontUpButton = document.getElementById("fontUpButton");
   var familyButton = document.getElementById("familyButton");
+  var voiceSelect = document.getElementById("voiceSelect");
+  var translationButton = document.getElementById("translationButton");
   var tooltip = document.getElementById("tooltip");
   var tooltipTranslation = document.getElementById("tooltipTranslation");
   var tooltipNote = document.getElementById("tooltipNote");
   var tooltipAudioButton = document.getElementById("tooltipAudioButton");
   var tooltipAudioError = document.getElementById("tooltipAudioError");
+  var tooltipVoiceButton = document.getElementById("tooltipVoiceButton");
+  var voiceAssistant = document.getElementById("voiceAssistant");
+  var voiceOrb = document.getElementById("voiceOrb");
+  var voiceStatus = document.getElementById("voiceStatus");
+  var voiceError = document.getElementById("voiceError");
+  var topbarVoiceButton = document.getElementById("topbarVoiceButton");
+  var waterOrb = new window.ReaderWaterOrb(document.getElementById("waterOrb"), voiceOrb);
+  var voice = new window.ReaderVoice({
+    onState: function (status) {
+      voiceAssistant.hidden = status === "idle";
+      voiceOrb.dataset.state = status;
+      if (status === "idle") waterOrb.stop(); else waterOrb.start();
+      topbarVoiceButton.dataset.state = status;
+      tooltipVoiceButton.setAttribute("aria-pressed", String(status !== "idle"));
+      topbarVoiceButton.setAttribute("aria-pressed", String(status !== "idle"));
+      voiceStatus.textContent = { connecting: "Подключаюсь…", listening: "Слушаю. Нажми, чтобы завершить", "user-speaking": "Слушаю. Нажми, чтобы завершить", speaking: "Говорю. Нажми, чтобы завершить" }[status] || "";
+    },
+    onLevel: function (level, speaker) {
+      waterOrb.activity(level, speaker);
+    },
+    onError: function (message) { voiceError.textContent = message; voiceError.hidden = false; }
+  });
   var phraseAudio = document.getElementById("phraseAudio");
   var chapterAudio = document.getElementById("chapterAudio");
   var chapterPlayButton = document.getElementById("chapterPlayButton");
@@ -60,7 +87,13 @@
   bindStaticEvents();
   loadBook();
 
+  function setSettingsReady(ready) {
+    state.profileReady = ready;
+    applySettings();
+  }
+
   function readStore(key, fallback) {
+    if (window.ReaderProfile.enabled) return fallback;
     try {
       var value = window.localStorage.getItem(storagePrefix + key);
       return value === null ? fallback : value;
@@ -70,6 +103,13 @@
   }
 
   function writeStore(key, value) {
+    if (window.ReaderProfile.enabled) {
+      window.ReaderProfile.saveSetting(key, value).catch(function () {
+        voiceError.textContent = "Не удалось сохранить настройки. Попробуй ещё раз.";
+        voiceError.hidden = false;
+      });
+      return;
+    }
     try {
       window.localStorage.setItem(storagePrefix + key, String(value));
     } catch (error) {
@@ -96,15 +136,29 @@
         state.book = book;
         document.title = book.title;
         renderBook(book);
+        loadChapterTimelines();
+        if (window.ReaderProfile.enabled) {
+          return window.ReaderProfile.load().then(function (positions) {
+            Object.keys(window.ReaderProfile.settings).forEach(function (key) { state[key] = window.ReaderProfile.settings[key]; });
+            state.renderedItems.forEach(function (entry) { entry.node.textContent = itemDisplayText(entry.item); });
+            applySettings();
+            setSettingsReady(true);
+            restorePosition(positions[bookId] || {});
+            updateProgressAndChapter();
+          }).catch(function () {
+            voiceError.textContent = "Не удалось восстановить место чтения. Обнови страницу.";
+            voiceError.hidden = false;
+            restorePosition({});
+          });
+        }
         restorePosition();
         updateProgressAndChapter();
-        loadChapterTimelines();
       })
       .catch(function () {
         content.innerHTML = "";
         var error = document.createElement("p");
         error.className = "load-error";
-        error.textContent = "Nepavyko įkelti knygos.";
+        error.textContent = "Не удалось загрузить книгу.";
         content.append(error);
       });
   }
@@ -112,13 +166,14 @@
   function renderBook(book) {
     content.innerHTML = "";
     chapterSelect.innerHTML = "";
+    state.renderedItems = [];
 
     var textWrap = document.createElement("section");
     textWrap.className = "text " + state.fontFamily;
     textWrap.id = "readerText";
 
     book.chapters.forEach(function (chapter, chapterIndex) {
-      var chapterTitle = chapter.title || ("Skyrius " + (chapterIndex + 1));
+      var chapterTitle = chapter.title || ("Глава " + (chapterIndex + 1));
       var option = document.createElement("option");
       option.value = chapter.id;
       option.textContent = chapter.title ? (chapterIndex + 1) + ". " + chapter.title : chapterTitle;
@@ -135,6 +190,7 @@
         var paragraph = document.createElement("p");
         var paragraphIndex = textWrap.querySelectorAll(".reader-paragraph").length;
         paragraph.id = makeParagraphId(chapter, chapterIndex, blockIndex);
+        paragraph._originalText = block.items.map(function (item) { return item.text; }).join(" ");
         paragraph.classList.add("reader-paragraph");
         paragraph.dataset.paragraphIndex = String(paragraphIndex);
         if (block.type === "dialogue") paragraph.classList.add("dialogue");
@@ -145,6 +201,8 @@
           if (itemIndex > 0) paragraph.append(document.createTextNode(" "));
           var phrase = renderItem(item);
           if (phrase.nodeType === 1) phrase.dataset.chapterId = chapter.id;
+          phrase._location = { chapter: chapterIndex, block: blockIndex, item: itemIndex };
+          state.renderedItems.push({ node: phrase, item: item });
           paragraph.append(phrase);
         });
         textWrap.append(paragraph);
@@ -157,7 +215,7 @@
   }
 
   function renderItem(item) {
-    if (!hasTooltip(item)) return document.createTextNode(displayText(item.text));
+    if (!hasTooltip(item)) return document.createTextNode(itemDisplayText(item));
     return renderPhrase(item);
   }
 
@@ -165,13 +223,17 @@
     var span = document.createElement("span");
     span.className = "phrase";
     span.tabIndex = 0;
-    span.textContent = displayText(item.text);
+    span.textContent = itemDisplayText(item);
     span._phraseData = item;
     return span;
   }
 
   function displayText(value) {
     return String(value || "").normalize("NFC");
+  }
+
+  function itemDisplayText(item) {
+    return displayText(state.language === "ru" && item.translation ? item.translation : item.text);
   }
 
   function makeParagraphId(chapter, chapterIndex, blockIndex) {
@@ -185,7 +247,57 @@
     return Boolean(String(item.translation || "").trim() || String(item.note || "").trim());
   }
 
+  function showTelegramHint() {
+    var hint = document.getElementById("telegramHint");
+    if (hint.matches(":popover-open")) hint.hidePopover();
+    else hint.showPopover();
+  }
+
   function bindStaticEvents() {
+    voiceSelect.addEventListener("change", function () {
+      state.voice = voiceSelect.value;
+      writeStore("voice", state.voice);
+    });
+    topbarVoiceButton.addEventListener("click", function () {
+      if (!window.ReaderProfile.enabled) { showTelegramHint(); return; }
+      if (voice.active) { voice.stop(); return; }
+      var location = getVisibleEndLocation();
+      if (!location) return;
+      stopPhraseAudio();
+      stopChapterAudio();
+      hideTooltip();
+      voiceError.hidden = true;
+      voice.start({ bookId: bookId, location: location, voice: state.voice });
+    });
+    tooltipVoiceButton.addEventListener("click", function () {
+      if (!window.ReaderProfile.enabled) { showTelegramHint(); return; }
+      if (voice.active) { voice.stop(); return; }
+      if (!state.activePhrase) return;
+      stopPhraseAudio();
+      stopChapterAudio();
+      state.tooltipPinned = true;
+      voiceError.hidden = true;
+      var location = state.activePhrase._location;
+      voice.start({ bookId: bookId, location: location, phraseLocation: location, voice: state.voice });
+    });
+    voiceOrb.addEventListener("click", function () { voice.stop(); });
+    window.addEventListener("pagehide", function () { voice.stop(); });
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "hidden") voice.stop();
+    });
+    translationButton.addEventListener("click", function () {
+      var position = getCurrentPosition();
+      stopChapterAudio();
+      hideTooltip();
+      state.language = state.language === "ru" ? "lt" : "ru";
+      writeStore("language", state.language);
+      state.renderedItems.forEach(function (entry) { entry.node.textContent = itemDisplayText(entry.item); });
+      applySettings();
+      var target = document.getElementById(position.id);
+      if (target) window.scrollTo(0, Math.max(0, window.scrollY + target.getBoundingClientRect().top + position.offset));
+      savePosition();
+      updateProgressAndChapter();
+    });
     themeButton.addEventListener("click", function () {
       state.theme = state.theme === "dark" ? "light" : "dark";
       writeStore("theme", state.theme);
@@ -313,6 +425,7 @@
     phraseAudio.addEventListener("error", showAudioError);
     document.addEventListener("play", function (event) {
       if (event.target.tagName !== "AUDIO") return;
+      voice.stop();
       document.querySelectorAll("audio").forEach(function (audio) {
         if (audio !== event.target) audio.pause();
       });
@@ -370,18 +483,23 @@
   }
 
   function applySettings() {
+    voiceSelect.value = state.voice;
     state.scrollTrack = null;
     document.body.classList.toggle("theme-dark", state.theme === "dark");
     document.body.classList.toggle("theme-light", state.theme !== "dark");
     document.documentElement.style.setProperty("--reader-font-size", state.fontSize + "px");
     themeButton.textContent = state.theme === "dark" ? "☀️" : "🌙";
-    themeButton.setAttribute("aria-label", state.theme === "dark" ? "Šviesi tema" : "Tamsi tema");
-    familyButton.textContent = "A";
-    familyButton.setAttribute("aria-label", state.fontFamily === "serif" ? "Šriftas su užraitais" : "Šriftas be užraitų");
+    themeButton.setAttribute("aria-label", state.theme === "dark" ? "Дневная тема" : "Ночная тема");
+    familyButton.textContent = state.fontFamily === "serif" ? "С засечками" : "Без засечек";
+    familyButton.setAttribute("aria-label", state.fontFamily === "serif" ? "Шрифт с засечками" : "Шрифт без засечек");
     familyButton.classList.toggle("family-serif", state.fontFamily === "serif");
     familyButton.classList.toggle("family-sans", state.fontFamily === "sans");
-    fontDownButton.disabled = state.fontSize <= 18;
-    fontUpButton.disabled = state.fontSize >= 32;
+    [themeButton, familyButton, voiceSelect, translationButton].forEach(function (control) { control.disabled = !state.profileReady; });
+    fontDownButton.disabled = !state.profileReady || state.fontSize <= 18;
+    fontUpButton.disabled = !state.profileReady || state.fontSize >= 32;
+    translationButton.textContent = state.language === "ru" ? "Русский" : "Литовский";
+    translationButton.setAttribute("aria-pressed", String(state.language === "ru"));
+    content.lang = state.language;
     var text = document.getElementById("readerText");
     if (text) {
       text.classList.toggle("serif", state.fontFamily === "serif");
@@ -409,6 +527,11 @@
     }
     state.activePhrase = phrase;
     state.activeData = phrase._phraseData;
+    voiceError.hidden = true;
+    if (!hoverOnly && voice.active) {
+      voice.updateContext({ reading: window.ReaderLearning.readingContext(state.book, phrase._location),
+        selection: window.ReaderLearning.phraseContext(state.book, phrase._location).phrase });
+    }
     phrase.classList.add("is-active");
     tooltipTranslation.textContent = state.activeData.translation;
     renderRichText(tooltipNote, state.activeData.note);
@@ -539,10 +662,10 @@
     chapterPlayButton.setAttribute("aria-pressed", String(playing));
     chapterDuration.textContent = durationText;
     chapterDuration.hidden = !durationText;
-    var label = playing ? "Pristabdyti skaitymą" : "Klausyti skyriaus";
-    if (!chapter || !chapter.audio) label = "Šis skyrius dar neįgarsintas";
-    else if (timeline === undefined) label = "Kraunama...";
-    else if (timeline === null) label = "Nepavyko įkelti garso. Atnaujink puslapį.";
+    var label = playing ? "Приостановить озвучку" : "Слушать главу";
+    if (!chapter || !chapter.audio) label = "Эта глава пока не озвучена";
+    else if (timeline === undefined) label = "Загрузка…";
+    else if (timeline === null) label = "Не удалось загрузить аудио. Обнови страницу.";
     chapterPlayButton.setAttribute("aria-label", label);
     chapterPlayButton.title = label;
     document.body.classList.toggle("chapter-playing", playing);
@@ -801,6 +924,22 @@
     };
   }
 
+  function getVisibleEndLocation() {
+    var viewport = getViewport();
+    var end = null;
+    state.renderedItems.forEach(function (entry) {
+      var rect;
+      if (entry.node.nodeType === 1) rect = entry.node.getBoundingClientRect();
+      else {
+        var range = document.createRange();
+        range.selectNodeContents(entry.node);
+        rect = range.getBoundingClientRect();
+      }
+      if (rect.bottom > topbar.getBoundingClientRect().bottom && rect.top < viewport.bottom - 40) end = entry.node._location;
+    });
+    return end;
+  }
+
   function findChapterAtMarker(chapters, marker) {
     var current = chapters[0] || null;
     chapters.forEach(function (chapter) {
@@ -833,15 +972,6 @@
     if (!chapterAudio.paused && state.audioChapterId) current = document.getElementById(state.audioChapterId);
     if (current) chapterSelect.value = current.id;
     updateChapterAudioButton();
-    if (state.book && current) {
-      state.book.chapters.some(function (chapter, index) {
-        if (chapter.id === current.id) {
-          chapterCountText.textContent = "Skyrius " + (index + 1) + " iš " + state.book.chapters.length;
-          return true;
-        }
-        return false;
-      });
-    }
     var chapterPercent = getChapterPercentAtMarker(
       chapterTitles, current, marker, content.getBoundingClientRect().bottom
     );
@@ -854,23 +984,30 @@
   }
 
   function savePosition() {
+    if (!state.restored) return;
     var position = getCurrentPosition();
+    if (window.ReaderProfile.enabled) {
+      window.ReaderProfile.save(bookId, position).catch(function () {
+        voiceError.textContent = "Не удалось сохранить место чтения. Попробуем ещё раз.";
+        voiceError.hidden = false;
+      });
+      return;
+    }
     writeStore("paragraphId", position.id);
     writeStore("paragraphIndex", position.index);
     writeStore("paragraphOffset", position.offset);
     writeStore("paragraphText", position.text);
   }
 
-  function restorePosition() {
+  function restorePosition(profilePosition) {
     if (state.restored) return;
-    state.restored = true;
-    var paragraphId = readStore("paragraphId", "");
-    var indexValue = readStore("paragraphIndex", "");
-    var paragraphIndex = parseInt(indexValue, 10);
-    var offset = parseFloat(readStore("paragraphOffset", "0"));
-    var paragraphText = readStore("paragraphText", "");
+    var paragraphId = profilePosition ? profilePosition.id : readStore("paragraphId", "");
+    var paragraphIndex = profilePosition ? profilePosition.index : parseInt(readStore("paragraphIndex", ""), 10);
+    var offset = profilePosition ? profilePosition.offset : parseFloat(readStore("paragraphOffset", "0"));
+    var paragraphText = profilePosition ? (profilePosition.text || "") : readStore("paragraphText", "");
     window.requestAnimationFrame(function () {
       var target = null;
+      state.restored = true;
       if (paragraphId) target = document.getElementById(paragraphId);
       if (target && paragraphText && !paragraphMatches(target, paragraphText)) target = null;
       if (!target && paragraphText) target = findParagraphByText(paragraphText);
@@ -882,7 +1019,7 @@
         window.scrollTo(0, Math.max(0, top));
         return;
       }
-      restoreLegacyRatio();
+      if (!profilePosition) restoreLegacyRatio();
     });
   }
 
@@ -903,7 +1040,7 @@
       id: current.id,
       index: Number.isFinite(index) ? index : 0,
       offset: Math.round((window.scrollY || 0) - absoluteTop),
-      text: normalizeAnchorText(current.textContent)
+      text: normalizeAnchorText(current._originalText || current.textContent)
     };
   }
 
@@ -912,7 +1049,7 @@
   }
 
   function paragraphMatches(paragraph, anchorText) {
-    return normalizeAnchorText(paragraph.textContent).indexOf(anchorText) === 0;
+    return normalizeAnchorText(paragraph._originalText || paragraph.textContent).indexOf(anchorText) === 0;
   }
 
   function findParagraphByText(anchorText) {

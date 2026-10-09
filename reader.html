@@ -1,60 +1,97 @@
 <!doctype html>
-<html lang="lt">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="reader.css?v=d21836867a85">
-  <title>Skaityklė</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="reader-telegram.js" defer></script>
+  <script src="reader-profile.js" defer></script>
+  <title>Читалка</title>
 </head>
 <body>
   <header class="topbar" id="topbar">
-    <a class="home-link" href="index.html" aria-label="Grįžti į lentyną">←</a>
-    <select class="chapter-select" id="chapterSelect" aria-label="Skyrius"></select>
-    <button class="control-button chapter-play-button" id="chapterPlayButton" type="button" aria-label="Klausyti skyriaus" aria-pressed="false" disabled>
+    <a class="home-link" href="index.html" aria-label="Вернуться на полку">←</a>
+    <select class="chapter-select" id="chapterSelect" aria-label="Глава"></select>
+    <button class="control-button chapter-play-button" id="chapterPlayButton" type="button" aria-label="Слушать главу" aria-pressed="false" disabled>
       <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
         <path class="audio-icon-play" d="M4 2 14 8 4 14Z"/>
         <path class="audio-icon-pause" d="M3 2h4v12H3zM9 2h4v12H9z"/>
       </svg>
     </button>
-    <span class="chapter-duration" id="chapterDuration" aria-label="Skyriaus trukmė" hidden></span>
-    <div class="controls" aria-label="Skaitymo nustatymai">
-      <button class="control-button theme-button" id="themeButton" type="button">🌙</button>
-      <button class="control-button" id="fontDownButton" type="button">A-</button>
-      <button class="control-button" id="fontUpButton" type="button">A+</button>
-      <button class="control-button family-button" id="familyButton" type="button">A</button>
+    <span class="chapter-duration" id="chapterDuration" aria-label="Длительность главы" hidden></span>
+    <div class="controls">
+      <button class="topbar-voice-button" id="topbarVoiceButton" type="button" aria-label="Голосовой помощник" aria-pressed="false"><svg class="assistant-water-icon" viewBox="0 0 100 100" aria-hidden="true"><circle class="water-air" cx="50" cy="50" r="49"/><path class="water-back" d="M1 50C20 42 35 59 51 50S80 42 99 50A49 49 0 0 1 1 50Z"/><path class="water-front" d="M1 50C22 61 35 39 53 50S80 61 99 50A49 49 0 0 1 1 50Z"/></svg></button>
+      <button class="control-button settings-button" id="settingsButton" type="button" popovertarget="settingsMenu" aria-label="Настройки чтения">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M19.39,8.94 L19.76,10.06 L21.82,10.09 L21.82,13.91 L19.76,13.94 L19.39,15.06 L19.39,15.06 L18.86,16.12 L20.29,17.59 L17.59,20.29 L16.12,18.86 L15.06,19.39 L15.06,19.39 L13.94,19.76 L13.91,21.82 L10.09,21.82 L10.06,19.76 L8.94,19.39 L8.94,19.39 L7.88,18.86 L6.41,20.29 L3.71,17.59 L5.14,16.12 L4.61,15.06 L4.61,15.06 L4.24,13.94 L2.18,13.91 L2.18,10.09 L4.24,10.06 L4.61,8.94 L4.61,8.94 L5.14,7.88 L3.71,6.41 L6.41,3.71 L7.88,5.14 L8.94,4.61 L8.94,4.61 L10.06,4.24 L10.09,2.18 L13.91,2.18 L13.94,4.24 L15.06,4.61 L15.06,4.61 L16.12,5.14 L17.59,3.71 L20.29,6.41 L18.86,7.88 L19.39,8.94 Z"/><circle cx="12" cy="12" r="3.2"/></svg>
+      </button>
     </div>
   </header>
-  <div class="chapter-audio-error" id="chapterAudioError" role="status" hidden>Nepavyko paleisti. Bandyk dar kartą.</div>
+  <div class="settings-menu" id="settingsMenu" popover aria-label="Настройки чтения">
+    <div class="settings-row"><span>Тема</span><button class="control-button theme-button" id="themeButton" type="button">🌙</button></div>
+    <div class="settings-row"><span>Размер текста</span><div class="settings-actions"><button class="control-button" id="fontDownButton" type="button" aria-label="Уменьшить шрифт">A−</button><button class="control-button" id="fontUpButton" type="button" aria-label="Увеличить шрифт">A+</button></div></div>
+    <div class="settings-row"><span>Шрифт</span><button class="control-button family-button" id="familyButton" type="button">A</button></div>
+    <div class="settings-row"><span>Язык текста</span><button class="control-button" id="translationButton" type="button" aria-pressed="false">Литовский</button></div>
+    <div class="settings-row"><label for="voiceSelect">Голос</label><select class="control-button" id="voiceSelect"><option value="egle">Eglė</option><option value="marius">Marius</option></select></div>
+  </div>
+  <div class="telegram-hint" id="telegramHint" popover role="note">
+    <p>Голосовой помощник доступен в Telegram.</p>
+    <a href="https://t.me/knigu_lentyna_bot?start=reader" target="_blank" rel="noopener">Открыть @knigu_lentyna_bot ↗</a>
+  </div>
+  <div class="chapter-audio-error" id="chapterAudioError" role="status" hidden>Не удалось включить звук. Попробуй ещё раз.</div>
 
   <main class="reader">
-    <article class="content" id="content" aria-label="Adaptuotas tekstas">
-      <p class="loading">Kraunama...</p>
+    <article class="content" id="content" aria-label="Текст книги">
+      <p class="loading">Загрузка…</p>
     </article>
   </main>
 
-  <footer class="progress-bar" aria-label="Skaitymo pažanga">
-    <span>Knyga <span id="progressText">0%</span> · <span id="chapterCountText"></span></span>
-    <span>Skyrius <span id="chapterProgressText">0%</span></span>
+  <footer class="progress-bar" aria-label="Прогресс чтения">
+    <span>Книга <span id="progressText">0%</span></span>
+    <span>Глава <span id="chapterProgressText">0%</span></span>
   </footer>
 
   <div class="tooltip" id="tooltip" role="note" hidden>
     <div class="tooltip-note" id="tooltipNote"></div>
-    <div class="tooltip-audio-error" id="tooltipAudioError" role="status" hidden>Nepavyko paleisti. Bandyk dar kartą.</div>
+    <div class="tooltip-audio-error" id="tooltipAudioError" role="status" hidden>Не удалось включить звук. Попробуй ещё раз.</div>
     <div class="tooltip-footer">
       <div class="tooltip-translation" id="tooltipTranslation"></div>
+      <div class="tooltip-actions">
       <button class="tooltip-audio-button" id="tooltipAudioButton" type="button" aria-pressed="false" hidden>
         <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
           <path class="audio-icon-play" d="M4 2 14 8 4 14Z"/>
           <rect class="audio-icon-stop" x="2" y="2" width="12" height="12"/>
         </svg>
-        <span>Klausyti</span>
+        <span>Слушать</span>
       </button>
+      <button class="tooltip-audio-button tooltip-voice-button" id="tooltipVoiceButton" type="button" aria-label="Обсудить фразу голосом" aria-pressed="false">
+        <svg class="assistant-water-icon" viewBox="0 0 100 100" aria-hidden="true"><circle class="water-air" cx="50" cy="50" r="49"/><path class="water-back" d="M1 50C20 42 35 59 51 50S80 42 99 50A49 49 0 0 1 1 50Z"/><path class="water-front" d="M1 50C22 61 35 39 53 50S80 61 99 50A49 49 0 0 1 1 50Z"/></svg>
+        <span>Обсудить</span>
+      </button>
+      </div>
     </div>
   </div>
   <audio id="phraseAudio" preload="none" hidden></audio>
   <audio id="chapterAudio" preload="none" hidden></audio>
+  <div class="voice-assistant" id="voiceAssistant" hidden>
+    <button class="voice-orb" id="voiceOrb" type="button" aria-label="Завершить разговор">
+      <svg class="water-orb" id="waterOrb" viewBox="0 0 100 100" aria-hidden="true">
+        <defs><clipPath id="waterClip"><circle cx="50" cy="50" r="49"/></clipPath></defs>
+        <g clip-path="url(#waterClip)"><circle class="water-air" cx="50" cy="50" r="50"/>
+          <path class="water-back" d="M0 50H100V100H0Z"/>
+          <path class="water-front" d="M0 50H100V100H0Z"/>
+          <g class="water-splashes"><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/><circle class="water-drop" opacity="0"/></g>
+        </g>
+      </svg>
+    </button>
+    <div class="voice-status" id="voiceStatus" role="status">Подключаюсь…</div>
+  </div>
+  <div class="voice-error" id="voiceError" role="status" hidden></div>
 
+  <script src="reader-learning.js" defer></script>
+  <script src="reader-live.js" defer></script>
+  <script src="reader-water.js" defer></script>
   <script src="reader.js?v=8c0772cce0b7" defer></script>
 </body>
 </html>

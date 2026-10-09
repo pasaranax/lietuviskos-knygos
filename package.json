@@ -1,0 +1,12 @@
+{
+  "name": "lithuanian-reader",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "node scripts/build-miniapp.mjs",
+    "cloud": "node scripts/cloud.mjs",
+    "deploy": "npm run build && node scripts/cloud.mjs push"
+  },
+  "devDependencies": { "@tgcloud/cli": "0.2.0" }
+}

@@ -4,4 +4,14 @@
 *.log
 node_modules/
 /.env
+/dist/
+/tgcloud/lib/secrets.js
+/tgcloud/lib/book-ids.js
+/tgcloud/lib/learning.js
+/tgcloud/lib/config.js
+/.tgcloud/
+/output/
 /author-plans/audio/
+
+tgcloud/lib/book-data.js
+tgcloud/lib/book-data/
