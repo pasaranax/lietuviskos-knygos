@@ -7,7 +7,7 @@ const root = path.join(__dirname, '..');
 function endpoint(fetch, book) {
   class EndpointError extends Error { constructor(message, data) { super(message); this.code = data.code; } }
   const context = vm.createContext({
-    fetch, EndpointError, getSettings: async () => ({ voice: 'egle' }), bookIds: ['sample'], books: { sample: book },
+    fetch, EndpointError, api: {}, checkCallAllowance: async () => ({ allowed: true }), getSettings: async () => ({ voice: 'egle' }), bookIds: ['sample'], books: { sample: book },
     geminiApiKey: 'test-key', db: {},
     reserveCall: async () => ({ deadline: Date.now() + 60000, callId: 'a'.repeat(32) }),
     updateCall: async () => ({}), reserveTokenIssue: async () => true,

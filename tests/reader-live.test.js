@@ -12,9 +12,9 @@ test('stopping while microphone permission is pending stops late tracks and crea
     close() { this.state = 'closed'; return Promise.resolve(); }
   }
   const context = vm.createContext({
-    window: { AudioContext, Telegram: { WebApp: { initData: 'verified by platform', Serverless: { call() { requests++; } } } } },
+    window: { AudioContext, Telegram: { WebApp: { initData: 'verified by platform', Serverless: { call(name, input, callback) { if (name === 'readerCallStatus') callback(null, { allowed: true }); else requests++; } } } } },
     navigator: { mediaDevices: { getUserMedia: () => new Promise(resolve => { permit = resolve; }) } },
-    setTimeout, clearTimeout, setInterval, clearInterval, DOMException,
+    setTimeout, clearTimeout, setInterval, clearInterval, DOMException, btoa, atob,
   });
   if (fs.existsSync(filename)) vm.runInContext(fs.readFileSync(filename, 'utf8'), context);
   assert.equal(typeof context.window.ReaderVoice, 'function');
@@ -54,17 +54,19 @@ test('phrase switches reuse the session, pass a silent context update and stoppi
     window: { AudioContext, Telegram: { WebApp: { initData: 'platform-auth', Serverless: {
       call(name, input, callback) {
         requests.push({ name, input });
-        callback(null, name === 'startReaderCall' ? {
+        callback(null, name === 'readerCallStatus' ? { allowed: true } : name === 'startReaderCall' ? {
           token: 'auth_tokens/test', callId: 'a'.repeat(32), model: 'model', maxCallSeconds: 600
         } : { remainingSeconds: 600 });
       }
     } } } },
     navigator: { mediaDevices: { getUserMedia: async () => ({ getTracks: () => [{ stop: () => microphoneStops++ }] }) } },
-    AudioWorkletNode, WebSocket: Socket, setTimeout, clearTimeout, setInterval, clearInterval, DOMException,
+    AudioWorkletNode, WebSocket: Socket, setTimeout, clearTimeout, setInterval, clearInterval, DOMException, btoa, atob,
   });
   vm.runInContext(fs.readFileSync(filename, 'utf8'), context);
   const voice = new context.window.ReaderVoice({});
   await voice.start({ bookId: 'book', location: { chapter: 0, block: 0, item: 0 } });
+  // This test switches context after the opening greeting has finished.
+  voice.call.greetingDone = true;
   voice.updateContext({ reading: 'Lietuvių tekstas.', selection: { text: 'Kita frazė.', translation: 'Другая фраза.', note: 'Разбор' } });
   const update = sent.find(data => data.clientContent?.turnComplete === false);
   assert.ok(update.clientContent.turns[0].parts[0].text.includes('Kita frazė.'));

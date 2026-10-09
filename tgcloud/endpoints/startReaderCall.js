@@ -1,4 +1,5 @@
-import { db, fetch, EndpointError } from 'sdk';
+import { db, api, fetch, EndpointError } from 'sdk';
+import { checkCallAllowance } from '../lib/limit.js';
 import { getSettings } from '../lib/settings.js';
 import bookIds from '../lib/book-ids.js';
 import books from '../lib/book-data.js';
@@ -16,6 +17,8 @@ export default async function (input, ctx) {
   } catch {
     throw new EndpointError('Выбери фразу из книги.', { code: 'INVALID_PHRASE' });
   }
+  const status = await checkCallAllowance(db, api, userId, ctx.initData.user.username);
+  if (!status.allowed) throw new EndpointError(status.message, { code: status.code });
   try {
     const book = books[input.bookId];
     if (!book) throw new Error('Book unavailable');
@@ -24,9 +27,12 @@ export default async function (input, ctx) {
   } catch {
     throw new EndpointError('Не удалось загрузить фразу. Открой книгу ещё раз.', { code: 'BOOK_UNAVAILABLE' });
   }
-  const reservation = await reserveCall(db, userId, { maxCallSeconds: 600, dailyCallSeconds: 600, cooldownSeconds: 10 });
-  if (!reservation) throw new EndpointError('Разговор уже идёт, ещё не прошло 10 секунд после предыдущего или исчерпаны 10 минут на сегодня.', { code: 'CALL_LIMIT' });
-  if (!await reserveTokenIssue(db, userId)) {
+  const reservation = await reserveCall(db, userId, { maxCallSeconds: 600, dailyCallSeconds: status.unlimited ? 86400 : 600, cooldownSeconds: 10 });
+  if (!reservation) {
+    const current = await checkCallAllowance(db, api, userId);
+    throw new EndpointError(current.message || 'Не удалось начать разговор. Попробуй ещё раз.', { code: current.code || 'CALL_LIMIT' });
+  }
+  if (!status.unlimited && !await reserveTokenIssue(db, userId)) {
     await updateCall(db, userId, reservation.callId, 'end');
     throw new EndpointError('Сегодня уже было 30 подключений. Возвращайся завтра.', { code: 'TOKEN_LIMIT' });
   }

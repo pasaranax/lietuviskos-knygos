@@ -1,9 +1,13 @@
 import { db, EndpointError } from 'sdk';
 import { getSettings, validSettings } from '../lib/settings.js';
+import { ensureVoiceAccess } from '../lib/limit.js';
 export default async function (input, ctx) {
   const userId = ctx.initData?.user?.id;
   if (!Number.isSafeInteger(userId) || userId <= 0) throw new EndpointError('Открой приложение в Telegram.', { code: 'AUTH_REQUIRED' });
-  if (input?.action === 'load') return getSettings(db, userId);
+  if (input?.action === 'load') {
+    await ensureVoiceAccess(db, userId, ctx.initData.user.username);
+    return getSettings(db, userId);
+  }
   let settings;
   try { if (input?.action !== 'save') throw new Error(); settings = validSettings(input.settings); }
   catch { throw new EndpointError('Неверные настройки.', { code: 'INVALID_SETTINGS' }); }

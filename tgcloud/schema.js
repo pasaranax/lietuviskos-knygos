@@ -1,5 +1,15 @@
 import { table, integer, text } from 'sdk/db';
 
+export const readerVoiceAccess = table('reader_voice_access', {
+  userId: integer('user_id').primaryKey(),
+  unlimited: integer('unlimited').notNull(),
+});
+
+export const voiceLimitNotifications = table('voice_limit_notifications', {
+  userId: integer('user_id').primaryKey(),
+  day: text('day').notNull(),
+});
+
 export const voiceTokenIssues = table('voice_token_issues', {
   userId: integer('user_id').primaryKey(),
   day: text('day').notNull(),

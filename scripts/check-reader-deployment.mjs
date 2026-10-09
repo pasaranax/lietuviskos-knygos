@@ -13,7 +13,7 @@ for (const file of ['index.html','reader.html','reader.js','reader-live.js','rea
   const hash = data => createHash('sha256').update(data).digest('hex');
   assert.equal(hash(Buffer.from(await response.arrayBuffer())), hash(await readFile('dist/' + file)), file);
 }
-for (const name of ['startReaderCall','readingPosition','readerSettings']) {
+for (const name of ['startReaderCall','readingPosition','readerSettings','readerCallStatus']) {
   const response = await fetch(appUrl + 'api/' + name, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
   assert.equal(response.status, 401);
 }
@@ -39,4 +39,4 @@ const manifest = await (await fetch(appUrl + book.chapters[0].audio.replace(/[^/
 assert.equal(manifest.phrases[0].audio, book.chapters[0].blocks[0].items[0].audio);
 assert.equal((await fetch(manifest.phrases[0].audio, { method: 'HEAD' })).status, 200);
 console.log(JSON.stringify({ revision: cloud.revision, webhookInSync: true, schemaInSync: true,
-  staticHashMatches: 8, unauthenticatedRejected: 3, privateFilesAbsent: 3, profileReadbackAndIsolation: true, settingsReadbackAndIsolation: true, chapterAndPhraseAudio: true }));
+  staticHashMatches: 8, unauthenticatedRejected: 4, privateFilesAbsent: 3, profileReadbackAndIsolation: true, settingsReadbackAndIsolation: true, chapterAndPhraseAudio: true }));

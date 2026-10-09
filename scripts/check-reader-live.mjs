@@ -26,8 +26,8 @@ if (!token.name?.startsWith('auth_tokens/')) throw new Error('Invalid token');
 const pcm = execFileSync('ffmpeg', ['-v', 'error', '-i', book.chapters[0].blocks[0].items[1].audio,
   '-f', 's16le', '-ar', '16000', '-ac', '1', 'pipe:1'], { maxBuffer: 2 * 1024 * 1024 });
 const socket = new WebSocket(`wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContentConstrained?access_token=${encodeURIComponent(token.name)}`);
-let turn = 0, bytes = 0, text = '', inputText = '', finished = false;
-const timer = setTimeout(() => { socket.close(); console.error('Live check timed out'); process.exitCode = 1; }, 60000);
+let turn = 0, bytes = 0, text = '', inputText = '', finished = false, waitingInSilence = false, heartbeat;
+const timer = setTimeout(() => { socket.close(); console.error('Live check timed out'); process.exitCode = 1; }, 90000);
 function sendText(text) {
   socket.send(JSON.stringify({ clientContent: { turns: [{ role: 'user', parts: [{ text }] }], turnComplete: true } }));
 }
@@ -39,7 +39,7 @@ socket.addEventListener('message', async ({ data }) => {
     const message = JSON.parse(typeof data === 'string' ? data : await data.text());
     if (message.error) throw new Error('Gemini returned an error');
     if (message.setupComplete) {
-      if (grant) await deployedCall('readerCallTime', { callId: grant.callId, action: 'start' });
+      if (grant) { await deployedCall('readerCallTime', { callId: grant.callId, action: 'start' }); heartbeat = setInterval(() => deployedCall('readerCallTime', { callId: grant.callId, action: 'heartbeat' }).catch(() => {}), 10000); }
       sendText('Соединение установлено. Поздоровайся согласно инструкции и жди.');
     }
     const content = message.serverContent;
@@ -48,10 +48,20 @@ socket.addEventListener('message', async ({ data }) => {
     inputText += content.inputTranscription?.text || '';
     for (const part of content.modelTurn?.parts || []) if (part.inlineData) bytes += Buffer.from(part.inlineData.data, 'base64').length;
     if (!content.turnComplete) return;
+    if (waitingInSilence) throw new Error('Assistant spoke without a user turn');
     if (!bytes || !text.trim()) throw new Error('No spoken response or transcription');
     console.log(JSON.stringify({ teacher: voice, deployed, turn: ++turn, audioBytes: bytes, transcript: text.trim().slice(0, 240), inputTranscript: inputText.slice(0, 180) }));
     text = ''; bytes = 0;
-    if (turn === 1) sendText('Почему в выбранной фразе ryte, а не rytas? Дай одно короткое объяснение.');
+    if (turn === 1) {
+      waitingInSilence = true;
+      for (let i = 0; i < 80; i++) {
+        if (socket.readyState !== 1) return;
+        socket.send(JSON.stringify({ realtimeInput: { audio: { data: Buffer.alloc(3200).toString('base64'), mimeType: 'audio/pcm;rate=16000' } } }));
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+      waitingInSilence = false; console.log('Eight seconds after greeting: no unsolicited speech.');
+      sendText('Почему в выбранной фразе ryte, а не rytas? Дай одно короткое объяснение.');
+    }
     else if (turn === 2) {
       const update = { reading: scope.ReaderLearning.readingContext(book, { chapter: 0, block: 0, item: 1 }),
         selection: scope.ReaderLearning.phraseContext(book, { chapter: 0, block: 0, item: 1 }).phrase };
@@ -76,4 +86,4 @@ socket.addEventListener('message', async ({ data }) => {
 });
 socket.addEventListener('error', () => { clearTimeout(timer); console.error('Live connection failed'); process.exitCode = 1; });
 socket.addEventListener('close', async ({ code }) => {
-  if (grant) await deployedCall('readerCallTime', { callId: grant.callId, action: 'end' }); clearTimeout(timer); if (!finished) { console.error(`Live ended early (${code})`); process.exitCode = 1; } });
+  clearInterval(heartbeat); if (grant) await deployedCall('readerCallTime', { callId: grant.callId, action: 'end' }); clearTimeout(timer); if (!finished) { console.error(`Live ended early (${code})`); process.exitCode = 1; } });

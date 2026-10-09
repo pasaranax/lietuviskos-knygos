@@ -24,6 +24,24 @@
     this.call = null;
   }
 
+  // Same 100 ms speech gate as Voisya: keep onset, discard quiet noise/clicks.
+  function MicGate() { this.reset(); }
+  MicGate.prototype.reset = function () { this.buffer = []; this.voiced = this.tail = 0; };
+  MicGate.prototype.push = function (chunk, rms) {
+    var loud = rms >= .006;
+    this.voiced = loud ? this.voiced + 1 : 0;
+    if (this.tail) {
+      this.tail = loud ? 5 : this.tail - 1;
+      return [chunk];
+    }
+    this.buffer.push(chunk);
+    if (this.buffer.length > 3) this.buffer.shift();
+    if (this.voiced < 2) return [];
+    var chunks = this.buffer;
+    this.buffer = []; this.tail = 5;
+    return chunks;
+  };
+
   ReaderVoice.prototype.start = async function (input) {
     this.stop();
     var self = this;
@@ -39,13 +57,18 @@
     }
     var call = { closed: false, ready: false, sources: new Set(), cursor: 0 };
     this.call = call;
-    this.active = true;
-    this.onState('connecting');
     try {
       // Resume audio in the original button gesture, including iOS.
       call.audio = new Context();
       await call.audio.resume();
       if (call.closed) return;
+      var status = await endpoint('readerCallStatus', {});
+      if (call.closed) return;
+      if (!status.allowed) throw new Error(status.message || 'На сегодня 10 минут голосового помощника закончились. Возвращайся завтра.');
+      this.active = true;
+      this.onState('connecting');
+      call.gate = new MicGate();
+      call.silentFrame = btoa('\0'.repeat(3200));
       var stream = await navigator.mediaDevices.getUserMedia({ audio: {
         channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: false
       } });
@@ -74,13 +97,15 @@
         var samples = new Int16Array(event.data);
         var sum = 0;
         for (var i = 0; i < samples.length; i++) sum += Math.pow(samples[i] / 32768, 2);
-        call.inputLevel = Math.sqrt(sum / samples.length);
+        call.inputLevel = call.greetingDone ? Math.sqrt(sum / samples.length) : 0;
         if (!call.outputMeter) self.meterActivity(call, call.inputLevel, 0);
         var bytes = new Uint8Array(event.data), binary = '';
         for (var b = 0; b < bytes.length; b++) binary += String.fromCharCode(bytes[b]);
-        if (call.socket.readyState === 1) call.socket.send(JSON.stringify({ realtimeInput: {
-          audio: { data: btoa(binary), mimeType: 'audio/pcm;rate=16000' }
-        } }));
+        var chunks = call.greetingDone ? call.gate.push(btoa(binary), call.inputLevel) : [];
+        if (!chunks.length) chunks = [call.silentFrame];
+        if (call.socket.readyState === 1) chunks.forEach(function (chunk) {
+          call.socket.send(JSON.stringify({ realtimeInput: { audio: { data: chunk, mimeType: 'audio/pcm;rate=16000' } } }));
+        });
       };
       call.input.connect(call.worklet);
       call.worklet.connect(call.silent);
@@ -123,13 +148,12 @@
             self.cue('start', call.audio);
             clearTimeout(call.connectTimer);
             self.onState('listening');
-            if (call.pendingContext) { self.updateContext(call.pendingContext); call.pendingContext = null; }
             call.endTimer = setTimeout(function () { self.stop(); self.onError('Время разговора закончилось.'); }, grant.remainingSeconds * 1000);
             call.heartbeat = setInterval(function () {
               if (call.checking || call.closed) return;
               call.checking = true;
               endpoint('readerCallTime', { callId: call.session.callId, action: 'heartbeat' })
-                .catch(function () { if (!call.closed) { self.stop(); self.onError('Связь прервалась. Попробуй ещё раз.'); } })
+                .catch(function (error) { if (!call.closed) { self.stop(); self.onError(error.message || 'Связь прервалась. Попробуй ещё раз.'); } })
                 .finally(function () { call.checking = false; });
             }, 10000);
             call.socket.send(JSON.stringify({ clientContent: { turns: [{ role: 'user', parts: [
@@ -147,6 +171,7 @@
               self.play(call, part.inlineData.data, rate ? Number(rate[1]) : 24000);
             }
           });
+          if (content.turnComplete) { call.greetingTurnComplete = true; self.releaseGreeting(call); }
         } catch (error) {
           if (!call.ready) reject(error);
           else if (!call.closed) { self.stop(); self.onError(error.message || 'Связь прервалась.'); }
@@ -180,13 +205,26 @@
     var start = Math.max(call.cursor, call.audio.currentTime);
     call.cursor = start + buffer.duration;
     call.sources.add(source);
+    call.firstVoice = true;
     var self = this;
     source.onended = function () {
       call.sources.delete(source);
+      self.releaseGreeting(call);
       if (!call.closed && !call.sources.size) { self.meterActivity(call, call.inputLevel || 0, 0); }
     };
     source.start(start);
     if (!call.outputMeter) this.meterActivity(call, 0, Math.sqrt(sum / samples.length));
+  };
+
+  ReaderVoice.prototype.releaseGreeting = function (call) {
+    if (call.closed || call.greetingDone || !call.firstVoice || !call.greetingTurnComplete || call.sources.size) return;
+    call.greetingDone = true;
+    call.gate.reset();
+    call.inputLevel = 0;
+    if (call.pendingContext) {
+      var context = call.pendingContext; call.pendingContext = null;
+      this.updateContext(context);
+    }
   };
 
   ReaderVoice.prototype.meterActivity = function (call, inputRms, outputRms) {
@@ -215,7 +253,7 @@
   ReaderVoice.prototype.updateContext = function (context) {
     var call = this.call;
     if (!call || call.closed) return;
-    if (!call.ready) { call.pendingContext = context; return; }
+    if (!call.ready || !call.greetingDone) { call.pendingContext = context; return; }
     this.interrupt(call);
     call.socket.send(JSON.stringify({ clientContent: { turns: [{ role: 'user', parts: [{
       text: 'reading_update: ' + JSON.stringify(context)
