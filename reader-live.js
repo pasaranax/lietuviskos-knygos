@@ -287,7 +287,7 @@
         call.micResumeAt = call.audio.currentTime + .35;
         if (reference.started && !call.closed && call.socket.readyState === 1) {
           call.socket.send(JSON.stringify({ clientContent: { turns: [{ role: 'user', parts: [{
-            text: 'reference_audio_end: ' + (error ? 'Запись остановлена. Жди моего вопроса.' : 'Эталонная запись завершена. Можешь коротко предложить следующий шаг по текущему разговору или молча ждать.') + ' Это не попытка ученика.'
+            text: 'reference_audio_end: ' + (error ? 'Запись остановлена. Жди моего вопроса.' : 'Эталонная запись завершена. Можешь коротко предложить разбор грамматики или слов по текущему разговору либо молча ждать. Практику произношения продолжай только по просьбе пользователя.') + ' Это не попытка ученика.'
           }] }], turnComplete: !error && !reference.toolId } }));
         }
         if (error) reject(error); else resolve();
@@ -414,7 +414,7 @@
           var playback = this.onPlaySelected();
           if (call.reference) call.reference.toolId = fn.id;
           await playback;
-          response = { status: 'completed', message: 'Эталонная запись завершена. Выбери следующий шаг по текущему разговору или жди; это не попытка ученика.' };
+          response = { status: 'completed', message: 'Эталонная запись завершена. Предложи разбор грамматики или слов по текущему разговору либо жди. Практику произношения продолжай только по просьбе пользователя; это не попытка ученика.' };
         } else {
         if (fn.name !== 'get_book_history') throw new Error('Unknown tool');
         var history = await endpoint('readerBookHistory', { bookId: call.bookId, location: call.location });

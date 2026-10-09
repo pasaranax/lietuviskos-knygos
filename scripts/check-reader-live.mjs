@@ -88,7 +88,7 @@ socket.addEventListener('message', async ({ data }) => {
       if(!reference) socket.send(JSON.stringify({ realtimeInput: { audioStreamEnd: true } }));
       if (reference) {
         hearingReference=false; referenceNext=true;
-        socket.send(JSON.stringify({clientContent:{turns:[{role:'user',parts:[{text:'reference_audio_end: Эталонная запись завершена. Можешь коротко предложить следующий шаг по текущему разговору или молча ждать. Это не попытка ученика.'}]}],turnComplete:true}}));
+        socket.send(JSON.stringify({clientContent:{turns:[{role:'user',parts:[{text:'reference_audio_end: Эталонная запись завершена. Можешь коротко предложить разбор грамматики или слов по текущему разговору либо молча ждать. Практику произношения продолжай только по просьбе пользователя. Это не попытка ученика.'}]}],turnComplete:true}}));
       }
     } else if(referenceNext) {
       referenceNext=false;

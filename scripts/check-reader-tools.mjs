@@ -26,7 +26,7 @@ async function reference(){
  }
  assert.ok(Date.now()-started>=pcm.length/32-100);
  recording=false;
- text('reference_audio_end: Эталонная запись завершена. Можешь коротко предложить следующий шаг по текущему разговору или молча ждать. Это не попытка ученика.',false);
+ text('reference_audio_end: Эталонная запись завершена. Можешь коротко предложить разбор грамматики или слов по текущему разговору либо молча ждать. Практику произношения продолжай только по просьбе пользователя. Это не попытка ученика.',false);
 }
 socket.addEventListener('open',()=>socket.send(JSON.stringify({setup:{model:'models/'+grant.model,generationConfig:{responseModalities:['AUDIO']}}})));
 socket.addEventListener('message',async({data})=>{
@@ -49,7 +49,7 @@ socket.addEventListener('message',async({data})=>{
     }else{
      assert.equal(fn.name,'play_selected_phrase');assert.equal(playCalled,false);playCalled=true;
      await reference();
-     socket.send(JSON.stringify({toolResponse:{functionResponses:[{id:fn.id,name:fn.name,response:{status:'completed',message:'Эталонная запись завершена. Выбери следующий шаг по контексту; это не попытка ученика.'}}]}}));
+     socket.send(JSON.stringify({toolResponse:{functionResponses:[{id:fn.id,name:fn.name,response:{status:'completed',message:'Эталонная запись завершена. Предложи разбор грамматики или слов по текущему разговору либо жди. Практику произношения продолжай только по просьбе пользователя; это не попытка ученика.'}}]}}));
     }
    }
   }
@@ -59,14 +59,16 @@ socket.addEventListener('message',async({data})=>{
   transcript+=content.outputTranscription?.text||'';
   if(!content.turnComplete||recording)return;
   if(stage==='greeting'){
-   console.log('Deployed greeting received.');stage='history';transcript='';
+   assert.match(transcript,/граммат|слов/i);assert.doesNotMatch(transcript,/произн|повтор|потренир|вслух/i);
+   console.log('Deployed grammar greeting received.');stage='history';transcript='';
    text('Для ответа нужен сюжет первой главы, его сейчас нет в тексте. Получи сводку через get_book_history и одним предложением скажи, зачем Лина приезжала к Эльзе.');
   }else if(stage==='history'&&historyCalled){
    console.log(JSON.stringify({historyTool:true,futureExcluded:true,transcript:transcript.slice(0,180)}));transcript='';stage='play';
    text('reading_update: '+JSON.stringify({reading:learning.ReaderLearning.readingContext(book,{chapter:0,block:0,item:1}),selection:learning.ReaderLearning.phraseContext(book,{chapter:0,block:0,item:1}).phrase}),false);
    text('Теперь хочу услышать выбранную фразу. Сам включи готовую запись инструментом play_selected_phrase, не читай её своим голосом.');
   }else if(stage==='reference'){
-   console.log(JSON.stringify({playTool:playCalled,pcmBytes:pcm.length,afterReference:transcript.slice(0,180)}));stage='verify';transcript='';
+   assert.doesNotMatch(transcript,/повтор|потренир|прочит[а-я]* вслух/i);
+   console.log(JSON.stringify({playTool:playCalled,pcmBytes:pcm.length,noPronunciationOffer:true,afterReference:transcript.slice(0,180)}));stage='verify';transcript='';
    text('Что только что звучало: я сам прочитал фразу или это готовая запись? Ответь одной фразой.');
   }else if(stage==='verify'){
    assert.match(transcript,/запис|эталон/i);assert.ok(historyCalled&&playCalled);
