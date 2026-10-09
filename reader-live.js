@@ -20,8 +20,21 @@
     this.onState = options.onState || function () {};
     this.onLevel = options.onLevel || function () {};
     this.onError = options.onError || function () {};
+    this.onPlaySelected = options.onPlaySelected || function () { throw new Error("Выбери фразу с записью."); };
     this.active = false;
     this.call = null;
+    this.usageCalls = [];
+    var app = window.Telegram && window.Telegram.WebApp;
+    var userId = app && app.initDataUnsafe && app.initDataUnsafe.user && app.initDataUnsafe.user.id;
+    this.usageKey = app && app.initData && Number.isSafeInteger(userId) ? 'readerVoiceUsage.' + userId : null;
+    try {
+      var outbox = this.usageKey && JSON.parse(window.localStorage.getItem(this.usageKey) || '[]');
+      if (Array.isArray(outbox)) outbox.forEach(function (entry) {
+        if (!/^[a-f0-9]{32}$/.test(entry.callId) || !Array.isArray(entry.events) || !entry.events.length) return;
+        var call = { session: { callId: entry.callId }, usageEvents: entry.events, closed: true };
+        this.usageCalls.push(call); this.flushUsage(call);
+      }, this);
+    } catch (_) {}
   }
 
   // Same 100 ms speech gate as Voisya: keep onset, discard quiet noise/clicks.
@@ -55,7 +68,7 @@
       this.onError('Этот браузер не поддерживает голосовой разговор.');
       return;
     }
-    var call = { closed: false, ready: false, sources: new Set(), cursor: 0 };
+    var call = { closed: false, ready: false, sources: new Set(), cursor: 0, bookId: input.bookId, location: input.location, cancelledTools: new Set() };
     this.call = call;
     try {
       // Resume audio in the original button gesture, including iOS.
@@ -94,14 +107,16 @@
       call.silent.gain.value = 0;
       call.worklet.port.onmessage = function (event) {
         if (call.closed || !call.ready) return;
+        if (call.reference) { call.inputLevel = 0; return; }
         var samples = new Int16Array(event.data);
         var sum = 0;
         for (var i = 0; i < samples.length; i++) sum += Math.pow(samples[i] / 32768, 2);
-        call.inputLevel = call.greetingDone ? Math.sqrt(sum / samples.length) : 0;
+        var micReady = call.greetingDone && call.audio.currentTime >= (call.micResumeAt || 0);
+        call.inputLevel = micReady ? Math.sqrt(sum / samples.length) : 0;
         if (!call.outputMeter) self.meterActivity(call, call.inputLevel, 0);
         var bytes = new Uint8Array(event.data), binary = '';
         for (var b = 0; b < bytes.length; b++) binary += String.fromCharCode(bytes[b]);
-        var chunks = call.greetingDone ? call.gate.push(btoa(binary), call.inputLevel) : [];
+        var chunks = micReady ? call.gate.push(btoa(binary), call.inputLevel) : [];
         if (!chunks.length) chunks = [call.silentFrame];
         if (call.socket.readyState === 1) chunks.forEach(function (chunk) {
           call.socket.send(JSON.stringify({ realtimeInput: { audio: { data: chunk, mimeType: 'audio/pcm;rate=16000' } } }));
@@ -161,6 +176,12 @@
             ] }], turnComplete: true } }));
             resolve();
           }
+          if (message.usageMetadata) self.recordUsage(call, message.usageMetadata);
+          if (message.toolCallCancellation) (message.toolCallCancellation.ids || []).forEach(function (id) {
+            call.cancelledTools.add(id);
+            if (call.reference && call.reference.toolId === id) self.stopReference();
+          });
+          if (message.toolCall) self.handleTools(call, message.toolCall.functionCalls || []);
           var content = message.serverContent;
           if (!content) return;
           if (content.interrupted) self.interrupt(call);
@@ -187,7 +208,7 @@
   };
 
   ReaderVoice.prototype.play = function (call, base64, rate) {
-    if (call.closed) return;
+    if (call.closed || call.reference) return;
     var binary = atob(base64);
     if (binary.length % 2) throw new Error('Неверный формат аудио.');
     var samples = new Float32Array(binary.length / 2), sum = 0;
@@ -227,6 +248,98 @@
     }
   };
 
+  ReaderVoice.prototype.referencePlaying = function () {
+    return !!(this.call && this.call.reference);
+  };
+
+  ReaderVoice.prototype.stopReference = function () {
+    var reference = this.call && this.call.reference;
+    if (reference) reference.finish(new DOMException('Cancelled', 'AbortError'));
+  };
+
+  // Decode once at 16 kHz: the same buffer reaches the speaker and Gemini.
+  // No microphone capture of the speaker, no new call or media-element binding.
+  ReaderVoice.prototype.playReference = function (url, phrase) {
+    this.stopReference();
+    var self = this, call = this.call;
+    if (!call || call.closed || !call.ready) return Promise.reject(new Error('Дождись подключения помощника.'));
+    if (!call.greetingDone) return Promise.reject(new Error('Дождись окончания приветствия и нажми «Прослушать» ещё раз.'));
+    var Offline = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+    if (!Offline) return Promise.reject(new Error('Этот браузер не поддерживает передачу записи.'));
+    var reference = { controller: new AbortController(), finished: false, started: false };
+    call.reference = reference;
+    call.gate.reset(); call.inputLevel = 0;
+    this.interrupt(call);
+    return new Promise(function (resolve, reject) {
+      reference.finish = function (error) {
+        if (reference.finished) return;
+        reference.finished = true;
+        clearTimeout(reference.loadTimer); clearInterval(reference.timer);
+        reference.controller.abort();
+        if (reference.source) {
+          reference.source.onended = null;
+          try { reference.source.stop(); } catch (_) {}
+          reference.source.disconnect();
+        }
+        if (call.reference === reference) call.reference = null;
+        call.gate.reset(); call.inputLevel = 0;
+        // Let the speaker tail fade before accepting microphone frames again.
+        call.micResumeAt = call.audio.currentTime + .35;
+        if (reference.started && !call.closed && call.socket.readyState === 1) {
+          call.socket.send(JSON.stringify({ clientContent: { turns: [{ role: 'user', parts: [{
+            text: 'reference_audio_end: ' + (error ? 'Запись остановлена. Жди моего вопроса.' : 'Эталонная запись завершена. Можешь коротко предложить следующий шаг по текущему разговору или молча ждать.') + ' Это не попытка ученика.'
+          }] }], turnComplete: !error && !reference.toolId } }));
+        }
+        if (error) reject(error); else resolve();
+      };
+      reference.loadTimer = setTimeout(function () { reference.finish(new Error('Не удалось загрузить запись. Попробуй ещё раз.')); }, 20000);
+      (async function () {
+        await call.audio.resume();
+        if (reference.finished || call.closed) return;
+        var response = await fetch(url, { signal: reference.controller.signal });
+        if (!response.ok) throw new Error('Не удалось загрузить запись.');
+        var bytes = await response.arrayBuffer();
+        if (reference.finished || call.closed) return;
+        var buffer = await new Offline(1, 1, 16000).decodeAudioData(bytes);
+        if (reference.finished || call.closed) return;
+        if (buffer.sampleRate !== 16000 || !buffer.length) throw new Error('Не удалось прочитать запись.');
+        clearTimeout(reference.loadTimer);
+        var channels = [];
+        for (var c = 0; c < buffer.numberOfChannels; c++) channels.push(buffer.getChannelData(c));
+        var sent = 0, start = call.audio.currentTime;
+        function pump(final) {
+          if (reference.finished || call.closed || call.socket.readyState !== 1) return;
+          var limit = final ? buffer.length : Math.min(buffer.length, Math.floor((call.audio.currentTime - start) * 16000));
+          while (sent < limit) {
+            var length = Math.min(1600, limit - sent);
+            if (!final && length < 1600) break;
+            var pcm = new DataView(new ArrayBuffer(length * 2)), binary = '';
+            for (var i = 0; i < length; i++) {
+              var value = 0;
+              for (var c = 0; c < channels.length; c++) value += channels[c][sent + i] / channels.length;
+              value = Math.max(-1, Math.min(1, value));
+              pcm.setInt16(i * 2, Math.round(value * (value < 0 ? 32768 : 32767)), true);
+            }
+            var bytes = new Uint8Array(pcm.buffer);
+            for (var b = 0; b < bytes.length; b++) binary += String.fromCharCode(bytes[b]);
+            call.socket.send(JSON.stringify({ clientContent: { turns: [{ role: 'user', parts: [{ inlineData: { data: btoa(binary), mimeType: 'audio/pcm;rate=16000' } }] }], turnComplete: false } }));
+            sent += length;
+          }
+        }
+        call.socket.send(JSON.stringify({ clientContent: { turns: [{ role: 'user', parts: [{
+          text: 'reference_audio_start: ' + JSON.stringify(phrase) + '\nСейчас звучит эталон через «Прослушать», не речь ученика. Слушай молча; не оценивай это как его произношение.'
+        }] }], turnComplete: false } }));
+        reference.started = true;
+        reference.source = call.audio.createBufferSource();
+        reference.source.buffer = buffer;
+        reference.source.connect(call.audio.destination);
+        reference.source.onended = function () { pump(true); reference.finish(); };
+        reference.source.start(start);
+        reference.timer = setInterval(function () { pump(false); }, 25);
+      })().catch(function (error) { reference.finish(error); });
+    });
+  };
+
   ReaderVoice.prototype.meterActivity = function (call, inputRms, outputRms) {
     if (call.closed || !call.ready) return;
     var speaker = inputRms > .015 ? 'user' : outputRms > .008 ? 'assistant' : null;
@@ -250,14 +363,82 @@
     }
   };
 
-  ReaderVoice.prototype.updateContext = function (context) {
+  ReaderVoice.prototype.updateContext = function (context, location) {
     var call = this.call;
     if (!call || call.closed) return;
+    if (location) call.location = location;
     if (!call.ready || !call.greetingDone) { call.pendingContext = context; return; }
+    this.stopReference();
     this.interrupt(call);
     call.socket.send(JSON.stringify({ clientContent: { turns: [{ role: 'user', parts: [{
       text: 'reading_update: ' + JSON.stringify(context)
     }] }], turnComplete: false } }));
+  };
+
+  ReaderVoice.prototype.storeUsageOutbox = function () {
+    try { if (this.usageKey) window.localStorage.setItem(this.usageKey, JSON.stringify(this.usageCalls.map(function (call) {
+      return { callId: call.session.callId, events: call.usageEvents };
+    }))); } catch (_) {}
+  };
+
+  ReaderVoice.prototype.recordUsage = function (call, metadata) {
+    if (!call.usageEvents) { call.usageEvents = []; call.usageSequence = 0; }
+    call.usageEvents.push({ sequence: ++call.usageSequence, receivedAt: Date.now(), metadata: metadata });
+    if (this.usageCalls.indexOf(call) < 0) this.usageCalls.push(call);
+    this.storeUsageOutbox();
+    this.flushUsage(call);
+  };
+
+  ReaderVoice.prototype.flushUsage = function (call) {
+    if (call.usageSaving || !call.usageEvents || !call.usageEvents.length) return;
+    var self = this, batch = call.usageEvents.slice(0, 20);
+    call.usageSaving = true;
+    endpoint('readerCallUsage', { callId: call.session.callId, events: batch }).then(function () {
+      call.usageEvents.splice(0, batch.length); call.usageRetries = 0;
+    }).catch(function () { call.usageRetries = (call.usageRetries || 0) + 1; }).finally(function () {
+      call.usageSaving = false;
+      if (!call.usageEvents.length) self.usageCalls = self.usageCalls.filter(function (entry) { return entry !== call; });
+      self.storeUsageOutbox();
+      if (call.usageEvents.length) call.usageRetry = setTimeout(function () { self.flushUsage(call); }, Math.min(30000, (call.usageRetries || 0) * 2000));
+    });
+  };
+
+  ReaderVoice.prototype.handleTools = async function (call, functions) {
+    var responses = [];
+    for (var fn of functions) {
+      if (call.closed || call.cancelledTools.has(fn.id)) continue;
+      var response;
+      try {
+        if (fn.name === 'play_selected_phrase') {
+          if (!call.greetingDone) throw new Error('Greeting not finished');
+          var playback = this.onPlaySelected();
+          if (call.reference) call.reference.toolId = fn.id;
+          await playback;
+          response = { status: 'completed', message: 'Эталонная запись завершена. Выбери следующий шаг по текущему разговору или жди; это не попытка ученика.' };
+        } else {
+        if (fn.name !== 'get_book_history') throw new Error('Unknown tool');
+        var history = await endpoint('readerBookHistory', { bookId: call.bookId, location: call.location });
+        // A user can move backwards while the request is in flight.
+        response = { chapters: (history.chapters || []).filter(function (chapter) {
+          return call.location && chapter.chapter < call.location.chapter - 1;
+        }) };
+        }
+      } catch (error) { response = { error: fn.name === 'play_selected_phrase' ? (error.name === 'AbortError' ? 'Воспроизведение остановлено. Жди нового вопроса; не запускай запись повторно.' : 'Не удалось воспроизвести выбранную фразу. Попроси выбрать фразу и попробовать «Прослушать».') : 'Не удалось получить сводку. Не придумывай более ранние события.' }; }
+      if (call.closed || call.cancelledTools.has(fn.id)) continue;
+      responses.push({ id: fn.id, name: fn.name, response: response });
+    }
+    responses = responses.filter(function (response) { return !call.cancelledTools.has(response.id); });
+    // Other tools may have awaited playback after the history request completed.
+    responses.forEach(function (response) {
+      if (response.name === 'get_book_history' && response.response.chapters) {
+        response.response.chapters = response.response.chapters.filter(function (chapter) {
+          return call.location && chapter.chapter < call.location.chapter - 1;
+        });
+      }
+    });
+    if (!call.closed && responses.length && call.socket.readyState === 1) {
+      call.socket.send(JSON.stringify({ toolResponse: { functionResponses: responses } }));
+    }
   };
 
   ReaderVoice.prototype.cue = function (type, audio) {
@@ -280,9 +461,10 @@
 
   ReaderVoice.prototype.stop = function () {
     var call = this.call;
+    if (call) { call.closed = true; this.stopReference(); }
     this.call = null;
     this.active = false;
-    if (call && !call.closed) {
+    if (call) {
       call.closed = true;
       clearTimeout(call.connectTimer); clearTimeout(call.endTimer); clearInterval(call.heartbeat); clearInterval(call.meterTimer);
       if (call.rejectConnect) call.rejectConnect(new DOMException('Cancelled', 'AbortError'));
@@ -298,6 +480,7 @@
         if (cueMs) setTimeout(function () { call.audio.close().catch(function () {}); }, cueMs);
         else call.audio.close().catch(function () {});
       }
+      this.flushUsage(call);
       this.release(call);
     }
     this.onLevel(0);

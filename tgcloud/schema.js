@@ -43,3 +43,21 @@ export const readerProfiles = table('reader_profiles', {
   settings: text('settings').notNull(),
   updatedAt: integer('updated_at').notNull(),
 });
+
+export const readerVoiceSessions = table('reader_voice_sessions', {
+  callId: text('call_id').primaryKey(),
+  userId: integer('user_id').notNull(),
+  bookId: text('book_id').notNull(),
+  model: text('model').notNull(),
+  createdAt: integer('created_at').notNull(),
+  startedAt: integer('started_at').notNull(),
+  endedAt: integer('ended_at').notNull(),
+});
+export const readerVoiceUsage = table('reader_voice_usage', {
+  key: text('key').primaryKey(),
+  callId: text('call_id').notNull(),
+  sequence: integer('sequence').notNull(),
+  receivedAt: integer('received_at').notNull(),
+  savedAt: integer('saved_at').notNull(),
+  metadata: text('metadata').notNull(),
+});

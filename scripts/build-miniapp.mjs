@@ -67,6 +67,8 @@ for (let offset = 0; offset < serializedBooks.length; offset += 110000) {
   await writeFile(`tgcloud/lib/book-data/${name}.js`, `export default ${JSON.stringify(serializedBooks.slice(offset, offset + 110000))};\n`);
 }
 await writeFile('tgcloud/lib/book-data.js', `// Generated public book data; split for the Serverless module limit.\n${dataImports.join('\n')}\nexport default JSON.parse([${dataParts.join(',')}].join(''));\n`);
+const summaries = JSON.parse(await readFile('author-plans/reader-summaries.json', 'utf8')).books;
+await writeFile('tgcloud/lib/book-summaries.js', `// Generated reader-safe chapter summaries; server only.\nexport default ${JSON.stringify(summaries)};\n`);
 await writeFile('tgcloud/lib/book-ids.js', `// Generated from the public catalog.\nexport default ${JSON.stringify(catalog.books.map(book => book.id))};\n`);
 const learning = await readFile('reader-learning.js', 'utf8');
 await writeFile('tgcloud/lib/learning.js', `const learningScope = {};\n${learning.replace(

@@ -9,7 +9,7 @@
     var phrase = block && block.items[location.item];
     if (!phrase) throw new Error('Invalid phrase location');
     var paragraphs = [];
-    for (var c = 0; c <= location.chapter; c++) {
+    for (var c = Math.max(0, location.chapter - 1); c <= location.chapter; c++) {
       var blocks = book.chapters[c].blocks;
       var count = c === location.chapter ? location.block + 1 : blocks.length;
       for (var b = 0; b < count; b++) {

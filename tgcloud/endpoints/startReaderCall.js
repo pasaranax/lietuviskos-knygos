@@ -47,6 +47,8 @@ export default async function (input, ctx) {
     if (!response.ok) throw new Error('Token unavailable');
     const token = await response.json();
     if (typeof token.name !== 'string' || !token.name.startsWith('auth_tokens/')) throw new Error('Invalid token');
+    await db.run('INSERT INTO reader_voice_sessions (call_id, user_id, book_id, model, created_at, started_at, ended_at) VALUES (:callId, :userId, :bookId, :model, :now, 0, 0)',
+      { ':callId': reservation.callId, ':userId': userId, ':bookId': input.bookId, ':model': model, ':now': Date.now() });
     return { token: token.name, model, callId: reservation.callId, maxCallSeconds: seconds };
   } catch {
     await updateCall(db, userId, reservation.callId, 'end');

@@ -15,3 +15,5 @@ node_modules/
 
 tgcloud/lib/book-data.js
 tgcloud/lib/book-data/
+
+/tgcloud/lib/book-summaries.js

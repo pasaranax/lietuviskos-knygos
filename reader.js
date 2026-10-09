@@ -59,6 +59,11 @@
   var topbarVoiceButton = document.getElementById("topbarVoiceButton");
   var waterOrb = new window.ReaderWaterOrb(document.getElementById("waterOrb"), voiceOrb);
   var voice = new window.ReaderVoice({
+    onPlaySelected: function () {
+      if (!state.activeData || !state.activeData.audio) throw new Error("Выбери фразу с записью.");
+      if (state.referenceAudio || !phraseAudio.paused) stopPhraseAudio();
+      return playPhraseAudio();
+    },
     onState: function (status) {
       voiceAssistant.hidden = status === "idle";
       voiceOrb.dataset.state = status;
@@ -530,7 +535,7 @@
     voiceError.hidden = true;
     if (!hoverOnly && voice.active) {
       voice.updateContext({ reading: window.ReaderLearning.readingContext(state.book, phrase._location),
-        selection: window.ReaderLearning.phraseContext(state.book, phrase._location).phrase });
+        selection: window.ReaderLearning.phraseContext(state.book, phrase._location).phrase }, phrase._location);
     }
     phrase.classList.add("is-active");
     tooltipTranslation.textContent = state.activeData.translation;
@@ -561,6 +566,8 @@
   }
 
   function stopPhraseAudio() {
+    voice.stopReference();
+    state.referenceAudio = null;
     phraseAudio.pause();
     // Abort a pending load/play too, so a closed tooltip cannot start speaking later.
     if (phraseAudio.hasAttribute("src")) {
@@ -574,12 +581,30 @@
     if (!state.activeData || !state.activeData.audio) return;
     window.clearTimeout(state.tooltipTimer);
     state.tooltipPinned = true;
-    if (!phraseAudio.paused) {
+    if (!phraseAudio.paused || state.referenceAudio) {
       stopPhraseAudio();
       return;
     }
     var item = state.activeData;
     tooltipAudioError.hidden = true;
+    if (voice.active) {
+      var reference = { item: item };
+      document.querySelectorAll("audio").forEach(function (audio) { audio.pause(); });
+      state.referenceAudio = reference;
+      tooltipAudioButton.setAttribute("aria-pressed", "true");
+      var playback = voice.playReference(item.audio, { text: item.text });
+      playback.catch(function (error) {
+        if (error.name === "AbortError" || state.referenceAudio !== reference) return;
+        tooltipAudioError.hidden = false;
+        tooltipAudioError.textContent = error.message || "Не удалось проиграть запись. Попробуй ещё раз.";
+        positionTooltip();
+      }).finally(function () {
+        if (state.referenceAudio !== reference) return;
+        state.referenceAudio = null;
+        resetAudioButton();
+      });
+      return playback;
+    }
     phraseAudio.src = item.audio;
     tooltipAudioButton.setAttribute("aria-pressed", "true");
     phraseAudio.play().catch(function (error) {

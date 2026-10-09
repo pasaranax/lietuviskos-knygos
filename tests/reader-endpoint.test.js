@@ -8,7 +8,7 @@ function endpoint(fetch, book) {
   class EndpointError extends Error { constructor(message, data) { super(message); this.code = data.code; } }
   const context = vm.createContext({
     fetch, EndpointError, api: {}, checkCallAllowance: async () => ({ allowed: true }), getSettings: async () => ({ voice: 'egle' }), bookIds: ['sample'], books: { sample: book },
-    geminiApiKey: 'test-key', db: {},
+    geminiApiKey: 'test-key', db: { run: async()=>({rows:[]}) },
     reserveCall: async () => ({ deadline: Date.now() + 60000, callId: 'a'.repeat(32) }),
     updateCall: async () => ({}), reserveTokenIssue: async () => true,
   });

@@ -6,6 +6,7 @@ const vm = require('node:vm');
 const path = require('node:path');
 function harness() {
   const sql = new DatabaseSync(':memory:');
+  sql.exec('CREATE TABLE reader_voice_sessions(call_id TEXT PRIMARY KEY,user_id INTEGER,started_at INTEGER,ended_at INTEGER)');
   sql.exec(`CREATE TABLE voice_time_limits (user_id INTEGER PRIMARY KEY,day TEXT,used_ms INTEGER,last_started_at INTEGER,call_id TEXT,reserved_ms INTEGER,call_started_at INTEGER,activated INTEGER,lease_until INTEGER,deadline INTEGER);
     CREATE TABLE voice_token_issues (user_id INTEGER PRIMARY KEY,day TEXT,issued INTEGER);
     CREATE TABLE voice_limit_notifications (user_id INTEGER PRIMARY KEY,day TEXT);
