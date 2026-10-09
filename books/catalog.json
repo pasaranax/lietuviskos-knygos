@@ -5,6 +5,7 @@
       "title": "Jokių orchidėjų mis Blendiš",
       "author": "Džeimsas H. Čeizas",
       "cover": "assets/jokiu-orchideju-cover.jpg",
+      "spineColor": "#4c365f",
       "href": "reader.html?book=jokiu-orchideju",
       "wordCount": 52393,
       "readingLevel": "B2–C1",
@@ -15,6 +16,7 @@
       "title": "Jūsų įprastas užsakymas",
       "author": "Mikhail Bulygin",
       "cover": "assets/jusu-iprastas-uzsakymas-cover.jpg",
+      "spineColor": "#20343d",
       "wordCount": 5930,
       "href": "reader.html?book=jusu-iprastas-uzsakymas",
       "readingLevel": "A2"
@@ -24,6 +26,7 @@
       "title": "Mobilioji biblioteka",
       "author": "Mikhail Bulygin",
       "cover": "assets/keliaujanti-biblioteka-cover-mobilioji.png",
+      "spineColor": "#586742",
       "href": "reader.html?book=keliaujanti-biblioteka",
       "wordCount": 5820,
       "readingLevel": "A2"

@@ -80,6 +80,7 @@
     var link = document.createElement("a");
     link.className = "book-card";
     link.href = book.href || ("reader.html?book=" + encodeURIComponent(book.id));
+    if (book.spineColor) link.style.setProperty("--spine-color", book.spineColor);
 
     var cover = document.createElement("img");
     cover.className = "book-cover";
@@ -141,7 +142,8 @@
             return { book: book, details: details };
           });
       })).then(function (entries) {
-        shelfEntries = entries.map(function (entry) {
+        // Catalog entries are appended when books are added: newest goes first.
+        shelfEntries = entries.reverse().map(function (entry) {
           return {
             book: entry.book,
             details: entry.details,

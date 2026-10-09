@@ -7,7 +7,8 @@ const cloud = await getFiles(process.env.TG_ACCESS_TOKEN);
 const webhook = await getWebhook(process.env.TG_ACCESS_TOKEN);
 assert.equal(webhook.in_sync, true);
 assert.equal((await getMigrationStatus(process.env.TG_ACCESS_TOKEN)).db_changes.length, 0);
-for (const file of ['index.html','reader.html','reader.js','reader-live.js','reader-water.js','reader-profile.js','reader.css','books/catalog.json']) {
+const staticFiles = ['index.html','index.js','index.css','reader.html','reader.js','reader-live.js','reader-water.js','reader-profile.js','reader.css','books/catalog.json'];
+for (const file of staticFiles) {
   const response = await fetch(appUrl + file);
   assert.equal(response.status, 200);
   const hash = data => createHash('sha256').update(data).digest('hex');
@@ -39,4 +40,4 @@ const manifest = await (await fetch(appUrl + book.chapters[0].audio.replace(/[^/
 assert.equal(manifest.phrases[0].audio, book.chapters[0].blocks[0].items[0].audio);
 assert.equal((await fetch(manifest.phrases[0].audio, { method: 'HEAD' })).status, 200);
 console.log(JSON.stringify({ revision: cloud.revision, webhookInSync: true, schemaInSync: true,
-  staticHashMatches: 8, unauthenticatedRejected: 4, privateFilesAbsent: 3, profileReadbackAndIsolation: true, settingsReadbackAndIsolation: true, chapterAndPhraseAudio: true }));
+  staticHashMatches: staticFiles.length, unauthenticatedRejected: 4, privateFilesAbsent: 3, profileReadbackAndIsolation: true, settingsReadbackAndIsolation: true, chapterAndPhraseAudio: true }));
