@@ -129,7 +129,7 @@ GitHub Pages is public by default. Treat full book text as publish-sensitive.
 
 ## Complete chapter delivery
 
-A request to create or continue a chapter includes its complete narration and deployment, unless the user explicitly limits the request to a draft or text only. Finish one chapter at a time: review the text and notes, generate audio, verify it, then deploy that chapter before proceeding to the next. Do not wait for a separate request to add audio or deploy. Honor rights confirmations and publishing authorization already given for the book.
+A request to create or continue a chapter includes its complete narration and deployment, unless the user explicitly limits the request to a draft or text only. Finish the authorized unit of work, whether a chapter, connected episode or requested batch. Review its connected text and notes before paid narration, then generate and verify audio and publish the completed unit; publication of one chapter is not a prerequisite for drafting the next. Do not wait for a separate request to add audio or deploy. Honor rights confirmations and publishing authorization already given for the book.
 
 A local-only, no-push or explicitly requested batch scope takes precedence. For narration, use [gemini-narration.md](gemini-narration.md); it owns casting, performance, synthesis and audio verification.
 

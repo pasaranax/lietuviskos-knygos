@@ -1362,6 +1362,95 @@
         }
       },
       "preview": "author-plans/audio/keliaujanti-biblioteka/voices/bird-v1.wav"
+    },
+    "leonas": {
+      "name": "Leonas",
+      "label": "Леон",
+      "gender": "male",
+      "ageYears": 32,
+      "ageMeaning": "Актёрская характеристика; не новый факт сюжета.",
+      "designPrompt": "A man in his early thirties with a clear light tenor, a slightly grainy edge and grounded conversational phrasing at an unhurried natural baseline. Native standard Lithuanian, clear vowels and consonants; dry close studio sound without reverberation, distinct from a low weathered father and a rounded baritone narrator.",
+      "status": "created",
+      "voiceId": "voice_8dia0l6elojw",
+      "createdAt": "2026-10-09T01:42:59.641140+00:00",
+      "apiMetadata": {
+        "id": "voice_8dia0l6elojw",
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-09T01:42:57.953642467Z",
+        "display_name": "Iki paskutinio puslapio / Leonas / v1",
+        "prompted": {
+          "input": "A man in his early thirties with a clear light tenor, a slightly grainy edge and grounded conversational phrasing at an unhurried natural baseline. Native standard Lithuanian, clear vowels and consonants; dry close studio sound without reverberation, distinct from a low weathered father and a rounded baritone narrator."
+        },
+        "language_code": "lt-LT",
+        "gender": "male",
+        "usage": {
+          "total_tokens": 870,
+          "total_input_tokens": 228,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 78
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 642,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 642
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 1101,
+          "raw_prompt_token": 391,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 241
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 647
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1101
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 241
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 647
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1101
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/overnight-2026-10-09/leonas-preview.wav"
     }
   },
   "batchingPolicy": {

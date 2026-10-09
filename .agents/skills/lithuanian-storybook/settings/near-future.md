@@ -1,6 +1,6 @@
 # Near future — optional setting module
 
-Set the story in a recognizable city in the near future, with familiar homes, shops, jobs, transport, and relationships. Choose a limited technological change affecting ordinary life. Do not use distant eras, space colonies, interstellar travel, or unfamiliar civilizations. Build interest through human consequences and choices. Investigation is optional; no culprit, clue ledger, or mystery ending is required.
+Set the story in recognizable places in the near future, with familiar homes, shops, jobs, transport, and relationships. Choose a limited technological change affecting ordinary life. Do not use distant eras, space colonies, interstellar travel, or unfamiliar civilizations. Build interest through human consequences and choices. Investigation is optional; no culprit, clue ledger, or mystery ending is required.
 
 For each consequential technology record capability, limits, cost or failure condition, access, and the scene establishing rules needed later. Distinguish a character's belief from a world fact. Demonstrate rules through ordinary use before a turning point depends on them; avoid last-minute overrides or unlimited AI abilities.
 

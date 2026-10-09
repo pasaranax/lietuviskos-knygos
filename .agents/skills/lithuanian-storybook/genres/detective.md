@@ -1,15 +1,9 @@
 # Detective / Детектив — optional investigation module
 
-Use only when investigation or solving a puzzle is part of the requested experience. Science fiction, suspense, or an unanswered question alone does not require this module.
+Use when investigation or solving a puzzle is part of the requested experience. Science fiction, suspense or an unanswered question alone does not require it. Root investigation in ordinary conversations, schedules, belongings, messages and choices rather than specialist forensic or legal jargon. In Russian call the genre «Детектив», not «мистери» or «мистика».
 
-Keep investigation rooted in recognizable daily life: conversations, schedules, belongings, messages, and ordinary choices. Avoid making specialist police, forensic, legal, or criminal terminology the lexical core. Refer to this module as «Детектив» in Russian, not «мистери» or «мистика».
+Establish the incident's underlying truth and relevant timeline, access and character knowledge in the dossier. Track significant observations, interpretations and their limits with enough detail to keep planned clues distinct from those actually shown. The record serves the story; no fixed number of fields or clues is required.
 
-Design the incident's truth before withholding it: actor, motive, means, opportunity, timing, concealment, and consequences. Check the timeline and character access. Distinguish accidents, deception, and mistaken assumptions.
+For a fair-play deduction story, give the reader usable evidence before the solution, test credible rival explanations and make conclusions follow from evidence available at that time. A late confession cannot substitute for the promised deduction. Other investigation forms may turn on testimony, a confession, unresolved doubt or knowledge the reader acquires later; choose deliberately rather than enforcing one puzzle structure on the genre. Narration must not fabricate observations simply to hide an answer.
 
-For each significant clue record the concrete observation, scene when reader/investigator can see it, first interpretation, true cause, evidential limits, alternative it helps reject, and payoff scene. Distinguish planned clues from appearances verified in the actual text. Evidence found after solving the case is corroboration, not an earlier clue.
-
-Test the strongest rival explanation. Conclusions require evidence available at the time; suspicion is not proof. A confession should confirm rather than supply the missing deduction. False leads have true causes that are eventually explained. Narration must not fabricate observations to conceal the answer.
-
-Make clues understandable at the target language level. An obscure word or a tooltip must not be the only route to the solution. Preserve ambiguity in translation without leaking the answer.
-
-A mystery pilot offers a useful discovery and an earned step forward while leaving the main case open, unless a complete short story was requested. Combine with other genres by investigating an event within their established rules; import no new technology or magic to rescue the deduction.
+Keep significant clues understandable at the target language level; an obscure word or a tooltip must not be the only route to the solution. Preserve intentional ambiguity in translation without leaking the answer. Magic or technology must follow established rules rather than appearing to rescue a deduction. A pilot's extent and stopping point follow the book, not a mandatory clue-and-payoff sequence.

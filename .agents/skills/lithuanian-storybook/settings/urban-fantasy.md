@@ -1,9 +1,7 @@
-# Urban fantasy — optional setting module
+# Fantasy in everyday life — optional setting module
 
-Set the story in an otherwise real, recognizable contemporary city. Add a limited fantastic element to ordinary life. Exclude invented kingdoms, epic quests, elaborate magical hierarchies, and creature catalogs. Establish the capabilities, limits, costs, and access rules of any magic used to resolve conflict. Wonder can remain unexplained, but a convenient new power cannot solve an otherwise insoluble problem without prior setup.
+Set fantastic elements within recognizable contemporary life in a real or fictional country. Cities, countryside and journeys are available according to the brief. Keep epic secondary worlds, invented races, elaborate magical hierarchies and creature catalogs outside the everyday-language focus. A fictional European country does not itself require exotic terminology.
 
-Keep invented terminology small and learnable. Explain unfamiliar things through action and concrete comparisons. Everyday A2 words about homes, promises, journeys, work, and relationships can support a fantastic world.
+Establish the capabilities, limits, costs and access rules of magic that affect choices or resolve conflict. Wonder and its mechanism can remain unexplained; a convenient new power cannot rescue a problem without setup. Demonstrate relevant rules through action rather than requiring characters to explain a system.
 
-Track rules that affect choices and consequences. Avoid lore dumps and genealogies unrelated to the protagonist's goals. A pilot demonstrates the world's distinctive possibility and its personal consequence.
-
-Combine with drama for relationships, romance for intimacy, comedy for tone, or the detective module for an investigation governed by already-established magical rules. None of these combinations is mandatory. Preserve ordinary life and useful everyday Lithuanian in every combination.
+Use ordinary language about homes, work, promises, journeys and relationships to make the fantastic understandable. Track consequential world facts in the dossier and avoid lore unrelated to the story. Combine with other modules as the brief warrants, preserving familiar life and useful Lithuanian.
