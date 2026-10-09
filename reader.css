@@ -9,6 +9,10 @@ html {
 }
 
 body {
+  --reader-inset-top: max(env(safe-area-inset-top, 0px), calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px)));
+  --reader-inset-bottom: max(env(safe-area-inset-bottom, 0px), calc(var(--tg-safe-area-inset-bottom, 0px) + var(--tg-content-safe-area-inset-bottom, 0px)));
+  --reader-inset-left: max(env(safe-area-inset-left, 0px), calc(var(--tg-safe-area-inset-left, 0px) + var(--tg-content-safe-area-inset-left, 0px)));
+  --reader-inset-right: max(env(safe-area-inset-right, 0px), calc(var(--tg-safe-area-inset-right, 0px) + var(--tg-content-safe-area-inset-right, 0px)));
   --serif-stack: ui-serif, "New York", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
   --sans-stack: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
   --bg: #eee4d0;
@@ -56,8 +60,7 @@ body.theme-dark {
   align-items: center;
   gap: 10px;
   min-height: 52px;
-  padding: 8px 12px;
-  padding-top: calc(8px + env(safe-area-inset-top));
+  padding: calc(8px + var(--reader-inset-top)) max(12px, var(--reader-inset-right)) 8px max(12px, var(--reader-inset-left));
   border-bottom: 1px solid var(--line);
   background: var(--surface);
 }
@@ -86,7 +89,7 @@ body.theme-dark {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 6px max(32px, env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(32px, env(safe-area-inset-left));
+  padding: 6px max(32px, var(--reader-inset-right)) calc(10px + var(--reader-inset-bottom)) max(32px, var(--reader-inset-left));
   border-top: 1px solid var(--line);
   background: var(--surface);
   color: var(--muted);
@@ -127,7 +130,7 @@ body.theme-dark {
 
 .settings-menu {
   position: fixed;
-  inset: calc(62px + env(safe-area-inset-top)) 12px auto auto;
+  inset: calc(62px + var(--reader-inset-top)) max(12px, var(--reader-inset-right)) auto auto;
   margin: 0;
   width: min(300px, calc(100vw - 24px));
   padding: 10px 14px;
@@ -139,13 +142,15 @@ body.theme-dark {
   font: 14px/1.5 var(--sans-stack);
 }
 .settings-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 7px 0; }
+.settings-row[hidden], .fullscreen-status[hidden] { display: none; }
+.fullscreen-status { margin: 4px 0; color: var(--muted); font-size: 12px; }
 .settings-actions { display: flex; gap: 6px; }
 .settings-menu .family-button { width: auto; padding: 0 10px; font-size: 13px; }
 .settings-menu .control-button { min-height: 38px; }
 
 .voice-assistant {
   position: fixed; z-index: 70;
-  bottom: calc(14px + env(safe-area-inset-bottom)); left: 50%;
+  bottom: calc(14px + var(--reader-inset-bottom)); left: 50%;
   transform: translateX(-50%); text-align: center;
 }
 .voice-assistant[hidden], .voice-error[hidden] { display: none; }
@@ -169,7 +174,7 @@ body.theme-dark {
 .topbar-voice-button[aria-pressed="true"] { background: #486854; }
 .tooltip-audio-button.tooltip-voice-button svg { width: 20px; height: 20px; flex: 0 0 20px; }
 .telegram-hint {
-  position: fixed; inset: calc(62px + env(safe-area-inset-top)) 12px auto auto; margin: 0;
+  position: fixed; inset: calc(62px + var(--reader-inset-top)) max(12px, var(--reader-inset-right)) auto auto; margin: 0;
   max-width: calc(100vw - 24px); padding: 14px 18px; border: 1px solid var(--line);
   border-radius: 12px; background: var(--surface); color: var(--ink);
   box-shadow: 0 8px 28px #0002; font: 14px/1.5 var(--sans-stack);
@@ -179,7 +184,7 @@ body.theme-dark {
 /* Keep connection state available to screen readers, with no visual caption. */
 .voice-status { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .voice-error {
-  position: fixed; z-index: 75; bottom: calc(48px + env(safe-area-inset-bottom));
+  position: fixed; z-index: 75; bottom: calc(48px + var(--reader-inset-bottom));
   left: 12px; right: 12px; width: fit-content; max-width: calc(100vw - 24px);
   margin: auto; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px;
   background: var(--surface); color: var(--ink); font-size: 13px;
@@ -244,7 +249,7 @@ body.theme-dark {
 
 .chapter-audio-error {
   position: fixed;
-  top: calc(60px + env(safe-area-inset-top));
+  top: calc(60px + var(--reader-inset-top));
   right: 12px;
   left: 12px;
   z-index: 60;
@@ -278,8 +283,8 @@ body.theme-dark {
 .reader {
   min-height: 100vh;
   padding: 72px 22px 76px;
-  padding-top: calc(72px + env(safe-area-inset-top));
-  padding-bottom: calc(76px + env(safe-area-inset-bottom));
+  padding-top: calc(72px + var(--reader-inset-top));
+  padding-bottom: calc(76px + var(--reader-inset-bottom));
   background: var(--bg);
   color: var(--ink);
 }
@@ -457,8 +462,8 @@ body:not(.chapter-playing) .phrase:focus,
 @media (max-width: 700px) {
   .topbar {
     gap: 7px;
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-right: max(8px, var(--reader-inset-right));
+    padding-left: max(8px, var(--reader-inset-left));
   }
 
   .chapter-select {

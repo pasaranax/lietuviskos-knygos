@@ -7,7 +7,7 @@ await rm('dist', { recursive: true, force: true });
 await mkdir('dist', { recursive: true });
 // Explicit public allowlist keeps credentials, source tooling and author dossiers off the site.
 for (const file of ['index.html', 'index.js', 'index.css', 'reader.html', 'reader.js', 'reader.css',
-  'reader-learning.js', 'reader-live.js', 'reader-water.js', 'reader-mic-worklet.js', 'reader-telegram.js', 'reader-profile.js', 'books']) {
+  'reader-learning.js', 'reader-live.js', 'reader-water.js', 'reader-mic-worklet.js', 'reader-telegram.js', 'reader-profile.js', 'vendor', 'books']) {
   await cp(file, `dist/${file}`, { recursive: true });
 }
 // Refresh asset URLs so Telegram WebViews cannot reuse an older script after deployment.

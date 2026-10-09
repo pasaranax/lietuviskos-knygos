@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="reader.css?v=7f868af08779">
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script src="reader-telegram.js" defer></script>
-  <script src="reader-profile.js" defer></script>
+  <link rel="stylesheet" href="reader.css?v=ffe0aba9cb0e">
+  <script src="vendor/telegram-web-app.js?v=124bdff7ba3f"></script>
+  <script src="reader-telegram.js?v=0018428da15d" defer></script>
+  <script src="reader-profile.js?v=51e12a5be5ea" defer></script>
   <title>Читалка</title>
 </head>
 <body>
@@ -34,6 +34,8 @@
     <div class="settings-row"><span>Шрифт</span><button class="control-button family-button" id="familyButton" type="button">A</button></div>
     <div class="settings-row"><span>Язык текста</span><button class="control-button" id="translationButton" type="button" aria-pressed="false">Литовский</button></div>
     <div class="settings-row"><label for="voiceSelect">Голос</label><select class="control-button" id="voiceSelect"><option value="egle">Eglė</option><option value="marius">Marius</option></select></div>
+    <div class="settings-row" id="fullscreenRow" hidden><span>На весь экран</span><button class="control-button" id="fullscreenButton" type="button" aria-pressed="false">Развернуть</button></div>
+    <p class="fullscreen-status" id="fullscreenStatus" role="status" hidden></p>
   </div>
   <div class="telegram-hint" id="telegramHint" popover role="note">
     <p>Голосовой помощник доступен в Telegram.</p>
@@ -93,6 +95,6 @@
   <script src="reader-learning.js?v=5b48ef1abf76" defer></script>
   <script src="reader-live.js?v=3b3dccbd9f29" defer></script>
   <script src="reader-water.js?v=fd029c95fd28" defer></script>
-  <script src="reader.js?v=8373b119ecda" defer></script>
+  <script src="reader.js?v=b25d2a9a5b39" defer></script>
 </body>
 </html>

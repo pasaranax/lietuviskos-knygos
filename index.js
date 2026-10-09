@@ -98,7 +98,8 @@
 
     var link = document.createElement("a");
     link.className = "book-card";
-    link.href = book.href || ("reader.html?book=" + encodeURIComponent(book.id));
+    link.href = window.ReaderTelegram.url(book.href || ("reader.html?book=" + encodeURIComponent(book.id)));
+    link.addEventListener("click", function () { link.href = window.ReaderTelegram.url(link.href); });
     if (book.spineColor) link.style.setProperty("--spine-color", book.spineColor);
 
     var cover = document.createElement("img");

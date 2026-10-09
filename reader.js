@@ -2,7 +2,7 @@
   var params = new URLSearchParams(window.location.search);
   var bookId = params.get("book");
   if (!bookId) {
-    window.location.replace("index.html");
+    window.location.replace(window.ReaderTelegram ? window.ReaderTelegram.url("index.html") : "index.html");
     return;
   }
   var storagePrefix = "frankReader." + bookId + ".";
@@ -134,7 +134,7 @@
     fetch("books/" + encodeURIComponent(bookId) + ".json", { cache: "no-cache" })
       .then(function (response) {
         if (response.status === 404) {
-          window.location.replace("index.html");
+          window.location.replace(window.ReaderTelegram ? window.ReaderTelegram.url("index.html") : "index.html");
           return null;
         }
         if (!response.ok) throw new Error("book load failed");
@@ -267,6 +267,11 @@
   }
 
   function showTelegramHint() {
+    if (window.ReaderTelegram.isMiniApp) {
+      voiceError.textContent = "Не удалось получить авторизацию Telegram. Закрой миниапп и открой его заново.";
+      voiceError.hidden = false;
+      return;
+    }
     var hint = document.getElementById("telegramHint");
     if (hint.matches(":popover-open")) hint.hidePopover();
     else hint.showPopover();
