@@ -1451,6 +1451,184 @@
         }
       },
       "preview": "author-plans/audio/keliaujanti-biblioteka/overnight-2026-10-09/leonas-preview.wav"
+    },
+    "elena": {
+      "name": "Elena",
+      "label": "Елена",
+      "gender": "female",
+      "ageYears": 61,
+      "designPrompt": "A woman in her early sixties with a clear mature low-mid contralto, a dry lightly textured timbre, patient conversational phrasing and a naturally measured baseline. Native standard Lithuanian with precise consonants and clear vowels. Warm everyday presence, capable of firm disagreement and grief without a frail quaver. Dry close-miked studio acoustics, no echo or breathy halo. Distinct from a young light mezzo and a soft older low alto.",
+      "ageMeaning": "Актёрская характеристика голоса, не новый факт сюжета.",
+      "status": "created",
+      "voiceId": "voice_r8330lyr5wzl",
+      "createdAt": "2026-10-12T21:42:42.230688+00:00",
+      "apiMetadata": {
+        "id": "voice_r8330lyr5wzl",
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-12T21:42:39.403972993Z",
+        "display_name": "Mobilioji biblioteka / elena / v1",
+        "prompted": {
+          "input": "A woman in her early sixties with a clear mature low-mid contralto, a dry lightly textured timbre, patient conversational phrasing and a naturally measured baseline. Native standard Lithuanian with precise consonants and clear vowels. Warm everyday presence, capable of firm disagreement and grief without a frail quaver. Dry close-miked studio acoustics, no echo or breathy halo. Distinct from a young light mezzo and a soft older low alto."
+        },
+        "language_code": "lt-LT",
+        "gender": "female",
+        "usage": {
+          "total_tokens": 1603,
+          "total_input_tokens": 239,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 89
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 1364,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 1364
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 227,
+          "raw_prompt_token": 402,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 252
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1369
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 227
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 252
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 1369
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 227
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/continuation-2026-10-13/elena-preview.wav"
+    },
+    "adrianas": {
+      "name": "Adrianas",
+      "label": "Адриан",
+      "gender": "male",
+      "ageYears": 36,
+      "designPrompt": "A man in his mid-thirties with a full middle-register baritone, clear chest resonance and a slightly dry edge, direct practical conversational phrasing at a natural unhurried baseline. Native standard Lithuanian with clean consonants and distinct vowels. Capable of mild irritation and warm concern without theatrical emphasis. Dry close-miked studio acoustics, no echo. Distinct from a light smiling baritone, a light tenor and a polished narrator.",
+      "ageMeaning": "Актёрская характеристика голоса, не новый факт сюжета.",
+      "status": "created",
+      "voiceId": "voice_4u7w26e5zpx0",
+      "createdAt": "2026-10-12T21:43:02.775730+00:00",
+      "apiMetadata": {
+        "id": "voice_4u7w26e5zpx0",
+        "model": "models/gemini-3.8-flash-tts",
+        "type": "prompted",
+        "expire_time": "2027-10-12T21:43:00.726137439Z",
+        "display_name": "Mobilioji biblioteka / adrianas / v1",
+        "prompted": {
+          "input": "A man in his mid-thirties with a full middle-register baritone, clear chest resonance and a slightly dry edge, direct practical conversational phrasing at a natural unhurried baseline. Native standard Lithuanian with clean consonants and distinct vowels. Capable of mild irritation and warm concern without theatrical emphasis. Dry close-miked studio acoustics, no echo. Distinct from a light smiling baritone, a light tenor and a polished narrator."
+        },
+        "language_code": "lt-LT",
+        "gender": "male",
+        "usage": {
+          "total_tokens": 723,
+          "total_input_tokens": 271,
+          "input_tokens_by_modality": [
+            {
+              "modality": "text",
+              "tokens": 121
+            }
+          ],
+          "total_cached_tokens": 0,
+          "total_output_tokens": 452,
+          "output_tokens_by_modality": [
+            {
+              "modality": "audio",
+              "tokens": 452
+            }
+          ],
+          "total_tool_use_tokens": 0,
+          "total_thought_tokens": 292,
+          "raw_prompt_token": 434,
+          "model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 284
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 457
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 292
+                }
+              ]
+            }
+          ],
+          "non_grounding_model_invocation_token_counts": [
+            {
+              "prompt_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 284
+                }
+              ],
+              "candidates_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 457
+                }
+              ],
+              "thoughts_tokens_details": [
+                {
+                  "modality": "text",
+                  "tokens": 292
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "preview": "author-plans/audio/keliaujanti-biblioteka/continuation-2026-10-13/adrianas-preview.wav"
     }
   },
   "batchingPolicy": {
